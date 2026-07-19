@@ -1,0 +1,6 @@
+# Omnibus Strategy Tests
+
+| Metric | Friedman Q | df | p-value | Average ranks |
+|---|---|---|---|---|
+| wolf_win_rate | 24.04 | 6 | 0.00 | default=4.80; random=2.60; edge_first=2.20; inner_first=2.10; highest_p_wolf=6.50; highest_suspicion=6.50; opposite_side=3.30 |
+| seer_found_wolf_rate | 17.31 | 6 | 0.01 | default=7.00; random=3.00; edge_first=2.00; inner_first=4.60; highest_p_wolf=4.80; highest_suspicion=3.60; opposite_side=3.00 |

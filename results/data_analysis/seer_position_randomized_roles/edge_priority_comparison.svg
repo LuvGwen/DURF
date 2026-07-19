@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="520" viewBox="0 0 980 520">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="490.0" y="28" text-anchor="middle" font-family="Arial" font-size="18" font-weight="700">Edge-priority comparison: wolf win rate</text>
+<line x1="190.0" y1="55" x2="190.0" y2="465" stroke="#e5e7eb"/>
+<text x="190.0" y="487" text-anchor="middle" font-family="Arial" font-size="11" fill="#4b5563">0</text>
+<line x1="303.8" y1="55" x2="303.8" y2="465" stroke="#e5e7eb"/>
+<text x="303.8" y="487" text-anchor="middle" font-family="Arial" font-size="11" fill="#4b5563">10</text>
+<line x1="417.7" y1="55" x2="417.7" y2="465" stroke="#e5e7eb"/>
+<text x="417.7" y="487" text-anchor="middle" font-family="Arial" font-size="11" fill="#4b5563">20</text>
+<line x1="531.5" y1="55" x2="531.5" y2="465" stroke="#e5e7eb"/>
+<text x="531.5" y="487" text-anchor="middle" font-family="Arial" font-size="11" fill="#4b5563">30</text>
+<line x1="645.4" y1="55" x2="645.4" y2="465" stroke="#e5e7eb"/>
+<text x="645.4" y="487" text-anchor="middle" font-family="Arial" font-size="11" fill="#4b5563">40</text>
+<line x1="759.2" y1="55" x2="759.2" y2="465" stroke="#e5e7eb"/>
+<text x="759.2" y="487" text-anchor="middle" font-family="Arial" font-size="11" fill="#4b5563">50</text>
+<line x1="873.1" y1="55" x2="873.1" y2="465" stroke="#e5e7eb"/>
+<text x="873.1" y="487" text-anchor="middle" font-family="Arial" font-size="11" fill="#4b5563">60</text>
+<text x="178" y="110.2" text-anchor="end" font-family="Arial" font-size="12" fill="#111827">default</text>
+<rect x="190" y="96.2" width="711.8" height="20" fill="#6b7280" opacity="0.80"/>
+<line x1="884.3" y1="106.2" x2="919.3" y2="106.2" stroke="#111827" stroke-width="2"/>
+<line x1="884.3" y1="100.2" x2="884.3" y2="112.2" stroke="#111827" stroke-width="2"/>
+<line x1="919.3" y1="100.2" x2="919.3" y2="112.2" stroke="#111827" stroke-width="2"/>
+<text x="907.8" y="110.2" font-family="Arial" font-size="11" fill="#111827">62.52</text>
+<text x="178" y="212.8" text-anchor="end" font-family="Arial" font-size="12" fill="#111827">random</text>
+<rect x="190" y="198.8" width="677.2" height="20" fill="#2563eb" opacity="0.80"/>
+<line x1="838.3" y1="208.8" x2="896.0" y2="208.8" stroke="#111827" stroke-width="2"/>
+<line x1="838.3" y1="202.8" x2="838.3" y2="214.8" stroke="#111827" stroke-width="2"/>
+<line x1="896.0" y1="202.8" x2="896.0" y2="214.8" stroke="#111827" stroke-width="2"/>
+<text x="873.2" y="212.8" font-family="Arial" font-size="11" fill="#111827">59.48</text>
+<text x="178" y="315.2" text-anchor="end" font-family="Arial" font-size="12" fill="#111827">edge_first</text>
+<rect x="190" y="301.2" width="666.7" height="20" fill="#dc2626" opacity="0.80"/>
+<line x1="821.2" y1="311.2" x2="892.2" y2="311.2" stroke="#111827" stroke-width="2"/>
+<line x1="821.2" y1="305.2" x2="821.2" y2="317.2" stroke="#111827" stroke-width="2"/>
+<line x1="892.2" y1="305.2" x2="892.2" y2="317.2" stroke="#111827" stroke-width="2"/>
+<text x="862.7" y="315.2" font-family="Arial" font-size="11" fill="#111827">58.56</text>
+<text x="178" y="417.8" text-anchor="end" font-family="Arial" font-size="12" fill="#111827">inner_first</text>
+<rect x="190" y="403.8" width="664.0" height="20" fill="#16a34a" opacity="0.80"/>
+<line x1="814.9" y1="413.8" x2="893.0" y2="413.8" stroke="#111827" stroke-width="2"/>
+<line x1="814.9" y1="407.8" x2="814.9" y2="419.8" stroke="#111827" stroke-width="2"/>
+<line x1="893.0" y1="407.8" x2="893.0" y2="419.8" stroke="#111827" stroke-width="2"/>
+<text x="860.0" y="417.8" font-family="Arial" font-size="11" fill="#111827">58.32</text>
+<text x="560.0" y="510" text-anchor="middle" font-family="Arial" font-size="12" fill="#374151">Wolf win rate (%), lower favors village</text>
+</svg>

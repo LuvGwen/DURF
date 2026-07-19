@@ -1,0 +1,4 @@
+interaction,base_model,comparison_model,df_diff,lr_statistic,p_value,p_value_holm,focal_coef,focal_odds_ratio,focal_p_value,base_aic,interaction_aic,delta_aic,interpretation
+edge_first_x_wolves_on_edge,main_adjusted,main_plus_edge_first_x_wolves_on_edge,1,43.75740780436172,3.7170691938305624e-11,1.1151207581491687e-10,0.40580125694071567,1.5005043080053517,6.136691155234075e-11,22962.559476774026,22920.802068969664,-41.75740780436172,statistically supported interaction
+strategy_x_first_check_target_is_wolf,main_adjusted,main_plus_strategy_x_first_check_target_is_wolf,6,12.302513712405926,0.05555051314342219,0.11110102628684437,,,,22962.559476774026,22962.25696306162,-0.3025137124059256,weak or unsupported interaction
+seer_seat_type_x_strategy,main_adjusted,main_plus_seer_seat_type_x_strategy,7,3.856493622486596,0.7961503054512098,0.7961503054512098,,,,22962.559476774026,22972.70298315154,10.143506377513404,weak or unsupported interaction

@@ -1,0 +1,9 @@
+section,seat_type,wolves_on_edge,observed_count,observed_probability,expected_probability,expected_count,observed_wolf_probability,expected_wolf_probability,ci_low,ci_high,test,statistic,df,p_value,effect_size
+wolves_on_edge_distribution,,0,2829,0.16165714285714286,0.16666666666666666,2916.6666666666665,,,,,hypergeometric expected distribution,,,,
+wolves_on_edge_distribution,,1,8786,0.5020571428571429,0.5,8750.0,,,,,hypergeometric expected distribution,,,,
+wolves_on_edge_distribution,,2,5279,0.30165714285714285,0.3,5250.0,,,,,hypergeometric expected distribution,,,,
+wolves_on_edge_distribution,,3,606,0.034628571428571425,0.03333333333333333,583.3333333333334,,,,,hypergeometric expected distribution,,,,
+seat_type_probability,edge,,21162,,,21000.0,0.3023142857142857,0.3,0.2989230216652157,0.30572724575931937,clustered mean vs hypergeometric expectation,1.6364471221745804,,0.10174604387737562,0.009257142857142853
+seat_type_probability,inner,,31338,,,31500.0,0.29845714285714287,0.3,0.2956968408448728,0.3012321913506,descriptive complement,,,,
+mean_wolves_on_edge,edge,,,,,,1.2092571428571428,1.2,1.1981890154919694,1.2203252702223162,one-sample normal approximation,1.6364471221745804,,0.10174604387737562,0.009257142857142853
+distribution_goodness_of_fit,edge,,17500,,,,,,,,chi-square goodness-of-fit vs hypergeometric,3.824076190476178,3,0.28109805889626227,0.008534608748223937

@@ -2,6 +2,11 @@ import csv
 from pathlib import Path
 
 from config import DEFAULT_MAX_ROUNDS
+from game_level_logging import (
+    validate_game_level_rows,
+    write_game_level_csv,
+    write_game_level_schema,
+)
 from simulation import format_optional_float, run_simulation, summarize_results
 from ten_player_experiment import NUM_GAMES, SEED, format_percent
 from ten_player_seer_position_experiment import (
@@ -16,6 +21,14 @@ CSV_PATH = (
 )
 MARKDOWN_PATH = (
     RESULTS_DIR / "ten_player_seer_position_randomized_roles_results.md"
+)
+GAME_LEVEL_RAW_PATH = (
+    RESULTS_DIR
+    / "ten_player_seer_position_randomized_roles_game_level_raw.csv"
+)
+GAME_LEVEL_SCHEMA_PATH = (
+    RESULTS_DIR
+    / "ten_player_seer_position_randomized_roles_game_level_schema.md"
 )
 
 CSV_FIELDNAMES = [
@@ -163,6 +176,46 @@ def run_randomized_role_seer_position_experiment(
     return rows
 
 
+def run_randomized_role_seer_position_experiment_with_game_level(
+    num_games=NUM_GAMES,
+    seed=SEED,
+    configs=None,
+):
+    if configs is None:
+        configs = get_randomized_role_seer_position_configs()
+
+    rows = []
+    game_level_rows = []
+
+    for config in configs:
+        condition = config["name"]
+        strategy = config["seer_check_strategy"]
+        simulation_kwargs = {
+            key: value for key, value in config.items()
+            if key != "name"
+        }
+        results = run_simulation(
+            num_games=num_games,
+            max_rounds=DEFAULT_MAX_ROUNDS,
+            seed=seed,
+            include_game_level_log=True,
+            **simulation_kwargs,
+        )
+        summary = summarize_results(results)
+        rows.append(
+            summarize_randomized_role_condition(
+                condition,
+                strategy,
+                summary,
+            )
+        )
+        game_level_rows.extend(
+            result["game_level_log"] for result in results
+        )
+
+    return rows, game_level_rows
+
+
 def write_csv(path, rows, fieldnames):
     with path.open("w", newline="") as file:
         writer = csv.DictWriter(
@@ -236,6 +289,12 @@ def export_randomized_role_results(rows):
     write_markdown(MARKDOWN_PATH, rows)
 
 
+def export_randomized_role_game_level_results(rows):
+    RESULTS_DIR.mkdir(exist_ok=True)
+    write_game_level_csv(GAME_LEVEL_RAW_PATH, rows)
+    write_game_level_schema(GAME_LEVEL_SCHEMA_PATH)
+
+
 def print_randomized_role_results(rows):
     print("Ten-player seer position randomized roles experiment")
     print("----------------------------------------------------")
@@ -256,8 +315,30 @@ def print_randomized_role_results(rows):
 
 
 if __name__ == "__main__":
-    result_rows = run_randomized_role_seer_position_experiment()
+    configs = get_randomized_role_seer_position_configs()
+    result_rows, raw_game_rows = (
+        run_randomized_role_seer_position_experiment_with_game_level(
+            configs=configs,
+        )
+    )
     export_randomized_role_results(result_rows)
+    export_randomized_role_game_level_results(raw_game_rows)
     print_randomized_role_results(result_rows)
+    validation = validate_game_level_rows(
+        raw_game_rows,
+        expected_count=len(configs) * NUM_GAMES,
+        valid_strategies=[
+            config["seer_check_strategy"] for config in configs
+        ],
+        valid_seeds=[SEED],
+    )
+    print(f"\nGame-level rows: {validation['row_count']}")
+    print(f"Game-level validation passed: {validation['valid']}")
+    if validation["errors"]:
+        print("Game-level validation errors:")
+        for error in validation["errors"]:
+            print(error)
     print(f"\nWrote {CSV_PATH}")
     print(f"Wrote {MARKDOWN_PATH}")
+    print(f"Wrote {GAME_LEVEL_RAW_PATH}")
+    print(f"Wrote {GAME_LEVEL_SCHEMA_PATH}")

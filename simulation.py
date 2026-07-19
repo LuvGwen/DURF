@@ -7,6 +7,7 @@ from config import (
     DEFAULT_WITCH_POISON_THRESHOLD,
 )
 from game import Game, create_default_players
+from game_level_logging import build_game_level_row
 from roles import VILLAGE_TEAM, WOLF_TEAM
 from speaker_memory import (
     get_average_speaker_trust,
@@ -111,6 +112,7 @@ def run_simulation(
     seer_check_strategy="default",
     enable_position_model=False,
     randomize_seat_roles=False,
+    include_game_level_log=False,
 ):
     if wolf_deception_strategy is None and wolf_deception_policy is not None:
         wolf_deception_strategy = wolf_deception_policy
@@ -547,7 +549,7 @@ def run_simulation(
             else 1.0
         )
 
-        results.append({
+        game_result = {
             "game_id": i + 1,
             "winner": result["winner"],
             "round_number": result["round_number"],
@@ -648,7 +650,18 @@ def run_simulation(
             "average_trust_speech_multiplier": (
                 average_trust_speech_multiplier
             ),
-        })
+        }
+
+        if include_game_level_log:
+            game_result["game_level_log"] = build_game_level_row(
+                game,
+                result,
+                seed=seed,
+                game_index_within_seed=i + 1,
+                strategy=seer_check_strategy,
+            )
+
+        results.append(game_result)
 
     return results
 

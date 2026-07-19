@@ -2,11 +2,19 @@ import csv
 from pathlib import Path
 from statistics import mean, stdev
 
+from game_level_logging import (
+    validate_game_level_rows,
+    write_game_level_csv,
+    write_game_level_schema,
+)
 from ten_player_experiment import NUM_GAMES
 from ten_player_seer_position_randomized_roles_experiment import (
     CSV_FIELDNAMES,
+    GAME_LEVEL_RAW_PATH,
+    GAME_LEVEL_SCHEMA_PATH,
     get_randomized_role_seer_position_configs,
     run_randomized_role_seer_position_experiment,
+    run_randomized_role_seer_position_experiment_with_game_level,
 )
 
 
@@ -63,6 +71,39 @@ def run_randomized_role_seer_position_multi_seed(
             rows.append(row)
 
     return rows
+
+
+def run_randomized_role_seer_position_multi_seed_with_game_level(
+    seeds=None,
+    num_games=NUM_GAMES,
+    configs=None,
+):
+    if seeds is None:
+        seeds = SEEDS
+
+    if configs is None:
+        configs = get_randomized_role_seer_position_configs()
+
+    rows = []
+    game_level_rows = []
+
+    for seed in seeds:
+        seed_rows, seed_game_level_rows = (
+            run_randomized_role_seer_position_experiment_with_game_level(
+                num_games=num_games,
+                seed=seed,
+                configs=configs,
+            )
+        )
+
+        for row in seed_rows:
+            row["seed"] = seed
+            row["num_games"] = num_games
+            rows.append(row)
+
+        game_level_rows.extend(seed_game_level_rows)
+
+    return rows, game_level_rows
 
 
 def summarize_multi_seed_rows(rows):
@@ -208,9 +249,32 @@ def print_multi_seed_summary(summary_rows):
 
 
 if __name__ == "__main__":
-    raw_result_rows = run_randomized_role_seer_position_multi_seed()
+    configs = get_randomized_role_seer_position_configs()
+    raw_result_rows, game_level_rows = (
+        run_randomized_role_seer_position_multi_seed_with_game_level(
+            configs=configs,
+        )
+    )
     summary_result_rows = summarize_multi_seed_rows(raw_result_rows)
     export_multi_seed_results(raw_result_rows, summary_result_rows)
+    write_game_level_csv(GAME_LEVEL_RAW_PATH, game_level_rows)
+    write_game_level_schema(GAME_LEVEL_SCHEMA_PATH)
     print_multi_seed_summary(summary_result_rows)
+    validation = validate_game_level_rows(
+        game_level_rows,
+        expected_count=len(configs) * len(SEEDS) * NUM_GAMES,
+        valid_strategies=[
+            config["seer_check_strategy"] for config in configs
+        ],
+        valid_seeds=SEEDS,
+    )
+    print(f"\nGame-level rows: {validation['row_count']}")
+    print(f"Game-level validation passed: {validation['valid']}")
+    if validation["errors"]:
+        print("Game-level validation errors:")
+        for error in validation["errors"]:
+            print(error)
     print(f"\nWrote {RAW_CSV_PATH}")
     print(f"Wrote {SUMMARY_MARKDOWN_PATH}")
+    print(f"Wrote {GAME_LEVEL_RAW_PATH}")
+    print(f"Wrote {GAME_LEVEL_SCHEMA_PATH}")

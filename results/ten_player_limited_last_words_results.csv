@@ -1,0 +1,9 @@
+condition,num_games,wolf_win_rate,village_win_rate,average_rounds,average_payoff,total_last_words,voted_out_last_words,night1_kill_last_words,wolf_last_words,village_team_last_words,correct_last_words_accusations,wrong_last_words_accusations,total_wolf_deceptions,credibility_cost_events,trust_updates
+ten_player_speech,500,0.374,0.626,3.36,0.31834999999999997,0,0,0,0,0,0,0,0,0,0
+ten_player_speech_limited_last_words,500,0.344,0.656,3.234,0.33897,1588,1442,146,848,740,408,1180,0,0,0
+ten_player_deception,500,0.792,0.208,3.226,-0.07365000000000003,0,0,0,0,0,0,0,3032,0,0
+ten_player_deception_limited_last_words,500,0.774,0.226,3.474,-0.054560000000000025,1628,1478,150,535,1093,564,1064,3163,0,0
+ten_player_credibility_cost,500,0.584,0.416,3.34,0.11191999999999998,0,0,0,0,0,0,0,3096,4280,0
+ten_player_credibility_cost_limited_last_words,500,0.544,0.456,3.548,0.14173,1692,1549,143,683,1009,639,1053,3174,4572,0
+ten_player_trust_memory,500,0.456,0.544,3.372,0.22481999999999996,0,0,0,0,0,0,0,3103,4240,13600
+ten_player_trust_memory_limited_last_words,500,0.358,0.642,3.494,0.30516,1705,1559,146,835,870,569,1136,3133,4331,13706

@@ -1,0 +1,7 @@
+model,n,parameters,log_likelihood,aic,note
+model_1_strategy_seed,35000,18,-23560.740769808315,47157.48153961663,Pre-treatment strategy and seed fixed effects.
+model_2_add_first_check_wolf,35000,19,-23269.179774001364,46576.35954800273,Adds early discovery indicator; intermediate variable.
+model_3_add_found_wolf_by_check_2,35000,19,-23064.544044245034,46167.08808849007,Adds discovery by check 2; intermediate variable.
+model_4_add_seer_survival,35000,19,-21028.056616936286,42094.11323387257,Adds seer survival; post-treatment lifecycle variable.
+model_5_add_coverage_diversity,35000,22,-22092.59057842692,44229.18115685384,Adds search coverage/diversity; post-treatment search path.
+model_6_full_mechanism,35000,26,-20223.402628964137,40498.805257928274,"Adds early discovery, survival, coverage, and diversity."

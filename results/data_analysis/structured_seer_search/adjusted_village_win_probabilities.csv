@@ -1,0 +1,15 @@
+analysis_family,outcome,strategy,adjusted_probability,ci_low,ci_high
+adjusted_probability,village_win,random,0.4052000000000002,0.38595776913424673,0.4244422308657537
+adjusted_probability,village_win,default,0.40520000000000006,0.38595776913424973,0.4244422308657504
+adjusted_probability,village_win,edge_first,0.4144000000000002,0.39509164535957064,0.4337083546404298
+adjusted_probability,village_win,inner_first,0.4208000000000001,0.4014497415435231,0.44015025845647715
+adjusted_probability,village_win,highest_p_wolf,0.3487999999999999,0.33011970811159963,0.36748029188840015
+adjusted_probability,village_win,highest_suspicion,0.34840000000000004,0.3297246882215554,0.3670753117784447
+adjusted_probability,village_win,left_to_right,0.40840000000000004,0.38913397844991754,0.42766602155008254
+adjusted_probability,village_win,right_to_left,0.43879999999999997,0.4193497042421184,0.4582502957578815
+adjusted_probability,village_win,alternate_sides,0.44159999999999994,0.4221364869175967,0.4610635130824032
+adjusted_probability,village_win,nearest_first,0.4168,0.39747553925986934,0.43612446074013067
+adjusted_probability,village_win,farthest_first,0.4288,0.4094020493370925,0.4481979506629075
+adjusted_probability,village_win,coverage_balanced,0.4128000000000001,0.3935026449279012,0.432097355072099
+adjusted_probability,village_win,hybrid_suspicion_position,0.3684,0.34949320560575003,0.38730679439425
+adjusted_probability,village_win,information_gain_proxy,0.4112000000000001,0.3919138546491223,0.4304861453508779

@@ -1,8 +1,17 @@
 import random
 
-from position_model import is_edge_seat, is_inner_seat
+from position_model import (
+    get_seat_type,
+    get_side,
+    is_edge_seat,
+    is_inner_seat,
+)
 from roles import SEER
 
+
+TOTAL_SEATS = 10
+MAX_CIRCULAR_DISTANCE = TOTAL_SEATS // 2
+HYBRID_SUSPICION_POSITION_LAMBDA = 0.25
 
 SEER_CHECK_STRATEGIES = {
     "default",
@@ -12,6 +21,14 @@ SEER_CHECK_STRATEGIES = {
     "highest_p_wolf",
     "highest_suspicion",
     "opposite_side",
+    "left_to_right",
+    "right_to_left",
+    "alternate_sides",
+    "nearest_first",
+    "farthest_first",
+    "coverage_balanced",
+    "hybrid_suspicion_position",
+    "information_gain_proxy",
 }
 
 
@@ -67,11 +84,246 @@ def prefer_unchecked_candidates(candidates, checked_target_ids):
     return unchecked_candidates or candidates
 
 
+def filter_unchecked_candidates(candidates, checked_target_ids):
+    return [
+        candidate for candidate in candidates
+        if candidate.player_id not in checked_target_ids
+    ]
+
+
 def choose_random_target(candidates):
     if not candidates:
         return None
 
     return random.choice(candidates)
+
+
+def get_player_side(player):
+    return getattr(player, "side", None) or get_side(player.player_id)
+
+
+def get_player_seat_type(player):
+    return (
+        getattr(player, "seat_type", None)
+        or get_seat_type(player.player_id)
+    )
+
+
+def circular_seat_distance(
+    seat_a,
+    seat_b,
+    total_seats=TOTAL_SEATS,
+):
+    diff = abs(seat_a - seat_b)
+    return min(diff, total_seats - diff)
+
+
+def normalized_circular_distance(seat_a, seat_b):
+    return (
+        circular_seat_distance(seat_a, seat_b)
+        / MAX_CIRCULAR_DISTANCE
+    )
+
+
+def choose_left_to_right_target(candidates, checked_target_ids):
+    candidate_pool = prefer_unchecked_candidates(
+        candidates,
+        checked_target_ids,
+    )
+
+    return sorted(candidate_pool, key=lambda candidate: candidate.player_id)[0]
+
+
+def choose_right_to_left_target(candidates, checked_target_ids):
+    candidate_pool = prefer_unchecked_candidates(
+        candidates,
+        checked_target_ids,
+    )
+
+    return sorted(
+        candidate_pool,
+        key=lambda candidate: candidate.player_id,
+        reverse=True,
+    )[0]
+
+
+def choose_alternate_sides_target(seer, candidates, checked_target_ids):
+    candidate_pool = prefer_unchecked_candidates(
+        candidates,
+        checked_target_ids,
+    )
+    seer_side = get_player_side(seer)
+
+    if seer_side == "left":
+        opposite_side = "right"
+    elif seer_side == "right":
+        opposite_side = "left"
+    else:
+        return choose_nearest_first_target(
+            seer,
+            candidates,
+            checked_target_ids,
+        )
+
+    same_side = seer_side
+    desired_side = (
+        opposite_side
+        if len(checked_target_ids) % 2 == 0
+        else same_side
+    )
+    desired_candidates = [
+        candidate for candidate in candidate_pool
+        if get_player_side(candidate) == desired_side
+    ]
+    selected_pool = desired_candidates or candidate_pool
+
+    return sorted(
+        selected_pool,
+        key=lambda candidate: (
+            circular_seat_distance(seer.player_id, candidate.player_id),
+            candidate.player_id,
+        ),
+    )[0]
+
+
+def choose_nearest_first_target(seer, candidates, checked_target_ids):
+    candidate_pool = prefer_unchecked_candidates(
+        candidates,
+        checked_target_ids,
+    )
+
+    return sorted(
+        candidate_pool,
+        key=lambda candidate: (
+            circular_seat_distance(seer.player_id, candidate.player_id),
+            candidate.player_id,
+        ),
+    )[0]
+
+
+def choose_farthest_first_target(seer, candidates, checked_target_ids):
+    candidate_pool = prefer_unchecked_candidates(
+        candidates,
+        checked_target_ids,
+    )
+
+    return sorted(
+        candidate_pool,
+        key=lambda candidate: (
+            -circular_seat_distance(seer.player_id, candidate.player_id),
+            candidate.player_id,
+        ),
+    )[0]
+
+
+def get_coverage_bonus(seer, candidate, checked_target_ids):
+    if not checked_target_ids:
+        return normalized_circular_distance(
+            seer.player_id,
+            candidate.player_id,
+        )
+
+    nearest_checked_distance = min(
+        circular_seat_distance(candidate.player_id, checked_target_id)
+        for checked_target_id in checked_target_ids
+    )
+    return nearest_checked_distance / MAX_CIRCULAR_DISTANCE
+
+
+def choose_coverage_balanced_target(seer, candidates, checked_target_ids):
+    candidate_pool = prefer_unchecked_candidates(
+        candidates,
+        checked_target_ids,
+    )
+
+    return sorted(
+        candidate_pool,
+        key=lambda candidate: (
+            -get_coverage_bonus(seer, candidate, checked_target_ids),
+            -circular_seat_distance(seer.player_id, candidate.player_id),
+            candidate.player_id,
+        ),
+    )[0]
+
+
+def choose_hybrid_suspicion_position_target(
+    seer,
+    candidates,
+    checked_target_ids,
+):
+    candidate_pool = prefer_unchecked_candidates(
+        candidates,
+        checked_target_ids,
+    )
+
+    def score(candidate):
+        suspicion_score = max(
+            0.0,
+            min(1.0, getattr(candidate, "suspicion_score", 0.0)),
+        )
+        coverage_bonus = get_coverage_bonus(
+            seer,
+            candidate,
+            checked_target_ids,
+        )
+        return (
+            suspicion_score
+            + HYBRID_SUSPICION_POSITION_LAMBDA * coverage_bonus
+        )
+
+    return sorted(
+        candidate_pool,
+        key=lambda candidate: (-score(candidate), candidate.player_id),
+    )[0]
+
+
+def choose_information_gain_proxy_target(
+    seer,
+    candidates,
+    checked_target_ids,
+):
+    candidate_pool = prefer_unchecked_candidates(
+        candidates,
+        checked_target_ids,
+    )
+    checked_sides = {
+        get_side(checked_target_id)
+        for checked_target_id in checked_target_ids
+    }
+    checked_seat_types = {
+        get_seat_type(checked_target_id)
+        for checked_target_id in checked_target_ids
+    }
+
+    def score(candidate):
+        candidate_side = get_player_side(candidate)
+        candidate_seat_type = get_player_seat_type(candidate)
+        unseen_side_bonus = (
+            1.0 if candidate_side not in checked_sides else 0.0
+        )
+        unseen_seat_type_bonus = (
+            1.0 if candidate_seat_type not in checked_seat_types else 0.0
+        )
+        distance_bonus = normalized_circular_distance(
+            seer.player_id,
+            candidate.player_id,
+        )
+        behavior_component = (
+            0.5 * getattr(candidate, "p_wolf", 0.0)
+            + 0.5 * getattr(candidate, "suspicion_score", 0.0)
+        )
+
+        return (
+            0.35 * unseen_side_bonus
+            + 0.25 * unseen_seat_type_bonus
+            + 0.25 * distance_bonus
+            + 0.15 * behavior_component
+        )
+
+    return sorted(
+        candidate_pool,
+        key=lambda candidate: (-score(candidate), candidate.player_id),
+    )[0]
 
 
 def choose_position_first_target(candidates, checked_target_ids, predicate):
@@ -143,6 +395,7 @@ def choose_seer_check_target(
     seer,
     seer_check_strategy="default",
     event_log=None,
+    avoid_repeat=False,
 ):
     candidates = get_seer_candidates(game_state, seer)
 
@@ -153,9 +406,35 @@ def choose_seer_check_target(
         seer_check_strategy = "default"
 
     if seer_check_strategy == "default":
+        if avoid_repeat:
+            checked_target_ids = get_checked_target_ids(
+                seer,
+                event_log=event_log,
+            )
+            unchecked_candidates = filter_unchecked_candidates(
+                candidates,
+                checked_target_ids,
+            )
+
+            if not unchecked_candidates:
+                return None
+
+            return choose_random_target(
+                unchecked_candidates
+            )
+
         return choose_random_target(candidates)
 
     checked_target_ids = get_checked_target_ids(seer, event_log=event_log)
+
+    if avoid_repeat:
+        candidates = filter_unchecked_candidates(
+            candidates,
+            checked_target_ids,
+        )
+
+        if not candidates:
+            return None
 
     if seer_check_strategy == "random":
         return choose_random_target(
@@ -197,6 +476,54 @@ def choose_seer_check_target(
             checked_target_ids,
         )
 
+    if seer_check_strategy == "left_to_right":
+        return choose_left_to_right_target(candidates, checked_target_ids)
+
+    if seer_check_strategy == "right_to_left":
+        return choose_right_to_left_target(candidates, checked_target_ids)
+
+    if seer_check_strategy == "alternate_sides":
+        return choose_alternate_sides_target(
+            seer,
+            candidates,
+            checked_target_ids,
+        )
+
+    if seer_check_strategy == "nearest_first":
+        return choose_nearest_first_target(
+            seer,
+            candidates,
+            checked_target_ids,
+        )
+
+    if seer_check_strategy == "farthest_first":
+        return choose_farthest_first_target(
+            seer,
+            candidates,
+            checked_target_ids,
+        )
+
+    if seer_check_strategy == "coverage_balanced":
+        return choose_coverage_balanced_target(
+            seer,
+            candidates,
+            checked_target_ids,
+        )
+
+    if seer_check_strategy == "hybrid_suspicion_position":
+        return choose_hybrid_suspicion_position_target(
+            seer,
+            candidates,
+            checked_target_ids,
+        )
+
+    if seer_check_strategy == "information_gain_proxy":
+        return choose_information_gain_proxy_target(
+            seer,
+            candidates,
+            checked_target_ids,
+        )
+
     return choose_random_target(candidates)
 
 
@@ -218,6 +545,7 @@ def perform_seer_action(
     suspicion_decrease=0.10,
     seer_check_strategy="default",
     event_log=None,
+    avoid_repeat=False,
 ):
     alive_seers = get_alive_seers(game_state)
 
@@ -230,6 +558,7 @@ def perform_seer_action(
         seer,
         seer_check_strategy=seer_check_strategy,
         event_log=event_log,
+        avoid_repeat=avoid_repeat,
     )
 
     if target is None:

@@ -129,6 +129,7 @@ class Game:
         speech_signal_scale=1.0,
         credibility_cost_scale=1.0,
         seer_check_strategy="default",
+        seer_avoid_repeat_checks=False,
         enable_position_model=False,
         randomize_seat_roles=False,
     ):
@@ -249,6 +250,9 @@ class Game:
         if seer_check_strategy is None:
             seer_check_strategy = "default"
 
+        if seer_avoid_repeat_checks is None:
+            seer_avoid_repeat_checks = False
+
         self.enable_position_model = enable_position_model
         self.randomize_seat_roles = randomize_seat_roles
         seat_role_assignment_event = None
@@ -306,6 +310,7 @@ class Game:
         self.speech_signal_scale = speech_signal_scale
         self.credibility_cost_scale = credibility_cost_scale
         self.seer_check_strategy = seer_check_strategy
+        self.seer_avoid_repeat_checks = seer_avoid_repeat_checks
 
         if self.enable_risk_preference:
             assign_risk_preferences(
@@ -457,6 +462,7 @@ class Game:
                 self.state,
                 seer_check_strategy=self.seer_check_strategy,
                 event_log=self.event_log,
+                avoid_repeat=self.seer_avoid_repeat_checks,
             )
             if seer_event is not None:
                 self.log_event("seer_check", seer_event)

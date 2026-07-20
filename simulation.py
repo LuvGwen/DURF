@@ -110,9 +110,11 @@ def run_simulation(
     witch_poison_threshold=DEFAULT_WITCH_POISON_THRESHOLD,
     witch_save_probability=0.7,
     seer_check_strategy="default",
+    seer_avoid_repeat_checks=False,
     enable_position_model=False,
     randomize_seat_roles=False,
     include_game_level_log=False,
+    game_level_log_builder=None,
 ):
     if wolf_deception_strategy is None and wolf_deception_policy is not None:
         wolf_deception_strategy = wolf_deception_policy
@@ -169,6 +171,7 @@ def run_simulation(
             witch_poison_threshold=witch_poison_threshold,
             witch_save_probability=witch_save_probability,
             seer_check_strategy=seer_check_strategy,
+            seer_avoid_repeat_checks=seer_avoid_repeat_checks,
             enable_position_model=enable_position_model,
             randomize_seat_roles=randomize_seat_roles,
         )
@@ -653,7 +656,10 @@ def run_simulation(
         }
 
         if include_game_level_log:
-            game_result["game_level_log"] = build_game_level_row(
+            if game_level_log_builder is None:
+                game_level_log_builder = build_game_level_row
+
+            game_result["game_level_log"] = game_level_log_builder(
                 game,
                 result,
                 seed=seed,

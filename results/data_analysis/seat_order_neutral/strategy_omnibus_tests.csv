@@ -1,0 +1,2 @@
+test,model,reference_strategy,n_independent_base_games,lr_statistic,df,p_value,full_log_likelihood,reduced_log_likelihood,converged
+strategy_omnibus_seed_adjusted,village_win ~ strategy + seed,random_neutral,10000,6.430307007707597,3,0.0924519181528121,-6787.921013612558,-6791.136167116412,True

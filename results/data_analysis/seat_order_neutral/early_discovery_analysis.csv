@@ -1,0 +1,43 @@
+row_type,strategy,metric,n,value,ci_low,ci_high
+strategy_metric,physical_clockwise,first_check_target_is_wolf,2500,0.328,0.3098723218063993,0.34665547132556235
+strategy_metric,physical_clockwise,found_wolf_by_check_2,2500,0.5544,0.5348476608389111,0.5737854092402824
+strategy_metric,physical_clockwise,found_wolf_by_check_3,2500,0.6408,0.621790339486472,0.6593776066008524
+strategy_metric,physical_clockwise,no_wolf_found,2500,0.3324,0.31420344444886344,0.351110846998327
+strategy_metric,physical_clockwise,seer_survived_to_game_end,2500,0.2968,0.2792143668855053,0.31500916546574237
+strategy_metric,physical_clockwise,mean_checks_until_first_wolf,1669,1.718993409227082,,
+strategy_metric,physical_clockwise,mean_total_seer_checks,2500,2.5956,,
+strategy_metric,physical_counterclockwise,first_check_target_is_wolf,2500,0.3372,0.3189303695543177,0.35596919278221345
+strategy_metric,physical_counterclockwise,found_wolf_by_check_2,2500,0.5572,0.5376556626370116,0.576568815460964
+strategy_metric,physical_counterclockwise,found_wolf_by_check_3,2500,0.638,0.6189628461487231,0.6566136919198193
+strategy_metric,physical_counterclockwise,no_wolf_found,2500,0.3408,0.3224769634454826,0.35961155205805395
+strategy_metric,physical_counterclockwise,seer_survived_to_game_end,2500,0.3048,0.28706620427003654,0.3231327795634455
+strategy_metric,physical_counterclockwise,mean_checks_until_first_wolf,1648,1.6765776699029127,,
+strategy_metric,physical_counterclockwise,mean_total_seer_checks,2500,2.5972,,
+strategy_metric,alternate_physical_sides,first_check_target_is_wolf,2500,0.328,0.3098723218063993,0.34665547132556235
+strategy_metric,alternate_physical_sides,found_wolf_by_check_2,2500,0.55,0.5304363474553473,0.5694102243086174
+strategy_metric,alternate_physical_sides,found_wolf_by_check_3,2500,0.6432,0.624214457453118,0.6617461240788766
+strategy_metric,alternate_physical_sides,no_wolf_found,2500,0.332,0.31380963094942865,0.35070588792365015
+strategy_metric,alternate_physical_sides,seer_survived_to_game_end,2500,0.3084,0.2906016319203304,0.32678630508015716
+strategy_metric,alternate_physical_sides,mean_checks_until_first_wolf,1670,1.7239520958083832,,
+strategy_metric,alternate_physical_sides,mean_total_seer_checks,2500,2.5988,,
+strategy_metric,random_neutral,first_check_target_is_wolf,2500,0.3504,0.33194033955287816,0.36931871772933955
+strategy_metric,random_neutral,found_wolf_by_check_2,2500,0.5556,0.5360510136706149,0.5749783741309138
+strategy_metric,random_neutral,found_wolf_by_check_3,2500,0.6356,0.616539830151611,0.6542440724722611
+strategy_metric,random_neutral,no_wolf_found,2500,0.3372,0.3189303695543177,0.35596919278221345
+strategy_metric,random_neutral,seer_survived_to_game_end,2500,0.306,0.2882445364992097,0.3243507650566075
+strategy_metric,random_neutral,mean_checks_until_first_wolf,1657,1.6741098370549186,,
+strategy_metric,random_neutral,mean_total_seer_checks,2500,2.61,,
+contrast_difference,physical_clockwise - random_neutral,first_check_target_is_wolf,2500,-0.022399999999999975,,
+contrast_difference,physical_clockwise - random_neutral,found_wolf_by_check_2,2500,-0.0011999999999999789,,
+contrast_difference,physical_clockwise - random_neutral,found_wolf_by_check_3,2500,0.005199999999999982,,
+contrast_difference,physical_clockwise - random_neutral,no_wolf_found,2500,-0.0048000000000000265,,
+contrast_difference,physical_clockwise - random_neutral,seer_survived_to_game_end,2500,-0.009199999999999986,,
+contrast_difference,physical_clockwise - random_neutral,total_seer_checks,2500,-0.014399999999999746,,
+contrast_difference,physical_clockwise - random_neutral,total_rounds,2500,-0.015600000000000058,,
+contrast_difference,physical_clockwise - physical_counterclockwise,first_check_target_is_wolf,2500,-0.009199999999999986,,
+contrast_difference,physical_clockwise - physical_counterclockwise,found_wolf_by_check_2,2500,-0.0028000000000000247,,
+contrast_difference,physical_clockwise - physical_counterclockwise,found_wolf_by_check_3,2500,0.0028000000000000247,,
+contrast_difference,physical_clockwise - physical_counterclockwise,no_wolf_found,2500,-0.008400000000000019,,
+contrast_difference,physical_clockwise - physical_counterclockwise,seer_survived_to_game_end,2500,-0.008000000000000007,,
+contrast_difference,physical_clockwise - physical_counterclockwise,total_seer_checks,2500,-0.0015999999999998238,,
+contrast_difference,physical_clockwise - physical_counterclockwise,total_rounds,2500,0.006400000000000183,,

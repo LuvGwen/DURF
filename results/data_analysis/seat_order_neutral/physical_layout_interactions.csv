@@ -1,0 +1,16 @@
+row_type,variable,kind,lr_statistic,df,p_value,base_log_likelihood,reduced_log_likelihood,full_log_likelihood,interpretation,strategy,n,village_win_rate,first_check_wolf_rate,found_wolf_by_check_3_rate
+interaction_lr_test,physical_seer_seat,categorical,17.413926089431698,27,0.9204129279100611,-6787.921013612558,-6777.062186118921,-6768.355223074205,no strong interaction evidence,,,,,
+interaction_lr_test,clockwise_wolf_count,numeric,72.22727674081762,3,1.4230807171136786e-15,-6787.921013612558,-6787.778951521668,-6751.665313151259,layout-dependent strategy performance,,,,,
+interaction_lr_test,counterclockwise_wolf_count,numeric,76.4051684993101,3,1.8109497101361962e-16,-6787.921013612558,-6787.145509979993,-6748.942925730338,layout-dependent strategy performance,,,,,
+interaction_lr_test,nearest_clockwise_wolf_distance,numeric,68.33149202684399,3,9.715770981586796e-15,-6787.921013612558,-6787.654289840572,-6753.48854382715,layout-dependent strategy performance,,,,,
+interaction_lr_test,nearest_counterclockwise_wolf_distance,numeric,79.52714793323867,3,3.876667121614615e-17,-6787.921013612558,-6786.39885579363,-6746.635281827011,layout-dependent strategy performance,,,,,
+interaction_lr_test,first_check_target_is_wolf,numeric,6.183893672619888,3,0.10299822383674362,-6787.921013612558,-6729.762966713884,-6726.6710198775745,no strong interaction evidence,,,,,
+interaction_lr_test,wolves_on_edge,numeric,7.276641846046914,3,0.06358393259595381,-6787.921013612558,-6786.222211175226,-6782.583890252203,no strong interaction evidence,,,,,
+interaction_lr_test,local_wolf_density_near_seer,numeric,22.003894192494045,3,6.510953255224872e-05,-6787.921013612558,-6778.260023608163,-6767.2580765119155,layout-dependent strategy performance,,,,,
+interaction_lr_test,layout_condition,categorical,78.54709633659877,6,7.12840249615595e-15,-6787.921013612558,-6785.175761507901,-6745.902213339602,layout-dependent strategy performance,,,,,
+clockwise_counterclockwise_by_layout,clockwise_wolf_earlier,descriptive,,,,,,,,physical_clockwise,1014,0.4930966469428008,0.6104536489151874,0.8974358974358975
+clockwise_counterclockwise_by_layout,clockwise_wolf_earlier,descriptive,,,,,,,,physical_counterclockwise,1014,0.32840236686390534,0.0,0.3244575936883629
+clockwise_counterclockwise_by_layout,counterclockwise_wolf_earlier,descriptive,,,,,,,,physical_clockwise,1016,0.36811023622047245,0.0,0.327755905511811
+clockwise_counterclockwise_by_layout,counterclockwise_wolf_earlier,descriptive,,,,,,,,physical_counterclockwise,1016,0.468503937007874,0.6318897637795275,0.8927165354330708
+clockwise_counterclockwise_by_layout,equal_nearest_wolf_distance,descriptive,,,,,,,,physical_clockwise,470,0.44042553191489364,0.4276595744680851,0.7638297872340426
+clockwise_counterclockwise_by_layout,equal_nearest_wolf_distance,descriptive,,,,,,,,physical_counterclockwise,470,0.44468085106382976,0.4276595744680851,0.7638297872340426

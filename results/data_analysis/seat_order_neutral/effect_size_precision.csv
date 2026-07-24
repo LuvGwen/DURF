@@ -1,0 +1,3 @@
+contrast,analysis_type,absolute_difference,odds_ratio,ci_low,ci_high,ci_width,holm_p_value,precision_note
+physical_clockwise vs physical_counterclockwise,seed_adjusted_logistic,0.025200000000000278,1.1090520192862199,0.9911653555077246,1.2409598203246077,0.24979446481688317,0.3551925802956801,CI is wide enough that effects near zero and modest positive clockwise effects remain compatible with the data.
+physical_clockwise vs physical_counterclockwise,paired_configuration,0.0252,1.1290983606557377,-5.6819255439918837e-05,0.05045681925543992,0.05051363851087984,0.27184798974843405,Paired difference CI gives the directly interpretable range of percentage-point effects across shared base configurations.

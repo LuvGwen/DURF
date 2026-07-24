@@ -1,0 +1,22 @@
+check,observed,expected,passed
+row_count,30000,30000,True
+unique_matched_sets,10000,10000,True
+three_label_rows_per_matched_set,10000,10000,True
+four_strategies,"alternate_physical_sides,physical_clockwise,physical_counterclockwise,random_neutral","alternate_physical_sides,physical_clockwise,physical_counterclockwise,random_neutral",True
+seeds_42_to_46,"42,43,44,45,46","42,43,44,45,46",True
+500_base_configs_per_strategy_seed,20,20,True
+valid_winners,"village,wolf","draw,village,wolf subset",True
+unique_game_ids,30000,30000,True
+no_duplicate_seer_checks,0,0,True
+physical_seer_seat_identical_across_label_conditions,10000,10000,True
+physical_wolf_seats_identical_across_label_conditions,10000,10000,True
+all_check_physical_targets_identical_across_label_conditions,10000,10000,True
+winner_identical_across_label_conditions,10000,10000,True
+total_rounds_identical_across_label_conditions,10000,10000,True
+seer_survived_to_game_end_identical_across_label_conditions,10000,10000,True
+physical_check_sequence_flag_matches_reference,20000,20000,True
+winner_flag_matches_reference,20000,20000,True
+final_physical_alive_set_matches_reference,20000,20000,True
+no_recorded_divergence,none,none,True
+neutral_mode_enabled_all_rows,30000,30000,True
+physical_outcome_mechanism_duplicates_identical,0,0,True

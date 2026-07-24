@@ -113,6 +113,13 @@ def run_simulation(
     seer_avoid_repeat_checks=False,
     enable_position_model=False,
     randomize_seat_roles=False,
+    seat_order_neutral_mode=False,
+    neutral_seed=None,
+    base_game_index=None,
+    label_condition=None,
+    rotation_offset=0,
+    physical_to_displayed_mapping=None,
+    main_game_seed=None,
     include_game_level_log=False,
     game_level_log_builder=None,
 ):
@@ -174,6 +181,17 @@ def run_simulation(
             seer_avoid_repeat_checks=seer_avoid_repeat_checks,
             enable_position_model=enable_position_model,
             randomize_seat_roles=randomize_seat_roles,
+            seat_order_neutral_mode=seat_order_neutral_mode,
+            neutral_seed=neutral_seed,
+            base_game_index=(
+                base_game_index
+                if base_game_index is not None
+                else i + 1
+            ),
+            label_condition=label_condition,
+            rotation_offset=rotation_offset,
+            physical_to_displayed_mapping=physical_to_displayed_mapping,
+            main_game_seed=main_game_seed,
         )
         result = game.run_game(max_rounds=max_rounds)
         seer_check_events = [

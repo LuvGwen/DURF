@@ -8,6 +8,7 @@ from deception_credibility import (
 )
 from roles import HUNTER, SEER, VILLAGER, WITCH
 from risk_preference import clamp, get_risk_multiplier
+from seat_order_neutral import SPEECH_SUBSEED_SCHEME, get_actor_uid, stable_seed
 from speech_action import generate_bow_tokens
 
 
@@ -56,6 +57,19 @@ FALSE_CLAIM_ROLES = [
 def build_deception_rng(wolf, game_state):
     suspicion_bucket = int(wolf.suspicion_score * 1000)
     alive_count = len(game_state.get_alive_players())
+    if getattr(game_state, "seat_order_neutral_mode", False):
+        seed = stable_seed(
+            SPEECH_SUBSEED_SCHEME,
+            "wolf_deception",
+            getattr(game_state, "neutral_seed", None),
+            getattr(game_state, "base_game_index", None),
+            game_state.round_number,
+            get_actor_uid(wolf),
+            suspicion_bucket,
+            alive_count,
+        )
+        return random.Random(seed)
+
     seed = (
         game_state.round_number * 2027
         + wolf.player_id * 7919

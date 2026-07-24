@@ -2,6 +2,7 @@ import random
 
 from risk_preference import clamp
 from roles import WITCH
+from seat_order_neutral import choose_neutral_candidate, neutral_tie_break_value
 
 
 def perform_witch_save(game_state, killed_player_id, save_probability=0.7):
@@ -13,7 +14,15 @@ def perform_witch_save(game_state, killed_player_id, save_probability=0.7):
     if not alive_witches:
         return False, None
 
-    witch = random.choice(alive_witches)
+    if getattr(game_state, "seat_order_neutral_mode", False):
+        witch = choose_neutral_candidate(
+            game_state,
+            alive_witches,
+            "witch_save_actor",
+            acting_player=None,
+        )
+    else:
+        witch = random.choice(alive_witches)
 
     if not witch.has_antidote:
         return False, None
@@ -53,7 +62,15 @@ def perform_witch_poison(
     if not alive_witches:
         return None, None
 
-    witch = random.choice(alive_witches)
+    if getattr(game_state, "seat_order_neutral_mode", False):
+        witch = choose_neutral_candidate(
+            game_state,
+            alive_witches,
+            "witch_poison_actor",
+            acting_player=None,
+        )
+    else:
+        witch = random.choice(alive_witches)
 
     if not witch.has_poison:
         return None, None
@@ -78,7 +95,21 @@ def perform_witch_poison(
     if not candidates:
         return None, None
 
-    target = max(candidates, key=lambda player: player.suspicion_score)
+    if getattr(game_state, "seat_order_neutral_mode", False):
+        target = sorted(
+            candidates,
+            key=lambda player: (
+                -player.suspicion_score,
+                neutral_tie_break_value(
+                    game_state,
+                    "witch_poison_target_tie",
+                    witch,
+                    player,
+                ),
+            ),
+        )[0]
+    else:
+        target = max(candidates, key=lambda player: player.suspicion_score)
 
     if target.suspicion_score < threshold_used:
         return None, None

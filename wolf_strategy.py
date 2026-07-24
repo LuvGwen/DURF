@@ -1,6 +1,7 @@
 import random
 
 from roles import HUNTER, SEER, VILLAGER, WITCH
+from seat_order_neutral import choose_neutral_candidate, neutral_tie_break_value
 
 
 ROLE_THREAT = {
@@ -120,24 +121,42 @@ def choose_wolf_kill_target(
         return None
 
     if strategy == "random":
+        if getattr(game_state, "seat_order_neutral_mode", False):
+            return choose_neutral_candidate(
+                game_state,
+                candidates,
+                "wolf_random_kill",
+                acting_player=None,
+            )
         return random.choice(candidates)
 
     if strategy not in SUPPORTED_WOLF_KILL_STRATEGIES:
         raise ValueError(f"Unknown wolf kill strategy: {strategy}")
 
-    scored_candidates = [
-        (
-            calculate_strategy_score(
-                candidate,
-                strategy=strategy,
-                noise_level=noise_level,
-            ),
+    scored_candidates = []
+    for candidate in candidates:
+        score = calculate_strategy_score(
             candidate,
+            strategy=strategy,
+            noise_level=noise_level,
         )
-        for candidate in candidates
-    ]
-    scored_candidates.sort(key=lambda item: item[0], reverse=True)
-    return scored_candidates[0][1]
+        if getattr(game_state, "seat_order_neutral_mode", False):
+            tie_break = neutral_tie_break_value(
+                game_state,
+                "wolf_kill_tie",
+                None,
+                candidate,
+            )
+        else:
+            tie_break = 0.0
+        scored_candidates.append((score, tie_break, candidate))
+
+    if getattr(game_state, "seat_order_neutral_mode", False):
+        scored_candidates.sort(key=lambda item: (-item[0], item[1]))
+    else:
+        scored_candidates.sort(key=lambda item: item[0], reverse=True)
+
+    return scored_candidates[0][2]
 
 
 if __name__ == "__main__":

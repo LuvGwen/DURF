@@ -4,6 +4,7 @@ from herding import calculate_herding_pressure
 from risk_preference import get_risk_multiplier
 from role_prior import calculate_role_prior_score
 from speaker_memory import get_speaker_trust
+from seat_order_neutral import neutral_tie_break_value
 
 
 def choose_vote_target(
@@ -88,10 +89,24 @@ def choose_vote_target(
         if enable_risk_preference:
             score *= get_risk_multiplier(voter, high_risk=False)
 
-        scored_candidates.append((score, candidate))
+        if getattr(game_state, "seat_order_neutral_mode", False):
+            tie_break = neutral_tie_break_value(
+                game_state,
+                "vote_target_tie",
+                voter,
+                candidate,
+            )
+        else:
+            tie_break = 0.0
 
-    scored_candidates.sort(key=lambda item: item[0], reverse=True)
-    return scored_candidates[0][1]
+        scored_candidates.append((score, tie_break, candidate))
+
+    if getattr(game_state, "seat_order_neutral_mode", False):
+        scored_candidates.sort(key=lambda item: (-item[0], item[1]))
+    else:
+        scored_candidates.sort(key=lambda item: item[0], reverse=True)
+
+    return scored_candidates[0][2]
 
 
 if __name__ == "__main__":

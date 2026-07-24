@@ -61,6 +61,18 @@ from position_model import (
 from risk_preference import assign_risk_preferences
 from role_prior import calculate_role_prior_score
 from seer_action import perform_seer_action
+from seat_order_neutral import (
+    STRATEGY_SUBSEED_SCHEME,
+    TIE_BREAK_SCHEME,
+    build_neutral_actor_order,
+    choose_neutral_candidate,
+    get_actor_uid,
+    get_displayed_to_physical_mapping_from_state,
+    get_physical_to_displayed_mapping_from_state,
+    initialize_neutral_player_metadata,
+    json_dump,
+    order_players_by_actor_order,
+)
 from speaker_memory import (
     apply_speaker_memory_from_credibility_event,
     apply_speaker_memory_from_reveal,
@@ -132,6 +144,13 @@ class Game:
         seer_avoid_repeat_checks=False,
         enable_position_model=False,
         randomize_seat_roles=False,
+        seat_order_neutral_mode=False,
+        neutral_seed=None,
+        base_game_index=None,
+        label_condition=None,
+        rotation_offset=0,
+        physical_to_displayed_mapping=None,
+        main_game_seed=None,
     ):
         if players is None:
             players = create_default_players(
@@ -255,6 +274,12 @@ class Game:
 
         self.enable_position_model = enable_position_model
         self.randomize_seat_roles = randomize_seat_roles
+        self.seat_order_neutral_mode = seat_order_neutral_mode
+        self.neutral_seed = neutral_seed
+        self.base_game_index = base_game_index
+        self.label_condition = label_condition
+        self.rotation_offset = rotation_offset
+        self.main_game_seed = main_game_seed
         seat_role_assignment_event = None
 
         if self.randomize_seat_roles:
@@ -267,10 +292,47 @@ class Game:
             seat_role_assignment_event = summarize_seat_role_assignment(
                 players
             )
-        elif self.enable_position_model and len(players) == 10:
+        elif (
+            self.enable_position_model
+            and len(players) == 10
+            and not self.seat_order_neutral_mode
+        ):
             assign_positions(players)
 
+        if self.seat_order_neutral_mode:
+            physical_to_displayed_mapping = initialize_neutral_player_metadata(
+                players,
+                mapping=physical_to_displayed_mapping,
+            )
+            self.neutral_actor_iteration_order = build_neutral_actor_order(
+                players,
+                seed=self.neutral_seed,
+                base_game_index=self.base_game_index,
+            )
+            players = order_players_by_actor_order(
+                players,
+                self.neutral_actor_iteration_order,
+            )
+        else:
+            self.neutral_actor_iteration_order = []
+
         self.state = GameState(players)
+        self.state.seat_order_neutral_mode = self.seat_order_neutral_mode
+        self.state.neutral_seed = self.neutral_seed
+        self.state.base_game_index = self.base_game_index
+        self.state.label_condition = self.label_condition
+        self.state.rotation_offset = self.rotation_offset
+        self.state.main_game_seed = self.main_game_seed
+        if self.seat_order_neutral_mode:
+            self.state.neutral_actor_iteration_order = (
+                self.neutral_actor_iteration_order
+            )
+            self.state.physical_to_displayed_mapping = (
+                physical_to_displayed_mapping
+            )
+            self.state.displayed_to_physical_mapping = (
+                get_displayed_to_physical_mapping_from_state(self.state)
+            )
         self.event_log = []
         self.payoffs = {}
         self.use_suspicion_voting = use_suspicion_voting
@@ -320,6 +382,42 @@ class Game:
 
         if self.enable_speaker_memory:
             initialize_speaker_memory(self.state.players)
+
+        if self.seat_order_neutral_mode:
+            self.log_event(
+                "seat_order_neutral_setup",
+                {
+                    "seat_order_neutral_mode": True,
+                    "neutral_seed": self.neutral_seed,
+                    "base_game_index": self.base_game_index,
+                    "label_condition": self.label_condition,
+                    "rotation_offset": self.rotation_offset,
+                    "actor_uid_to_physical_seat": {
+                        player.actor_uid: player.physical_seat
+                        for player in self.state.players
+                    },
+                    "actor_uid_to_displayed_id": {
+                        player.actor_uid: player.player_id
+                        for player in self.state.players
+                    },
+                    "physical_to_displayed_mapping": (
+                        get_physical_to_displayed_mapping_from_state(
+                            self.state
+                        )
+                    ),
+                    "displayed_to_physical_mapping": (
+                        get_displayed_to_physical_mapping_from_state(
+                            self.state
+                        )
+                    ),
+                    "neutral_actor_iteration_order": (
+                        self.neutral_actor_iteration_order
+                    ),
+                    "tie_break_scheme": TIE_BREAK_SCHEME,
+                    "strategy_subseed_scheme": STRATEGY_SUBSEED_SCHEME,
+                    "main_game_seed": self.main_game_seed,
+                },
+            )
 
         if seat_role_assignment_event is not None:
             self.log_event(
@@ -773,7 +871,22 @@ class Game:
                     player for player in alive_players
                     if player.player_id != voter.player_id
                 ]
-                target = random.choice(possible_targets) if possible_targets else None
+                if (
+                    possible_targets
+                    and self.seat_order_neutral_mode
+                ):
+                    target = choose_neutral_candidate(
+                        self.state,
+                        possible_targets,
+                        "random_vote_target",
+                        acting_player=voter,
+                    )
+                else:
+                    target = (
+                        random.choice(possible_targets)
+                        if possible_targets
+                        else None
+                    )
 
             if target is None:
                 continue
@@ -791,7 +904,20 @@ class Game:
             player_id for player_id, vote_count in vote_counts.items()
             if vote_count == highest_vote_count
         ]
-        eliminated_id = random.choice(tied_targets)
+        if self.seat_order_neutral_mode and len(tied_targets) > 1:
+            tied_players = [
+                self.state.get_player_by_id(player_id)
+                for player_id in tied_targets
+            ]
+            eliminated_player = choose_neutral_candidate(
+                self.state,
+                tied_players,
+                "day_vote_elimination_tie",
+                acting_player=None,
+            )
+            eliminated_id = eliminated_player.player_id
+        else:
+            eliminated_id = random.choice(tied_targets)
 
         if self.enable_suspicion_update:
             update_suspicion_after_vote(self.state, votes, eliminated_id)
@@ -818,6 +944,12 @@ class Game:
                 else "random"
             ),
             "votes": votes,
+            "votes_by_actor_uid": {
+                get_actor_uid(self.state.get_player_by_id(voter_id)): (
+                    get_actor_uid(self.state.get_player_by_id(target_id))
+                )
+                for voter_id, target_id in votes.items()
+            },
             "voter_risk_preference": {
                 voter_id: getattr(
                     self.state.get_player_by_id(voter_id),
@@ -827,6 +959,9 @@ class Game:
                 for voter_id in votes
             },
             "eliminated": eliminated_id,
+            "eliminated_actor_uid": get_actor_uid(
+                self.state.get_player_by_id(eliminated_id)
+            ),
             "vote_outcome_trust_events": vote_outcome_trust_events,
             "suspicion_scores": {
                 player.player_id: player.suspicion_score
@@ -880,6 +1015,7 @@ class Game:
                 )
                 for player in self.state.players
             },
+            "neutral_mode_enabled": self.seat_order_neutral_mode,
         })
 
     def run_one_round(self):

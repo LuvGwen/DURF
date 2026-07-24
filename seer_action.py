@@ -7,6 +7,17 @@ from position_model import (
     is_inner_seat,
 )
 from roles import SEER
+from seat_order_neutral import (
+    SPEECH_SUBSEED_SCHEME,
+    STRATEGY_SUBSEED_SCHEME,
+    choose_neutral_candidate,
+    clockwise_distance_physical,
+    counterclockwise_distance_physical,
+    get_actor_uid,
+    get_physical_seat,
+    neutral_rng,
+    neutral_tie_break_value,
+)
 
 
 TOTAL_SEATS = 10
@@ -29,6 +40,12 @@ SEER_CHECK_STRATEGIES = {
     "coverage_balanced",
     "hybrid_suspicion_position",
     "information_gain_proxy",
+    "physical_clockwise",
+    "physical_counterclockwise",
+    "alternate_physical_sides",
+    "random_neutral",
+    "nearest_physical_first",
+    "farthest_physical_first",
 }
 
 
@@ -96,6 +113,20 @@ def choose_random_target(candidates):
         return None
 
     return random.choice(candidates)
+
+
+def choose_random_target_neutral(game_state, seer, candidates, action_index=None):
+    if not candidates:
+        return None
+
+    rng = neutral_rng(
+        game_state,
+        "seer_random_neutral",
+        actor_uid=get_actor_uid(seer),
+        action_index=action_index,
+    )
+    ordered_candidates = sorted(candidates, key=get_actor_uid)
+    return rng.choice(ordered_candidates)
 
 
 def get_player_side(player):
@@ -212,6 +243,139 @@ def choose_farthest_first_target(seer, candidates, checked_target_ids):
         key=lambda candidate: (
             -circular_seat_distance(seer.player_id, candidate.player_id),
             candidate.player_id,
+        ),
+    )[0]
+
+
+def choose_physical_clockwise_target(seer, candidates, checked_target_ids):
+    candidate_pool = prefer_unchecked_candidates(
+        candidates,
+        checked_target_ids,
+    )
+    seer_physical = get_physical_seat(seer)
+
+    return sorted(
+        candidate_pool,
+        key=lambda candidate: (
+            clockwise_distance_physical(
+                seer_physical,
+                get_physical_seat(candidate),
+            ),
+            get_actor_uid(candidate),
+        ),
+    )[0]
+
+
+def choose_physical_counterclockwise_target(
+    seer,
+    candidates,
+    checked_target_ids,
+):
+    candidate_pool = prefer_unchecked_candidates(
+        candidates,
+        checked_target_ids,
+    )
+    seer_physical = get_physical_seat(seer)
+
+    return sorted(
+        candidate_pool,
+        key=lambda candidate: (
+            counterclockwise_distance_physical(
+                seer_physical,
+                get_physical_seat(candidate),
+            ),
+            get_actor_uid(candidate),
+        ),
+    )[0]
+
+
+def choose_alternate_physical_sides_target(
+    seer,
+    candidates,
+    checked_target_ids,
+):
+    candidate_pool = prefer_unchecked_candidates(
+        candidates,
+        checked_target_ids,
+    )
+    if len(checked_target_ids) % 2 == 0:
+        first_key = lambda candidate: clockwise_distance_physical(
+            get_physical_seat(seer),
+            get_physical_seat(candidate),
+        )
+        second_key = lambda candidate: counterclockwise_distance_physical(
+            get_physical_seat(seer),
+            get_physical_seat(candidate),
+        )
+    else:
+        first_key = lambda candidate: counterclockwise_distance_physical(
+            get_physical_seat(seer),
+            get_physical_seat(candidate),
+        )
+        second_key = lambda candidate: clockwise_distance_physical(
+            get_physical_seat(seer),
+            get_physical_seat(candidate),
+        )
+
+    return sorted(
+        candidate_pool,
+        key=lambda candidate: (
+            first_key(candidate),
+            second_key(candidate),
+            get_actor_uid(candidate),
+        ),
+    )[0]
+
+
+def choose_nearest_physical_first_target(seer, candidates, checked_target_ids):
+    candidate_pool = prefer_unchecked_candidates(
+        candidates,
+        checked_target_ids,
+    )
+
+    return sorted(
+        candidate_pool,
+        key=lambda candidate: (
+            min(
+                clockwise_distance_physical(
+                    get_physical_seat(seer),
+                    get_physical_seat(candidate),
+                ),
+                counterclockwise_distance_physical(
+                    get_physical_seat(seer),
+                    get_physical_seat(candidate),
+                ),
+            ),
+            neutral_tie_break_value(
+                getattr(seer, "_game_state", None),
+                "nearest_physical_first",
+                seer,
+                candidate,
+            ) if hasattr(seer, "_game_state") else get_actor_uid(candidate),
+        ),
+    )[0]
+
+
+def choose_farthest_physical_first_target(seer, candidates, checked_target_ids):
+    candidate_pool = prefer_unchecked_candidates(
+        candidates,
+        checked_target_ids,
+    )
+
+    return sorted(
+        candidate_pool,
+        key=lambda candidate: (
+            -min(
+                clockwise_distance_physical(
+                    get_physical_seat(seer),
+                    get_physical_seat(candidate),
+                ),
+                counterclockwise_distance_physical(
+                    get_physical_seat(seer),
+                    get_physical_seat(candidate),
+                ),
+            ),
+            get_actor_uid(candidate),
         ),
     )[0]
 
@@ -369,7 +533,13 @@ def choose_opposite_side_target(seer, candidates, checked_target_ids):
     return choose_random_target(unchecked_candidates)
 
 
-def choose_scored_target(candidates, checked_target_ids, score_attribute):
+def choose_scored_target(
+    candidates,
+    checked_target_ids,
+    score_attribute,
+    game_state=None,
+    seer=None,
+):
     candidate_pool = prefer_unchecked_candidates(
         candidates,
         checked_target_ids,
@@ -386,6 +556,14 @@ def choose_scored_target(candidates, checked_target_ids, score_attribute):
         candidate for candidate in candidate_pool
         if getattr(candidate, score_attribute, 0.0) == highest_score
     ]
+
+    if getattr(game_state, "seat_order_neutral_mode", False):
+        return choose_neutral_candidate(
+            game_state,
+            tied_candidates,
+            f"seer_{score_attribute}_tie",
+            acting_player=seer,
+        )
 
     return choose_random_target(tied_candidates)
 
@@ -419,9 +597,15 @@ def choose_seer_check_target(
             if not unchecked_candidates:
                 return None
 
-            return choose_random_target(
-                unchecked_candidates
-            )
+            if getattr(game_state, "seat_order_neutral_mode", False):
+                return choose_random_target_neutral(
+                    game_state,
+                    seer,
+                    unchecked_candidates,
+                    action_index=len(checked_target_ids),
+                )
+
+            return choose_random_target(unchecked_candidates)
 
         return choose_random_target(candidates)
 
@@ -437,8 +621,23 @@ def choose_seer_check_target(
             return None
 
     if seer_check_strategy == "random":
+        if getattr(game_state, "seat_order_neutral_mode", False):
+            return choose_random_target_neutral(
+                game_state,
+                seer,
+                prefer_unchecked_candidates(candidates, checked_target_ids),
+                action_index=len(checked_target_ids),
+            )
         return choose_random_target(
             prefer_unchecked_candidates(candidates, checked_target_ids)
+        )
+
+    if seer_check_strategy == "random_neutral":
+        return choose_random_target_neutral(
+            game_state,
+            seer,
+            prefer_unchecked_candidates(candidates, checked_target_ids),
+            action_index=len(checked_target_ids),
         )
 
     if seer_check_strategy == "edge_first":
@@ -460,6 +659,8 @@ def choose_seer_check_target(
             candidates,
             checked_target_ids,
             "p_wolf",
+            game_state=game_state,
+            seer=seer,
         )
 
     if seer_check_strategy == "highest_suspicion":
@@ -467,6 +668,8 @@ def choose_seer_check_target(
             candidates,
             checked_target_ids,
             "suspicion_score",
+            game_state=game_state,
+            seer=seer,
         )
 
     if seer_check_strategy == "opposite_side":
@@ -524,6 +727,41 @@ def choose_seer_check_target(
             checked_target_ids,
         )
 
+    if seer_check_strategy == "physical_clockwise":
+        return choose_physical_clockwise_target(
+            seer,
+            candidates,
+            checked_target_ids,
+        )
+
+    if seer_check_strategy == "physical_counterclockwise":
+        return choose_physical_counterclockwise_target(
+            seer,
+            candidates,
+            checked_target_ids,
+        )
+
+    if seer_check_strategy == "alternate_physical_sides":
+        return choose_alternate_physical_sides_target(
+            seer,
+            candidates,
+            checked_target_ids,
+        )
+
+    if seer_check_strategy == "nearest_physical_first":
+        return choose_nearest_physical_first_target(
+            seer,
+            candidates,
+            checked_target_ids,
+        )
+
+    if seer_check_strategy == "farthest_physical_first":
+        return choose_farthest_physical_first_target(
+            seer,
+            candidates,
+            checked_target_ids,
+        )
+
     return choose_random_target(candidates)
 
 
@@ -552,7 +790,16 @@ def perform_seer_action(
     if not alive_seers:
         return None
 
-    seer = random.choice(alive_seers)
+    if getattr(game_state, "seat_order_neutral_mode", False):
+        seer = choose_neutral_candidate(
+            game_state,
+            alive_seers,
+            "seer_actor_choice",
+            acting_player=None,
+        )
+    else:
+        seer = random.choice(alive_seers)
+    seer._game_state = game_state
     target = choose_seer_check_target(
         game_state,
         seer,
@@ -573,7 +820,13 @@ def perform_seer_action(
         "type": "seer_check",
         "round": game_state.round_number,
         "seer": seer.player_id,
+        "seer_actor_uid": get_actor_uid(seer),
+        "seer_physical_seat": get_physical_seat(seer),
+        "seer_displayed_id": seer.player_id,
         "target": target.player_id,
+        "target_actor_uid": get_actor_uid(target),
+        "target_physical_seat": get_physical_seat(target),
+        "target_displayed_id": target.player_id,
         "target_role": target.role,
         "target_is_wolf": target.is_wolf(),
         "target_suspicion_after": target.suspicion_score,
@@ -582,6 +835,13 @@ def perform_seer_action(
         "target_seat_type": getattr(target, "seat_type", None),
         "seer_side": getattr(seer, "side", None),
         "seer_seat_type": getattr(seer, "seat_type", None),
+        "neutral_mode_enabled": getattr(
+            game_state,
+            "seat_order_neutral_mode",
+            False,
+        ),
+        "speech_subseed_scheme": SPEECH_SUBSEED_SCHEME,
+        "strategy_subseed_scheme": STRATEGY_SUBSEED_SCHEME,
     }
     remember_seer_check(seer, event)
 

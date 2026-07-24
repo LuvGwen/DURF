@@ -1,6 +1,7 @@
 import random
 
 from bow_lexicon import BOW_LEXICON, DEFAULT_NUM_TOKENS, SPEECH_TYPES
+from seat_order_neutral import SPEECH_SUBSEED_SCHEME, get_actor_uid, stable_seed
 
 
 TARGETED_SPEECH_TYPES = {
@@ -14,6 +15,18 @@ TARGETED_SPEECH_TYPES = {
 def build_speech_rng(player, game_state):
     suspicion_bucket = int(player.suspicion_score * 1000)
     alive_count = len(game_state.get_alive_players())
+    if getattr(game_state, "seat_order_neutral_mode", False):
+        seed = stable_seed(
+            SPEECH_SUBSEED_SCHEME,
+            getattr(game_state, "neutral_seed", None),
+            getattr(game_state, "base_game_index", None),
+            game_state.round_number,
+            get_actor_uid(player),
+            suspicion_bucket,
+            alive_count,
+        )
+        return random.Random(seed)
+
     seed = (
         game_state.round_number * 1009
         + player.player_id * 9173

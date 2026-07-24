@@ -1,4 +1,5 @@
 from roles import HUNTER
+from seat_order_neutral import neutral_tie_break_value
 
 
 def perform_hunter_shot(game_state, dead_player_id):
@@ -18,7 +19,21 @@ def perform_hunter_shot(game_state, dead_player_id):
     if not candidates:
         return None, None
 
-    target = max(candidates, key=lambda player: player.suspicion_score)
+    if getattr(game_state, "seat_order_neutral_mode", False):
+        target = sorted(
+            candidates,
+            key=lambda player: (
+                -player.suspicion_score,
+                neutral_tie_break_value(
+                    game_state,
+                    "hunter_shot_target_tie",
+                    hunter,
+                    player,
+                ),
+            ),
+        )[0]
+    else:
+        target = max(candidates, key=lambda player: player.suspicion_score)
 
     return target.player_id, {
         "hunter": hunter.player_id,

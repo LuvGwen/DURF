@@ -1,0 +1,9 @@
+strategy,label_condition,first_divergence_phase,first_divergence_event_type,num_games,share_of_condition
+alternate_physical_sides,mirrored,none,none,2500,1.0
+alternate_physical_sides,rotated,none,none,2500,1.0
+physical_clockwise,mirrored,none,none,2500,1.0
+physical_clockwise,rotated,none,none,2500,1.0
+physical_counterclockwise,mirrored,none,none,2500,1.0
+physical_counterclockwise,rotated,none,none,2500,1.0
+random_neutral,mirrored,none,none,2500,1.0
+random_neutral,rotated,none,none,2500,1.0

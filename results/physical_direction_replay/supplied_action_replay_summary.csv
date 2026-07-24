@@ -1,0 +1,2 @@
+experiment_component,num_pairs,num_games,exact_replay_match_rate,physical_mirror_match_rate,strategy_mirror_action_sequence_match_rate,first_check_mirror_match_rate,full_check_sequence_mirror_match_rate,vote_sequence_mirror_match_rate,speech_sequence_mirror_match_rate,winner_match_rate,final_alive_set_match_rate,avg_reference_action_count,avg_replay_action_count,village_win_rate,wolf_win_rate,avg_total_rounds,avg_total_seer_checks
+supplied_action_replay,1000,1000,1.0,,,,,,,1.0,1.0,53.432,53.432,0.399,0.601,3.438,2.598

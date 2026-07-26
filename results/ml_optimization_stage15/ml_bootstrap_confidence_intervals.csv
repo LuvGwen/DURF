@@ -1,0 +1,4 @@
+metric,group_field,resamples,estimate,ci_lower,ci_upper
+seer_check_surrogate_full_pearson,game_family_id,500,0.20962968910794877,0.09573460784147797,0.31441466747456936
+wolf_kill_surrogate_full_pearson,game_family_id,500,-0.009292591740668994,-0.11453999721701506,0.09597823610815508
+day_vote_surrogate_full_pearson,game_family_id,500,0.18909999082896695,0.07456390884563184,0.2890700723826276

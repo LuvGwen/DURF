@@ -1,0 +1,13 @@
+task,context,model,train_metric,validation_metric,final_test_metric,train_validation_gap,validation_test_gap,overfitting_flag,classification
+identity,seer_candidate_states,existing_p_wolf,0.5,0.5,0.5,0.0,0.0,0,promising but uncertain
+identity,seer_candidate_states,existing_suspicion,0.5,0.5,0.5,0.0,0.0,0,promising but uncertain
+identity,seer_candidate_states,logistic_regression_stdlib,0.6504629629629629,0.6381766381766382,0.5986467236467237,0.012286324786324743,0.0395299145299145,1,overfit
+identity,village_vote_candidate_states,existing_p_wolf,0.5907407407407408,0.6634615384615384,0.6586059743954481,-0.07272079772079765,0.004855564066090334,0,promising but uncertain
+identity,village_vote_candidate_states,existing_suspicion,0.5666666666666667,0.65,0.5789473684210527,-0.08333333333333337,0.07105263157894737,0,promising but uncertain
+identity,village_vote_candidate_states,logistic_regression_stdlib,0.6975308641975309,0.698076923076923,0.6678520625889047,-0.0005460588793921861,0.030224860488018312,0,promising but uncertain
+action_value,seer_check,mean_baseline,0.1857142857142857,0.11428571428571428,0.14285714285714285,,,0,promising but uncertain
+action_value,seer_check,ridge_regression_stdlib,0.15238095238095237,0.14285714285714285,0.12857142857142856,,,0,promising but uncertain
+action_value,wolf_kill,mean_baseline,0.09047619047619047,0.17142857142857143,0.12857142857142856,,,0,promising but uncertain
+action_value,wolf_kill,ridge_regression_stdlib,0.08095238095238094,0.1285714285714286,0.10714285714285716,,,0,promising but uncertain
+action_value,day_vote,mean_baseline,0.1857142857142857,0.17142857142857143,0.10714285714285714,,,0,promising but uncertain
+action_value,day_vote,ridge_regression_stdlib,0.14285714285714285,0.05714285714285714,0.10714285714285714,,,0,promising but uncertain

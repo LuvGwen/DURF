@@ -56,6 +56,37 @@ def labels(rows, target_column):
     return [as_float(row.get(target_column), 0.0) for row in rows]
 
 
+def fit_standardizer(matrix):
+    if not matrix:
+        return [], []
+    column_count = len(matrix[0])
+    means = []
+    scales = []
+    for index in range(column_count):
+        values = [row[index] for row in matrix]
+        column_mean = sum(values) / len(values)
+        variance = (
+            sum((value - column_mean) ** 2 for value in values)
+            / len(values)
+        )
+        scale = math.sqrt(variance) if variance > 0 else 1.0
+        means.append(column_mean)
+        scales.append(scale)
+    return means, scales
+
+
+def apply_standardizer(matrix, means, scales):
+    if not matrix or not means:
+        return matrix
+    return [
+        [
+            (value - means[index]) / scales[index]
+            for index, value in enumerate(row)
+        ]
+        for row in matrix
+    ]
+
+
 def sigmoid(value):
     if value >= 0:
         z = math.exp(-value)
@@ -70,7 +101,15 @@ def fit_logistic_regression(rows, target_column, feature_columns=None, epochs=18
     x = feature_matrix(rows, feature_columns)
     y = labels(rows, target_column)
     if not x:
-        return {"intercept": 0.0, "weights": [0.0 for _ in feature_columns], "features": feature_columns}
+        return {
+            "intercept": 0.0,
+            "weights": [0.0 for _ in feature_columns],
+            "features": feature_columns,
+            "standardizer_means": [],
+            "standardizer_scales": [],
+        }
+    means, scales = fit_standardizer(x)
+    x = apply_standardizer(x, means, scales)
     weights = [0.0 for _ in feature_columns]
     intercept = 0.0
     n = len(x)
@@ -92,11 +131,18 @@ def fit_logistic_regression(rows, target_column, feature_columns=None, epochs=18
         "intercept": intercept,
         "weights": weights,
         "features": feature_columns,
+        "standardizer_means": means,
+        "standardizer_scales": scales,
     }
 
 
 def predict_logistic(model, rows):
     x = feature_matrix(rows, model["features"])
+    x = apply_standardizer(
+        x,
+        model.get("standardizer_means", []),
+        model.get("standardizer_scales", []),
+    )
     return [
         sigmoid(model["intercept"] + sum(w * v for w, v in zip(model["weights"], row_x)))
         for row_x in x
@@ -109,7 +155,15 @@ def fit_ridge_regression(rows, target_column, feature_columns=None, epochs=220, 
     x = feature_matrix(rows, feature_columns)
     y = labels(rows, target_column)
     if not x:
-        return {"intercept": 0.0, "weights": [0.0 for _ in feature_columns], "features": feature_columns}
+        return {
+            "intercept": 0.0,
+            "weights": [0.0 for _ in feature_columns],
+            "features": feature_columns,
+            "standardizer_means": [],
+            "standardizer_scales": [],
+        }
+    means, scales = fit_standardizer(x)
+    x = apply_standardizer(x, means, scales)
     weights = [0.0 for _ in feature_columns]
     intercept = sum(y) / len(y)
     n = len(x)
@@ -130,11 +184,18 @@ def fit_ridge_regression(rows, target_column, feature_columns=None, epochs=220, 
         "intercept": intercept,
         "weights": weights,
         "features": feature_columns,
+        "standardizer_means": means,
+        "standardizer_scales": scales,
     }
 
 
 def predict_ridge(model, rows):
     x = feature_matrix(rows, model["features"])
+    x = apply_standardizer(
+        x,
+        model.get("standardizer_means", []),
+        model.get("standardizer_scales", []),
+    )
     return [
         max(0.0, min(1.0, model["intercept"] + sum(w * v for w, v in zip(model["weights"], row_x))))
         for row_x in x

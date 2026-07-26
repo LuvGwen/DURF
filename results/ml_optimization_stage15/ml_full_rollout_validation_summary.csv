@@ -1,0 +1,10 @@
+metric,value
+candidate_rows,976
+decision_states,244
+full_rollout_simulations,6832
+grouped_split_valid,1
+snapshot_equivalence_passed,10
+train_candidate_rows,360
+validation_candidate_rows,120
+final_test_candidate_rows,240
+ood_test_candidate_rows,256

@@ -1,0 +1,94 @@
+{
+  "code_commit_at_generation": "20ddb693a70fc7fd0eb7a5e3ce6dfe19c4fe8fa0",
+  "created_at_utc": "2026-07-26T12:20:23.382829+00:00",
+  "hyperparameters": {
+    "logistic_regression_stdlib": {
+      "epochs": 180,
+      "l2": 0.001,
+      "learning_rate": 0.03
+    },
+    "ridge_regression_stdlib": {
+      "epochs": 220,
+      "l2": 0.01,
+      "learning_rate": 0.01
+    }
+  },
+  "metadata": {
+    "behavioral_regimes": 7,
+    "bootstrap_resamples": 500,
+    "candidate_rows": 976,
+    "continuation_policies": 7,
+    "decision_limits": {
+      "day_vote": 120,
+      "seer_check": 80,
+      "wolf_kill": 80
+    },
+    "decision_states": 244,
+    "full_rollout_simulations": 6832,
+    "games_per_regime_seed": 2,
+    "max_candidates": 4,
+    "rollouts_per_policy": 1,
+    "runtime_seconds": 10.799897909164429,
+    "source_game_families": 84,
+    "source_seeds": [
+      42,
+      43,
+      44,
+      50,
+      52,
+      53
+    ]
+  },
+  "models_considered": {
+    "action_value": [
+      "mean_baseline",
+      "ridge_regression_stdlib_l2",
+      "random_forest_regressor_sklearn_unavailable",
+      "hist_gradient_boosting_regressor_sklearn_unavailable"
+    ],
+    "identity_prediction": [
+      "existing_p_wolf",
+      "existing_suspicion",
+      "logistic_regression_stdlib_l2",
+      "random_forest_sklearn_unavailable",
+      "hist_gradient_boosting_sklearn_unavailable"
+    ]
+  },
+  "preprocessing": "Numeric feature standardization is fit on training rows only inside the standard-library logistic and ridge models.",
+  "random_seed": 42,
+  "rejected_models": [
+    "random_forest_sklearn_unavailable",
+    "hist_gradient_boosting_sklearn_unavailable"
+  ],
+  "selected_action_value_models": {
+    "day_vote": {
+      "selected_features": "full_legal_feature_set",
+      "selected_model": "ridge_regression_stdlib",
+      "validation_policy_value": 0.42857142857142855
+    },
+    "seer_check": {
+      "selected_features": "full_legal_feature_set",
+      "selected_model": "mean_baseline",
+      "validation_policy_value": 0.3714285714285714
+    },
+    "wolf_kill": {
+      "selected_features": "full_legal_feature_set",
+      "selected_model": "ridge_regression_stdlib",
+      "validation_policy_value": 0.7428571428571429
+    }
+  },
+  "selected_identity_models": {
+    "seer_candidate_states": {
+      "selected_features": "full_legal_feature_set",
+      "selected_model": "logistic_regression_stdlib",
+      "validation_roc_auc": 0.6381766381766382
+    },
+    "village_vote_candidate_states": {
+      "selected_features": "full_legal_feature_set",
+      "selected_model": "logistic_regression_stdlib",
+      "validation_roc_auc": 0.698076923076923
+    }
+  },
+  "selection_rule": "choose on validation only; final_test evaluated after model selection",
+  "stage": "ml_optimization_stage15"
+}

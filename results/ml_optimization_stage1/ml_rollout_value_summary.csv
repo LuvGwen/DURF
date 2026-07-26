@@ -1,0 +1,4 @@
+decision_type,candidate_rows,decision_states,mean_rollout_team_win_rate,min_rollout_team_win_rate,max_rollout_team_win_rate,mean_existing_policy_regret,total_rollout_simulations
+day_vote,5588,1000,0.536745406824147,0.0,1.0,0.2975423526604629,16764
+seer_check,588,98,0.5850340136054422,0.0,1.0,0.2857142857142857,2940
+wolf_kill,979,192,0.646782431052094,0.0,1.0,0.19877425944841676,4895

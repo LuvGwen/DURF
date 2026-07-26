@@ -1,0 +1,15 @@
+metric,value
+generated_games,60
+candidate_rows,7155
+decision_states,1290
+rollout_simulations,24599
+validation_passed,1
+day_vote_candidate_rows,5588
+day_vote_decision_states,1000
+seer_check_candidate_rows,588
+seer_check_decision_states,98
+wolf_kill_candidate_rows,979
+wolf_kill_decision_states,192
+train_candidate_rows,4892
+validation_candidate_rows,1765
+test_candidate_rows,498

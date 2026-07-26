@@ -1,0 +1,12 @@
+context,model,status,test_rows,roc_auc,pr_auc,brier_score,log_loss,calibration_error,top1_wolf_hit_rate,top3_wolf_recall
+seer_candidate_states,existing_p_wolf,baseline,126,0.6006235827664399,0.5093956962976756,0.2226772445436508,0.6370849282497082,0.02854166666666665,0.3333333333333333,0.4841269841269841
+seer_candidate_states,existing_suspicion_score,baseline,126,0.6082766439909297,0.5270558396455437,0.3243803943452381,2.966430660134253,0.32337499999999997,0.3333333333333333,0.5158730158730159
+seer_candidate_states,logistic_regression_stdlib,trained,126,0.5338718820861678,0.4122014610115032,0.22522074221807398,0.6473190079130214,0.05284106651961607,0.42857142857142855,0.5476190476190477
+seer_candidate_states,random_forest_sklearn,skipped_sklearn_unavailable,126,,,,,,,
+seer_candidate_states,hist_gradient_boosting_sklearn,skipped_sklearn_unavailable,126,,,,,,,
+village_vote_candidate_states,existing_p_wolf,baseline,120,0.5042261731273681,0.4689207464324228,0.24251475792978397,0.6791593885159877,0.09434208333333335,0.4,0.5583333333333333
+village_vote_candidate_states,existing_suspicion_score,baseline,120,0.510929758088021,0.47678719974856737,0.3513712475640432,1.4968131462798877,0.3490679166666667,0.4,0.5333333333333333
+village_vote_candidate_states,logistic_regression_stdlib,trained,120,0.9457883998834159,0.8997051557863642,0.1464201723132452,0.4600186855983003,0.19702570323270757,1.0,0.9166666666666666
+village_vote_candidate_states,random_forest_sklearn,skipped_sklearn_unavailable,120,,,,,,,
+village_vote_candidate_states,hist_gradient_boosting_sklearn,skipped_sklearn_unavailable,120,,,,,,,
+wolf_kill_candidate_states,identity_task_not_meaningful,not_meaningful_no_label_variance,198,,,,,,,

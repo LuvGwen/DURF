@@ -1,0 +1,4 @@
+both_loss,both_win,contrast,holm_adjusted_p_value,matched_sets,odds_ratio_discordant,policy_loss_existing_win,policy_win_existing_loss,raw_p_value
+39,100,frozen_ml_vs_existing_rule,0.07923402979699937,200,0.569620253164557,39,22,0.03961701489849968
+49,104,frozen_hybrid_50_50_vs_existing_rule,0.003265614619422763,200,0.352112676056338,35,12,0.0010885382064742544
+38,99,frozen_ml_epsilon_010_vs_existing_rule,0.07923402979699937,200,0.5802469135802469,40,23,0.04295654552438921

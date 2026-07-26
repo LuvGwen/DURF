@@ -1,0 +1,543 @@
+{
+  "coefficients": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    -0.04200660323518097,
+    0.0,
+    0.0,
+    -0.002709304725911002,
+    -0.002709304725910999,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    -0.0008240404186213413,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    -0.00026396288975516475,
+    -0.00832902046978581,
+    -0.00033577310867680154,
+    0.013866111340798607,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    -0.0008240404186213413,
+    0.0008240404186213401
+  ],
+  "created_at_utc": "2026-07-26T13:30:16.491048+00:00",
+  "excluded_stage15_final_test_seeds": [
+    52,
+    53,
+    54,
+    55,
+    56
+  ],
+  "feature_order": [
+    "round_number",
+    "phase_is_night",
+    "phase_is_day",
+    "decision_type_is_seer_check",
+    "decision_type_is_wolf_kill",
+    "decision_type_is_day_vote",
+    "actor_team_is_wolf",
+    "actor_team_is_village",
+    "alive_count",
+    "dead_count",
+    "public_revealed_role_count",
+    "public_information_entropy_proxy",
+    "number_of_public_check_results",
+    "number_of_previous_eliminations",
+    "actor_suspicion_score",
+    "actor_p_wolf",
+    "actor_risk_conservative",
+    "actor_risk_aggressive",
+    "actor_previous_votes_made",
+    "actor_previous_speeches_made",
+    "actor_known_teammate_count",
+    "candidate_alive",
+    "candidate_checked_by_actor_status",
+    "candidate_public_role_known",
+    "candidate_suspicion_score",
+    "candidate_p_wolf",
+    "candidate_received_accusations",
+    "candidate_made_accusations",
+    "candidate_wrong_accusation_count",
+    "candidate_vote_received_count",
+    "candidate_vote_made_count",
+    "candidate_vote_switch_count",
+    "candidate_speech_count",
+    "candidate_defense_count",
+    "candidate_role_claim_count",
+    "candidate_special_role_claim_count",
+    "candidate_trust_from_actor",
+    "candidate_conflict_with_actor",
+    "candidate_support_from_actor",
+    "candidate_public_influence_proxy",
+    "candidate_physical_seat_numeric",
+    "candidate_seat_is_edge",
+    "candidate_side_is_left",
+    "candidate_distance_from_actor",
+    "candidate_search_coverage_bonus",
+    "candidate_was_previously_targeted_by_actor",
+    "candidate_known_wolf_to_actor",
+    "candidate_known_village_to_actor",
+    "candidate_current_vote_count",
+    "current_vote_total",
+    "candidate_uncertainty_proxy",
+    "candidate_survival_proxy"
+  ],
+  "final_test_seed_isolation": "Seeds 100-119 are reserved for Stage 2A live testing and are not used for model training, feature selection, hybrid weight selection, epsilon selection, or model selection.",
+  "intercept": 0.7023809523809523,
+  "live_final_test_seeds": [
+    100,
+    101,
+    102,
+    103,
+    104,
+    105,
+    106,
+    107,
+    108,
+    109,
+    110,
+    111,
+    112,
+    113,
+    114,
+    115,
+    116,
+    117,
+    118,
+    119
+  ],
+  "manifest_hash": "3636ee12b35a57bbe8811b59ccf2c37a2bfec25ced6170ee3f51615da6f64f83",
+  "missing_value_handling": "missing numeric features are filled with 0.0 before training-set standardization",
+  "model_artifact_hash": "f3c5e60275eea04c4a03e15a21aab2713e86a4e2b446ff0fbf9b194e90ae124b",
+  "model_type": "ridge_regression_stdlib_l2",
+  "regularization": {
+    "epochs": 220,
+    "kind": "L2 ridge",
+    "l2": 0.01,
+    "learning_rate": 0.01
+  },
+  "serialization_format": "json_manifest_v1",
+  "source_commit_hash": "be2175d5e0b0be63a39ddfd9cc6066b2871d5024",
+  "source_dataset": "results/ml_optimization_stage15/ml_full_rollout_wolf_kill_dataset.csv",
+  "source_dataset_sha256": "e9e22ea70cbcfc8ac0b407559b434b1e736e193eab1e6f887b89d9f5ccfa7187",
+  "stage": "ml_optimization_stage2a",
+  "standardization_means": [
+    1.0,
+    1.0,
+    0.0,
+    0.0,
+    1.0,
+    0.0,
+    1.0,
+    0.0,
+    10.0,
+    0.0,
+    0.0,
+    0.294,
+    0.0,
+    0.0,
+    0.025,
+    0.325,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    2.0,
+    1.0,
+    0.0,
+    0.0,
+    0.0,
+    0.28625,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.5,
+    0.0,
+    0.0,
+    0.0,
+    5.058333333333334,
+    0.4583333333333333,
+    0.5666666666666667,
+    2.725,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.28625,
+    1.4284375
+  ],
+  "standardization_scales": [
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    0.013747727084867507,
+    1.0,
+    1.0,
+    0.07500000000000001,
+    0.07500000000000002,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    0.04328322423295196,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    3.0964921909943337,
+    0.4982608642958916,
+    0.49553562491061687,
+    1.303600782448369,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    1.0,
+    0.04328322423295196,
+    0.010820806058237951
+  ],
+  "target_column": "full_rollout_mean_team_win_rate",
+  "training_feature_ranges": {
+    "actor_known_teammate_count": {
+      "max": 2.0,
+      "min": 2.0,
+      "missing_count": 0
+    },
+    "actor_p_wolf": {
+      "max": 0.55,
+      "min": 0.3,
+      "missing_count": 0
+    },
+    "actor_previous_speeches_made": {
+      "max": 0.0,
+      "min": 0.0,
+      "missing_count": 0
+    },
+    "actor_previous_votes_made": {
+      "max": 0.0,
+      "min": 0.0,
+      "missing_count": 0
+    },
+    "actor_risk_aggressive": {
+      "max": 0.0,
+      "min": 0.0,
+      "missing_count": 0
+    },
+    "actor_risk_conservative": {
+      "max": 0.0,
+      "min": 0.0,
+      "missing_count": 0
+    },
+    "actor_suspicion_score": {
+      "max": 0.25,
+      "min": 0.0,
+      "missing_count": 0
+    },
+    "actor_team_is_village": {
+      "max": 0.0,
+      "min": 0.0,
+      "missing_count": 0
+    },
+    "actor_team_is_wolf": {
+      "max": 1.0,
+      "min": 1.0,
+      "missing_count": 0
+    },
+    "alive_count": {
+      "max": 10.0,
+      "min": 10.0,
+      "missing_count": 0
+    },
+    "candidate_alive": {
+      "max": 1.0,
+      "min": 1.0,
+      "missing_count": 0
+    },
+    "candidate_checked_by_actor_status": {
+      "max": 0.0,
+      "min": 0.0,
+      "missing_count": 0
+    },
+    "candidate_conflict_with_actor": {
+      "max": 0.0,
+      "min": 0.0,
+      "missing_count": 0
+    },
+    "candidate_current_vote_count": {
+      "max": 0.0,
+      "min": 0.0,
+      "missing_count": 0
+    },
+    "candidate_defense_count": {
+      "max": 0.0,
+      "min": 0.0,
+      "missing_count": 0
+    },
+    "candidate_distance_from_actor": {
+      "max": 5.0,
+      "min": 1.0,
+      "missing_count": 0
+    },
+    "candidate_known_village_to_actor": {
+      "max": 0.0,
+      "min": 0.0,
+      "missing_count": 0
+    },
+    "candidate_known_wolf_to_actor": {
+      "max": 0.0,
+      "min": 0.0,
+      "missing_count": 0
+    },
+    "candidate_made_accusations": {
+      "max": 0.0,
+      "min": 0.0,
+      "missing_count": 0
+    },
+    "candidate_p_wolf": {
+      "max": 0.3,
+      "min": 0.15,
+      "missing_count": 0
+    },
+    "candidate_physical_seat_numeric": {
+      "max": 10.0,
+      "min": 1.0,
+      "missing_count": 0
+    },
+    "candidate_public_influence_proxy": {
+      "max": 0.0,
+      "min": 0.0,
+      "missing_count": 0
+    },
+    "candidate_public_role_known": {
+      "max": 0.0,
+      "min": 0.0,
+      "missing_count": 0
+    },
+    "candidate_received_accusations": {
+      "max": 0.0,
+      "min": 0.0,
+      "missing_count": 0
+    },
+    "candidate_role_claim_count": {
+      "max": 0.0,
+      "min": 0.0,
+      "missing_count": 0
+    },
+    "candidate_search_coverage_bonus": {
+      "max": 0.0,
+      "min": 0.0,
+      "missing_count": 0
+    },
+    "candidate_seat_is_edge": {
+      "max": 1.0,
+      "min": 0.0,
+      "missing_count": 0
+    },
+    "candidate_side_is_left": {
+      "max": 1.0,
+      "min": 0.0,
+      "missing_count": 0
+    },
+    "candidate_special_role_claim_count": {
+      "max": 0.0,
+      "min": 0.0,
+      "missing_count": 0
+    },
+    "candidate_speech_count": {
+      "max": 0.0,
+      "min": 0.0,
+      "missing_count": 0
+    },
+    "candidate_support_from_actor": {
+      "max": 0.0,
+      "min": 0.0,
+      "missing_count": 0
+    },
+    "candidate_survival_proxy": {
+      "max": 1.4625,
+      "min": 1.425,
+      "missing_count": 0
+    },
+    "candidate_suspicion_score": {
+      "max": 0.0,
+      "min": 0.0,
+      "missing_count": 0
+    },
+    "candidate_trust_from_actor": {
+      "max": 0.5,
+      "min": 0.5,
+      "missing_count": 0
+    },
+    "candidate_uncertainty_proxy": {
+      "max": 0.3,
+      "min": 0.15,
+      "missing_count": 0
+    },
+    "candidate_vote_made_count": {
+      "max": 0.0,
+      "min": 0.0,
+      "missing_count": 0
+    },
+    "candidate_vote_received_count": {
+      "max": 0.0,
+      "min": 0.0,
+      "missing_count": 0
+    },
+    "candidate_vote_switch_count": {
+      "max": 0.0,
+      "min": 0.0,
+      "missing_count": 0
+    },
+    "candidate_was_previously_targeted_by_actor": {
+      "max": 0.0,
+      "min": 0.0,
+      "missing_count": 0
+    },
+    "candidate_wrong_accusation_count": {
+      "max": 0.0,
+      "min": 0.0,
+      "missing_count": 0
+    },
+    "current_vote_total": {
+      "max": 0.0,
+      "min": 0.0,
+      "missing_count": 0
+    },
+    "dead_count": {
+      "max": 0.0,
+      "min": 0.0,
+      "missing_count": 0
+    },
+    "decision_type_is_day_vote": {
+      "max": 0.0,
+      "min": 0.0,
+      "missing_count": 0
+    },
+    "decision_type_is_seer_check": {
+      "max": 0.0,
+      "min": 0.0,
+      "missing_count": 0
+    },
+    "decision_type_is_wolf_kill": {
+      "max": 1.0,
+      "min": 1.0,
+      "missing_count": 0
+    },
+    "number_of_previous_eliminations": {
+      "max": 0.0,
+      "min": 0.0,
+      "missing_count": 0
+    },
+    "number_of_public_check_results": {
+      "max": 0.0,
+      "min": 0.0,
+      "missing_count": 0
+    },
+    "phase_is_day": {
+      "max": 0.0,
+      "min": 0.0,
+      "missing_count": 0
+    },
+    "phase_is_night": {
+      "max": 1.0,
+      "min": 1.0,
+      "missing_count": 0
+    },
+    "public_information_entropy_proxy": {
+      "max": 0.315,
+      "min": 0.28500000000000003,
+      "missing_count": 0
+    },
+    "public_revealed_role_count": {
+      "max": 0.0,
+      "min": 0.0,
+      "missing_count": 0
+    },
+    "round_number": {
+      "max": 1.0,
+      "min": 1.0,
+      "missing_count": 0
+    }
+  },
+  "training_rows": 120,
+  "training_seeds": [
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49
+  ],
+  "validation_seeds": [
+    50,
+    51
+  ]
+}

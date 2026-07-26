@@ -1,0 +1,53 @@
+coefficient,coefficient_sign,feature,standardized_coefficient_magnitude,strategic_interpretation,training_max,training_min,training_missing_count
+-0.04200660323518097,pushes_away_from_kill,public_information_entropy_proxy,0.04200660323518097,general public feature; pushes_away_from_kill; not a causal interpretation,0.315,0.28500000000000003,0
+0.013866111340798607,pushes_toward_kill,candidate_distance_from_actor,0.013866111340798607,position signal; pushes_toward_kill; not a causal interpretation,5.0,1.0,0
+-0.00832902046978581,pushes_away_from_kill,candidate_seat_is_edge,0.00832902046978581,position signal; pushes_away_from_kill; not a causal interpretation,1.0,0.0,0
+-0.002709304725911002,pushes_away_from_kill,actor_suspicion_score,0.002709304725911002,risk/suspicion signal; pushes_away_from_kill; not a causal interpretation,0.25,0.0,0
+-0.002709304725910999,pushes_away_from_kill,actor_p_wolf,0.002709304725910999,risk/suspicion signal; pushes_away_from_kill; not a causal interpretation,0.55,0.3,0
+-0.0008240404186213413,pushes_away_from_kill,candidate_p_wolf,0.0008240404186213413,risk/suspicion signal; pushes_away_from_kill; not a causal interpretation,0.3,0.15,0
+-0.0008240404186213413,pushes_away_from_kill,candidate_uncertainty_proxy,0.0008240404186213413,general public feature; pushes_away_from_kill; not a causal interpretation,0.3,0.15,0
+0.0008240404186213401,pushes_toward_kill,candidate_survival_proxy,0.0008240404186213401,survival/game-state signal; pushes_toward_kill; not a causal interpretation,1.4625,1.425,0
+-0.00033577310867680154,pushes_away_from_kill,candidate_side_is_left,0.00033577310867680154,position signal; pushes_away_from_kill; not a causal interpretation,1.0,0.0,0
+-0.00026396288975516475,pushes_away_from_kill,candidate_physical_seat_numeric,0.00026396288975516475,position signal; pushes_away_from_kill; not a causal interpretation,10.0,1.0,0
+0.0,neutral,round_number,0.0,general public feature; neutral; not a causal interpretation,1.0,1.0,0
+0.0,neutral,phase_is_night,0.0,general public feature; neutral; not a causal interpretation,1.0,1.0,0
+0.0,neutral,phase_is_day,0.0,general public feature; neutral; not a causal interpretation,0.0,0.0,0
+0.0,neutral,decision_type_is_seer_check,0.0,general public feature; neutral; not a causal interpretation,0.0,0.0,0
+0.0,neutral,decision_type_is_wolf_kill,0.0,general public feature; neutral; not a causal interpretation,1.0,1.0,0
+0.0,neutral,decision_type_is_day_vote,0.0,voting-history signal; neutral; not a causal interpretation,0.0,0.0,0
+0.0,neutral,actor_team_is_wolf,0.0,general public feature; neutral; not a causal interpretation,1.0,1.0,0
+0.0,neutral,actor_team_is_village,0.0,general public feature; neutral; not a causal interpretation,0.0,0.0,0
+0.0,neutral,alive_count,0.0,survival/game-state signal; neutral; not a causal interpretation,10.0,10.0,0
+0.0,neutral,dead_count,0.0,general public feature; neutral; not a causal interpretation,0.0,0.0,0
+0.0,neutral,public_revealed_role_count,0.0,general public feature; neutral; not a causal interpretation,0.0,0.0,0
+0.0,neutral,number_of_public_check_results,0.0,general public feature; neutral; not a causal interpretation,0.0,0.0,0
+0.0,neutral,number_of_previous_eliminations,0.0,general public feature; neutral; not a causal interpretation,0.0,0.0,0
+0.0,neutral,actor_risk_conservative,0.0,general public feature; neutral; not a causal interpretation,0.0,0.0,0
+0.0,neutral,actor_risk_aggressive,0.0,general public feature; neutral; not a causal interpretation,0.0,0.0,0
+0.0,neutral,actor_previous_votes_made,0.0,voting-history signal; neutral; not a causal interpretation,0.0,0.0,0
+0.0,neutral,actor_previous_speeches_made,0.0,speech and accusation signal; neutral; not a causal interpretation,0.0,0.0,0
+0.0,neutral,actor_known_teammate_count,0.0,general public feature; neutral; not a causal interpretation,2.0,2.0,0
+0.0,neutral,candidate_alive,0.0,survival/game-state signal; neutral; not a causal interpretation,1.0,1.0,0
+0.0,neutral,candidate_checked_by_actor_status,0.0,general public feature; neutral; not a causal interpretation,0.0,0.0,0
+0.0,neutral,candidate_public_role_known,0.0,general public feature; neutral; not a causal interpretation,0.0,0.0,0
+0.0,neutral,candidate_suspicion_score,0.0,risk/suspicion signal; neutral; not a causal interpretation,0.0,0.0,0
+0.0,neutral,candidate_received_accusations,0.0,speech and accusation signal; neutral; not a causal interpretation,0.0,0.0,0
+0.0,neutral,candidate_made_accusations,0.0,speech and accusation signal; neutral; not a causal interpretation,0.0,0.0,0
+0.0,neutral,candidate_wrong_accusation_count,0.0,speech and accusation signal; neutral; not a causal interpretation,0.0,0.0,0
+0.0,neutral,candidate_vote_received_count,0.0,voting-history signal; neutral; not a causal interpretation,0.0,0.0,0
+0.0,neutral,candidate_vote_made_count,0.0,voting-history signal; neutral; not a causal interpretation,0.0,0.0,0
+0.0,neutral,candidate_vote_switch_count,0.0,voting-history signal; neutral; not a causal interpretation,0.0,0.0,0
+0.0,neutral,candidate_speech_count,0.0,speech and accusation signal; neutral; not a causal interpretation,0.0,0.0,0
+0.0,neutral,candidate_defense_count,0.0,speech and accusation signal; neutral; not a causal interpretation,0.0,0.0,0
+0.0,neutral,candidate_role_claim_count,0.0,general public feature; neutral; not a causal interpretation,0.0,0.0,0
+0.0,neutral,candidate_special_role_claim_count,0.0,general public feature; neutral; not a causal interpretation,0.0,0.0,0
+0.0,neutral,candidate_trust_from_actor,0.0,relationship or trust signal; neutral; not a causal interpretation,0.5,0.5,0
+0.0,neutral,candidate_conflict_with_actor,0.0,relationship or trust signal; neutral; not a causal interpretation,0.0,0.0,0
+0.0,neutral,candidate_support_from_actor,0.0,relationship or trust signal; neutral; not a causal interpretation,0.0,0.0,0
+0.0,neutral,candidate_public_influence_proxy,0.0,general public feature; neutral; not a causal interpretation,0.0,0.0,0
+0.0,neutral,candidate_search_coverage_bonus,0.0,general public feature; neutral; not a causal interpretation,0.0,0.0,0
+0.0,neutral,candidate_was_previously_targeted_by_actor,0.0,general public feature; neutral; not a causal interpretation,0.0,0.0,0
+0.0,neutral,candidate_known_wolf_to_actor,0.0,general public feature; neutral; not a causal interpretation,0.0,0.0,0
+0.0,neutral,candidate_known_village_to_actor,0.0,general public feature; neutral; not a causal interpretation,0.0,0.0,0
+0.0,neutral,candidate_current_vote_count,0.0,voting-history signal; neutral; not a causal interpretation,0.0,0.0,0
+0.0,neutral,current_vote_total,0.0,voting-history signal; neutral; not a causal interpretation,0.0,0.0,0

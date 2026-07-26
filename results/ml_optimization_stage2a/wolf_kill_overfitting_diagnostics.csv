@@ -1,0 +1,4 @@
+classification,live_wolf_win_difference,overfitting_flag,policy_name,shadow_improvement,shadow_live_gap
+live harmful in this pilot,-0.08499999999999996,0,frozen_ml,-0.03401360544217687,0.0509863945578231
+live harmful in this pilot,-0.11499999999999999,0,frozen_hybrid_50_50,-0.042176870748299324,0.07282312925170067
+live harmful in this pilot,-0.08499999999999996,0,frozen_ml_epsilon_010,-0.03129251700680272,0.05370748299319725

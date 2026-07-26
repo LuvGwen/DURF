@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="360" viewBox="0 0 760 360">
+<rect width="100%" height="100%" fill="white"/>
+<text x="20" y="30" font-family="Arial" font-size="18" font-weight="bold">Frozen ML wolf win rate by regime</text>
+<text x="20" y="72.4" font-family="Arial" font-size="12">baseline_speech_enabled</text>
+<rect x="180" y="59.0" width="297.0" height="20.0" fill="#4C78A8"/>
+<text x="483.0" y="72.4" font-family="Arial" font-size="12">0.550</text>
+<text x="20" y="100.4" font-family="Arial" font-size="12">deception_enabled</text>
+<rect x="180" y="87.0" width="297.0" height="20.0" fill="#4C78A8"/>
+<text x="483.0" y="100.4" font-family="Arial" font-size="12">0.550</text>
+<text x="20" y="128.4" font-family="Arial" font-size="12">herding_enabled</text>
+<rect x="180" y="115.0" width="270.0" height="20.0" fill="#4C78A8"/>
+<text x="456.0" y="128.4" font-family="Arial" font-size="12">0.500</text>
+<text x="20" y="156.4" font-family="Arial" font-size="12">heterogeneous_risk_preference</text>
+<rect x="180" y="143.0" width="432.0" height="20.0" fill="#4C78A8"/>
+<text x="618.0" y="156.4" font-family="Arial" font-size="12">0.800</text>
+<text x="20" y="184.4" font-family="Arial" font-size="12">mixed_seer_strategy</text>
+<rect x="180" y="171.0" width="216.0" height="20.0" fill="#4C78A8"/>
+<text x="402.0" y="184.4" font-family="Arial" font-size="12">0.400</text>
+<text x="20" y="212.4" font-family="Arial" font-size="12">mixed_voting_strategy</text>
+<rect x="180" y="199.0" width="513.0" height="20.0" fill="#4C78A8"/>
+<text x="699.0" y="212.4" font-family="Arial" font-size="12">0.950</text>
+<text x="20" y="240.4" font-family="Arial" font-size="12">mixed_wolf_deception_strategy</text>
+<rect x="180" y="227.0" width="378.0" height="20.0" fill="#4C78A8"/>
+<text x="564.0" y="240.4" font-family="Arial" font-size="12">0.700</text>
+<text x="20" y="268.4" font-family="Arial" font-size="12">speech_disabled</text>
+<rect x="180" y="255.0" width="270.0" height="20.0" fill="#4C78A8"/>
+<text x="456.0" y="268.4" font-family="Arial" font-size="12">0.500</text>
+<text x="20" y="296.4" font-family="Arial" font-size="12">strong_village_information</text>
+<rect x="180" y="283.0" width="243.0" height="20.0" fill="#4C78A8"/>
+<text x="429.0" y="296.4" font-family="Arial" font-size="12">0.450</text>
+<text x="20" y="324.4" font-family="Arial" font-size="12">weak_village_information</text>
+<rect x="180" y="311.0" width="378.0" height="20.0" fill="#4C78A8"/>
+<text x="564.0" y="324.4" font-family="Arial" font-size="12">0.700</text>
+</svg>

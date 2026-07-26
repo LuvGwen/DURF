@@ -1,0 +1,5 @@
+avg_rounds,avg_special_role_kills,avg_successful_night_kills,draws,games,policy_name,village_win_rate,village_wins,wolf_win_ci_high,wolf_win_ci_low,wolf_win_rate,wolf_wins
+3.23,2.18,2.365,0,200,existing_rule,0.305,61,0.7588092140681892,0.6311907859318107,0.695,139
+3.265,1.03,2.43,0,200,frozen_ml,0.39,78,0.6775986922950437,0.5424013077049563,0.61,122
+3.25,1.015,2.405,0,200,frozen_hybrid_50_50,0.42,84,0.6484037191971314,0.5115962808028686,0.58,116
+3.255,1.025,2.43,0,200,frozen_ml_epsilon_010,0.39,78,0.6775986922950437,0.5424013077049563,0.61,122

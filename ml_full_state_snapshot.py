@@ -55,6 +55,12 @@ GAME_CONFIG_FIELDS = [
     "label_condition",
     "rotation_offset",
     "main_game_seed",
+    "enable_ml_wolf_kill_policy",
+    "ml_wolf_kill_policy_name",
+    "ml_wolf_kill_model_manifest_path",
+    "ml_wolf_kill_manifest_hash",
+    "ml_wolf_kill_epsilon",
+    "ml_wolf_kill_hybrid_weight",
 ]
 
 

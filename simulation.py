@@ -120,6 +120,12 @@ def run_simulation(
     rotation_offset=0,
     physical_to_displayed_mapping=None,
     main_game_seed=None,
+    enable_ml_wolf_kill_policy=False,
+    ml_wolf_kill_policy_name="existing_rule",
+    ml_wolf_kill_model_manifest_path=None,
+    ml_wolf_kill_manifest_hash=None,
+    ml_wolf_kill_epsilon=0.10,
+    ml_wolf_kill_hybrid_weight=0.50,
     include_game_level_log=False,
     game_level_log_builder=None,
 ):
@@ -192,6 +198,14 @@ def run_simulation(
             rotation_offset=rotation_offset,
             physical_to_displayed_mapping=physical_to_displayed_mapping,
             main_game_seed=main_game_seed,
+            enable_ml_wolf_kill_policy=enable_ml_wolf_kill_policy,
+            ml_wolf_kill_policy_name=ml_wolf_kill_policy_name,
+            ml_wolf_kill_model_manifest_path=(
+                ml_wolf_kill_model_manifest_path
+            ),
+            ml_wolf_kill_manifest_hash=ml_wolf_kill_manifest_hash,
+            ml_wolf_kill_epsilon=ml_wolf_kill_epsilon,
+            ml_wolf_kill_hybrid_weight=ml_wolf_kill_hybrid_weight,
         )
         result = game.run_game(max_rounds=max_rounds)
         seer_check_events = [

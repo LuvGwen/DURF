@@ -151,6 +151,12 @@ class Game:
         rotation_offset=0,
         physical_to_displayed_mapping=None,
         main_game_seed=None,
+        enable_ml_wolf_kill_policy=False,
+        ml_wolf_kill_policy_name="existing_rule",
+        ml_wolf_kill_model_manifest_path=None,
+        ml_wolf_kill_manifest_hash=None,
+        ml_wolf_kill_epsilon=0.10,
+        ml_wolf_kill_hybrid_weight=0.50,
     ):
         if players is None:
             players = create_default_players(
@@ -373,6 +379,14 @@ class Game:
         self.credibility_cost_scale = credibility_cost_scale
         self.seer_check_strategy = seer_check_strategy
         self.seer_avoid_repeat_checks = seer_avoid_repeat_checks
+        self.enable_ml_wolf_kill_policy = enable_ml_wolf_kill_policy
+        self.ml_wolf_kill_policy_name = ml_wolf_kill_policy_name
+        self.ml_wolf_kill_model_manifest_path = (
+            ml_wolf_kill_model_manifest_path
+        )
+        self.ml_wolf_kill_manifest_hash = ml_wolf_kill_manifest_hash
+        self.ml_wolf_kill_epsilon = ml_wolf_kill_epsilon
+        self.ml_wolf_kill_hybrid_weight = ml_wolf_kill_hybrid_weight
 
         if self.enable_risk_preference:
             assign_risk_preferences(
@@ -570,11 +584,30 @@ class Game:
             if self.enable_wolf_strategy
             else "random"
         )
-        target = choose_wolf_kill_target(
-            self.state,
-            strategy=wolf_kill_strategy,
-            noise_level=self.wolf_kill_noise_level,
-        )
+        ml_policy_event = None
+
+        if self.enable_ml_wolf_kill_policy:
+            from ml_wolf_kill_policy import choose_stage2a_wolf_kill_target
+
+            target, ml_policy_event = choose_stage2a_wolf_kill_target(
+                self,
+                policy_name=self.ml_wolf_kill_policy_name,
+                manifest_path=self.ml_wolf_kill_model_manifest_path,
+                existing_rule_strategy=wolf_kill_strategy,
+                epsilon=self.ml_wolf_kill_epsilon,
+            )
+            wolf_kill_strategy = self.ml_wolf_kill_policy_name
+            if ml_policy_event is not None:
+                self.log_event(
+                    "wolf_kill_policy_decision",
+                    ml_policy_event,
+                )
+        else:
+            target = choose_wolf_kill_target(
+                self.state,
+                strategy=wolf_kill_strategy,
+                noise_level=self.wolf_kill_noise_level,
+            )
 
         if target is None:
             self.state.check_win_condition()

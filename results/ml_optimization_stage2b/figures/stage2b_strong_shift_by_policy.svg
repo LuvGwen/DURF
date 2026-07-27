@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="320" viewBox="0 0 820 320">
+<rect width="100%" height="100%" fill="white"/>
+<text x="20" y="30" font-family="Arial" font-size="18" font-weight="bold">Strong-shift decision rows by policy</text>
+<text x="20" y="73" font-family="Arial" font-size="12">continuous_frozen_ml</text>
+<rect x="230" y="59" width="476.2" height="20" fill="#4C78A8"/>
+<text x="712.2" y="73" font-family="Arial" font-size="12">380.000</text>
+<text x="20" y="105" font-family="Arial" font-size="12">existing_rule</text>
+<rect x="230" y="91" width="508.7" height="20" fill="#4C78A8"/>
+<text x="744.7" y="105" font-family="Arial" font-size="12">406.000</text>
+<text x="20" y="137" font-family="Arial" font-size="12">existing_with_ml_shadow</text>
+<rect x="230" y="123" width="508.7" height="20" fill="#4C78A8"/>
+<text x="744.7" y="137" font-family="Arial" font-size="12">406.000</text>
+<text x="20" y="169" font-family="Arial" font-size="12">high_confidence_shadow</text>
+<rect x="230" y="155" width="508.7" height="20" fill="#4C78A8"/>
+<text x="744.7" y="169" font-family="Arial" font-size="12">406.000</text>
+<text x="20" y="201" font-family="Arial" font-size="12">ml_first_kill_only</text>
+<rect x="230" y="187" width="507.5" height="20" fill="#4C78A8"/>
+<text x="743.5" y="201" font-family="Arial" font-size="12">405.000</text>
+<text x="20" y="233" font-family="Arial" font-size="12">ml_first_two_kills</text>
+<rect x="230" y="219" width="483.7" height="20" fill="#4C78A8"/>
+<text x="719.7" y="233" font-family="Arial" font-size="12">386.000</text>
+<text x="20" y="265" font-family="Arial" font-size="12">ml_single_random_kill</text>
+<rect x="230" y="251" width="484.9" height="20" fill="#4C78A8"/>
+<text x="720.9" y="265" font-family="Arial" font-size="12">387.000</text>
+<text x="20" y="297" font-family="Arial" font-size="12">selective_ml_override</text>
+<rect x="230" y="283" width="510.0" height="20" fill="#4C78A8"/>
+<text x="746.0" y="297" font-family="Arial" font-size="12">407.000</text>
+</svg>

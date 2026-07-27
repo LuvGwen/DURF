@@ -16,6 +16,7 @@
 
 ## Stage R1: ML Stage 2B - offline-to-live failure diagnosis
 
+- Status: Completed in `results/ml_optimization_stage2b/`.
 - Objective: Diagnose why frozen wolf-kill ML failed live.
 - Unanswered question: Was failure caused by distribution shift, repeated-decision compounding, or special-role targeting loss?
 - Implementation: Add diagnostic logging, not a new deployed policy.
@@ -24,6 +25,7 @@
 - Required report: ML Stage 2B research report.
 - Entry condition: Stage 2A negative result documented.
 - Exit condition: Failure modes ranked with evidence.
+- Completed output: `results/ml_optimization_stage2b/ml_stage2b_research_report.md`.
 - Dependencies: Stage 2A artifacts.
 - Risk of overfitting or invalid inference: High overfitting risk if tuned on live final seeds.
 - Expected outputs: Failure taxonomy, drift metrics, opportunity-cost diagnostics.

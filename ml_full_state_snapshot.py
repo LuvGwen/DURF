@@ -61,6 +61,8 @@ GAME_CONFIG_FIELDS = [
     "ml_wolf_kill_manifest_hash",
     "ml_wolf_kill_epsilon",
     "ml_wolf_kill_hybrid_weight",
+    "enable_ml_stage2b_policy",
+    "ml_stage2b_selective_override_manifest_path",
 ]
 
 

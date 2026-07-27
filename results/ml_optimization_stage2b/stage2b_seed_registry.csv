@@ -1,0 +1,36 @@
+allowed_for_final_inference,allowed_for_model_training,allowed_for_threshold_selection,notes,prior_stage_usage,purpose,seed,split
+False,False,True,Excluded from final inference,none known,threshold diagnostics,200,development
+False,False,True,Excluded from final inference,none known,threshold diagnostics,201,development
+False,False,True,Excluded from final inference,none known,threshold diagnostics,202,development
+False,False,True,Excluded from final inference,none known,threshold diagnostics,203,development
+False,False,True,Excluded from final inference,none known,threshold diagnostics,204,development
+False,False,True,Excluded from final inference,none known,threshold diagnostics,205,development
+False,False,True,Excluded from final inference,none known,threshold diagnostics,206,development
+False,False,True,Excluded from final inference,none known,threshold diagnostics,207,development
+False,False,True,Excluded from final inference,none known,threshold diagnostics,208,development
+False,False,True,Excluded from final inference,none known,threshold diagnostics,209,development
+False,False,True,Excluded from final inference,none known,threshold diagnostics,210,validation
+False,False,True,Excluded from final inference,none known,threshold diagnostics,211,validation
+False,False,True,Excluded from final inference,none known,threshold diagnostics,212,validation
+False,False,True,Excluded from final inference,none known,threshold diagnostics,213,validation
+False,False,True,Excluded from final inference,none known,threshold diagnostics,214,validation
+True,False,False,"Not used for model training, model selection, or selective-threshold calibration",none known,untouched Stage 2B final inference,220,final_test
+True,False,False,"Not used for model training, model selection, or selective-threshold calibration",none known,untouched Stage 2B final inference,221,final_test
+True,False,False,"Not used for model training, model selection, or selective-threshold calibration",none known,untouched Stage 2B final inference,222,final_test
+True,False,False,"Not used for model training, model selection, or selective-threshold calibration",none known,untouched Stage 2B final inference,223,final_test
+True,False,False,"Not used for model training, model selection, or selective-threshold calibration",none known,untouched Stage 2B final inference,224,final_test
+True,False,False,"Not used for model training, model selection, or selective-threshold calibration",none known,untouched Stage 2B final inference,225,final_test
+True,False,False,"Not used for model training, model selection, or selective-threshold calibration",none known,untouched Stage 2B final inference,226,final_test
+True,False,False,"Not used for model training, model selection, or selective-threshold calibration",none known,untouched Stage 2B final inference,227,final_test
+True,False,False,"Not used for model training, model selection, or selective-threshold calibration",none known,untouched Stage 2B final inference,228,final_test
+True,False,False,"Not used for model training, model selection, or selective-threshold calibration",none known,untouched Stage 2B final inference,229,final_test
+True,False,False,"Not used for model training, model selection, or selective-threshold calibration",none known,untouched Stage 2B final inference,230,final_test
+True,False,False,"Not used for model training, model selection, or selective-threshold calibration",none known,untouched Stage 2B final inference,231,final_test
+True,False,False,"Not used for model training, model selection, or selective-threshold calibration",none known,untouched Stage 2B final inference,232,final_test
+True,False,False,"Not used for model training, model selection, or selective-threshold calibration",none known,untouched Stage 2B final inference,233,final_test
+True,False,False,"Not used for model training, model selection, or selective-threshold calibration",none known,untouched Stage 2B final inference,234,final_test
+True,False,False,"Not used for model training, model selection, or selective-threshold calibration",none known,untouched Stage 2B final inference,235,final_test
+True,False,False,"Not used for model training, model selection, or selective-threshold calibration",none known,untouched Stage 2B final inference,236,final_test
+True,False,False,"Not used for model training, model selection, or selective-threshold calibration",none known,untouched Stage 2B final inference,237,final_test
+True,False,False,"Not used for model training, model selection, or selective-threshold calibration",none known,untouched Stage 2B final inference,238,final_test
+True,False,False,"Not used for model training, model selection, or selective-threshold calibration",none known,untouched Stage 2B final inference,239,final_test

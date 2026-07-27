@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="320" viewBox="0 0 820 320">
+<rect width="100%" height="100%" fill="white"/>
+<text x="20" y="30" font-family="Arial" font-size="18" font-weight="bold">Stage 2B wolf win rate by policy</text>
+<text x="20" y="73" font-family="Arial" font-size="12">existing_rule</text>
+<rect x="230" y="59" width="362.1" height="20" fill="#4C78A8"/>
+<text x="598.1" y="73" font-family="Arial" font-size="12">0.710</text>
+<text x="20" y="105" font-family="Arial" font-size="12">ml_first_kill_only</text>
+<rect x="230" y="91" width="367.2" height="20" fill="#4C78A8"/>
+<text x="603.2" y="105" font-family="Arial" font-size="12">0.720</text>
+<text x="20" y="137" font-family="Arial" font-size="12">ml_single_random_kill</text>
+<rect x="230" y="123" width="339.2" height="20" fill="#4C78A8"/>
+<text x="575.2" y="137" font-family="Arial" font-size="12">0.665</text>
+<text x="20" y="169" font-family="Arial" font-size="12">ml_first_two_kills</text>
+<rect x="230" y="155" width="321.3" height="20" fill="#4C78A8"/>
+<text x="557.3" y="169" font-family="Arial" font-size="12">0.630</text>
+<text x="20" y="201" font-family="Arial" font-size="12">continuous_frozen_ml</text>
+<rect x="230" y="187" width="311.1" height="20" fill="#4C78A8"/>
+<text x="547.1" y="201" font-family="Arial" font-size="12">0.610</text>
+<text x="20" y="233" font-family="Arial" font-size="12">existing_with_ml_shadow</text>
+<rect x="230" y="219" width="362.1" height="20" fill="#4C78A8"/>
+<text x="598.1" y="233" font-family="Arial" font-size="12">0.710</text>
+<text x="20" y="265" font-family="Arial" font-size="12">selective_ml_override</text>
+<rect x="230" y="251" width="357.0" height="20" fill="#4C78A8"/>
+<text x="593.0" y="265" font-family="Arial" font-size="12">0.700</text>
+<text x="20" y="297" font-family="Arial" font-size="12">high_confidence_shadow</text>
+<rect x="230" y="283" width="362.1" height="20" fill="#4C78A8"/>
+<text x="598.1" y="297" font-family="Arial" font-size="12">0.710</text>
+</svg>

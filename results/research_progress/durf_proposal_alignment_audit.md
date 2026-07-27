@@ -55,3 +55,11 @@ The project has completed and extended the core simulator, 10-player setup, role
 ## Matrix
 
 The full component-by-component audit is in `results/research_progress/durf_proposal_alignment_matrix.csv`.
+
+## ML Stage 2B Update
+
+ML Stage 2B adds a formal offline-to-live failure diagnosis for the frozen
+wolf-kill model. It preserves the existing rule as the default, uses isolated
+final seeds, and reports single-intervention, repeated-decision,
+distribution-shift, selective-override, hybrid-failure, and downstream
+mechanism diagnostics in `results/ml_optimization_stage2b`.

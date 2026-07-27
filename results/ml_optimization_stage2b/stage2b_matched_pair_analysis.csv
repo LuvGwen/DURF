@@ -1,0 +1,5 @@
+both_loss,both_win,contrast,holm_adjusted_p_value,matched_sets,odds_ratio_discordant,policy_loss_existing_win,policy_win_existing_loss,raw_p_value
+50,136,ml_first_kill_only_vs_existing_rule,1.0,200,1.3076923076923077,6,8,0.79052734375
+35,103,ml_first_two_kills_vs_existing_rule,0.16769168009913338,200,0.5949367088607594,39,23,0.05589722669971113
+30,94,continuous_frozen_ml_vs_existing_rule,0.11450662203495152,200,0.5876288659793815,48,28,0.02862665550873788
+58,140,selective_ml_override_vs_existing_rule,1.0,200,0.2,2,0,0.5

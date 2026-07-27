@@ -194,12 +194,35 @@ The project has completed and extended the core simulator, night/day mechanics, 
 
 ## 20. Remaining Deliverables
 
-Remaining deliverables are ordered in `remaining_work_roadmap.md`: ML Stage 2B failure diagnosis, formal BoW speech quantification, BoW integration, unified role-specific payoff matrix, financial risk metrics, role strategy optimization synthesis, systematic literature comparison, final integrated Data Analysis, and final DURF report/presentation.
+Remaining deliverables are ordered in `remaining_work_roadmap.md`: formal BoW speech quantification, BoW integration, unified role-specific payoff matrix, financial risk metrics, role strategy optimization synthesis, systematic literature comparison, final integrated Data Analysis, and final DURF report/presentation.
 
 ## 21. Next Research Priorities
 
-The exact next stage is ML Stage 2B - Offline-to-Live Failure Diagnosis. It should diagnose policy-induced distribution shift, repeated-decision compounding, special-role targeting loss, and shadow/live mismatch before any new ML policy is deployed.
+The exact next stage is R2 - Formal Bag-of-Words Speech Quantification. It should define observation-safe tokenization, werewolf-leaning speech scores, emotional-intensity scores, and information-density scores without treating the current structured speech labels as full BoW completion.
 
 ## 22. Reproducibility and Source Index
 
 The cumulative evidence registry is `results/research_progress/cumulative_evidence_registry.csv`. Source traceability is `results/research_progress/source_traceability_index.csv`. Known inconsistencies are documented in `results/research_progress/documentation_inconsistencies.md`.
+
+## 23. Machine Learning Stage 2B
+
+Question: Why did the frozen wolf-kill ML policy fail after promising shadow
+analysis?
+
+Hypothesis: The offline-to-live gap is caused by mixed mechanisms: repeated
+intervention compounding, distribution shift, low-margin instability,
+hybrid score incompatibility, and downstream interaction with witch, hunter,
+seer, speech, and voting systems.
+
+Design: Stage 2B uses the unchanged Stage 2A frozen wolf-kill model in
+matched complete games. Selective override thresholds are calibrated from
+development/validation shadow seeds only, then evaluated on isolated final
+seeds. Primary comparisons are matched against `existing_rule` with Holm
+correction.
+
+Evidence: See `results/ml_optimization_stage2b/ml_stage2b_research_report.md` and
+`results/ml_optimization_stage2b/stage2b_primary_contrasts.csv`.
+
+Conclusion: The existing rule remains the default. The frozen ML model should
+be retained for diagnostics only unless a later, pre-registered selective
+override validation shows stable non-harmful value.

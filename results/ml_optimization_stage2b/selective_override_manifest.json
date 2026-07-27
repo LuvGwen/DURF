@@ -1,0 +1,68 @@
+{
+  "allowed_for_model_training": false,
+  "calibration_decision_count": 499,
+  "calibration_disagreement_in_distribution_count": 131,
+  "development_seeds": [
+    200,
+    201,
+    202,
+    203,
+    204,
+    205,
+    206,
+    207,
+    208,
+    209
+  ],
+  "excluded_final_test_seeds": [
+    220,
+    221,
+    222,
+    223,
+    224,
+    225,
+    226,
+    227,
+    228,
+    229,
+    230,
+    231,
+    232,
+    233,
+    234,
+    235,
+    236,
+    237,
+    238,
+    239
+  ],
+  "manifest_hash": "56df48c63f448c53d12228774ff6bb8a080e5a06f287ffff7a384a401a5188b2",
+  "margin_bands": {
+    "low_margin_max": 0.03,
+    "medium_margin_max": 0.06,
+    "very_low_margin_max": 0.01
+  },
+  "policy": "selective_ml_override",
+  "primary_model_retrained": false,
+  "rule": {
+    "allowed_shift_categories": [
+      "in_distribution"
+    ],
+    "max_absolute_z_score": 2.5,
+    "max_feature_vector_novelty_score": 2.381135126443713,
+    "max_fraction_outside_training_minmax": 0.0,
+    "max_missing_feature_count": 0,
+    "min_ml_advantage_over_existing": 0.021610167987622053,
+    "min_top_two_margin": 0.01,
+    "threshold_selection_note": "Thresholds were calibrated only from development and validation shadow decisions. Final-test outcomes were excluded."
+  },
+  "source_commit_hash": "28299a910cb42c110f6265257a013f1ff8c37e4e",
+  "stage": "ml_optimization_stage2b",
+  "validation_seeds": [
+    210,
+    211,
+    212,
+    213,
+    214
+  ]
+}

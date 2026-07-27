@@ -1,0 +1,9 @@
+analysis,avg_interventions,avg_rounds,branch_policy,condition,games_or_rollouts,hunter_retaliation_rate,note,rollouts,source_decisions,witch_save_rate,wolf_win_rate,wolf_win_rate_or_value
+complete_game_policy,1.0,,,ml_first_kill_only,200,,live complete-game policy,,,,,0.72
+complete_game_policy,0.97,,,ml_single_random_kill,200,,live complete-game policy,,,,,0.665
+complete_game_policy,2.0,,,ml_first_two_kills,200,,live complete-game policy,,,,,0.63
+complete_game_policy,3.345,,,continuous_frozen_ml,200,,live complete-game policy,,,,,0.61
+complete_game_policy,0.185,,,selective_ml_override,200,,live complete-game policy,,,,,0.7
+single_intervention_rollout,,3.48,existing_rule_forced_once,,,0.72,,50,25,0.9,0.78,0.78
+single_intervention_rollout,,3.42,frozen_ml_forced_once,,,0.62,,50,25,0.9,0.8,0.8
+paired_single_intervention_difference,,,frozen_ml_minus_existing_rule,,,,,100,25,,0.02,0.02

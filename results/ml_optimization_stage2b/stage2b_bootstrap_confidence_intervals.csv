@@ -1,0 +1,5 @@
+bootstrap_ci_high,bootstrap_ci_low,bootstrap_iterations,contrast
+0.045,-0.02,300,ml_first_kill_only_vs_existing_rule
+0.0,-0.155,300,ml_first_two_kills_vs_existing_rule
+-0.015,-0.185,300,continuous_frozen_ml_vs_existing_rule
+0.0,-0.025,300,selective_ml_override_vs_existing_rule

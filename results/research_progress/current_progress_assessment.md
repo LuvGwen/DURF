@@ -43,3 +43,11 @@ The project is ready to draft strong sections on simulation design, information 
 - Financial risk metrics: incomplete.
 - Systematic literature comparison: incomplete.
 - Final cumulative reporting: completed for current repository state by this stage.
+
+## ML Stage 2B Current Assessment
+
+ML wolf-kill optimization has been formally diagnosed using Stage 2B
+matched live policies and single-intervention diagnostics. The existing rule
+remains the default, and the next planned proposal-completion stage is R2:
+Formal Bag-of-Words Speech Quantification. Source outputs are in
+`results/ml_optimization_stage2b`.

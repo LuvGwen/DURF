@@ -157,6 +157,8 @@ class Game:
         ml_wolf_kill_manifest_hash=None,
         ml_wolf_kill_epsilon=0.10,
         ml_wolf_kill_hybrid_weight=0.50,
+        enable_ml_stage2b_policy=False,
+        ml_stage2b_selective_override_manifest_path=None,
     ):
         if players is None:
             players = create_default_players(
@@ -387,6 +389,10 @@ class Game:
         self.ml_wolf_kill_manifest_hash = ml_wolf_kill_manifest_hash
         self.ml_wolf_kill_epsilon = ml_wolf_kill_epsilon
         self.ml_wolf_kill_hybrid_weight = ml_wolf_kill_hybrid_weight
+        self.enable_ml_stage2b_policy = enable_ml_stage2b_policy
+        self.ml_stage2b_selective_override_manifest_path = (
+            ml_stage2b_selective_override_manifest_path
+        )
 
         if self.enable_risk_preference:
             assign_risk_preferences(
@@ -587,15 +593,38 @@ class Game:
         ml_policy_event = None
 
         if self.enable_ml_wolf_kill_policy:
-            from ml_wolf_kill_policy import choose_stage2a_wolf_kill_target
-
-            target, ml_policy_event = choose_stage2a_wolf_kill_target(
-                self,
-                policy_name=self.ml_wolf_kill_policy_name,
-                manifest_path=self.ml_wolf_kill_model_manifest_path,
-                existing_rule_strategy=wolf_kill_strategy,
-                epsilon=self.ml_wolf_kill_epsilon,
+            from ml_stage2b_interventions import (
+                STAGE2B_WOLF_KILL_POLICIES,
+                choose_stage2b_wolf_kill_target,
             )
+
+            if (
+                self.enable_ml_stage2b_policy
+                and self.ml_wolf_kill_policy_name
+                in STAGE2B_WOLF_KILL_POLICIES
+            ):
+                target, ml_policy_event = choose_stage2b_wolf_kill_target(
+                    self,
+                    policy_name=self.ml_wolf_kill_policy_name,
+                    manifest_path=self.ml_wolf_kill_model_manifest_path,
+                    selective_override_manifest_path=(
+                        self.ml_stage2b_selective_override_manifest_path
+                    ),
+                    existing_rule_strategy=wolf_kill_strategy,
+                    epsilon=self.ml_wolf_kill_epsilon,
+                )
+            else:
+                from ml_wolf_kill_policy import (
+                    choose_stage2a_wolf_kill_target,
+                )
+
+                target, ml_policy_event = choose_stage2a_wolf_kill_target(
+                    self,
+                    policy_name=self.ml_wolf_kill_policy_name,
+                    manifest_path=self.ml_wolf_kill_model_manifest_path,
+                    existing_rule_strategy=wolf_kill_strategy,
+                    epsilon=self.ml_wolf_kill_epsilon,
+                )
             wolf_kill_strategy = self.ml_wolf_kill_policy_name
             if ml_policy_event is not None:
                 self.log_event(

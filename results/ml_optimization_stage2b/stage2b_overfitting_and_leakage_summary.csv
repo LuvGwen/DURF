@@ -1,0 +1,6 @@
+check,detail,status
+frozen_manifest_validates,3636ee12b35a57bbe8811b59ccf2c37a2bfec25ced6170ee3f51615da6f64f83,PASS
+frozen_model_not_retrained,Stage 2B uses Stage 2A manifest without training.,PASS
+final_seeds_excluded_from_threshold_selection,leaked_final_seed_rows=0,PASS
+live_feature_columns_observation_safe,feature_count=52,PASS
+posthoc_role_fields_excluded_from_live_features,Role labels appear only in raw analysis outputs after decision logging.,PASS

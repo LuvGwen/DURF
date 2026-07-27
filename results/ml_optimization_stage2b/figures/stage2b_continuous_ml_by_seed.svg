@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="820" height="694" viewBox="0 0 820 694">
+<rect width="100%" height="100%" fill="white"/>
+<text x="20" y="30" font-family="Arial" font-size="18" font-weight="bold">Continuous frozen ML wolf win rate by seed</text>
+<text x="20" y="73" font-family="Arial" font-size="12">220</text>
+<rect x="230" y="59" width="306.0" height="20" fill="#4C78A8"/>
+<text x="542.0" y="73" font-family="Arial" font-size="12">0.600</text>
+<text x="20" y="105" font-family="Arial" font-size="12">221</text>
+<rect x="230" y="91" width="255.0" height="20" fill="#4C78A8"/>
+<text x="491.0" y="105" font-family="Arial" font-size="12">0.500</text>
+<text x="20" y="137" font-family="Arial" font-size="12">222</text>
+<rect x="230" y="123" width="306.0" height="20" fill="#4C78A8"/>
+<text x="542.0" y="137" font-family="Arial" font-size="12">0.600</text>
+<text x="20" y="169" font-family="Arial" font-size="12">223</text>
+<rect x="230" y="155" width="306.0" height="20" fill="#4C78A8"/>
+<text x="542.0" y="169" font-family="Arial" font-size="12">0.600</text>
+<text x="20" y="201" font-family="Arial" font-size="12">224</text>
+<rect x="230" y="187" width="306.0" height="20" fill="#4C78A8"/>
+<text x="542.0" y="201" font-family="Arial" font-size="12">0.600</text>
+<text x="20" y="233" font-family="Arial" font-size="12">225</text>
+<rect x="230" y="219" width="255.0" height="20" fill="#4C78A8"/>
+<text x="491.0" y="233" font-family="Arial" font-size="12">0.500</text>
+<text x="20" y="265" font-family="Arial" font-size="12">226</text>
+<rect x="230" y="251" width="306.0" height="20" fill="#4C78A8"/>
+<text x="542.0" y="265" font-family="Arial" font-size="12">0.600</text>
+<text x="20" y="297" font-family="Arial" font-size="12">227</text>
+<rect x="230" y="283" width="408.0" height="20" fill="#4C78A8"/>
+<text x="644.0" y="297" font-family="Arial" font-size="12">0.800</text>
+<text x="20" y="329" font-family="Arial" font-size="12">228</text>
+<rect x="230" y="315" width="408.0" height="20" fill="#4C78A8"/>
+<text x="644.0" y="329" font-family="Arial" font-size="12">0.800</text>
+<text x="20" y="361" font-family="Arial" font-size="12">229</text>
+<rect x="230" y="347" width="204.0" height="20" fill="#4C78A8"/>
+<text x="440.0" y="361" font-family="Arial" font-size="12">0.400</text>
+<text x="20" y="393" font-family="Arial" font-size="12">230</text>
+<rect x="230" y="379" width="255.0" height="20" fill="#4C78A8"/>
+<text x="491.0" y="393" font-family="Arial" font-size="12">0.500</text>
+<text x="20" y="425" font-family="Arial" font-size="12">231</text>
+<rect x="230" y="411" width="408.0" height="20" fill="#4C78A8"/>
+<text x="644.0" y="425" font-family="Arial" font-size="12">0.800</text>
+<text x="20" y="457" font-family="Arial" font-size="12">232</text>
+<rect x="230" y="443" width="408.0" height="20" fill="#4C78A8"/>
+<text x="644.0" y="457" font-family="Arial" font-size="12">0.800</text>
+<text x="20" y="489" font-family="Arial" font-size="12">233</text>
+<rect x="230" y="475" width="408.0" height="20" fill="#4C78A8"/>
+<text x="644.0" y="489" font-family="Arial" font-size="12">0.800</text>
+<text x="20" y="521" font-family="Arial" font-size="12">234</text>
+<rect x="230" y="507" width="408.0" height="20" fill="#4C78A8"/>
+<text x="644.0" y="521" font-family="Arial" font-size="12">0.800</text>
+<text x="20" y="553" font-family="Arial" font-size="12">235</text>
+<rect x="230" y="539" width="306.0" height="20" fill="#4C78A8"/>
+<text x="542.0" y="553" font-family="Arial" font-size="12">0.600</text>
+<text x="20" y="585" font-family="Arial" font-size="12">236</text>
+<rect x="230" y="571" width="153.0" height="20" fill="#4C78A8"/>
+<text x="389.0" y="585" font-family="Arial" font-size="12">0.300</text>
+<text x="20" y="617" font-family="Arial" font-size="12">237</text>
+<rect x="230" y="603" width="357.0" height="20" fill="#4C78A8"/>
+<text x="593.0" y="617" font-family="Arial" font-size="12">0.700</text>
+<text x="20" y="649" font-family="Arial" font-size="12">238</text>
+<rect x="230" y="635" width="255.0" height="20" fill="#4C78A8"/>
+<text x="491.0" y="649" font-family="Arial" font-size="12">0.500</text>
+<text x="20" y="681" font-family="Arial" font-size="12">239</text>
+<rect x="230" y="667" width="204.0" height="20" fill="#4C78A8"/>
+<text x="440.0" y="681" font-family="Arial" font-size="12">0.400</text>
+</svg>

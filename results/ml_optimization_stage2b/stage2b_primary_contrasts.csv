@@ -1,0 +1,5 @@
+absolute_difference,both_loss,both_win,contrast,difference_ci_high,difference_ci_low,discordant_policy_loss_existing_win,discordant_policy_win_existing_loss,existing_rule_wolf_win_rate,holm_adjusted_p_value,matched_sets,odds_ratio_discordant,policy_name,policy_wolf_win_rate,raw_p_value
+0.01,50,136,ml_first_kill_only_vs_existing_rule,0.04673399148817436,-0.026733991488174354,6,8,0.71,1.0,200,1.3076923076923077,ml_first_kill_only,0.72,0.79052734375
+-0.08,35,103,ml_first_two_kills_vs_existing_rule,-0.0034437914645282786,-0.15655620853547172,39,23,0.71,0.16769168009913338,200,0.5949367088607594,ml_first_two_kills,0.63,0.05589722669971113
+-0.1,30,94,continuous_frozen_ml_vs_existing_rule,-0.015485661767755829,-0.18451433823224417,48,28,0.71,0.11450662203495152,200,0.5876288659793815,continuous_frozen_ml,0.61,0.02862665550873788
+-0.01,58,140,selective_ml_override_vs_existing_rule,0.003824426710332212,-0.023824426710332212,2,0,0.71,1.0,200,0.2,selective_ml_override,0.7,0.5

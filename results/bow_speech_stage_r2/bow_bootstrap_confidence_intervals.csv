@@ -1,0 +1,6 @@
+bootstrap_ci_high,bootstrap_ci_low,bootstrap_method,metric_name,model_name,point_estimate
+,,Reported model metric; CIs reserved for score contrasts in this R2 implementation.,final_test_roc_auc,p_wolf_only,0.5691456776845327
+,,Reported model metric; CIs reserved for score contrasts in this R2 implementation.,final_test_roc_auc,suspicion_only,0.5147112430460026
+,,Reported model metric; CIs reserved for score contrasts in this R2 implementation.,final_test_roc_auc,bow_scores_only,0.6917769504590713
+,,Reported model metric; CIs reserved for score contrasts in this R2 implementation.,final_test_roc_auc,structured_speech_labels_only,0.8774589563621594
+,,Reported model metric; CIs reserved for score contrasts in this R2 implementation.,final_test_roc_auc,full_legal_combined,0.8897204907360623

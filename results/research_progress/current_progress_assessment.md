@@ -4,19 +4,19 @@
 
 Qualitative status: high.
 
-The core simulation, 10-player game, special roles, speech-like labels, belief updates, herding, trust memory, deception, risk preference, position strategy, replay validation, and ML logging/policy infrastructure are implemented. The project has substantially exceeded the original basic simulation requirement.
+The core simulation, 10-player game, special roles, speech-like labels, formal R2 BoW speech quantification, belief updates, herding, trust memory, deception, risk preference, position strategy, replay validation, and ML logging/policy infrastructure are implemented. The project has substantially exceeded the original basic simulation requirement.
 
 ## B. Scientific-Analysis Completion
 
 Qualitative status: medium-high.
 
-Formal Data Analysis exists for randomized-role seer position, structured seer search, seat-order-neutral analysis, physical replay validation, and ML Stage 2A. Some earlier mechanism stages remain descriptive only. Payoff, financial risk, and BoW-specific claims still need formal synthesis.
+Formal Data Analysis exists for randomized-role seer position, structured seer search, seat-order-neutral analysis, physical replay validation, ML Stage 2A/2B, and R2 BoW speech quantification. Some earlier mechanism stages remain descriptive only. Payoff and financial-risk claims still need formal synthesis.
 
 ## C. Proposal-Alignment Completion
 
 Qualitative status: medium.
 
-Core simulator commitments are complete or extended. BoW quantification, unified role payoff optimization, financial risk metrics, Sharpe-like analysis, and literature cross-check remain incomplete.
+Core simulator commitments are complete or extended. R2 BoW quantification is complete as a shadow feature pipeline. BoW live-decision integration, unified role payoff optimization, financial risk metrics, Sharpe-like analysis, and literature cross-check remain incomplete.
 
 ## D. Documentation Completion
 
@@ -28,7 +28,7 @@ This stage creates missing ML research reports, cumulative evidence registry, cu
 
 Qualitative status: not yet final-report ready, but close for simulation/mechanism chapters.
 
-The project is ready to draft strong sections on simulation design, information flow, deception, trust, seer search, engine validity, and ML validation failure. It is not ready to finalize BoW quantification, financial risk metrics, unified role-specific payoff optimization, or literature comparison.
+The project is ready to draft strong sections on simulation design, information flow, BoW quantification, deception, trust, seer search, engine validity, and ML validation failure. It is not ready to finalize BoW decision integration, financial risk metrics, unified role-specific payoff optimization, or literature comparison.
 
 ## Expected Assessment
 
@@ -38,7 +38,7 @@ The project is ready to draft strong sections on simulation design, information 
 - Data Analysis: advanced.
 - Engine validity: strongly validated.
 - ML optimization: active, with negative live Stage 2A result.
-- BoW: incomplete.
+- BoW: R2 shadow quantification completed; R3 live integration pending.
 - Unified payoff matrix: incomplete.
 - Financial risk metrics: incomplete.
 - Systematic literature comparison: incomplete.
@@ -48,6 +48,8 @@ The project is ready to draft strong sections on simulation design, information 
 
 ML wolf-kill optimization has been formally diagnosed using Stage 2B
 matched live policies and single-intervention diagnostics. The existing rule
-remains the default, and the next planned proposal-completion stage is R2:
-Formal Bag-of-Words Speech Quantification. Source outputs are in
-`results/ml_optimization_stage2b`.
+remains the default. Source outputs are in `results/ml_optimization_stage2b`.
+
+## R2 Current Assessment
+
+Formal BoW speech quantification is now implemented and validated as a shadow feature system. The project has a real English tokenizer, core lexicon, train-derived vocabulary, utterance-level dataset, score manifests, leakage audit, overfitting audit, model comparisons, template/regime generalization checks, and R2 research reports. BoW is not yet integrated into live decisions; that remains the exact R3 task.

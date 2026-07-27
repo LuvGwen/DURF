@@ -1,0 +1,60 @@
+generator_version,speech_intent,speech_subtype,template_family,template_id,template_split_group,template_text
+r2_template_generator_v1,neutral_statement,low_information,neutral_observation,neutral_001,primary,I am still listening and comparing the vote pattern.
+r2_template_generator_v1,neutral_statement,low_information,neutral_observation,neutral_002,primary,For now I want more evidence before we push.
+r2_template_generator_v1,neutral_statement,low_information,neutral_waiting,neutral_003,primary,"The room feels unclear, so I will wait for a better reason."
+r2_template_generator_v1,neutral_statement,low_information,neutral_process_ood,neutral_ood_001,ood_template,My read is not settled yet; I need another round of information.
+r2_template_generator_v1,accusation,standard_accusation,accusation_reasoned,accuse_001,primary,I suspect PLAYER_TARGET because their vote record has a wolfish pattern.
+r2_template_generator_v1,accusation,standard_accusation,accusation_reasoned,accuse_002,primary,PLAYER_TARGET looks suspicious; the logic around their push is weak.
+r2_template_generator_v1,accusation,vote_pressure,accusation_pressure,accuse_003,primary,We should pressure PLAYER_TARGET and see whether the story changes.
+r2_template_generator_v1,accusation,standard_accusation,accusation_chain_ood,accuse_ood_001,ood_template,"The evidence points toward PLAYER_TARGET, and I want that claim tested."
+r2_template_generator_v1,strong_accusation,high_certainty,strong_accusation_certainty,strong_001,primary,I am sure PLAYER_TARGET is hiding something; vote there now.
+r2_template_generator_v1,strong_accusation,urgent_vote,strong_accusation_urgency,strong_002,primary,Stop drifting. PLAYER_TARGET is the danger today!
+r2_template_generator_v1,strong_accusation,urgent_vote,strong_accusation_flashpoint_ood,strong_ood_001,ood_template,This is urgent: PLAYER_TARGET is the clear threat if we want to survive!
+r2_template_generator_v1,defense,target_defense,defense_evidence,defense_001,primary,I defend PLAYER_TARGET because their record looks honest.
+r2_template_generator_v1,defense,target_defense,defense_vote_record,defense_002,primary,PLAYER_TARGET has a village pattern in the vote history.
+r2_template_generator_v1,defense,target_defense,defense_consistency_ood,defense_ood_001,ood_template,I do not see a wolf agenda from PLAYER_TARGET; the evidence is thin.
+r2_template_generator_v1,self_defense,denial,self_defense_denial,selfdef_001,primary,"I am not a wolf, and the case against me is a misread."
+r2_template_generator_v1,self_defense,counter_pressure,self_defense_counter_pressure,selfdef_002,primary,That push on me is noise; question the reason before you vote.
+r2_template_generator_v1,self_defense,denial,self_defense_process_ood,selfdef_ood_001,ood_template,The accusation against PLAYER_SELF does not match the public record.
+r2_template_generator_v1,trust_support,trust_target,trust_support_clear,trust_001,primary,I trust PLAYER_TARGET for now; their reasoning has been clear.
+r2_template_generator_v1,trust_support,trust_target,trust_support_vote_follow,trust_002,primary,I can follow PLAYER_TARGET because the plan is reasonable.
+r2_template_generator_v1,trust_support,trust_target,trust_consensus_ood,trust_ood_001,ood_template,PLAYER_TARGET feels safe enough to coordinate with today.
+r2_template_generator_v1,vote_request,vote_call,vote_request_coalition,vote_req_001,primary,Vote PLAYER_TARGET with me so the majority is not split.
+r2_template_generator_v1,vote_request,vote_call,vote_request_pressure,vote_req_002,primary,Move votes to PLAYER_TARGET; this is the best pressure point.
+r2_template_generator_v1,vote_request,vote_call,vote_request_deadline_ood,vote_req_ood_001,ood_template,"Before the day ends, put the vote on PLAYER_TARGET."
+r2_template_generator_v1,vote_explanation,reasoned_vote,vote_explanation_reasoned,vote_exp_001,primary,My vote on PLAYER_TARGET is because of the earlier pattern.
+r2_template_generator_v1,vote_explanation,reasoned_vote,vote_explanation_history,vote_exp_002,primary,The vote history gives me a reason to choose PLAYER_TARGET.
+r2_template_generator_v1,vote_explanation,reasoned_vote,vote_explanation_trace_ood,vote_exp_ood_001,ood_template,I am voting PLAYER_TARGET because the public sequence does not fit.
+r2_template_generator_v1,uncertainty,question,uncertainty_questioning,uncertain_001,primary,Why should we trust that read on PLAYER_TARGET?
+r2_template_generator_v1,uncertainty,probe,uncertainty_probe,uncertain_002,primary,Can someone explain the evidence against PLAYER_TARGET?
+r2_template_generator_v1,uncertainty,probe,uncertainty_counterfactual_ood,uncertain_ood_001,ood_template,I am unsure; what changes if PLAYER_TARGET is actually village?
+r2_template_generator_v1,information_report,seer_private_report,information_report_check,info_001,primary,My check says PLAYER_TARGET is CHECK_RESULT.
+r2_template_generator_v1,information_report,public_vote_report,information_report_vote_history,info_002,primary,The vote history shows PLAYER_TARGET was central in the last push.
+r2_template_generator_v1,information_report,public_vote_report,information_report_sequence_ood,info_ood_001,ood_template,The public sequence gives concrete evidence about PLAYER_TARGET.
+r2_template_generator_v1,seer_claim,role_claim,seer_claim_check,seer_claim_001,primary,I claim seer and my check matters for PLAYER_TARGET.
+r2_template_generator_v1,seer_claim,role_claim,seer_claim_result_ood,seer_claim_ood_001,ood_template,"As a seer claim, I want the table to remember PLAYER_TARGET."
+r2_template_generator_v1,witch_claim,role_claim,witch_claim_potion,witch_claim_001,primary,I claim witch; the save and poison choices matter now.
+r2_template_generator_v1,witch_claim,role_claim,witch_claim_resource_ood,witch_claim_ood_001,ood_template,"My witch claim is about potion risk, not a random story."
+r2_template_generator_v1,hunter_claim,role_claim,hunter_claim_retaliation,hunter_claim_001,primary,"I claim hunter, so a reckless push on me has a shot risk."
+r2_template_generator_v1,hunter_claim,role_claim,hunter_claim_warning_ood,hunter_claim_ood_001,ood_template,"As hunter, I am warning the village not to waste the vote."
+r2_template_generator_v1,counter_claim,role_conflict,counter_claim_conflict,counter_001,primary,That role claim sounds fake; I counterclaim the story.
+r2_template_generator_v1,counter_claim,role_conflict,counter_claim_timing_ood,counter_ood_001,ood_template,"The timing of that claim is wrong, and I do not trust it."
+r2_template_generator_v1,deflection,redirect,deflection_redirect,deflect_001,primary,Do not focus on me; PLAYER_TARGET is a better question.
+r2_template_generator_v1,deflection,process_redirect,deflection_process,deflect_002,primary,"This pressure is a distraction, so look at PLAYER_TARGET instead."
+r2_template_generator_v1,deflection,redirect,deflection_misdirection_ood,deflect_ood_001,ood_template,The push on me is a frame; move attention to PLAYER_TARGET.
+r2_template_generator_v1,false_accusation,deceptive_accusation,false_accusation_pressure,false_accuse_001,primary,I am certain PLAYER_TARGET is wolf; vote there before they hide.
+r2_template_generator_v1,false_accusation,deceptive_accusation,false_accusation_certainty,false_accuse_002,primary,"PLAYER_TARGET is the obvious threat, and waiting only helps wolves."
+r2_template_generator_v1,false_accusation,deceptive_accusation,false_accusation_stampede_ood,false_accuse_ood_001,ood_template,Everyone should push PLAYER_TARGET now; the danger is obvious.
+r2_template_generator_v1,false_role_claim,deceptive_role_claim,false_role_claim_authority,false_claim_001,primary,"I claim ROLE_CLAIM, and that should clear my vote."
+r2_template_generator_v1,false_role_claim,deceptive_role_claim,false_role_claim_badge_ood,false_claim_ood_001,ood_template,My ROLE_CLAIM claim gives me authority in this vote.
+r2_template_generator_v1,trust_building,deceptive_trust,trust_building_soft,trust_build_001,primary,"I trust PLAYER_TARGET, and I want us to coordinate together."
+r2_template_generator_v1,trust_building,deceptive_trust,trust_building_coalition,trust_build_002,primary,"PLAYER_TARGET and I are aligned on the plan, so follow this vote."
+r2_template_generator_v1,trust_building,deceptive_trust,trust_building_bridge_ood,trust_build_ood_001,ood_template,I want to build trust with PLAYER_TARGET and keep the village together.
+r2_template_generator_v1,panic,urgent_emotion,panic_urgency,panic_001,primary,"This is panic time; if we miss now, the wolves control the vote!"
+r2_template_generator_v1,panic,urgent_emotion,panic_countdown_ood,panic_ood_001,ood_template,"There is no time left, and a wrong vote is dangerous!"
+r2_template_generator_v1,retaliation,counter_attack,retaliation_counter,retaliate_001,primary,"That accusation is a lie, so I suspect PLAYER_TARGET back."
+r2_template_generator_v1,retaliation,counter_attack,retaliation_mirror_ood,retaliate_ood_001,ood_template,"If PLAYER_TARGET attacks me with no reason, I will vote back."
+r2_template_generator_v1,coordination,group_plan,coordination_plan,coord_001,primary,"We need a plan: compare claims, then coordinate the vote."
+r2_template_generator_v1,coordination,group_plan,coordination_partition_ood,coord_ood_001,ood_template,"Split the reads into trust, suspect, and unsure before voting."
+r2_template_generator_v1,last_words,death_warning,last_words_warning,last_001,primary,My last words are simple: remember who pushed this vote.
+r2_template_generator_v1,last_words,death_warning,last_words_trace_ood,last_ood_001,ood_template,"After I die, check the people who created this wagon."

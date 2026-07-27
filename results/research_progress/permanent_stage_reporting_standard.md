@@ -38,6 +38,7 @@ Allowed labels are:
 - statistically supported harmful effect
 - promising but uncertain
 - weak/inconclusive
+- template-bound
 - no meaningful improvement
 - overfit
 - unstable across regimes

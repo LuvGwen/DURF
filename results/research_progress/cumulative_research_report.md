@@ -54,7 +54,7 @@ Evidence: Current exported ablation results show speech_enabled village win 59% 
 
 Formal analysis: Not performed for the early Stage 2 ablation.
 
-Conclusion: `promising but uncertain`. Structured speech labels are not yet full Bag-of-Words text quantification.
+Conclusion: `promising but uncertain`. Structured speech labels motivated the later R2 BoW text pipeline, which is now implemented as a shadow measurement layer.
 
 ## 7. Herding
 
@@ -190,15 +190,15 @@ The project supports the claim that information, credibility, and search structu
 
 ## 19. Proposal Alignment
 
-The project has completed and extended the core simulator, night/day mechanics, role actions, suspicion, credibility, herding, wolf coordination, competing seer scenarios, 10,000+ simulations, Data Analysis, visualization, and presentation outputs. It has partially completed payoff and financial-market interpretation. Formal BoW tokenization, quantified emotional intensity, information density, unified payoff optimization, risk-adjusted return, Sharpe-like analysis, and systematic literature comparison remain incomplete.
+The project has completed and extended the core simulator, night/day mechanics, role actions, suspicion, credibility, herding, wolf coordination, competing seer scenarios, 10,000+ simulations, Data Analysis, visualization, presentation outputs, and R2 formal BoW speech quantification. It has partially completed payoff and financial-market interpretation. BoW integration into live decisions, unified payoff optimization, risk-adjusted return, Sharpe-like analysis, and systematic literature comparison remain incomplete.
 
 ## 20. Remaining Deliverables
 
-Remaining deliverables are ordered in `remaining_work_roadmap.md`: formal BoW speech quantification, BoW integration, unified role-specific payoff matrix, financial risk metrics, role strategy optimization synthesis, systematic literature comparison, final integrated Data Analysis, and final DURF report/presentation.
+Remaining deliverables are ordered in `remaining_work_roadmap.md`: BoW integration, unified role-specific payoff matrix, financial risk metrics, role strategy optimization synthesis, systematic literature comparison, final integrated Data Analysis, and final DURF report/presentation.
 
 ## 21. Next Research Priorities
 
-The exact next stage is R2 - Formal Bag-of-Words Speech Quantification. It should define observation-safe tokenization, werewolf-leaning speech scores, emotional-intensity scores, and information-density scores without treating the current structured speech labels as full BoW completion.
+The exact next stage is R3 - BoW Integration and Comparative Decision Analysis. It should test whether the validated R2 BoW scores improve belief and voting updates in matched live games, while keeping credibility and speaker-memory safeguards active.
 
 ## 22. Reproducibility and Source Index
 
@@ -226,3 +226,13 @@ Evidence: See `results/ml_optimization_stage2b/ml_stage2b_research_report.md` an
 Conclusion: The existing rule remains the default. The frozen ML model should
 be retained for diagnostics only unless a later, pre-registered selective
 override validation shows stable non-harmful value.
+
+## 24. R2 Formal Bag-of-Words Speech Quantification
+
+Question: Can the simulator implement proposal-level Bag-of-Words speech metrics rather than relying only on structured speech labels?
+
+Design: R2 generates English natural-language utterances from existing legal speech events without changing gameplay policy. It tokenizes text deterministically, builds a train-only BoW vocabulary, extracts werewolf-leaning, emotional-intensity, and information-density scores, and evaluates role prediction, intent prediction, template generalization, regime generalization, ablations, leakage, and overfitting.
+
+Evidence: See `results/bow_speech_stage_r2/bow_stage_r2_research_report.md`. The dataset contains 1,600 source games, 32,721 utterances, 48 template families, 6 behavioral regimes, and a 289-term train-derived vocabulary. BoW score contrasts are significant after Holm correction. Final-test BoW-score ROC-AUC for speaker-is-wolf is 0.692, compared with 0.569 for `p_wolf` and 0.515 for suspicion. Structured labels remain stronger, and the full legal combined model does not clearly improve over `p_wolf + suspicion + structured` labels.
+
+Conclusion: `promising but uncertain`. R2 validates the BoW measurement pipeline, but live decision integration remains R3.

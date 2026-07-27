@@ -1,0 +1,11 @@
+final_test_roc_auc,model_name,ood_template_auc_gap,ood_template_roc_auc,template_generalization_label
+0.5,base_rate,0.0,0.5,stable_or_uncertain
+0.6917769504590713,bow_scores_only,-0.07782746126537188,0.6139494891936994,template_bound
+0.7576329637301525,full_bow_vector_naive_bayes,-0.3964070964448201,0.36122586728533246,template_bound
+0.8897204907360623,full_legal_combined,0.002148666874476679,0.891869157610539,stable_or_uncertain
+0.5691456776845327,p_wolf_only,0.019031157622832917,0.5881768353073656,stable_or_uncertain
+0.5673225464736691,p_wolf_plus_suspicion,0.0184336684493821,0.5857562149230512,stable_or_uncertain
+0.8912708460632875,p_wolf_suspicion_structured,0.001606243855806544,0.8928770899190941,stable_or_uncertain
+0.8770173680999754,structured_labels_plus_bow_scores,-0.0017177583840281008,0.8752996097159473,stable_or_uncertain
+0.8774589563621594,structured_speech_labels_only,-0.002012368294992628,0.8754465880671668,stable_or_uncertain
+0.5147112430460026,suspicion_only,0.003831206563035039,0.5185424496090376,stable_or_uncertain

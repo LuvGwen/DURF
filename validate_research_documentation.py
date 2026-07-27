@@ -15,6 +15,7 @@ ALLOWED_CONCLUSION_LABELS = {
     "statistically supported harmful effect",
     "promising but uncertain",
     "weak/inconclusive",
+    "template-bound",
     "no meaningful improvement",
     "overfit",
     "unstable across regimes",
@@ -42,6 +43,12 @@ REQUIRED_FILES = [
     "results/ml_optimization_stage1/ml_stage1_research_report.md",
     "results/ml_optimization_stage15/ml_stage15_research_report.md",
     "results/ml_optimization_stage2a/ml_stage2a_research_report.md",
+    "results/ml_optimization_stage2b/ml_stage2b_research_report.md",
+    "results/bow_speech_stage_r2/bow_stage_r2_research_report.md",
+    "results/bow_speech_stage_r2/bow_stage_r2_information_leakage_audit.md",
+    "results/bow_speech_stage_r2/bow_information_leakage_audit.md",
+    "results/bow_speech_stage_r2/bow_vocabulary_manifest.json",
+    "results/bow_speech_stage_r2/bow_score_definition_manifest.json",
     "results/research_progress/research_documentation_completion_report.md",
 ]
 
@@ -172,9 +179,42 @@ def main() -> int:
     bad_statuses = sorted({row["status"] for row in proposal_rows} - PROPOSAL_STATUSES)
     add_result(summary, "proposal_statuses_allowed", not bad_statuses, ";".join(bad_statuses) if bad_statuses else "all statuses allowed")
 
-    bow_rows = [row for row in proposal_rows if "Bag-of-Words" in row["proposal_component"] or "Speech text tokenization" in row["proposal_component"] or "Emotional" in row["proposal_component"] or "Information-density" in row["proposal_component"]]
-    bow_not_false_complete = all(row["status"] != "completed" for row in bow_rows)
-    add_result(summary, "proposal_bow_not_falsely_completed", bow_not_false_complete, ",".join(row["proposal_component"] + "=" + row["status"] for row in bow_rows))
+    bow_rows = [
+        row for row in proposal_rows
+        if (
+            "Bag-of-Words" in row["proposal_component"]
+            or "Speech text tokenization" in row["proposal_component"]
+            or "Emotional" in row["proposal_component"]
+            or "Information-density" in row["proposal_component"]
+            or row["proposal_component"] == "Werewolf-leaning speech score"
+        )
+    ]
+    bow_artifacts_exist = all(
+        (ROOT / path).exists()
+        for path in [
+            "results/bow_speech_stage_r2/bow_speech_utterance_dataset.csv",
+            "results/bow_speech_stage_r2/bow_vocabulary.csv",
+            "results/bow_speech_stage_r2/bow_score_intent_contrasts.csv",
+            "results/bow_speech_stage_r2/bow_stage_r2_research_report.md",
+        ]
+    )
+    bow_decision_rows = [
+        row for row in proposal_rows
+        if row["proposal_component"] == "BoW integration into decisions"
+    ]
+    bow_decision_not_complete = all(
+        row["status"] != "completed"
+        for row in bow_decision_rows
+    )
+    add_result(
+        summary,
+        "proposal_bow_r2_completed_but_decision_integration_deferred",
+        bow_artifacts_exist and bow_decision_not_complete,
+        ",".join(
+            row["proposal_component"] + "=" + row["status"]
+            for row in bow_rows
+        ),
+    )
 
     financial_rows = [row for row in proposal_rows if row["proposal_component"] in {"Risk-adjusted return", "Sharpe-ratio analogue", "Payoff variance", "Risk cost"}]
     financial_not_false_complete = all(row["status"] != "completed" for row in financial_rows)
@@ -198,10 +238,36 @@ def main() -> int:
         "## 21. Next Research Priorities",
     ]
     add_result(summary, "cumulative_report_major_chapters_present", all(ch in cumulative_text for ch in required_chapters), "checked key chapters")
+    add_result(
+        summary,
+        "cumulative_report_r2_present",
+        "## 24. R2 Formal Bag-of-Words Speech Quantification" in cumulative_text,
+        "R2 chapter",
+    )
 
     stage2a_text = (ROOT / "results/ml_optimization_stage2a/ml_stage2a_research_report.md").read_text(encoding="utf-8")
     add_result(summary, "stage2a_adjusted_p_values_reported", "0.0792" in stage2a_text and "0.0033" in stage2a_text, "Stage 2A Holm p-values")
     add_result(summary, "stage2a_next_hypothesis_present", "policy-induced distribution shift" in stage2a_text and "repeated-decision compounding" in stage2a_text, "Stage 2B hypothesis")
+
+    r2_text = (ROOT / "results/bow_speech_stage_r2/bow_stage_r2_research_report.md").read_text(encoding="utf-8")
+    add_result(
+        summary,
+        "r2_bow_report_has_required_answers",
+        "Required Final Questions" in r2_text
+        and "32721 utterances" in r2_text
+        and "R3" in r2_text,
+        "R2 final questions",
+    )
+    leakage_text = (
+        ROOT
+        / "results/bow_speech_stage_r2/bow_stage_r2_information_leakage_audit.md"
+    ).read_text(encoding="utf-8")
+    add_result(
+        summary,
+        "r2_bow_leakage_audit_passed",
+        "Status: PASS" in leakage_text,
+        "R2 leakage audit",
+    )
 
     completion_text = (RESEARCH_DIR / "research_documentation_completion_report.md").read_text(encoding="utf-8")
     add_result(summary, "current_stage_report_has_data_analysis", "## Data Analysis" in completion_text, "research_documentation_completion_report.md")
@@ -213,7 +279,11 @@ def main() -> int:
 
     SUMMARY_PATH.parent.mkdir(parents=True, exist_ok=True)
     with SUMMARY_PATH.open("w", newline="", encoding="utf-8") as handle:
-        writer = csv.DictWriter(handle, fieldnames=["check", "passed", "detail"])
+        writer = csv.DictWriter(
+            handle,
+            fieldnames=["check", "passed", "detail"],
+            lineterminator="\n",
+        )
         writer.writeheader()
         writer.writerows(summary)
 

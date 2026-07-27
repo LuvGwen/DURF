@@ -1,0 +1,13 @@
+{
+  "built_from_split": "train",
+  "include_bigrams": true,
+  "max_document_frequency_ratio": 0.95,
+  "max_vocabulary_size": 300,
+  "min_document_frequency": 2,
+  "source_commit": "8c3e35f43c0b29c5413dfa992d66f31f7722e993",
+  "tokenizer_version": "r2_english_tokenizer_v1",
+  "training_document_count": 16251,
+  "unknown_token_handling": "ignored at vectorization time",
+  "vocabulary_hash": "daaf6c72bfdfb49311d69fc31b387d05c33b536459fc0ca719ffa97f10d1bd2f",
+  "vocabulary_size": 289
+}

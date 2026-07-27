@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="420" viewBox="0 0 900 420">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="220" y="28" font-family="Arial" font-size="18" fill="#202124">Final-test ROC-AUC by model</text>
+<text x="12" y="67.1" font-family="Arial" font-size="11" fill="#3c4043">p_wolf_suspicion_structured</text>
+<rect x="220" y="48.0" width="640.0" height="28.0" fill="#2f6f9f"/>
+<text x="866.0" y="67.1" font-family="Arial" font-size="11" fill="#3c4043">0.891</text>
+<text x="12" y="101.1" font-family="Arial" font-size="11" fill="#3c4043">full_legal_combined</text>
+<rect x="220" y="82.0" width="638.9" height="28.0" fill="#2f6f9f"/>
+<text x="864.9" y="101.1" font-family="Arial" font-size="11" fill="#3c4043">0.890</text>
+<text x="12" y="135.1" font-family="Arial" font-size="11" fill="#3c4043">structured_speech_labels_only</text>
+<rect x="220" y="116.0" width="630.1" height="28.0" fill="#2f6f9f"/>
+<text x="856.1" y="135.1" font-family="Arial" font-size="11" fill="#3c4043">0.877</text>
+<text x="12" y="169.1" font-family="Arial" font-size="11" fill="#3c4043">structured_labels_plus_bow_scores</text>
+<rect x="220" y="150.0" width="629.8" height="28.0" fill="#2f6f9f"/>
+<text x="855.8" y="169.1" font-family="Arial" font-size="11" fill="#3c4043">0.877</text>
+<text x="12" y="203.1" font-family="Arial" font-size="11" fill="#3c4043">full_bow_vector_naive_bayes</text>
+<rect x="220" y="184.0" width="544.0" height="28.0" fill="#2f6f9f"/>
+<text x="770.0" y="203.1" font-family="Arial" font-size="11" fill="#3c4043">0.758</text>
+<text x="12" y="237.1" font-family="Arial" font-size="11" fill="#3c4043">bow_scores_only</text>
+<rect x="220" y="218.0" width="496.7" height="28.0" fill="#2f6f9f"/>
+<text x="722.7" y="237.1" font-family="Arial" font-size="11" fill="#3c4043">0.692</text>
+<text x="12" y="271.1" font-family="Arial" font-size="11" fill="#3c4043">p_wolf_only</text>
+<rect x="220" y="252.0" width="408.7" height="28.0" fill="#2f6f9f"/>
+<text x="634.7" y="271.1" font-family="Arial" font-size="11" fill="#3c4043">0.569</text>
+<text x="12" y="305.1" font-family="Arial" font-size="11" fill="#3c4043">p_wolf_plus_suspicion</text>
+<rect x="220" y="286.0" width="407.4" height="28.0" fill="#2f6f9f"/>
+<text x="633.4" y="305.1" font-family="Arial" font-size="11" fill="#3c4043">0.567</text>
+<text x="12" y="339.1" font-family="Arial" font-size="11" fill="#3c4043">suspicion_only</text>
+<rect x="220" y="320.0" width="369.6" height="28.0" fill="#2f6f9f"/>
+<text x="595.6" y="339.1" font-family="Arial" font-size="11" fill="#3c4043">0.515</text>
+<text x="12" y="373.1" font-family="Arial" font-size="11" fill="#3c4043">base_rate</text>
+<rect x="220" y="354.0" width="359.0" height="28.0" fill="#2f6f9f"/>
+<text x="585.0" y="373.1" font-family="Arial" font-size="11" fill="#3c4043">0.500</text>
+</svg>

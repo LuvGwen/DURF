@@ -6,7 +6,7 @@ The original DURF proposal file was not found in the repository during this audi
 
 ## Summary
 
-The project has completed and extended the core simulator, 10-player setup, role mechanics, suspicion and credibility systems, wolf strategy, competing seer scenarios, large-scale simulations, Data Analysis outputs, visualization, and presentation materials. It has partially completed payoff and financial analogy work. It has not yet completed formal Bag-of-Words tokenization, emotional intensity, information density, unified role-specific payoff optimization, risk-adjusted return, Sharpe-like analysis, or systematic literature comparison.
+The project has completed and extended the core simulator, 10-player setup, role mechanics, suspicion and credibility systems, wolf strategy, competing seer scenarios, large-scale simulations, Data Analysis outputs, visualization, presentation materials, and formal R2 Bag-of-Words speech quantification. It has partially completed payoff and financial analogy work. It has not yet completed BoW integration into live decisions, unified role-specific payoff optimization, risk-adjusted return, Sharpe-like analysis, or systematic literature comparison.
 
 ## Completed Or Extended
 
@@ -21,20 +21,17 @@ The project has completed and extended the core simulator, 10-player setup, role
 - 10,000+ simulations.
 - Data Analysis and visualization.
 - DURF progress presentation.
+- Formal BoW vocabulary, English tokenization, and three proposal-level speech scores.
 
 ## Partially Completed
 
-- Bag-of-Words vocabulary: structured labels exist, but formal text tokenization and proposed quantitative scores do not.
+- BoW integration into decisions: R2 implements BoW as a shadow-analysis pipeline, but live belief/voting integration is intentionally deferred to R3.
 - Role-specific payoff matrix: payoff functions and summary payoffs exist, but the unified matrix and role-level synthesis are incomplete.
 - Financial-market interpretation: conceptual analogies exist, but formal risk metrics are incomplete.
 - Reproducibility documentation: many schemas exist, and this stage adds a permanent standard, but future stages must keep it current.
 
 ## Not Yet Completed
 
-- Speech text tokenization.
-- Werewolf-leaning speech score as a true BoW metric.
-- Emotional-intensity score.
-- Information-density score.
 - Payoff variance.
 - Risk-adjusted return.
 - Sharpe-ratio analogue.
@@ -43,9 +40,8 @@ The project has completed and extended the core simulator, 10-player setup, role
 
 ## Requires A New Experiment
 
-- Formal BoW quantification and BoW-driven decisions.
+- BoW-driven decision integration.
 - Unified role-specific payoff and risk-adjusted payoff analysis.
-- ML Stage 2B offline-to-live failure diagnosis.
 
 ## Requires Documentation Only
 
@@ -63,3 +59,7 @@ wolf-kill model. It preserves the existing rule as the default, uses isolated
 final seeds, and reports single-intervention, repeated-decision,
 distribution-shift, selective-override, hybrid-failure, and downstream
 mechanism diagnostics in `results/ml_optimization_stage2b`.
+
+## R2 BoW Update
+
+R2 completes the formal BoW vocabulary, English tokenization, werewolf-leaning score, emotional-intensity score, and information-density score as shadow-analysis modules. `BoW integration into decisions` remains partially completed because R2 intentionally does not alter live voting, checking, killing, or payoff rules. The next required stage is R3: BoW Integration and Comparative Decision Analysis.

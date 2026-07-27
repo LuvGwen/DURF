@@ -32,6 +32,7 @@
 
 ## Stage R2: Formal Bag-of-Words speech quantification
 
+- Status: Completed in `results/bow_speech_stage_r2/`.
 - Objective: Implement proposal-level BoW metrics.
 - Unanswered question: Can werewolf-leaning, emotional-intensity, and information-density scores be defined without leakage?
 - Implementation: Tokenizer and score calculators.
@@ -40,12 +41,14 @@
 - Required report: BoW quantification report.
 - Entry condition: Documentation stage complete.
 - Exit condition: Scores reproducible and observation-safe.
+- Completed output: `results/bow_speech_stage_r2/bow_stage_r2_research_report.md`.
 - Dependencies: Speech modules.
 - Risk of overfitting or invalid inference: Risk of post-hoc metric design.
 - Expected outputs: BoW lexicon, tokenizer, schema, validation.
 
 ## Stage R3: BoW integration and comparative Data Analysis
 
+- Status: Next exact experiment.
 - Objective: Test whether BoW metrics improve decisions.
 - Unanswered question: Do formal BoW scores improve village coordination or enable wolf manipulation?
 - Implementation: Integrate BoW scores into belief/voting toggles.

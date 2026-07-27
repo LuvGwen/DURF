@@ -1,0 +1,13 @@
+metric,notes,status,value
+source_game_count,,PASS,1600
+utterance_count,,PASS,32721
+seed_count,,PASS,35
+behavioral_regime_count,,PASS,6
+template_family_count,,PASS,48
+dataset_split_counts,,PASS,"{""final_test"": 8190, ""ood_regime"": 2107, ""ood_template"": 2044, ""train"": 16251, ""validation"": 4129}"
+vocabulary_size,,PASS,289
+hidden_information_leakage_flags,,PASS,0
+ood_template_overlap_with_train,,PASS,0
+game_family_split_crossing_count,,PASS,0
+base_configuration_split_crossing_count,,PASS,0
+minimum_scale_check,,PASS,games>=1000 and utterances>=10000

@@ -1,0 +1,4 @@
+criterion,notes,selected_model,value
+best_final_test_roc_auc,Selection is descriptive; no final-test tuning was performed.,p_wolf_suspicion_structured,0.8912708460632875
+bow_score_added_value_over_structured,Positive values indicate complementary BoW value beyond structured labels.,full_legal_combined,0.012261534373902871
+bow_scores_vs_existing_p_wolf,Compare against p_wolf_only row in role prediction metrics.,bow_scores_only,0.6917769504590713

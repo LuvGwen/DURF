@@ -1,0 +1,15 @@
+{
+  "core_lexicon_version": "r2_core_lexicon_v1_frozen_pre_evaluation",
+  "feature_extractor_version": "r2_bow_feature_extractor_v1",
+  "formulas": {
+    "bow_emotional_intensity_score": "clip01((sum(token.intensity_weight * count) + 0.20 * exclamation_count) / unigram_count)",
+    "bow_information_density_score": "clip01(mean information weight + 0.20 * type-token ratio + player-reference, causal-connector bonuses - vague-word penalty)",
+    "bow_werewolf_leaning_score": "clip01(0.5 + sum(token.werewolf_leaning_weight * count) / (2 * unigram_count))"
+  },
+  "normalization": "All primary scores are clipped to [0, 1]. Empty utterances use a denominator of 1 and therefore remain valid.",
+  "score_ranges": {
+    "bow_emotional_intensity_score": "[0, 1]",
+    "bow_information_density_score": "[0, 1]",
+    "bow_werewolf_leaning_score": "[0, 1]"
+  }
+}

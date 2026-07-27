@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="520" viewBox="0 0 900 520">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="220" y="28" font-family="Arial" font-size="18" fill="#202124">Final-test ROC-AUC under BoW ablations</text>
+<text x="12" y="71.0" font-family="Arial" font-size="11" fill="#3c4043">bow_only_unigram_bigram</text>
+<rect x="220" y="48.0" width="550.5" height="34.0" fill="#2f6f9f"/>
+<text x="776.5" y="71.0" font-family="Arial" font-size="11" fill="#3c4043">0.755</text>
+<text x="12" y="111.0" font-family="Arial" font-size="11" fill="#3c4043">remove_direct_role_words</text>
+<rect x="220" y="88.0" width="550.8" height="34.0" fill="#2f6f9f"/>
+<text x="776.8" y="111.0" font-family="Arial" font-size="11" fill="#3c4043">0.755</text>
+<text x="12" y="151.0" font-family="Arial" font-size="11" fill="#3c4043">remove_player_placeholders</text>
+<rect x="220" y="128.0" width="550.8" height="34.0" fill="#2f6f9f"/>
+<text x="776.8" y="151.0" font-family="Arial" font-size="11" fill="#3c4043">0.755</text>
+<text x="12" y="191.0" font-family="Arial" font-size="11" fill="#3c4043">remove_emotional_punctuation</text>
+<rect x="220" y="168.0" width="551.1" height="34.0" fill="#2f6f9f"/>
+<text x="777.1" y="191.0" font-family="Arial" font-size="11" fill="#3c4043">0.756</text>
+<text x="12" y="231.0" font-family="Arial" font-size="11" fill="#3c4043">remove_explicit_accusation_verbs</text>
+<rect x="220" y="208.0" width="550.5" height="34.0" fill="#2f6f9f"/>
+<text x="776.5" y="231.0" font-family="Arial" font-size="11" fill="#3c4043">0.755</text>
+<text x="12" y="271.0" font-family="Arial" font-size="11" fill="#3c4043">remove_deception_specific_terms</text>
+<rect x="220" y="248.0" width="550.5" height="34.0" fill="#2f6f9f"/>
+<text x="776.5" y="271.0" font-family="Arial" font-size="11" fill="#3c4043">0.755</text>
+<text x="12" y="311.0" font-family="Arial" font-size="11" fill="#3c4043">unigram_only</text>
+<rect x="220" y="288.0" width="551.5" height="34.0" fill="#2f6f9f"/>
+<text x="777.5" y="311.0" font-family="Arial" font-size="11" fill="#3c4043">0.756</text>
+<text x="12" y="351.0" font-family="Arial" font-size="11" fill="#3c4043">core_lexicon_only</text>
+<rect x="220" y="328.0" width="556.3" height="34.0" fill="#2f6f9f"/>
+<text x="782.3" y="351.0" font-family="Arial" font-size="11" fill="#3c4043">0.763</text>
+<text x="12" y="391.0" font-family="Arial" font-size="11" fill="#3c4043">data_derived_vocabulary_only</text>
+<rect x="220" y="368.0" width="550.5" height="34.0" fill="#2f6f9f"/>
+<text x="776.5" y="391.0" font-family="Arial" font-size="11" fill="#3c4043">0.755</text>
+<text x="12" y="431.0" font-family="Arial" font-size="11" fill="#3c4043">structured_speech_labels_only</text>
+<rect x="220" y="408.0" width="640.0" height="34.0" fill="#2f6f9f"/>
+<text x="866.0" y="431.0" font-family="Arial" font-size="11" fill="#3c4043">0.877</text>
+<text x="12" y="471.0" font-family="Arial" font-size="11" fill="#3c4043">structured_plus_bow</text>
+<rect x="220" y="448.0" width="639.2" height="34.0" fill="#2f6f9f"/>
+<text x="865.2" y="471.0" font-family="Arial" font-size="11" fill="#3c4043">0.876</text>
+</svg>

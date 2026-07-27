@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="420" viewBox="0 0 900 420">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="220" y="28" font-family="Arial" font-size="18" fill="#202124">Pre-specified BoW score contrasts</text>
+<text x="12" y="100.2" font-family="Arial" font-size="11" fill="#3c4043">accusation_vs_neutral_werewolf_score</text>
+<rect x="220" y="48.0" width="249.8" height="79.0" fill="#2f6f9f"/>
+<text x="475.8" y="100.2" font-family="Arial" font-size="11" fill="#3c4043">0.043</text>
+<text x="12" y="185.2" font-family="Arial" font-size="11" fill="#3c4043">emotional_vs_neutral_intensity</text>
+<rect x="220" y="133.0" width="170.3" height="79.0" fill="#2f6f9f"/>
+<text x="396.3" y="185.2" font-family="Arial" font-size="11" fill="#3c4043">0.029</text>
+<text x="12" y="270.2" font-family="Arial" font-size="11" fill="#3c4043">informative_vs_low_information_density</text>
+<rect x="220" y="218.0" width="640.0" height="79.0" fill="#2f6f9f"/>
+<text x="866.0" y="270.2" font-family="Arial" font-size="11" fill="#3c4043">0.110</text>
+<text x="12" y="355.2" font-family="Arial" font-size="11" fill="#3c4043">deceptive_vs_non_deceptive_werewolf_score</text>
+<rect x="220" y="303.0" width="239.7" height="79.0" fill="#2f6f9f"/>
+<text x="465.7" y="355.2" font-family="Arial" font-size="11" fill="#3c4043">0.041</text>
+</svg>

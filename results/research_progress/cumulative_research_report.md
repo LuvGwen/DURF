@@ -1,175 +1,205 @@
-# DURF Werewolf Simulation: Cumulative Research Report
+# DURF Werewolf Cumulative Research Report
 
-## 1. Executive Summary
+## 1. Original Proposal and Research Questions
 
-The DURF Werewolf project uses Werewolf as a controlled social-deduction environment for studying hidden information, belief updating, deception, credibility, trust, positional search, and machine-learning policy optimization.
+The project uses Werewolf as a controlled environment for hidden-information decision making. The proposal commitments include a 10-player simulation, Bag-of-Words speech quantification, suspicion and credibility decisions, herding, coordinated wolf behavior, role-specific payoff optimization, financial-market analogies, risk and opportunity-cost analysis, 10,000+ simulations, a final report, and a DURF presentation.
 
-The cumulative evidence supports three broad conclusions:
+The original proposal file was not found in the repository during this audit. Proposal alignment therefore uses the user-provided proposal summary and repository evidence.
 
-1. Low-information Werewolf strongly favors wolves.
-2. Village information mechanisms can reduce wolf advantage, but their effects depend on calibration and validation.
-3. Machine-learning policy improvements cannot be trusted from row-level or surrogate evaluation alone; live matched complete-game testing is required.
+## 2. Simulation Environment
 
-The latest ML Stage 2A result is negative for the frozen wolf-kill ML policy. The existing hand-coded wolf-kill rule won 69.50% of live games, while the frozen ML policy won 61.00%, the hybrid won 58.00%, and the epsilon-greedy ML policy won 61.00%. The hybrid policy was statistically significantly worse than the existing rule after Holm correction.
+The repository implements a modular Python simulation with roles, players, game state, night/day phases, win conditions, randomized role assignment, event logs, and batch simulation. Both 7-player and 10-player settings are represented. The 10-player setup matches the proposal role pool: 3 wolves, 4 villagers, seer, witch, and hunter.
 
-## 2. Research Program And Core Question
+## 3. Payoff and Role Framework
 
-The core research question is:
+Payoff calculation exists and has been used in ablation, ten-player, risk-preference, and ML outputs. However, a unified role-specific payoff matrix and formal payoff-optimization synthesis remain incomplete. Risk-adjusted return and Sharpe-like metrics are not yet fully implemented as formal financial analogues.
 
-> How do belief updating, speech signals, deception, credibility costs, trust memory, search strategy, and learned policies affect collective decision-making in a hidden-information social deduction environment?
+## 4. Low-Information Baseline
 
-The project is also motivated by risk management. `p_wolf` acts like a dynamic risk score, wolf deception resembles adversarial manipulation, and credibility or speaker-memory mechanisms resemble reputation-based controls.
+Question: Does the baseline expose a real hidden-information problem?
 
-## 3. Stage 1: Basic Simulation And Payoff
+Hypothesis: Wolves dominate when village agents lack reliable information.
 
-Stage 1 built the modular simulation framework with players, roles, game state, night/day phases, basic special-role actions, batch simulation, and payoff calculation.
+Design: Stage 1 ablation with random voting and no information mechanisms.
 
-The random baseline strongly favored wolves. In the exported ablation table, the random baseline produced 93 wolf wins and 7 village wins out of 100 games. Adding village information and role mechanisms reduced the wolf advantage.
+Evidence: The Stage 1 report gives random baseline wolf win 93% and village win 7%.
 
-Conclusion label: `descriptive only`.
+Formal analysis: Not performed; descriptive pilot only.
 
-## 4. Stage 2: Speech, Belief, Herding, Role Prior, And Wolf Strategy
+Conclusion: `hypothesis supported` descriptively. This baseline motivates all later information mechanisms.
 
-Stage 2 added Bag-of-Words speech signals, `p_wolf` belief updating, herding pressure, role priors, and wolf night-kill strategy diagnostics.
+## 5. Special-Role Actions
 
-The main Stage 2 pattern was that social information improved village performance. Speech and belief mechanisms helped the village turn noisy day discussion into voting-relevant signals. Wolf night-kill strategy mattered, but strategic killing alone did not restore the initial wolf dominance.
+Question: Do seer, witch, and hunter mechanics reduce wolf dominance?
 
-Conclusion label: `promising but uncertain`, because several Stage 2 comparisons were exploratory and some outputs used 100-game runs.
+Hypothesis: Special roles add information and intervention value for the village.
 
-## 5. Stage 3: Wolf Deception And Credibility Costs
+Design: Sequential Stage 1 ablations.
 
-Stage 3 added wolf daytime deception. Initial `false_accuse` behavior was too strong, reaching a 78% wolf win rate before credibility penalties. After accusation pressure and wrong-accusation penalties, `false_accuse` fell to about 50%. After self-defense credibility costs, deflection was also reduced, and adaptive deception became more realistic.
+Evidence: Stage 1 report shows seer_action village win 23%, witch_action 49%, and hunter_action 46%.
 
-The scientific lesson is that deception must carry credibility risk. Without costs, manipulative speech becomes a dominant strategy; with costs, deception remains relevant but no longer cost-free.
+Formal analysis: Not performed.
 
-Conclusion label: `promising but uncertain`.
+Conclusion: `promising but uncertain`. Special roles matter, but effects were sequential and not fully isolated.
 
-## 6. Stage 4: Speaker-Specific Trust Memory
+## 6. Speech and Information Flow
 
-Stage 4 added speaker-specific trust memory. Each player can track the credibility of other speakers and use that memory in voting. A trust-vote-weight sensitivity experiment showed that increasing trust weight could reduce wolf win rate: the reported wolf win rate fell from 47.80% at trust vote weight 0.00 to 36.40% at trust vote weight 0.40.
+Question: Do speech-like signals turn voting into a social inference process?
 
-The trend was not strictly monotonic, and later trust-weighted speech/herding experiments showed that reputation systems can create unintended dynamics. The mechanism is valuable, but it requires calibration and formal multi-seed testing.
+Hypothesis: Speech, belief updating, and role priors improve village coordination.
 
-Conclusion label: `promising but uncertain`.
+Design: Stage 2 added structured speech acts, `p_wolf`, suspicion updates, herding, and role prior.
 
-## 7. Ten-Player And Risk Preference Experiments
+Evidence: Current exported ablation results show speech_enabled village win 59% versus 7% baseline, but Stage 2 values are exploratory and some report versions differ.
 
-The ten-player extension tested larger-game dynamics, limited last words, risk preferences, and role-specific decision tendencies. Multi-seed risk preference results showed that conservative-majority trust-memory populations reduced wolf win rate relative to all-neutral trust memory, while aggressive-majority populations increased wolf win rate.
+Formal analysis: Not performed for the early Stage 2 ablation.
 
-The risk-preference results suggest that group decision culture matters: conservative agents can resist wolf manipulation more effectively in this simulation, while aggressive agents may create noisy or exploitable eliminations.
+Conclusion: `promising but uncertain`. Structured speech labels are not yet full Bag-of-Words text quantification.
 
-Conclusion label: `promising but uncertain`.
+## 7. Herding
 
-## 8. Seer Position And Randomized Roles
+Question: Does group pressure improve voting?
 
-The randomized-role seer-position analysis tested whether edge-priority checking retained an advantage after roles were randomized across seats. Across 17,500 completed games, edge seats were not meaningfully wolf-heavy after randomization. Edge-first did not outperform random checking in a statistically supported way.
+Hypothesis: Herding can amplify useful signals but may also amplify noise.
 
-Key result: adjusted edge-first versus random odds ratio was 1.05 with p = 0.417. Edge-first first-check wolf rate was 34.20%, while random was 34.72%.
+Design: Stage 2 and Stage 4 trust-weighted herding experiments.
 
-Conclusion label: `hypothesis rejected` for the edge-priority advantage after role randomization.
+Evidence: Stage 2 suggested herding added value beyond speech in exploratory runs. Later multi-seed summaries showed trust-weighted herding changed outcomes but did not always monotonically improve village performance.
 
-## 9. Structured Seer Search
+Formal analysis: Not yet fully formalized for herding-specific claims.
 
-Structured seer search compared 14 strategies over 35,000 game-level rows. The omnibus strategy effect was statistically significant. `alternate_sides` had the highest descriptive village win rate at 44.16%, compared with random at 40.52%, but the positive contrast did not survive Holm correction: OR 1.161, raw p = 0.0092, Holm p = 0.0552.
+Conclusion: `promising but uncertain`.
 
-Behaviorally exploitative strategies were harmful. `highest_p_wolf` versus random had OR 0.786 and Holm p = 0.000276, and `highest_suspicion` was similarly harmful.
+## 8. Wolf Strategy and Deception
 
-Conclusion labels:
+Question: Can wolves regain advantage through night strategy and daytime deception?
 
-- Diversified structured search: `promising but uncertain`.
-- Behavioral exploitation in seer search: `statistically supported harmful effect`.
+Hypothesis: Deception helps wolves unless credibility costs penalize manipulation.
 
-## 10. Seat-Order Neutrality And Physical Symmetry
+Design: Wolf night-kill diagnostics, wolf daytime deception policies, accusation costs, wrong-accusation penalties, and self-defense costs.
 
-Seat-order-neutral experiments separated displayed labels from physical layout. Displayed-label rows were deterministic duplicates, so the effective independent sample size was based on physical configurations rather than raw rows.
+Evidence: `false_accuse` reached 78% wolf win before costs, then fell to 50% after accusation costs. Deflection fell to 46% after self-defense costs.
 
-The physical-clockwise strategy showed a possible 3.04 percentage-point advantage over random neutral, but this did not survive Holm correction. The exact replay and physical mirror experiment later showed 100% agreement for supplied-action replay, physical mirror replay, and strategy mirror action validation.
+Formal analysis: Mostly descriptive diagnostics.
 
-Conclusion labels:
+Conclusion: `promising but uncertain`. Deception matters, and credibility costs are necessary.
 
-- Displayed label artifact: `hypothesis rejected`.
-- Physical path-layout effect: `promising but uncertain`.
-- Engine mirror symmetry: `hypothesis supported`.
+## 9. Risk Preference
 
-## 11. ML Stage 1: Observation-Safe Logging And Initial Models
+Question: Does risk appetite alter collective resilience and payoff?
 
-ML Stage 1 created decision datasets and initial models. It produced 7,155 candidate rows across seer-check, wolf-kill, and day-vote contexts. The initial row-level village-vote model reported ROC-AUC 0.9458, but later grouped validation showed that this was optimistic.
+Hypothesis: Conservative populations should reduce false-positive eliminations and lower wolf win rate.
 
-The lesson is methodological: ordinary row splits are unsafe when candidate rows share games, decision states, and latent state histories.
+Design: Ten-player risk-preference multi-seed experiment.
 
-Conclusion label: `weak/inconclusive` after later validation.
+Evidence: Conservative-majority trust memory had wolf mean 38.56% versus 42.96% for neutral trust memory. Aggressive-majority trust memory had wolf mean 50.96%.
 
-## 12. ML Stage 1.5: Full-State Rollout Validation
+Formal analysis: Replicated descriptive multi-seed summary, without formal contrast p-values.
 
-ML Stage 1.5 introduced grouped splits and full-state rollout validation. It found weak surrogate-to-full validity for wolf kills, with Spearman correlation 0.0718. It also showed that final-test village-vote identity ROC-AUC was only 0.6679, not the much higher Stage 1 row-split estimate.
+Conclusion: `promising but uncertain`.
 
-The Stage 1.5 shadow wolf-kill policy looked promising, with a reported final-test shadow ML action-value recommendation of 0.85 versus 0.70 for the existing rule. This result motivated live Stage 2A testing but was not sufficient for deployment.
+## 10. Position Theory
 
-Conclusion label: `promising but uncertain`.
+Question: Are edge seats inherently informative?
 
-## 13. ML Stage 2A: Frozen Wolf-Kill Policy Live Test
+Hypothesis: Edge seats contain more wolves or edge-first checking improves village outcomes.
 
-ML Stage 2A froze the Stage 1.5 wolf-kill model and tested it in live complete games. The result was negative for the ML policies.
+Design: Randomized-role seer-position experiments and game-level Data Analysis.
 
-| Policy | Games | Wolf win rate | 95% CI | Difference vs existing | Holm p |
-|---|---:|---:|---|---:|---:|
-| existing_rule | 200 | 69.50% | 63.12%-75.88% | NA | NA |
-| frozen_ml | 200 | 61.00% | 54.24%-67.76% | -8.50 pp | 0.0792 |
-| frozen_hybrid_50_50 | 200 | 58.00% | 51.16%-64.84% | -11.50 pp | 0.0033 |
-| frozen_ml_epsilon_010 | 200 | 61.00% | 54.24%-67.76% | -8.50 pp | 0.0792 |
+Evidence: Edge seat wolf probability was 30.23%, inner was 29.85%, and expected was 30.00%. Edge-first versus random adjusted OR was 1.05, p = 0.417.
 
-The hybrid policy had a statistically supported harmful effect after Holm correction. The pure ML and epsilon variants were directionally harmful but not significant after correction.
+Formal analysis: Formal game-level analysis exists.
 
-Conclusion label: `statistically supported harmful effect` for the hybrid; `weak/inconclusive` but harmful direction for pure ML and epsilon.
+Conclusion: `hypothesis rejected` for strong edge-seat theory after role randomization.
 
-## 14. Cross-Stage Evidence Chain
+## 11. Structured Seer Search
 
-The evidence chain has become progressively stricter:
+Question: Do structured search paths beat random checking?
 
-1. Single-seed ablations established mechanisms.
-2. Multi-seed experiments tested robustness.
-3. Randomized-role seer-position analysis removed fixed seat-role confounding.
-4. Structured search separated path design from behavioral exploitation.
-5. Seat-order-neutral experiments removed displayed-label artifacts.
-6. Supplied-action replay validated physical mirror symmetry.
-7. ML Stage 1.5 replaced row-level optimism with grouped and full-state validation.
-8. ML Stage 2A required frozen live complete-game deployment.
+Hypothesis: Diversified search paths such as alternate_sides improve village win rate.
 
-The project increasingly rejects results that do not survive stronger validation.
+Design: 14-strategy, 35,000-game structured seer search with formal Data Analysis.
 
-## 15. Current Scientific Conclusions
+Evidence: Alternate_sides had 44.16% village win versus random 40.52%, OR 1.161, raw p = 0.0092, Holm p = 0.0552. Highest_p_wolf and highest_suspicion were statistically worse than random, Holm p = 0.000276.
 
-Current best-supported conclusions:
+Conclusion: Structured diversification is `promising but uncertain`; behavioral exploitation has a `statistically supported harmful effect`.
 
-- Wolves dominate low-information baselines.
-- Village information mechanisms reduce wolf advantage.
-- Deception can restore wolf advantage if it is cost-free.
-- Credibility costs and trust memory are necessary controls against deception.
-- Edge-priority seer checking is not supported after role randomization.
-- Structured diversified seer search is promising but not yet corrected-significant against random.
-- Behaviorally exploitative seer search using current suspicion or `p_wolf` signals is harmful.
-- The simulation engine passes physical mirror replay validation.
-- Frozen ML wolf-kill policies did not improve live games; the hybrid policy was statistically harmful.
+## 12. Seat-Order and Label Validity
 
-## 16. Next Research Direction
+Question: Are directional results artifacts of displayed labels?
 
-The next experiment should not simply add a more complex model. It should address the failure mode revealed by Stage 2A:
+Hypothesis: Neutralizing displayed labels should expose whether label order changes outcomes.
 
-> A learned policy must optimize live strategic consequences, not weak candidate-level proxies.
+Design: Seat-order-neutral experiment with normal, mirrored, and rotated labels.
 
-Recommended next direction:
+Evidence: Displayed-label invariance was exact across all tested physical trajectories and outcomes. Source rows were 30,000, but effective independent sample for strategy inference was 10,000 strategy/base rows and 2,500 physical configurations.
 
-1. Build role-removal-aware and information-suppression-aware wolf-kill features.
-2. Keep all features observation-safe.
-3. Use grouped splits and final live seeds held out from model selection.
-4. Treat shadow rollout as screening only.
-5. Require matched live complete-game validation before claiming improvement.
-6. Compare against existing rule, frozen ML, hybrid, and role-removal-aware ML.
-7. Report CIs, adjusted p-values, effect sizes, seed robustness, regime robustness, distribution shift, overfitting diagnostics, leakage audit, and failure cases.
+Conclusion: Displayed-label artifact rejected; physical clockwise advantage remains `promising but uncertain`.
 
-The cumulative evidence registry for this report is stored at:
+## 13. Physical-Direction Engine Validation
 
-```text
-results/research_progress/cumulative_evidence_registry.csv
-```
+Question: Is the engine physically mirror-symmetric under supplied actions?
 
+Hypothesis: Replay and mirror transforms should preserve trajectories and outcomes if the engine is symmetric.
+
+Design: Supplied-action replay and physical mirror validation.
+
+Evidence: Exact replay, physical mirror replay, and strategy mirror action validation all matched at 100% with zero divergences.
+
+Conclusion: `engine symmetry validated`.
+
+## 14. Machine Learning Stage 1
+
+Question: Can observation-safe features support ML identity and action models?
+
+Hypothesis: Public and actor-available features contain useful signal.
+
+Evidence: Stage 1 generated 7,155 candidate rows and reported village-vote logistic ROC-AUC 0.9458.
+
+Formal analysis: Pilot only. The result was later revised by Stage 1.5.
+
+Conclusion: `weak/inconclusive` for generalization; `implementation validated` for logging.
+
+## 15. Machine Learning Stage 1.5
+
+Question: Do ML signals survive grouped splits and full-state rollouts?
+
+Hypothesis: Grouped validation and full rollouts should retain meaningful ML value.
+
+Evidence: Village-vote ROC-AUC fell to 0.6679, close to existing `p_wolf` at 0.6586. Surrogate validity was weak for wolf-kill action value, with Spearman 0.0718. A final-test shadow wolf-kill recommendation still appeared promising with +0.150 action value.
+
+Conclusion: `surrogate-only improvement` for shadow wolf-kill; not ready as a live policy.
+
+## 16. Machine Learning Stage 2A
+
+Question: Does the frozen ML wolf-kill policy improve live complete-game wolf win rate?
+
+Hypothesis: Frozen ML, hybrid, and epsilon policies should outperform or match the existing rule.
+
+Evidence: Existing rule wolf win was 69.50%. Frozen ML and epsilon were 61.00%, and hybrid was 58.00%. Hybrid difference was -11.50 pp with Holm p = 0.0033.
+
+Conclusion: Hybrid has a `statistically supported harmful effect`; pure ML and epsilon are `weak/inconclusive` but harmful in direction. Existing rule remains default.
+
+## 17. Cross-Stage Data Analysis Lessons
+
+Raw rows are not always independent. Candidate rows are not games. Deterministic label duplicates must be collapsed. Shadow values are not live policy values. Model coefficients are not causal effects. Post-treatment variables such as first-check success and seer survival are diagnostic unless explicitly randomized.
+
+## 18. Current Scientific Conclusions
+
+The project supports the claim that information, credibility, and search structure shape social-deduction outcomes. It rejects strong edge-seat folklore after role randomization. It validates engine symmetry. It also shows that ML policies require live matched validation and can be harmful even after apparently promising shadow analysis.
+
+## 19. Proposal Alignment
+
+The project has completed and extended the core simulator, night/day mechanics, role actions, suspicion, credibility, herding, wolf coordination, competing seer scenarios, 10,000+ simulations, Data Analysis, visualization, and presentation outputs. It has partially completed payoff and financial-market interpretation. Formal BoW tokenization, quantified emotional intensity, information density, unified payoff optimization, risk-adjusted return, Sharpe-like analysis, and systematic literature comparison remain incomplete.
+
+## 20. Remaining Deliverables
+
+Remaining deliverables are ordered in `remaining_work_roadmap.md`: ML Stage 2B failure diagnosis, formal BoW speech quantification, BoW integration, unified role-specific payoff matrix, financial risk metrics, role strategy optimization synthesis, systematic literature comparison, final integrated Data Analysis, and final DURF report/presentation.
+
+## 21. Next Research Priorities
+
+The exact next stage is ML Stage 2B - Offline-to-Live Failure Diagnosis. It should diagnose policy-induced distribution shift, repeated-decision compounding, special-role targeting loss, and shadow/live mismatch before any new ML policy is deployed.
+
+## 22. Reproducibility and Source Index
+
+The cumulative evidence registry is `results/research_progress/cumulative_evidence_registry.csv`. Source traceability is `results/research_progress/source_traceability_index.csv`. Known inconsistencies are documented in `results/research_progress/documentation_inconsistencies.md`.

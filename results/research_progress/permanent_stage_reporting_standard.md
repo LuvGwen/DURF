@@ -58,5 +58,26 @@ Allowed labels are:
 - invalid due to missing event data
 - ready for risk-adjusted analysis
 - requires one correction before R5
+- highest expected payoff
+- highest payoff volatility
+- lowest payoff volatility
+- lowest downside risk
+- negative-payoff probability
+- lowest CVaR-like loss
+- highest Sharpe-like payoff ratio
+- highest Sortino-like payoff ratio
+- opportunity-cost-adjusted payoff
+- information premium analogue
+- manipulation premium analogue
+- risk-return efficient
+- strictly dominated
+- robust across seeds
+- robust across regimes
+- sensitive to payoff specification
+- fragile under coefficient sensitivity
+- descriptive only
+- insufficient data
+- financial analogy supported
+- ready for synthesis
 
 No future stage may be marked complete unless all applicable reporting outputs exist.

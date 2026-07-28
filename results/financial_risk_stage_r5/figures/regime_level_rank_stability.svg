@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="420" viewBox="0 0 760 420">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="24" y="30" font-family="Arial" font-size="18" font-weight="700" fill="#1f2937">Regime-level mean payoff</text>
+<line x1="712.5" y1="46" x2="712.5" y2="388" stroke="#6b7280" stroke-width="1"/>
+<text x="24" y="70.6" font-family="Arial" font-size="12" fill="#374151">baseline_structured_speech</text>
+<rect x="251.9" y="58.0" width="460.5" height="16.8" fill="#d97706" opacity="0.86"/>
+<text x="189.9" y="70.1" font-family="Arial" font-size="11" fill="#111827">-0.772</text>
+<text x="24" y="97.8" font-family="Arial" font-size="12" fill="#374151">deception_and_credibility</text>
+<rect x="278.9" y="85.2" width="433.5" height="16.8" fill="#d97706" opacity="0.86"/>
+<text x="216.9" y="97.3" font-family="Arial" font-size="11" fill="#111827">-0.726</text>
+<text x="24" y="125.0" font-family="Arial" font-size="12" fill="#374151">low_information_noise</text>
+<rect x="318.7" y="112.3" width="393.8" height="16.8" fill="#d97706" opacity="0.86"/>
+<text x="256.7" y="124.5" font-family="Arial" font-size="11" fill="#111827">-0.660</text>
+<text x="24" y="152.1" font-family="Arial" font-size="12" fill="#374151">risk_mixed</text>
+<rect x="190.0" y="139.5" width="522.5" height="16.8" fill="#d97706" opacity="0.86"/>
+<text x="128.0" y="151.6" font-family="Arial" font-size="11" fill="#111827">-0.875</text>
+<text x="24" y="179.3" font-family="Arial" font-size="12" fill="#374151">strong_village_information</text>
+<rect x="280.7" y="166.7" width="431.8" height="16.8" fill="#d97706" opacity="0.86"/>
+<text x="218.7" y="178.8" font-family="Arial" font-size="11" fill="#111827">-0.723</text>
+<text x="24" y="206.5" font-family="Arial" font-size="12" fill="#374151">baseline_structured_speech</text>
+<rect x="644.6" y="193.8" width="67.8" height="16.8" fill="#d97706" opacity="0.86"/>
+<text x="582.6" y="206.0" font-family="Arial" font-size="11" fill="#111827">-0.114</text>
+<text x="24" y="233.6" font-family="Arial" font-size="12" fill="#374151">deception_and_credibility</text>
+<rect x="642.4" y="221.0" width="70.1" height="16.8" fill="#d97706" opacity="0.86"/>
+<text x="580.4" y="233.1" font-family="Arial" font-size="11" fill="#111827">-0.117</text>
+<text x="24" y="260.8" font-family="Arial" font-size="12" fill="#374151">low_information_noise</text>
+<rect x="712.5" y="248.2" width="7.5" height="16.8" fill="#2563eb" opacity="0.86"/>
+<text x="725.0" y="260.3" font-family="Arial" font-size="11" fill="#111827">0.013</text>
+<text x="24" y="288.0" font-family="Arial" font-size="12" fill="#374151">risk_mixed</text>
+<rect x="617.4" y="275.3" width="95.1" height="16.8" fill="#d97706" opacity="0.86"/>
+<text x="555.4" y="287.5" font-family="Arial" font-size="11" fill="#111827">-0.159</text>
+<text x="24" y="315.1" font-family="Arial" font-size="12" fill="#374151">strong_village_information</text>
+<rect x="699.8" y="302.5" width="12.7" height="16.8" fill="#d97706" opacity="0.86"/>
+<text x="637.8" y="314.6" font-family="Arial" font-size="11" fill="#111827">-0.021</text>
+<text x="24" y="342.3" font-family="Arial" font-size="12" fill="#374151">baseline_structured_speech</text>
+<rect x="362.6" y="329.7" width="349.8" height="16.8" fill="#d97706" opacity="0.86"/>
+<text x="300.6" y="341.8" font-family="Arial" font-size="11" fill="#111827">-0.586</text>
+<text x="24" y="369.5" font-family="Arial" font-size="12" fill="#374151">deception_and_credibility</text>
+<rect x="364.6" y="356.8" width="347.8" height="16.8" fill="#d97706" opacity="0.86"/>
+<text x="302.6" y="369.0" font-family="Arial" font-size="11" fill="#111827">-0.583</text>
+</svg>

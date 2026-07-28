@@ -152,3 +152,7 @@ R4 — Unified Role-Specific Payoff Matrix.
 ## R4 Unified Payoff Update
 
 Next exact experiment: R5 financial risk metrics using R4 payoff ledger outputs.
+
+## Next Stage: R6 Unified Role Strategy Optimization Synthesis
+
+R6 should synthesize Seer, Witch, Hunter, Villager, and Werewolf strategy recommendations using expected payoff, risk-adjusted payoff, downside risk, and robustness evidence from R5.

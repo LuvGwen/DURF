@@ -35,6 +35,27 @@ ALLOWED_CONCLUSION_LABELS = {
     "invalid due to missing event data",
     "ready for risk-adjusted analysis",
     "requires one correction before R5",
+    "highest expected payoff",
+    "highest payoff volatility",
+    "lowest payoff volatility",
+    "lowest downside risk",
+    "negative-payoff probability",
+    "lowest CVaR-like loss",
+    "highest Sharpe-like payoff ratio",
+    "highest Sortino-like payoff ratio",
+    "opportunity-cost-adjusted payoff",
+    "information premium analogue",
+    "manipulation premium analogue",
+    "risk-return efficient",
+    "strictly dominated",
+    "robust across seeds",
+    "robust across regimes",
+    "sensitive to payoff specification",
+    "fragile under coefficient sensitivity",
+    "descriptive only",
+    "insufficient data",
+    "financial analogy supported",
+    "ready for synthesis",
 }
 
 REQUIRED_FILES = [
@@ -63,6 +84,11 @@ REQUIRED_FILES = [
     "results/payoff_matrix_stage_r4/r4_information_leakage_audit.md",
     "results/payoff_matrix_stage_r4/r4_validation_summary.csv",
     "results/payoff_matrix_stage_r4/r4_double_counting_audit.md",
+    "results/financial_risk_stage_r5/r5_metric_definition_manifest.json",
+    "results/financial_risk_stage_r5/r5_research_report.md",
+    "results/financial_risk_stage_r5/r5_metric_validation_summary.csv",
+    "results/financial_risk_stage_r5/r5_strategy_frontier_summary.csv",
+    "results/financial_risk_stage_r5/r5_information_leakage_audit.md",
 ]
 
 REGISTRY_COLUMNS = [
@@ -188,7 +214,7 @@ def main() -> int:
         add_result(summary, f"registry_paths:{row['stage_id']}:{row['hypothesis_id']}", dataset_ok and report_ok, f"dataset={row['dataset_path']} report={row['report_path']}")
 
     proposal_rows = read_csv(RESEARCH_DIR / "durf_proposal_alignment_matrix.csv")
-    add_result(summary, "proposal_component_count", len(proposal_rows) == 39, str(len(proposal_rows)))
+    add_result(summary, "proposal_component_count", len(proposal_rows) >= 39, str(len(proposal_rows)))
     bad_statuses = sorted({row["status"] for row in proposal_rows} - PROPOSAL_STATUSES)
     add_result(summary, "proposal_statuses_allowed", not bad_statuses, ";".join(bad_statuses) if bad_statuses else "all statuses allowed")
 

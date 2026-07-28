@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="420" viewBox="0 0 760 420">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="24" y="30" font-family="Arial" font-size="18" font-weight="700" fill="#1f2937">Dominated vs non-dominated strategies</text>
+<line x1="190.0" y1="46" x2="190.0" y2="388" stroke="#6b7280" stroke-width="1"/>
+<text x="24" y="83.3" font-family="Arial" font-size="12" fill="#374151">hunter_False</text>
+<rect x="190.0" y="58.0" width="530.0" height="33.7" fill="#2563eb" opacity="0.86"/>
+<text x="725.0" y="82.3" font-family="Arial" font-size="11" fill="#111827">5.000</text>
+<text x="24" y="137.6" font-family="Arial" font-size="12" fill="#374151">seer_False</text>
+<rect x="190.0" y="112.3" width="530.0" height="33.7" fill="#2563eb" opacity="0.86"/>
+<text x="725.0" y="136.6" font-family="Arial" font-size="11" fill="#111827">5.000</text>
+<text x="24" y="191.9" font-family="Arial" font-size="12" fill="#374151">villager_False</text>
+<rect x="190.0" y="166.7" width="530.0" height="33.7" fill="#2563eb" opacity="0.86"/>
+<text x="725.0" y="190.9" font-family="Arial" font-size="11" fill="#111827">5.000</text>
+<text x="24" y="246.3" font-family="Arial" font-size="12" fill="#374151">werewolf_True</text>
+<rect x="190.0" y="221.0" width="424.0" height="33.7" fill="#2563eb" opacity="0.86"/>
+<text x="619.0" y="245.3" font-family="Arial" font-size="11" fill="#111827">4.000</text>
+<text x="24" y="300.6" font-family="Arial" font-size="12" fill="#374151">werewolf_False</text>
+<rect x="190.0" y="275.3" width="106.0" height="33.7" fill="#2563eb" opacity="0.86"/>
+<text x="301.0" y="299.6" font-family="Arial" font-size="11" fill="#111827">1.000</text>
+<text x="24" y="354.9" font-family="Arial" font-size="12" fill="#374151">witch_False</text>
+<rect x="190.0" y="329.7" width="530.0" height="33.7" fill="#2563eb" opacity="0.86"/>
+<text x="725.0" y="353.9" font-family="Arial" font-size="11" fill="#111827">5.000</text>
+</svg>

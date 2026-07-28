@@ -1,0 +1,127 @@
+{
+  "benchmarks": [
+    {
+      "benchmark_id": "zero_payoff",
+      "definition": "Break-even game payoff; primary Sharpe-like benchmark.",
+      "label": "Zero payoff"
+    },
+    {
+      "benchmark_id": "role_specific_random_strategy",
+      "definition": "Village roles use villager_random_vote; werewolves use wolf_random_kill when available.",
+      "label": "Role-specific random strategy mean"
+    },
+    {
+      "benchmark_id": "reference_strategy_mix",
+      "definition": "R4 reference_strategy_mix condition mean by role.",
+      "label": "Existing default strategy mix"
+    }
+  ],
+  "bootstrap_unit": "game clusters for player-level metrics",
+  "coefficient_sensitivity_factors": [
+    0.75,
+    1.0,
+    1.25
+  ],
+  "confidence_levels": [
+    0.9,
+    0.95
+  ],
+  "financial_analogy_boundary": "Metrics are empirical game-payoff analogues, not literal market returns, investment performance, regulatory VaR, or portfolio Sharpe ratios.",
+  "metric_definitions": [
+    {
+      "financial_analogy": "expected return analogue",
+      "formula": "arithmetic mean of player-game total_payoff",
+      "label": "Expected payoff",
+      "metric_id": "expected_payoff",
+      "primary_unit": "player-game"
+    },
+    {
+      "financial_analogy": "return variance analogue",
+      "formula": "sample variance of player-game payoff",
+      "label": "Payoff variance",
+      "metric_id": "payoff_variance",
+      "primary_unit": "player-game"
+    },
+    {
+      "financial_analogy": "return volatility analogue",
+      "formula": "sample standard deviation of player-game payoff",
+      "label": "Payoff volatility",
+      "metric_id": "payoff_volatility",
+      "primary_unit": "player-game"
+    },
+    {
+      "financial_analogy": "downside-risk analogue",
+      "formula": "sqrt(mean((target - payoff)^2 for payoff < target))",
+      "label": "Downside deviation",
+      "metric_id": "downside_deviation",
+      "primary_unit": "player-game"
+    },
+    {
+      "financial_analogy": "loss-frequency analogue",
+      "formula": "count(payoff < 0) / count(payoff)",
+      "label": "Negative-payoff probability",
+      "metric_id": "negative_payoff_probability",
+      "primary_unit": "player-game"
+    },
+    {
+      "financial_analogy": "VaR-like threshold analogue",
+      "formula": "empirical lower-tail payoff quantile at 1 - confidence",
+      "label": "VaR-like payoff threshold",
+      "metric_id": "var_like_payoff_threshold",
+      "primary_unit": "player-game"
+    },
+    {
+      "financial_analogy": "CVaR-like tail-loss analogue",
+      "formula": "mean(-payoff for payoff at or below VaR-like threshold)",
+      "label": "CVaR-like downside loss",
+      "metric_id": "cvar_like_loss",
+      "primary_unit": "player-game"
+    },
+    {
+      "financial_analogy": "Sharpe-ratio analogue without risk-free rate",
+      "formula": "(mean payoff - benchmark payoff) / payoff standard deviation",
+      "label": "Sharpe-like payoff ratio",
+      "metric_id": "sharpe_like_ratio",
+      "primary_unit": "player-game"
+    },
+    {
+      "financial_analogy": "Sortino-ratio analogue",
+      "formula": "(mean payoff - target payoff) / downside deviation",
+      "label": "Sortino-like payoff ratio",
+      "metric_id": "sortino_like_ratio",
+      "primary_unit": "player-game"
+    },
+    {
+      "financial_analogy": "opportunity-cost-adjusted return analogue",
+      "formula": "payoff excluding opportunity cost plus opportunity cost",
+      "label": "Opportunity-cost-adjusted payoff",
+      "metric_id": "opportunity_cost_adjusted_payoff",
+      "primary_unit": "player-game"
+    },
+    {
+      "financial_analogy": "informed-trader premium analogue",
+      "formula": "mean payoff with useful information event minus without",
+      "label": "Information premium",
+      "metric_id": "information_premium",
+      "primary_unit": "player-game"
+    },
+    {
+      "financial_analogy": "adversarial-manipulation premium analogue",
+      "formula": "mean wolf payoff with manipulation event minus without",
+      "label": "Manipulation premium",
+      "metric_id": "manipulation_premium",
+      "primary_unit": "player-game"
+    },
+    {
+      "financial_analogy": "efficient-frontier analogue",
+      "formula": "non-dominated expected-payoff/risk points by role",
+      "label": "Risk-return frontier",
+      "metric_id": "risk_return_frontier",
+      "primary_unit": "strategy-role"
+    }
+  ],
+  "metric_manifest_hash": "4b48f5aae165d6c30d5a13cd2e9c3e01f5b595ddbfeb93f7c1832b018f6861bf",
+  "metric_manifest_version": "r5_financial_metric_manifest_v1",
+  "primary_analysis_unit": "player-game for role payoff; game for game outcomes",
+  "r4_manifest_hash": "eee8007693ec6a484632f61444a53f6f8b1b9feb64b18c865f0edf704a15c7cd"
+}

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="460" viewBox="0 0 760 460">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="24" y="30" font-family="Arial" font-size="18" font-weight="700" fill="#1f2937">Role downside-risk frontier</text>
+<line x1="74" y1="398" x2="724" y2="398" stroke="#6b7280"/>
+<line x1="74" y1="58" x2="74" y2="398" stroke="#6b7280"/>
+<text x="290.0" y="442" font-family="Arial" font-size="12" fill="#374151">downside_deviation</text>
+<text x="18" y="44" font-family="Arial" font-size="12" fill="#374151">mean_payoff</text>
+<circle cx="724.0" cy="398.0" r="5" fill="#2563eb" opacity="0.84"/>
+<text x="731.0" y="392.0" font-family="Arial" font-size="9" fill="#374151">hunter</text>
+<circle cx="440.6" cy="281.6" r="5" fill="#2563eb" opacity="0.84"/>
+<text x="447.6" y="275.6" font-family="Arial" font-size="9" fill="#374151">seer</text>
+<circle cx="567.1" cy="366.9" r="5" fill="#2563eb" opacity="0.84"/>
+<text x="574.1" y="360.9" font-family="Arial" font-size="9" fill="#374151">villager</text>
+<circle cx="475.8" cy="58.0" r="5" fill="#2563eb" opacity="0.84"/>
+<text x="482.8" y="52.0" font-family="Arial" font-size="9" fill="#374151">werewolf</text>
+<circle cx="518.5" cy="317.9" r="5" fill="#2563eb" opacity="0.84"/>
+<text x="525.5" y="311.9" font-family="Arial" font-size="9" fill="#374151">witch</text>
+</svg>

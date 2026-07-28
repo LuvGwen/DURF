@@ -71,3 +71,7 @@ BoW decision integration is now partially completed and live-validated under gua
 ## R4 Unified Payoff Update
 
 R4 resolves the role-specific payoff matrix gap and leaves payoff variance and Sharpe-like ratios for R5.
+
+## R5 Financial-Risk Alignment
+
+R5 addresses the proposal components for expected payoff, payoff variance, opportunity cost, risk-adjusted return, Sharpe-like analysis, downside risk, and financial-market interpretation. The analogy remains explicitly game-based rather than literal finance.

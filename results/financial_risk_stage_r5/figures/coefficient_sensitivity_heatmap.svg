@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="520" viewBox="0 0 900 520">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="24" y="30" font-family="Arial" font-size="18" font-weight="700" fill="#1f2937">Coefficient sensitivity heatmap</text>
+<text x="194.0" y="58" font-family="Arial" font-size="10" fill="#374151" transform="rotate(-20 194.0,58)">0.75</text>
+<text x="417.3" y="58" font-family="Arial" font-size="10" fill="#374151" transform="rotate(-20 417.3,58)">1.0</text>
+<text x="640.7" y="58" font-family="Arial" font-size="10" fill="#374151" transform="rotate(-20 640.7,58)">1.25</text>
+<text x="20" y="123.3" font-family="Arial" font-size="11" fill="#374151">hunter</text>
+<rect x="190.0" y="70.0" width="221.3" height="80.0" fill="rgb(221,229,255)" stroke="#ffffff"/>
+<text x="194.0" y="123.3" font-family="Arial" font-size="9" fill="#111827">-0.75</text>
+<rect x="413.3" y="70.0" width="221.3" height="80.0" fill="rgb(229,237,255)" stroke="#ffffff"/>
+<text x="417.3" y="123.3" font-family="Arial" font-size="9" fill="#111827">-0.90</text>
+<rect x="636.7" y="70.0" width="221.3" height="80.0" fill="rgb(238,246,255)" stroke="#ffffff"/>
+<text x="640.7" y="123.3" font-family="Arial" font-size="9" fill="#111827">-1.05</text>
+<text x="20" y="205.3" font-family="Arial" font-size="11" fill="#374151">seer</text>
+<rect x="190.0" y="152.0" width="221.3" height="80.0" fill="rgb(188,196,255)" stroke="#ffffff"/>
+<text x="194.0" y="205.3" font-family="Arial" font-size="9" fill="#111827">-0.17</text>
+<rect x="413.3" y="152.0" width="221.3" height="80.0" fill="rgb(196,204,255)" stroke="#ffffff"/>
+<text x="417.3" y="205.3" font-family="Arial" font-size="9" fill="#111827">-0.32</text>
+<rect x="636.7" y="152.0" width="221.3" height="80.0" fill="rgb(205,213,255)" stroke="#ffffff"/>
+<text x="640.7" y="205.3" font-family="Arial" font-size="9" fill="#111827">-0.47</text>
+<text x="20" y="287.3" font-family="Arial" font-size="11" fill="#374151">villager</text>
+<rect x="190.0" y="234.0" width="221.3" height="80.0" fill="rgb(211,219,255)" stroke="#ffffff"/>
+<text x="194.0" y="287.3" font-family="Arial" font-size="9" fill="#111827">-0.58</text>
+<rect x="413.3" y="234.0" width="221.3" height="80.0" fill="rgb(218,226,255)" stroke="#ffffff"/>
+<text x="417.3" y="287.3" font-family="Arial" font-size="9" fill="#111827">-0.70</text>
+<rect x="636.7" y="234.0" width="221.3" height="80.0" fill="rgb(225,233,255)" stroke="#ffffff"/>
+<text x="640.7" y="287.3" font-family="Arial" font-size="9" fill="#111827">-0.83</text>
+<text x="20" y="369.3" font-family="Arial" font-size="11" fill="#374151">werewolf</text>
+<rect x="190.0" y="316.0" width="221.3" height="80.0" fill="rgb(141,149,255)" stroke="#ffffff"/>
+<text x="194.0" y="369.3" font-family="Arial" font-size="9" fill="#111827">0.64</text>
+<rect x="413.3" y="316.0" width="221.3" height="80.0" fill="rgb(138,146,255)" stroke="#ffffff"/>
+<text x="417.3" y="369.3" font-family="Arial" font-size="9" fill="#111827">0.71</text>
+<rect x="636.7" y="316.0" width="221.3" height="80.0" fill="rgb(134,142,255)" stroke="#ffffff"/>
+<text x="640.7" y="369.3" font-family="Arial" font-size="9" fill="#111827">0.77</text>
+<text x="20" y="451.3" font-family="Arial" font-size="11" fill="#374151">witch</text>
+<rect x="190.0" y="398.0" width="221.3" height="80.0" fill="rgb(191,199,255)" stroke="#ffffff"/>
+<text x="194.0" y="451.3" font-family="Arial" font-size="9" fill="#111827">-0.23</text>
+<rect x="413.3" y="398.0" width="221.3" height="80.0" fill="rgb(200,208,255)" stroke="#ffffff"/>
+<text x="417.3" y="451.3" font-family="Arial" font-size="9" fill="#111827">-0.38</text>
+<rect x="636.7" y="398.0" width="221.3" height="80.0" fill="rgb(208,216,255)" stroke="#ffffff"/>
+<text x="640.7" y="451.3" font-family="Arial" font-size="9" fill="#111827">-0.53</text>
+</svg>

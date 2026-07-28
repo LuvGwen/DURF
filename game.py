@@ -159,6 +159,14 @@ class Game:
         ml_wolf_kill_hybrid_weight=0.50,
         enable_ml_stage2b_policy=False,
         ml_stage2b_selective_override_manifest_path=None,
+        enable_bow_r3=False,
+        r3_belief_policy="existing_belief",
+        r3_vote_policy="existing_vote",
+        r3_bow_signal_variant="primary",
+        r3_template_condition="in_distribution_templates",
+        r3_behavioral_regime="baseline_speech",
+        r3_selective_override_margin=0.08,
+        r3_selective_min_information_density=0.12,
     ):
         if players is None:
             players = create_default_players(
@@ -393,6 +401,17 @@ class Game:
         self.ml_stage2b_selective_override_manifest_path = (
             ml_stage2b_selective_override_manifest_path
         )
+        self.enable_bow_r3 = enable_bow_r3
+        self.r3_belief_policy = r3_belief_policy
+        self.r3_vote_policy = r3_vote_policy
+        self.r3_bow_signal_variant = r3_bow_signal_variant
+        self.r3_template_condition = r3_template_condition
+        self.r3_behavioral_regime = r3_behavioral_regime
+        self.r3_selective_override_margin = r3_selective_override_margin
+        self.r3_selective_min_information_density = (
+            r3_selective_min_information_density
+        )
+        self.r3_current_signal_by_player = {}
 
         if self.enable_risk_preference:
             assign_risk_preferences(
@@ -725,6 +744,7 @@ class Game:
             return
 
         speech_events = []
+        self.r3_current_signal_by_player = {}
 
         if self.enable_speech:
             for player in alive_players:
@@ -799,6 +819,36 @@ class Game:
 
                 speech_events.append(speech_event)
                 self.log_event("speech", speech_event)
+
+                if self.enable_bow_r3:
+                    from bow_r3_belief_integration import (
+                        apply_r3_belief_policy,
+                    )
+                    from bow_r3_template_conditions import (
+                        render_r3_live_utterance,
+                    )
+
+                    source_event_index = len(self.event_log) - 1
+                    utterance_row = render_r3_live_utterance(
+                        self.state,
+                        speech_event,
+                        template_condition=self.r3_template_condition,
+                        behavioral_regime=self.r3_behavioral_regime,
+                        source_event_index=source_event_index,
+                    )
+                    r3_belief_event = apply_r3_belief_policy(
+                        self.state,
+                        speech_event,
+                        utterance_row,
+                        policy_name=self.r3_belief_policy,
+                        signal_variant=self.r3_bow_signal_variant,
+                    )
+                    belief_target = r3_belief_event.get("belief_target")
+                    if belief_target is not None:
+                        self.r3_current_signal_by_player[belief_target] = (
+                            r3_belief_event
+                        )
+                    self.log_event("r3_bow_belief_update", r3_belief_event)
 
                 if self.enable_speaker_memory:
                     observe_speech(self.state, speech_event)
@@ -953,6 +1003,28 @@ class Game:
             if target is None:
                 continue
 
+            if self.enable_bow_r3:
+                from bow_r3_voting_policy import choose_r3_vote_target
+
+                r3_target, r3_vote_event = choose_r3_vote_target(
+                    voter,
+                    alive_players,
+                    self.state,
+                    policy_name=self.r3_vote_policy,
+                    existing_target=target,
+                    signal_by_player=self.r3_current_signal_by_player,
+                    template_condition=self.r3_template_condition,
+                    selective_override_margin=(
+                        self.r3_selective_override_margin
+                    ),
+                    selective_min_information_density=(
+                        self.r3_selective_min_information_density
+                    ),
+                )
+                if r3_target is not None:
+                    target = r3_target
+                self.log_event("r3_bow_vote_decision", r3_vote_event)
+
             voter.vote_target = target.player_id
             votes[voter.player_id] = target.player_id
 
@@ -1078,6 +1150,11 @@ class Game:
                 for player in self.state.players
             },
             "neutral_mode_enabled": self.seat_order_neutral_mode,
+            "bow_r3_enabled": self.enable_bow_r3,
+            "r3_belief_policy": self.r3_belief_policy,
+            "r3_vote_policy": self.r3_vote_policy,
+            "r3_template_condition": self.r3_template_condition,
+            "r3_behavioral_regime": self.r3_behavioral_regime,
         })
 
     def run_one_round(self):

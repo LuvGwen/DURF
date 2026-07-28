@@ -53,3 +53,7 @@ remains the default. Source outputs are in `results/ml_optimization_stage2b`.
 ## R2 Current Assessment
 
 Formal BoW speech quantification is now implemented and validated as a shadow feature system. The project has a real English tokenizer, core lexicon, train-derived vocabulary, utterance-level dataset, score manifests, leakage audit, overfitting audit, model comparisons, template/regime generalization checks, and R2 research reports. BoW is not yet integrated into live decisions; that remains the exact R3 task.
+
+## Current R3 Assessment
+
+R3 is implemented for guarded belief and vote policies. Broad BoW integration remains conditional on OOD stability.

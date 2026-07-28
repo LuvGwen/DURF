@@ -144,3 +144,7 @@
 - Dependencies: All prior reports.
 - Risk of overfitting or invalid inference: Risk of overclaiming incomplete proposal pieces.
 - Expected outputs: Final report, slides, appendix.
+
+## Next Proposal-Completion Stage
+
+R4 — Unified Role-Specific Payoff Matrix.

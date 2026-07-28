@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="308">
+<rect width="100%" height="100%" fill="white"/>
+<text x="24" y="28" font-family="Arial" font-size="18" fill="#222">Belief ROC-AUC by R3 policy</text>
+<text x="24" y="66" font-family="Arial" font-size="12" fill="#333">existing_with_bow_shadow</text>
+<rect x="260" y="48" width="284" height="26" fill="#4C78A8"/>
+<text x="552" y="66" font-family="Arial" font-size="12" fill="#333">0.508</text>
+<text x="24" y="104" font-family="Arial" font-size="12" fill="#333">guarded_bow_010_live</text>
+<rect x="260" y="86" width="281" height="26" fill="#4C78A8"/>
+<text x="549" y="104" font-family="Arial" font-size="12" fill="#333">0.504</text>
+<text x="24" y="142" font-family="Arial" font-size="12" fill="#333">guarded_bow_020_live</text>
+<rect x="260" y="124" width="279" height="26" fill="#4C78A8"/>
+<text x="547" y="142" font-family="Arial" font-size="12" fill="#333">0.499</text>
+<text x="24" y="180" font-family="Arial" font-size="12" fill="#333">pure_bow_diagnostic_live</text>
+<rect x="260" y="162" width="267" height="26" fill="#4C78A8"/>
+<text x="535" y="180" font-family="Arial" font-size="12" fill="#333">0.477</text>
+<text x="24" y="218" font-family="Arial" font-size="12" fill="#333">selective_bow_vote_override_live</text>
+<rect x="260" y="200" width="288" height="26" fill="#4C78A8"/>
+<text x="556" y="218" font-family="Arial" font-size="12" fill="#333">0.516</text>
+<text x="24" y="256" font-family="Arial" font-size="12" fill="#333">structured_bow_guarded_live</text>
+<rect x="260" y="238" width="277" height="26" fill="#4C78A8"/>
+<text x="545" y="256" font-family="Arial" font-size="12" fill="#333">0.495</text>
+</svg>

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="308">
+<rect width="100%" height="100%" fill="white"/>
+<text x="24" y="28" font-family="Arial" font-size="18" fill="#222">Vote target wolf rate by R3 policy</text>
+<text x="24" y="66" font-family="Arial" font-size="12" fill="#333">existing_with_bow_shadow</text>
+<rect x="260" y="48" width="189" height="26" fill="#4C78A8"/>
+<text x="457" y="66" font-family="Arial" font-size="12" fill="#333">0.339</text>
+<text x="24" y="104" font-family="Arial" font-size="12" fill="#333">guarded_bow_010_live</text>
+<rect x="260" y="86" width="176" height="26" fill="#4C78A8"/>
+<text x="444" y="104" font-family="Arial" font-size="12" fill="#333">0.316</text>
+<text x="24" y="142" font-family="Arial" font-size="12" fill="#333">guarded_bow_020_live</text>
+<rect x="260" y="124" width="159" height="26" fill="#4C78A8"/>
+<text x="427" y="142" font-family="Arial" font-size="12" fill="#333">0.285</text>
+<text x="24" y="180" font-family="Arial" font-size="12" fill="#333">pure_bow_diagnostic_live</text>
+<rect x="260" y="162" width="216" height="26" fill="#4C78A8"/>
+<text x="484" y="180" font-family="Arial" font-size="12" fill="#333">0.386</text>
+<text x="24" y="218" font-family="Arial" font-size="12" fill="#333">selective_bow_vote_override_live</text>
+<rect x="260" y="200" width="197" height="26" fill="#4C78A8"/>
+<text x="465" y="218" font-family="Arial" font-size="12" fill="#333">0.352</text>
+<text x="24" y="256" font-family="Arial" font-size="12" fill="#333">structured_bow_guarded_live</text>
+<rect x="260" y="238" width="138" height="26" fill="#4C78A8"/>
+<text x="406" y="256" font-family="Arial" font-size="12" fill="#333">0.247</text>
+</svg>

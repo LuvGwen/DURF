@@ -63,3 +63,7 @@ mechanism diagnostics in `results/ml_optimization_stage2b`.
 ## R2 BoW Update
 
 R2 completes the formal BoW vocabulary, English tokenization, werewolf-leaning score, emotional-intensity score, and information-density score as shadow-analysis modules. `BoW integration into decisions` remains partially completed because R2 intentionally does not alter live voting, checking, killing, or payoff rules. The next required stage is R3: BoW Integration and Comparative Decision Analysis.
+
+## R3 Guarded BoW Integration Update
+
+BoW decision integration is now partially completed and live-validated under guarded experimental policies.

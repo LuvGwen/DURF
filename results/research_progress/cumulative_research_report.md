@@ -236,3 +236,7 @@ Design: R2 generates English natural-language utterances from existing legal spe
 Evidence: See `results/bow_speech_stage_r2/bow_stage_r2_research_report.md`. The dataset contains 1,600 source games, 32,721 utterances, 48 template families, 6 behavioral regimes, and a 289-term train-derived vocabulary. BoW score contrasts are significant after Holm correction. Final-test BoW-score ROC-AUC for speaker-is-wolf is 0.692, compared with 0.569 for `p_wolf` and 0.515 for suspicion. Structured labels remain stronger, and the full legal combined model does not clearly improve over `p_wolf + suspicion + structured` labels.
 
 Conclusion: `promising but uncertain`. R2 validates the BoW measurement pipeline, but live decision integration remains R3.
+
+## 25. R3 Guarded Bag-of-Words Integration
+
+R3 integrated formal BoW speech scores into belief and village voting under explicit experimental flags. The stage generated matched live-game, speech, belief-update, vote-decision, shadow, template-shift, and disagreement-branch proxy datasets. Default gameplay remains unchanged unless `enable_bow_r3=True`.

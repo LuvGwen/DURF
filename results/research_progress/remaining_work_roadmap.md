@@ -156,3 +156,7 @@ Next exact experiment: R5 financial risk metrics using R4 payoff ledger outputs.
 ## Next Stage: R6 Unified Role Strategy Optimization Synthesis
 
 R6 should synthesize Seer, Witch, Hunter, Villager, and Werewolf strategy recommendations using expected payoff, risk-adjusted payoff, downside risk, and robustness evidence from R5.
+
+## Next Stage After R5.1
+
+R6 - Unified Role Strategy Optimization Synthesis should combine expected payoff, risk-adjusted payoff, downside risk, externalities, and evidence quality by role.

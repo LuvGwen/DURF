@@ -65,3 +65,7 @@ R4 unified payoff accounting is validated. R5 should compute variance and Sharpe
 ## R5 Progress Assessment
 
 R5 financial-risk payoff analysis is complete for the R4 validation dataset. The project is ready for R6 unified role strategy optimization synthesis.
+
+## R5.1 Progress Assessment
+
+R5.1 is complete. Strategy ownership is explicit, R5 strategy frontiers are superseded, and R6 may proceed with corrected attribution labels.

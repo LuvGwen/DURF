@@ -89,6 +89,16 @@ REQUIRED_FILES = [
     "results/financial_risk_stage_r5/r5_metric_validation_summary.csv",
     "results/financial_risk_stage_r5/r5_strategy_frontier_summary.csv",
     "results/financial_risk_stage_r5/r5_information_leakage_audit.md",
+    "results/financial_risk_stage_r51/r51_strategy_attribution_registry.csv",
+    "results/financial_risk_stage_r51/r51_r5_strategy_mapping_audit.csv",
+    "results/financial_risk_stage_r51/r51_actor_specific_strategy_payoff_raw.csv",
+    "results/financial_risk_stage_r51/r51_cross_role_externality_raw.csv",
+    "results/financial_risk_stage_r51/r51_actor_specific_primary_contrasts.csv",
+    "results/financial_risk_stage_r51/r51_actor_specific_frontier_summary.csv",
+    "results/financial_risk_stage_r51/r51_information_premium_summary.csv",
+    "results/financial_risk_stage_r51/r51_manipulation_premium_summary.csv",
+    "results/financial_risk_stage_r51/r51_mapping_validation_summary.csv",
+    "results/financial_risk_stage_r51/r51_research_report.md",
 ]
 
 REGISTRY_COLUMNS = [
@@ -282,6 +292,12 @@ def main() -> int:
         "cumulative_report_r2_present",
         "## 24. R2 Formal Bag-of-Words Speech Quantification" in cumulative_text,
         "R2 chapter",
+    )
+    add_result(
+        summary,
+        "cumulative_report_r51_present",
+        "## 29. R5.1 Role-Strategy Attribution Audit" in cumulative_text,
+        "R5.1 chapter",
     )
 
     stage2a_text = (ROOT / "results/ml_optimization_stage2a/ml_stage2a_research_report.md").read_text(encoding="utf-8")

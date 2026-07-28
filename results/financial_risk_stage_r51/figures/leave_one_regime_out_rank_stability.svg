@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="488" viewBox="0 0 920 488">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="24" y="34" font-family="Arial" font-size="18" font-weight="700">Leave-one-regime-out actor payoffs</text>
+<text x="24" y="85" font-family="Arial" font-size="12">seer_highest_suspicion</text>
+<rect x="360" y="68" width="136" height="20" fill="#c53030" opacity="0.85"/>
+<text x="506" y="83" font-family="Arial" font-size="12">-0.2186</text>
+<text x="24" y="119" font-family="Arial" font-size="12">villager_random_vote</text>
+<rect x="360" y="102" width="429" height="20" fill="#c53030" opacity="0.85"/>
+<text x="799" y="117" font-family="Arial" font-size="12">-0.6879</text>
+<text x="24" y="153" font-family="Arial" font-size="12">wolf_random_kill</text>
+<rect x="360" y="136" width="448" height="20" fill="#2b6cb0" opacity="0.85"/>
+<text x="818" y="151" font-family="Arial" font-size="12">0.7191</text>
+<text x="24" y="187" font-family="Arial" font-size="12">witch_conservative_poison</text>
+<rect x="360" y="170" width="217" height="20" fill="#c53030" opacity="0.85"/>
+<text x="587" y="185" font-family="Arial" font-size="12">-0.3483</text>
+<text x="24" y="221" font-family="Arial" font-size="12">seer_highest_suspicion</text>
+<rect x="360" y="204" width="139" height="20" fill="#c53030" opacity="0.85"/>
+<text x="509" y="219" font-family="Arial" font-size="12">-0.2241</text>
+<text x="24" y="255" font-family="Arial" font-size="12">villager_random_vote</text>
+<rect x="360" y="238" width="423" height="20" fill="#c53030" opacity="0.85"/>
+<text x="793" y="253" font-family="Arial" font-size="12">-0.6787</text>
+<text x="24" y="289" font-family="Arial" font-size="12">wolf_random_kill</text>
+<rect x="360" y="272" width="415" height="20" fill="#2b6cb0" opacity="0.85"/>
+<text x="785" y="287" font-family="Arial" font-size="12">0.6660</text>
+<text x="24" y="323" font-family="Arial" font-size="12">witch_conservative_poison</text>
+<rect x="360" y="306" width="252" height="20" fill="#c53030" opacity="0.85"/>
+<text x="622" y="321" font-family="Arial" font-size="12">-0.4048</text>
+<text x="24" y="357" font-family="Arial" font-size="12">seer_highest_suspicion</text>
+<rect x="360" y="340" width="103" height="20" fill="#c53030" opacity="0.85"/>
+<text x="473" y="355" font-family="Arial" font-size="12">-0.1650</text>
+<text x="24" y="391" font-family="Arial" font-size="12">villager_random_vote</text>
+<rect x="360" y="374" width="450" height="20" fill="#c53030" opacity="0.85"/>
+<text x="820" y="389" font-family="Arial" font-size="12">-0.7207</text>
+<text x="24" y="425" font-family="Arial" font-size="12">wolf_random_kill</text>
+<rect x="360" y="408" width="399" height="20" fill="#2b6cb0" opacity="0.85"/>
+<text x="769" y="423" font-family="Arial" font-size="12">0.6398</text>
+<text x="24" y="459" font-family="Arial" font-size="12">witch_conservative_poison</text>
+<rect x="360" y="442" width="200" height="20" fill="#c53030" opacity="0.85"/>
+<text x="570" y="457" font-family="Arial" font-size="12">-0.3219</text>
+</svg>

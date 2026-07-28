@@ -75,3 +75,7 @@ R4 resolves the role-specific payoff matrix gap and leaves payoff variance and S
 ## R5 Financial-Risk Alignment
 
 R5 addresses the proposal components for expected payoff, payoff variance, opportunity cost, risk-adjusted return, Sharpe-like analysis, downside risk, and financial-market interpretation. The analogy remains explicitly game-based rather than literal finance.
+
+## R5.1 Attribution Audit Update
+
+R5.1 resolves the strategy ownership ambiguity introduced by global R4 condition labels and prevents cross-role externalities from being reported as actor-specific strategy recommendations.

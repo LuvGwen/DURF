@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="488" viewBox="0 0 920 488">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="24" y="34" font-family="Arial" font-size="18" font-weight="700">Manipulation-premium group balance</text>
+<text x="24" y="85" font-family="Arial" font-size="12">600</text>
+<rect x="360" y="68" width="20" height="20" fill="#2b6cb0" opacity="0.85"/>
+<text x="390" y="83" font-family="Arial" font-size="12">0.0311</text>
+<text x="24" y="119" font-family="Arial" font-size="12">601</text>
+<rect x="360" y="102" width="20" height="20" fill="#2b6cb0" opacity="0.85"/>
+<text x="390" y="117" font-family="Arial" font-size="12">0.0311</text>
+<text x="24" y="153" font-family="Arial" font-size="12">602</text>
+<rect x="360" y="136" width="309" height="20" fill="#2b6cb0" opacity="0.85"/>
+<text x="679" y="151" font-family="Arial" font-size="12">0.4602</text>
+<text x="24" y="187" font-family="Arial" font-size="12">603</text>
+<rect x="360" y="170" width="159" height="20" fill="#c53030" opacity="0.85"/>
+<text x="529" y="185" font-family="Arial" font-size="12">-0.2366</text>
+<text x="24" y="221" font-family="Arial" font-size="12">604</text>
+<rect x="360" y="204" width="20" height="20" fill="#2b6cb0" opacity="0.85"/>
+<text x="390" y="219" font-family="Arial" font-size="12">0.0311</text>
+<text x="24" y="255" font-family="Arial" font-size="12">605</text>
+<rect x="360" y="238" width="159" height="20" fill="#c53030" opacity="0.85"/>
+<text x="529" y="253" font-family="Arial" font-size="12">-0.2366</text>
+<text x="24" y="289" font-family="Arial" font-size="12">606</text>
+<rect x="360" y="272" width="309" height="20" fill="#2b6cb0" opacity="0.85"/>
+<text x="679" y="287" font-family="Arial" font-size="12">0.4602</text>
+<text x="24" y="323" font-family="Arial" font-size="12">607</text>
+<rect x="360" y="306" width="309" height="20" fill="#2b6cb0" opacity="0.85"/>
+<text x="679" y="321" font-family="Arial" font-size="12">0.4602</text>
+<text x="24" y="357" font-family="Arial" font-size="12">608</text>
+<rect x="360" y="340" width="159" height="20" fill="#c53030" opacity="0.85"/>
+<text x="529" y="355" font-family="Arial" font-size="12">-0.2366</text>
+<text x="24" y="391" font-family="Arial" font-size="12">609</text>
+<rect x="360" y="374" width="159" height="20" fill="#c53030" opacity="0.85"/>
+<text x="529" y="389" font-family="Arial" font-size="12">-0.2366</text>
+<text x="24" y="425" font-family="Arial" font-size="12">baseline_structured_speech</text>
+<rect x="360" y="408" width="31" height="20" fill="#2b6cb0" opacity="0.85"/>
+<text x="401" y="423" font-family="Arial" font-size="12">0.0465</text>
+<text x="24" y="459" font-family="Arial" font-size="12">deception_and_credibility</text>
+<rect x="360" y="442" width="450" height="20" fill="#2b6cb0" opacity="0.85"/>
+<text x="820" y="457" font-family="Arial" font-size="12">0.6687</text>
+</svg>

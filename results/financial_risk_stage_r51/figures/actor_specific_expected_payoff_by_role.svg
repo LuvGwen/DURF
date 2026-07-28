@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="216" viewBox="0 0 920 216">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="24" y="34" font-family="Arial" font-size="18" font-weight="700">Actor-specific expected payoff by role</text>
+<text x="24" y="85" font-family="Arial" font-size="12">seer</text>
+<rect x="360" y="68" width="133" height="20" fill="#c53030" opacity="0.85"/>
+<text x="503" y="83" font-family="Arial" font-size="12">-0.2104</text>
+<text x="24" y="119" font-family="Arial" font-size="12">villager</text>
+<rect x="360" y="102" width="445" height="20" fill="#c53030" opacity="0.85"/>
+<text x="815" y="117" font-family="Arial" font-size="12">-0.7014</text>
+<text x="24" y="153" font-family="Arial" font-size="12">werewolf</text>
+<rect x="360" y="136" width="450" height="20" fill="#2b6cb0" opacity="0.85"/>
+<text x="820" y="151" font-family="Arial" font-size="12">0.7085</text>
+<text x="24" y="187" font-family="Arial" font-size="12">witch</text>
+<rect x="360" y="170" width="199" height="20" fill="#c53030" opacity="0.85"/>
+<text x="569" y="185" font-family="Arial" font-size="12">-0.3134</text>
+</svg>

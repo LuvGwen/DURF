@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="250" viewBox="0 0 920 250">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="24" y="34" font-family="Arial" font-size="18" font-weight="700">Corrected strategy ownership map</text>
+<text x="24" y="85" font-family="Arial" font-size="12">reference_strategy_mix</text>
+<rect x="360" y="68" width="0" height="20" fill="#2b6cb0" opacity="0.85"/>
+<text x="370" y="83" font-family="Arial" font-size="12">0.0000</text>
+<text x="24" y="119" font-family="Arial" font-size="12">villager_random_vote</text>
+<rect x="360" y="102" width="450" height="20" fill="#2b6cb0" opacity="0.85"/>
+<text x="820" y="117" font-family="Arial" font-size="12">1.0000</text>
+<text x="24" y="153" font-family="Arial" font-size="12">seer_highest_suspicion</text>
+<rect x="360" y="136" width="450" height="20" fill="#2b6cb0" opacity="0.85"/>
+<text x="820" y="151" font-family="Arial" font-size="12">1.0000</text>
+<text x="24" y="187" font-family="Arial" font-size="12">witch_conservative_poison</text>
+<rect x="360" y="170" width="450" height="20" fill="#2b6cb0" opacity="0.85"/>
+<text x="820" y="185" font-family="Arial" font-size="12">1.0000</text>
+<text x="24" y="221" font-family="Arial" font-size="12">wolf_random_kill</text>
+<rect x="360" y="204" width="450" height="20" fill="#2b6cb0" opacity="0.85"/>
+<text x="820" y="219" font-family="Arial" font-size="12">1.0000</text>
+</svg>

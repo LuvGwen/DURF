@@ -253,3 +253,7 @@ risk-adjusted analysis.
 ## 27. R5 Financial Risk Metrics
 
 R5 computed expected payoff, volatility, downside deviation, VaR-like and CVaR-like tail metrics, Sharpe-like and Sortino-like payoff ratios, opportunity-cost-adjusted payoff, information and manipulation premiums, and role-specific strategy frontiers from the frozen R4 payoff dataset. The stage keeps the financial-market language explicitly analogical and does not alter gameplay or the R4 payoff manifest.
+
+## 29. R5.1 Role-Strategy Attribution Audit
+
+R5.1 audited the R5 strategy output and found that strategy-condition labels were global game configurations. The stage reconstructs actor-specific rows, separates cross-role externalities, rebuilds sparse actor-specific frontiers, adds paired contrasts against the reference configuration, and strengthens premium analyses with group sizes and bootstrap CIs. The project is ready for R6 synthesis with explicit sparse-strategy limitations.

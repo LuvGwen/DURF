@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="182" viewBox="0 0 920 182">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="24" y="34" font-family="Arial" font-size="18" font-weight="700">R5 mapping audit counts</text>
+<text x="24" y="85" font-family="Arial" font-size="12">valid_global_configuration</text>
+<rect x="360" y="68" width="140" height="20" fill="#2b6cb0" opacity="0.85"/>
+<text x="510" y="83" font-family="Arial" font-size="12">10.0000</text>
+<text x="24" y="119" font-family="Arial" font-size="12">valid_cross_role_externality</text>
+<rect x="360" y="102" width="450" height="20" fill="#2b6cb0" opacity="0.85"/>
+<text x="820" y="117" font-family="Arial" font-size="12">32.0000</text>
+<text x="24" y="153" font-family="Arial" font-size="12">valid_actor_specific</text>
+<rect x="360" y="136" width="112" height="20" fill="#2b6cb0" opacity="0.85"/>
+<text x="482" y="151" font-family="Arial" font-size="12">8.0000</text>
+</svg>

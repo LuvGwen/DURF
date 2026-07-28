@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="270" viewBox="0 0 900 270">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="24" y="32" font-family="Arial" font-size="20" fill="#222">Payoff dispersion by role</text>
+<line x1="510" x2="510" y1="48" y2="250" stroke="#888"/>
+<text x="24" y="78" font-family="Arial" font-size="13" fill="#333">hunter</text>
+<rect x="510" y="60" width="222.8979044327795" height="26" fill="#2f6f9f" opacity="0.85"/>
+<text x="738.8979044327796" y="78" font-family="Arial" font-size="12" fill="#333">1.332</text>
+<text x="24" y="114" font-family="Arial" font-size="13" fill="#333">seer</text>
+<rect x="510" y="96" width="210.02999856555763" height="26" fill="#2f6f9f" opacity="0.85"/>
+<text x="726.0299985655577" y="114" font-family="Arial" font-size="12" fill="#333">1.255</text>
+<text x="24" y="150" font-family="Arial" font-size="13" fill="#333">villager</text>
+<rect x="510" y="132" width="169.14253756741363" height="26" fill="#2f6f9f" opacity="0.85"/>
+<text x="685.1425375674137" y="150" font-family="Arial" font-size="12" fill="#333">1.011</text>
+<text x="24" y="186" font-family="Arial" font-size="13" fill="#333">werewolf</text>
+<rect x="510" y="168" width="240.0" height="26" fill="#2f6f9f" opacity="0.85"/>
+<text x="756.0" y="186" font-family="Arial" font-size="12" fill="#333">1.434</text>
+<text x="24" y="222" font-family="Arial" font-size="13" fill="#333">witch</text>
+<rect x="510" y="204" width="206.18952050660494" height="26" fill="#2f6f9f" opacity="0.85"/>
+<text x="722.1895205066049" y="222" font-family="Arial" font-size="12" fill="#333">1.232</text>
+</svg>

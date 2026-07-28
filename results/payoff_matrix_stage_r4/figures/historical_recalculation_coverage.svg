@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="162" viewBox="0 0 900 162">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="24" y="32" font-family="Arial" font-size="20" fill="#222">Historical recalculation coverage</text>
+<line x1="510" x2="510" y1="48" y2="142" stroke="#888"/>
+<text x="24" y="78" font-family="Arial" font-size="13" fill="#333">not recalculable</text>
+<rect x="510" y="60" width="60.0" height="26" fill="#2f6f9f" opacity="0.85"/>
+<text x="576.0" y="78" font-family="Arial" font-size="12" fill="#333">2.000</text>
+<text x="24" y="114" font-family="Arial" font-size="13" fill="#333">partially recalculable</text>
+<rect x="510" y="96" width="240.0" height="26" fill="#2f6f9f" opacity="0.85"/>
+<text x="756.0" y="114" font-family="Arial" font-size="12" fill="#333">8.000</text>
+</svg>

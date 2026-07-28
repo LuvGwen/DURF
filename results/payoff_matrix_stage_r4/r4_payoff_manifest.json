@@ -1,0 +1,654 @@
+{
+  "manifest_hash": "eee8007693ec6a484632f61444a53f6f8b1b9feb64b18c865f0edf704a15c7cd",
+  "manifest_version": "r4_payoff_manifest_v1",
+  "normalization_rules": {
+    "shared_wolf_team_bonus": "Shared wolf bonuses are split equally across wolves so the team-level value is not multiplied by wolf count.",
+    "total_payoff": "total_payoff = terminal_team_payoff + individual_action_payoff + shared_wolf_team_bonus + survival_or_exposure_payoff + opportunity_cost"
+  },
+  "payoff_components": [
+    {
+      "base_value": 1.0,
+      "component_category": "terminal_team_payoff",
+      "component_id": "villager_team_win",
+      "double_counting_rules": "Award at most once per source action and actor.",
+      "exclusion_rules": "Do not award when the source action is invalid.",
+      "immediate_or_terminal": "terminal",
+      "normalization_rules": "No normalization unless multiplier is supplied.",
+      "opportunity_cost_rules": "Not an opportunity-cost component.",
+      "proposal_component": "Villager team win",
+      "role_scope": [
+        "villager"
+      ],
+      "specification": "core",
+      "team_or_individual": "team",
+      "trigger_definition": "Villager role is on the winning village team."
+    },
+    {
+      "base_value": -1.0,
+      "component_category": "terminal_team_payoff",
+      "component_id": "villager_team_loss",
+      "double_counting_rules": "Award at most once per source action and actor.",
+      "exclusion_rules": "Do not award when the source action is invalid.",
+      "immediate_or_terminal": "terminal",
+      "normalization_rules": "No normalization unless multiplier is supplied.",
+      "opportunity_cost_rules": "Not an opportunity-cost component.",
+      "proposal_component": "Symmetric villager loss",
+      "role_scope": [
+        "villager"
+      ],
+      "specification": "core",
+      "team_or_individual": "team",
+      "trigger_definition": "Villager role is on the losing village team."
+    },
+    {
+      "base_value": 1.2,
+      "component_category": "terminal_team_payoff",
+      "component_id": "special_village_team_win",
+      "double_counting_rules": "Award at most once per source action and actor.",
+      "exclusion_rules": "Do not award when the source action is invalid.",
+      "immediate_or_terminal": "terminal",
+      "normalization_rules": "No normalization unless multiplier is supplied.",
+      "opportunity_cost_rules": "Not an opportunity-cost component.",
+      "proposal_component": "Special village team win",
+      "role_scope": [
+        "seer",
+        "witch",
+        "hunter"
+      ],
+      "specification": "core",
+      "team_or_individual": "team",
+      "trigger_definition": "Seer, witch, or hunter is on the winning village team."
+    },
+    {
+      "base_value": -1.2,
+      "component_category": "terminal_team_payoff",
+      "component_id": "special_village_team_loss",
+      "double_counting_rules": "Award at most once per source action and actor.",
+      "exclusion_rules": "Do not award when the source action is invalid.",
+      "immediate_or_terminal": "terminal",
+      "normalization_rules": "No normalization unless multiplier is supplied.",
+      "opportunity_cost_rules": "Not an opportunity-cost component.",
+      "proposal_component": "Symmetric special-role village loss",
+      "role_scope": [
+        "seer",
+        "witch",
+        "hunter"
+      ],
+      "specification": "core",
+      "team_or_individual": "team",
+      "trigger_definition": "Seer, witch, or hunter is on the losing village team."
+    },
+    {
+      "base_value": 1.5,
+      "component_category": "terminal_team_payoff",
+      "component_id": "wolf_team_win",
+      "double_counting_rules": "Award at most once per source action and actor.",
+      "exclusion_rules": "Do not award when the source action is invalid.",
+      "immediate_or_terminal": "terminal",
+      "normalization_rules": "No normalization unless multiplier is supplied.",
+      "opportunity_cost_rules": "Not an opportunity-cost component.",
+      "proposal_component": "Werewolf team win",
+      "role_scope": [
+        "werewolf"
+      ],
+      "specification": "core",
+      "team_or_individual": "team",
+      "trigger_definition": "Werewolf is on the winning wolf team."
+    },
+    {
+      "base_value": -1.5,
+      "component_category": "terminal_team_payoff",
+      "component_id": "wolf_team_loss",
+      "double_counting_rules": "Award at most once per source action and actor.",
+      "exclusion_rules": "Do not award when the source action is invalid.",
+      "immediate_or_terminal": "terminal",
+      "normalization_rules": "No normalization unless multiplier is supplied.",
+      "opportunity_cost_rules": "Not an opportunity-cost component.",
+      "proposal_component": "Symmetric werewolf loss",
+      "role_scope": [
+        "werewolf"
+      ],
+      "specification": "core",
+      "team_or_individual": "team",
+      "trigger_definition": "Werewolf is on the losing wolf team."
+    },
+    {
+      "base_value": 0.0,
+      "component_category": "terminal_team_payoff",
+      "component_id": "draw_terminal",
+      "double_counting_rules": "Award at most once per source action and actor.",
+      "exclusion_rules": "Do not award when the source action is invalid.",
+      "immediate_or_terminal": "terminal",
+      "normalization_rules": "No normalization unless multiplier is supplied.",
+      "opportunity_cost_rules": "Not an opportunity-cost component.",
+      "proposal_component": "Draw convention",
+      "role_scope": [
+        "villager",
+        "seer",
+        "witch",
+        "hunter",
+        "werewolf"
+      ],
+      "specification": "core",
+      "team_or_individual": "team",
+      "trigger_definition": "Game ends in a draw under the max-round rule."
+    },
+    {
+      "base_value": 0.05,
+      "component_category": "individual_action_payoff",
+      "component_id": "correct_vote_for_wolf",
+      "double_counting_rules": "Award at most once per source action and actor.",
+      "exclusion_rules": "Do not award when the source action is invalid.",
+      "immediate_or_terminal": "immediate",
+      "normalization_rules": "No normalization unless multiplier is supplied.",
+      "opportunity_cost_rules": "Not an opportunity-cost component.",
+      "proposal_component": "",
+      "role_scope": [
+        "villager",
+        "seer",
+        "witch",
+        "hunter"
+      ],
+      "specification": "core",
+      "team_or_individual": "individual",
+      "trigger_definition": "Village-team voter targets a live werewolf in a day vote."
+    },
+    {
+      "base_value": -0.05,
+      "component_category": "individual_action_payoff",
+      "component_id": "incorrect_vote_for_villager",
+      "double_counting_rules": "Award at most once per source action and actor.",
+      "exclusion_rules": "Do not award when the source action is invalid.",
+      "immediate_or_terminal": "immediate",
+      "normalization_rules": "No normalization unless multiplier is supplied.",
+      "opportunity_cost_rules": "Not an opportunity-cost component.",
+      "proposal_component": "",
+      "role_scope": [
+        "villager",
+        "seer",
+        "witch",
+        "hunter"
+      ],
+      "specification": "core",
+      "team_or_individual": "individual",
+      "trigger_definition": "Village-team voter targets a village-team player in a day vote."
+    },
+    {
+      "base_value": -0.5,
+      "component_category": "individual_action_payoff",
+      "component_id": "wrongly_eliminated",
+      "double_counting_rules": "Award at most once per source action and actor.",
+      "exclusion_rules": "Do not award when the source action is invalid.",
+      "immediate_or_terminal": "immediate",
+      "normalization_rules": "No normalization unless multiplier is supplied.",
+      "opportunity_cost_rules": "Not an opportunity-cost component.",
+      "proposal_component": "Villager wrongly eliminated risk/cost",
+      "role_scope": [
+        "villager",
+        "seer",
+        "witch",
+        "hunter"
+      ],
+      "specification": "core",
+      "team_or_individual": "individual",
+      "trigger_definition": "Village-team player is eliminated by day vote."
+    },
+    {
+      "base_value": 0.2,
+      "component_category": "individual_action_payoff",
+      "component_id": "seer_investigation_used",
+      "double_counting_rules": "Award at most once per source action and actor.",
+      "exclusion_rules": "Do not award when the source action is invalid.",
+      "immediate_or_terminal": "immediate",
+      "normalization_rules": "No normalization unless multiplier is supplied.",
+      "opportunity_cost_rules": "Not an opportunity-cost component.",
+      "proposal_component": "Seer each investigation",
+      "role_scope": [
+        "seer"
+      ],
+      "specification": "core",
+      "team_or_individual": "individual",
+      "trigger_definition": "Seer performs one legal night check."
+    },
+    {
+      "base_value": 0.3,
+      "component_category": "individual_action_payoff",
+      "component_id": "seer_information_leads_to_wolf_elimination",
+      "double_counting_rules": "Award once per checked wolf and seer; separate from the check-use reward because the later elimination is an attribution event.",
+      "exclusion_rules": "Do not award when the source action is invalid.",
+      "immediate_or_terminal": "immediate",
+      "normalization_rules": "No normalization unless multiplier is supplied.",
+      "opportunity_cost_rules": "Not an opportunity-cost component.",
+      "proposal_component": "Seer information leading to wolf elimination",
+      "role_scope": [
+        "seer"
+      ],
+      "specification": "core",
+      "team_or_individual": "individual",
+      "trigger_definition": "Checked wolf is eliminated by day vote within the attribution window."
+    },
+    {
+      "base_value": 0.3,
+      "component_category": "individual_action_payoff",
+      "component_id": "witch_correct_save",
+      "double_counting_rules": "Award at most once per source action and actor.",
+      "exclusion_rules": "Do not award when the source action is invalid.",
+      "immediate_or_terminal": "immediate",
+      "normalization_rules": "No normalization unless multiplier is supplied.",
+      "opportunity_cost_rules": "Not an opportunity-cost component.",
+      "proposal_component": "Witch correct save",
+      "role_scope": [
+        "witch"
+      ],
+      "specification": "core",
+      "team_or_individual": "individual",
+      "trigger_definition": "Witch uses antidote on a village-team night target that would die."
+    },
+    {
+      "base_value": -0.2,
+      "component_category": "individual_action_payoff",
+      "component_id": "witch_wasted_potion",
+      "double_counting_rules": "Award at most once per source action and actor.",
+      "exclusion_rules": "Do not award when the source action is invalid.",
+      "immediate_or_terminal": "immediate",
+      "normalization_rules": "No normalization unless multiplier is supplied.",
+      "opportunity_cost_rules": "Not an opportunity-cost component.",
+      "proposal_component": "Witch wasted potion",
+      "role_scope": [
+        "witch"
+      ],
+      "specification": "core",
+      "team_or_individual": "individual",
+      "trigger_definition": "Witch uses a potion on a target that does not satisfy the correct-use rule."
+    },
+    {
+      "base_value": 0.4,
+      "component_category": "individual_action_payoff",
+      "component_id": "witch_correct_poison",
+      "double_counting_rules": "Award at most once per source action and actor.",
+      "exclusion_rules": "Do not award when the source action is invalid.",
+      "immediate_or_terminal": "immediate",
+      "normalization_rules": "No normalization unless multiplier is supplied.",
+      "opportunity_cost_rules": "Not an opportunity-cost component.",
+      "proposal_component": "Witch correct poison",
+      "role_scope": [
+        "witch"
+      ],
+      "specification": "core",
+      "team_or_individual": "individual",
+      "trigger_definition": "Witch poison kills a werewolf."
+    },
+    {
+      "base_value": -0.5,
+      "component_category": "individual_action_payoff",
+      "component_id": "witch_poison_villager",
+      "double_counting_rules": "Award at most once per source action and actor.",
+      "exclusion_rules": "Do not award when the source action is invalid.",
+      "immediate_or_terminal": "immediate",
+      "normalization_rules": "No normalization unless multiplier is supplied.",
+      "opportunity_cost_rules": "Not an opportunity-cost component.",
+      "proposal_component": "Witch poison villager",
+      "role_scope": [
+        "witch"
+      ],
+      "specification": "core",
+      "team_or_individual": "individual",
+      "trigger_definition": "Witch poison kills a village-team player."
+    },
+    {
+      "base_value": 0.4,
+      "component_category": "individual_action_payoff",
+      "component_id": "hunter_correct_shot",
+      "double_counting_rules": "Award at most once per source action and actor.",
+      "exclusion_rules": "Do not award when the source action is invalid.",
+      "immediate_or_terminal": "immediate",
+      "normalization_rules": "No normalization unless multiplier is supplied.",
+      "opportunity_cost_rules": "Not an opportunity-cost component.",
+      "proposal_component": "Hunter correct death shot",
+      "role_scope": [
+        "hunter"
+      ],
+      "specification": "core",
+      "team_or_individual": "individual",
+      "trigger_definition": "Legal hunter death shot kills a werewolf."
+    },
+    {
+      "base_value": -0.5,
+      "component_category": "individual_action_payoff",
+      "component_id": "hunter_shoot_villager",
+      "double_counting_rules": "Award at most once per source action and actor.",
+      "exclusion_rules": "Do not award when the source action is invalid.",
+      "immediate_or_terminal": "immediate",
+      "normalization_rules": "No normalization unless multiplier is supplied.",
+      "opportunity_cost_rules": "Not an opportunity-cost component.",
+      "proposal_component": "Hunter shoot villager",
+      "role_scope": [
+        "hunter"
+      ],
+      "specification": "core",
+      "team_or_individual": "individual",
+      "trigger_definition": "Legal hunter death shot kills a village-team player."
+    },
+    {
+      "base_value": 0.5,
+      "component_category": "shared_wolf_team_bonus",
+      "component_id": "wolf_special_killed_shared",
+      "double_counting_rules": "Award at most once per source action and actor.",
+      "exclusion_rules": "Do not award when the source action is invalid.",
+      "immediate_or_terminal": "immediate",
+      "normalization_rules": "Split equally across all wolves in the game.",
+      "opportunity_cost_rules": "Not an opportunity-cost component.",
+      "proposal_component": "Werewolf special killed",
+      "role_scope": [
+        "werewolf"
+      ],
+      "specification": "core",
+      "team_or_individual": "team_shared",
+      "trigger_definition": "A special village role dies from night kill or vote elimination."
+    },
+    {
+      "base_value": 0.3,
+      "component_category": "shared_wolf_team_bonus",
+      "component_id": "wolf_villager_voted_out_shared",
+      "double_counting_rules": "Award at most once per source action and actor.",
+      "exclusion_rules": "Do not award when the source action is invalid.",
+      "immediate_or_terminal": "immediate",
+      "normalization_rules": "Split equally across all wolves in the game.",
+      "opportunity_cost_rules": "Not an opportunity-cost component.",
+      "proposal_component": "Werewolf villager voted out",
+      "role_scope": [
+        "werewolf"
+      ],
+      "specification": "core",
+      "team_or_individual": "team_shared",
+      "trigger_definition": "A village-team player is eliminated by day vote."
+    },
+    {
+      "base_value": 0.05,
+      "component_category": "survival_or_exposure_payoff",
+      "component_id": "survives_game",
+      "double_counting_rules": "Award at most once per source action and actor.",
+      "exclusion_rules": "Do not award when the source action is invalid.",
+      "immediate_or_terminal": "terminal",
+      "normalization_rules": "No normalization unless multiplier is supplied.",
+      "opportunity_cost_rules": "Not an opportunity-cost component.",
+      "proposal_component": "",
+      "role_scope": [
+        "villager",
+        "seer",
+        "witch",
+        "hunter",
+        "werewolf"
+      ],
+      "specification": "extended",
+      "team_or_individual": "individual",
+      "trigger_definition": "Player survives to game end."
+    },
+    {
+      "base_value": -0.05,
+      "component_category": "opportunity_cost",
+      "component_id": "death_with_unused_potion",
+      "double_counting_rules": "Award at most once per source action and actor.",
+      "exclusion_rules": "Do not award when the source action is invalid.",
+      "immediate_or_terminal": "terminal",
+      "normalization_rules": "No normalization unless multiplier is supplied.",
+      "opportunity_cost_rules": "Observable from final witch potion state.",
+      "proposal_component": "",
+      "role_scope": [
+        "witch"
+      ],
+      "specification": "extended",
+      "team_or_individual": "individual",
+      "trigger_definition": "Witch dies with at least one usable potion remaining."
+    },
+    {
+      "base_value": -0.05,
+      "component_category": "survival_or_exposure_payoff",
+      "component_id": "false_public_accusation",
+      "double_counting_rules": "Award at most once per source action and actor.",
+      "exclusion_rules": "Do not award when the source action is invalid.",
+      "immediate_or_terminal": "immediate",
+      "normalization_rules": "No normalization unless multiplier is supplied.",
+      "opportunity_cost_rules": "Not an opportunity-cost component.",
+      "proposal_component": "",
+      "role_scope": [
+        "villager",
+        "seer",
+        "witch",
+        "hunter",
+        "werewolf"
+      ],
+      "specification": "extended",
+      "team_or_individual": "individual",
+      "trigger_definition": "Speech accusation targets a player later revealed as village-team."
+    },
+    {
+      "base_value": 0.05,
+      "component_category": "individual_action_payoff",
+      "component_id": "correct_public_accusation",
+      "double_counting_rules": "Award at most once per source action and actor.",
+      "exclusion_rules": "Do not award when the source action is invalid.",
+      "immediate_or_terminal": "immediate",
+      "normalization_rules": "No normalization unless multiplier is supplied.",
+      "opportunity_cost_rules": "Not an opportunity-cost component.",
+      "proposal_component": "",
+      "role_scope": [
+        "villager",
+        "seer",
+        "witch",
+        "hunter",
+        "werewolf"
+      ],
+      "specification": "extended",
+      "team_or_individual": "individual",
+      "trigger_definition": "Speech accusation targets a player later revealed as werewolf."
+    },
+    {
+      "base_value": 0.05,
+      "component_category": "individual_action_payoff",
+      "component_id": "successful_deception",
+      "double_counting_rules": "Award at most once per source action and actor.",
+      "exclusion_rules": "Do not award when the source action is invalid.",
+      "immediate_or_terminal": "immediate",
+      "normalization_rules": "No normalization unless multiplier is supplied.",
+      "opportunity_cost_rules": "Not an opportunity-cost component.",
+      "proposal_component": "",
+      "role_scope": [
+        "werewolf"
+      ],
+      "specification": "extended",
+      "team_or_individual": "individual",
+      "trigger_definition": "Wolf deceptive speech targets a village player who is eliminated that day."
+    },
+    {
+      "base_value": -0.02,
+      "component_category": "survival_or_exposure_payoff",
+      "component_id": "accusation_pressure_cost",
+      "double_counting_rules": "Award at most once per source action and actor.",
+      "exclusion_rules": "Do not award when the source action is invalid.",
+      "immediate_or_terminal": "immediate",
+      "normalization_rules": "No normalization unless multiplier is supplied.",
+      "opportunity_cost_rules": "Not an opportunity-cost component.",
+      "proposal_component": "",
+      "role_scope": [
+        "villager",
+        "seer",
+        "witch",
+        "hunter",
+        "werewolf"
+      ],
+      "specification": "extended",
+      "team_or_individual": "individual",
+      "trigger_definition": "Credibility module applies accusation pressure cost."
+    },
+    {
+      "base_value": -0.1,
+      "component_category": "survival_or_exposure_payoff",
+      "component_id": "wrong_accusation_cost",
+      "double_counting_rules": "Award at most once per source action and actor.",
+      "exclusion_rules": "Do not award when the source action is invalid.",
+      "immediate_or_terminal": "immediate",
+      "normalization_rules": "No normalization unless multiplier is supplied.",
+      "opportunity_cost_rules": "Not an opportunity-cost component.",
+      "proposal_component": "",
+      "role_scope": [
+        "villager",
+        "seer",
+        "witch",
+        "hunter",
+        "werewolf"
+      ],
+      "specification": "extended",
+      "team_or_individual": "individual",
+      "trigger_definition": "Credibility module applies wrong-accusation penalty."
+    },
+    {
+      "base_value": -0.04,
+      "component_category": "survival_or_exposure_payoff",
+      "component_id": "self_defense_cost",
+      "double_counting_rules": "Award at most once per source action and actor.",
+      "exclusion_rules": "Do not award when the source action is invalid.",
+      "immediate_or_terminal": "immediate",
+      "normalization_rules": "No normalization unless multiplier is supplied.",
+      "opportunity_cost_rules": "Not an opportunity-cost component.",
+      "proposal_component": "",
+      "role_scope": [
+        "villager",
+        "seer",
+        "witch",
+        "hunter",
+        "werewolf"
+      ],
+      "specification": "extended",
+      "team_or_individual": "individual",
+      "trigger_definition": "Credibility module applies repeated self-defense or trust-building cost."
+    }
+  ],
+  "proposal_reference": [
+    {
+      "payoff_component": "team_win",
+      "proposal_description": "Village team victory.",
+      "proposal_value": 1.0,
+      "role": "villager"
+    },
+    {
+      "payoff_component": "wrongly_eliminated",
+      "proposal_description": "Cost of being wrongly eliminated.",
+      "proposal_value": -0.5,
+      "role": "villager"
+    },
+    {
+      "payoff_component": "team_win",
+      "proposal_description": "Village team victory with seer role premium.",
+      "proposal_value": 1.2,
+      "role": "seer"
+    },
+    {
+      "payoff_component": "investigation_used",
+      "proposal_description": "Each legal investigation.",
+      "proposal_value": 0.2,
+      "role": "seer"
+    },
+    {
+      "payoff_component": "information_leads_to_wolf_elimination",
+      "proposal_description": "Checked information contributing to wolf elimination.",
+      "proposal_value": 0.3,
+      "role": "seer"
+    },
+    {
+      "payoff_component": "high_mortality_exposure_risk",
+      "proposal_description": "Exposure or mortality risk.",
+      "proposal_value": -0.8,
+      "role": "seer"
+    },
+    {
+      "payoff_component": "team_win",
+      "proposal_description": "Village team victory with witch role premium.",
+      "proposal_value": 1.2,
+      "role": "witch"
+    },
+    {
+      "payoff_component": "correct_poison",
+      "proposal_description": "Poisoning a werewolf.",
+      "proposal_value": 0.4,
+      "role": "witch"
+    },
+    {
+      "payoff_component": "correct_save",
+      "proposal_description": "Saving a village-team night target.",
+      "proposal_value": 0.3,
+      "role": "witch"
+    },
+    {
+      "payoff_component": "wasted_potion",
+      "proposal_description": "Using a potion without useful effect.",
+      "proposal_value": -0.2,
+      "role": "witch"
+    },
+    {
+      "payoff_component": "poison_villager",
+      "proposal_description": "Poisoning a village-team player.",
+      "proposal_value": -0.5,
+      "role": "witch"
+    },
+    {
+      "payoff_component": "team_win",
+      "proposal_description": "Village team victory with hunter role premium.",
+      "proposal_value": 1.2,
+      "role": "hunter"
+    },
+    {
+      "payoff_component": "correct_death_shot",
+      "proposal_description": "Hunter death shot kills a wolf.",
+      "proposal_value": 0.4,
+      "role": "hunter"
+    },
+    {
+      "payoff_component": "shoot_villager",
+      "proposal_description": "Hunter death shot kills village team.",
+      "proposal_value": -0.5,
+      "role": "hunter"
+    },
+    {
+      "payoff_component": "team_win",
+      "proposal_description": "Wolf team victory.",
+      "proposal_value": 1.5,
+      "role": "werewolf"
+    },
+    {
+      "payoff_component": "special_killed",
+      "proposal_description": "Shared wolf bonus when a special village role is killed.",
+      "proposal_value": 0.5,
+      "role": "werewolf"
+    },
+    {
+      "payoff_component": "villager_voted_out",
+      "proposal_description": "Shared wolf bonus when a village-team player is voted out.",
+      "proposal_value": 0.3,
+      "role": "werewolf"
+    }
+  ],
+  "role_definitions": {
+    "hunter": {
+      "special_role": true,
+      "team": "village"
+    },
+    "seer": {
+      "special_role": true,
+      "team": "village"
+    },
+    "villager": {
+      "special_role": false,
+      "team": "village"
+    },
+    "werewolf": {
+      "special_role": false,
+      "team": "wolf"
+    },
+    "witch": {
+      "special_role": true,
+      "team": "village"
+    }
+  },
+  "source_commit": "f3e19b917d29494fa825ccc4b156284aa206925e"
+}

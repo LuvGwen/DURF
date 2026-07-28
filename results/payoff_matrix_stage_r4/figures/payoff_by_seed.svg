@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="810" viewBox="0 0 900 810">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="24" y="32" font-family="Arial" font-size="20" fill="#222">Mean payoff by seed</text>
+<line x1="510" x2="510" y1="48" y2="790" stroke="#888"/>
+<text x="24" y="78" font-family="Arial" font-size="13" fill="#333">600</text>
+<rect x="349.1025964204689" y="60" width="160.8974035795311" height="26" fill="#c96b3c" opacity="0.85"/>
+<text x="279.1025964204689" y="78" font-family="Arial" font-size="12" fill="#333">-0.887</text>
+<text x="24" y="114" font-family="Arial" font-size="13" fill="#333">600</text>
+<rect x="487.76657423745905" y="96" width="22.23342576254097" height="26" fill="#c96b3c" opacity="0.85"/>
+<text x="417.76657423745905" y="114" font-family="Arial" font-size="12" fill="#333">-0.123</text>
+<text x="24" y="150" font-family="Arial" font-size="13" fill="#333">600</text>
+<rect x="395.64532392235947" y="132" width="114.3546760776405" height="26" fill="#c96b3c" opacity="0.85"/>
+<text x="325.64532392235947" y="150" font-family="Arial" font-size="12" fill="#333">-0.630</text>
+<text x="24" y="186" font-family="Arial" font-size="13" fill="#333">600</text>
+<rect x="510" y="168" width="235.7045626417948" height="26" fill="#2f6f9f" opacity="0.85"/>
+<text x="751.7045626417948" y="186" font-family="Arial" font-size="12" fill="#333">1.299</text>
+<text x="24" y="222" font-family="Arial" font-size="13" fill="#333">600</text>
+<rect x="447.97327955633983" y="204" width="62.02672044366019" height="26" fill="#c96b3c" opacity="0.85"/>
+<text x="377.9732795563398" y="222" font-family="Arial" font-size="12" fill="#333">-0.342</text>
+<text x="24" y="258" font-family="Arial" font-size="13" fill="#333">601</text>
+<rect x="356.9069826065037" y="240" width="153.0930173934963" height="26" fill="#c96b3c" opacity="0.85"/>
+<text x="286.9069826065037" y="258" font-family="Arial" font-size="12" fill="#333">-0.843</text>
+<text x="24" y="294" font-family="Arial" font-size="13" fill="#333">601</text>
+<rect x="474.3811444416435" y="276" width="35.61885555835645" height="26" fill="#c96b3c" opacity="0.85"/>
+<text x="404.3811444416435" y="294" font-family="Arial" font-size="12" fill="#333">-0.196</text>
+<text x="24" y="330" font-family="Arial" font-size="13" fill="#333">601</text>
+<rect x="393.37660700781447" y="312" width="116.62339299218552" height="26" fill="#c96b3c" opacity="0.85"/>
+<text x="323.37660700781447" y="330" font-family="Arial" font-size="12" fill="#333">-0.643</text>
+<text x="24" y="366" font-family="Arial" font-size="13" fill="#333">601</text>
+<rect x="510" y="348" width="240.0" height="26" fill="#2f6f9f" opacity="0.85"/>
+<text x="756.0" y="366" font-family="Arial" font-size="12" fill="#333">1.322</text>
+<text x="24" y="402" font-family="Arial" font-size="13" fill="#333">601</text>
+<rect x="434.8147214519788" y="384" width="75.18527854802116" height="26" fill="#c96b3c" opacity="0.85"/>
+<text x="364.8147214519788" y="402" font-family="Arial" font-size="12" fill="#333">-0.414</text>
+<text x="24" y="438" font-family="Arial" font-size="13" fill="#333">602</text>
+<rect x="365.2104865137384" y="420" width="144.78951348626163" height="26" fill="#c96b3c" opacity="0.85"/>
+<text x="295.2104865137384" y="438" font-family="Arial" font-size="12" fill="#333">-0.798</text>
+<text x="24" y="474" font-family="Arial" font-size="13" fill="#333">602</text>
+<rect x="490.44366019662215" y="456" width="19.556339803377877" height="26" fill="#c96b3c" opacity="0.85"/>
+<text x="420.4436601966221" y="474" font-family="Arial" font-size="12" fill="#333">-0.108</text>
+<text x="24" y="510" font-family="Arial" font-size="13" fill="#333">602</text>
+<rect x="400.6818754726494" y="492" width="109.31812452735062" height="26" fill="#c96b3c" opacity="0.85"/>
+<text x="330.6818754726494" y="510" font-family="Arial" font-size="12" fill="#333">-0.602</text>
+<text x="24" y="546" font-family="Arial" font-size="13" fill="#333">602</text>
+<rect x="510" y="528" width="227.41618351399043" height="26" fill="#2f6f9f" opacity="0.85"/>
+<text x="743.4161835139904" y="546" font-family="Arial" font-size="12" fill="#333">1.253</text>
+<text x="24" y="582" font-family="Arial" font-size="13" fill="#333">602</text>
+<rect x="453.4635744895387" y="564" width="56.536425510461285" height="26" fill="#c96b3c" opacity="0.85"/>
+<text x="383.4635744895387" y="582" font-family="Arial" font-size="12" fill="#333">-0.311</text>
+<text x="24" y="618" font-family="Arial" font-size="13" fill="#333">603</text>
+<rect x="366.0725989412655" y="600" width="143.92740105873452" height="26" fill="#c96b3c" opacity="0.85"/>
+<text x="296.0725989412655" y="618" font-family="Arial" font-size="12" fill="#333">-0.793</text>
+<text x="24" y="654" font-family="Arial" font-size="13" fill="#333">603</text>
+<rect x="493.2568691706579" y="636" width="16.743130829342082" height="26" fill="#c96b3c" opacity="0.85"/>
+<text x="423.2568691706579" y="654" font-family="Arial" font-size="12" fill="#333">-0.092</text>
+<text x="24" y="690" font-family="Arial" font-size="13" fill="#333">603</text>
+<rect x="404.7315351651122" y="672" width="105.2684648348878" height="26" fill="#c96b3c" opacity="0.85"/>
+<text x="334.7315351651122" y="690" font-family="Arial" font-size="12" fill="#333">-0.580</text>
+<text x="24" y="726" font-family="Arial" font-size="13" fill="#333">603</text>
+<rect x="510" y="708" width="226.2062011595664" height="26" fill="#2f6f9f" opacity="0.85"/>
+<text x="742.2062011595664" y="726" font-family="Arial" font-size="12" fill="#333">1.246</text>
+<text x="24" y="762" font-family="Arial" font-size="13" fill="#333">603</text>
+<rect x="445.5230652886312" y="744" width="64.47693471136878" height="26" fill="#c96b3c" opacity="0.85"/>
+<text x="375.5230652886312" y="762" font-family="Arial" font-size="12" fill="#333">-0.355</text>
+</svg>

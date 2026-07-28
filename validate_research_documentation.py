@@ -27,6 +27,14 @@ ALLOWED_CONCLUSION_LABELS = {
     "hypothesis unresolved",
     "implementation validated",
     "engine symmetry validated",
+    "unified payoff system validated",
+    "partially validated",
+    "design inconsistency found",
+    "historical recalculation limited",
+    "invalid due to double counting",
+    "invalid due to missing event data",
+    "ready for risk-adjusted analysis",
+    "requires one correction before R5",
 }
 
 REQUIRED_FILES = [
@@ -50,6 +58,11 @@ REQUIRED_FILES = [
     "results/bow_speech_stage_r2/bow_vocabulary_manifest.json",
     "results/bow_speech_stage_r2/bow_score_definition_manifest.json",
     "results/research_progress/research_documentation_completion_report.md",
+    "results/payoff_matrix_stage_r4/r4_payoff_manifest.json",
+    "results/payoff_matrix_stage_r4/r4_research_report.md",
+    "results/payoff_matrix_stage_r4/r4_information_leakage_audit.md",
+    "results/payoff_matrix_stage_r4/r4_validation_summary.csv",
+    "results/payoff_matrix_stage_r4/r4_double_counting_audit.md",
 ]
 
 REGISTRY_COLUMNS = [

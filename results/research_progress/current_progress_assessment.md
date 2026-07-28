@@ -57,3 +57,7 @@ Formal BoW speech quantification is now implemented and validated as a shadow fe
 ## Current R3 Assessment
 
 R3 is implemented for guarded belief and vote policies. Broad BoW integration remains conditional on OOD stability.
+
+## R4 Unified Payoff Update
+
+R4 unified payoff accounting is validated. R5 should compute variance and Sharpe-like metrics.

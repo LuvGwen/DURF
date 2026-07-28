@@ -50,5 +50,13 @@ Allowed labels are:
 - hypothesis unresolved
 - implementation validated
 - engine symmetry validated
+- unified payoff system validated
+- partially validated
+- design inconsistency found
+- historical recalculation limited
+- invalid due to double counting
+- invalid due to missing event data
+- ready for risk-adjusted analysis
+- requires one correction before R5
 
 No future stage may be marked complete unless all applicable reporting outputs exist.

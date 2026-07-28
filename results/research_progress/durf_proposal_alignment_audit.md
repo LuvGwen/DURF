@@ -67,3 +67,7 @@ R2 completes the formal BoW vocabulary, English tokenization, werewolf-leaning s
 ## R3 Guarded BoW Integration Update
 
 BoW decision integration is now partially completed and live-validated under guarded experimental policies.
+
+## R4 Unified Payoff Update
+
+R4 resolves the role-specific payoff matrix gap and leaves payoff variance and Sharpe-like ratios for R5.

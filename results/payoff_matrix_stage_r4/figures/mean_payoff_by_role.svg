@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="270" viewBox="0 0 900 270">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="24" y="32" font-family="Arial" font-size="20" fill="#222">Mean core payoff by role</text>
+<line x1="510" x2="510" y1="48" y2="250" stroke="#888"/>
+<text x="24" y="78" font-family="Arial" font-size="13" fill="#333">hunter</text>
+<rect x="360.9359497299085" y="60" width="149.0640502700915" height="26" fill="#c96b3c" opacity="0.85"/>
+<text x="290.9359497299085" y="78" font-family="Arial" font-size="12" fill="#333">-0.751</text>
+<text x="24" y="114" font-family="Arial" font-size="13" fill="#333">seer</text>
+<rect x="494.16988204167126" y="96" width="15.83011795832875" height="26" fill="#c96b3c" opacity="0.85"/>
+<text x="424.16988204167126" y="114" font-family="Arial" font-size="12" fill="#333">-0.080</text>
+<text x="24" y="150" font-family="Arial" font-size="13" fill="#333">villager</text>
+<rect x="396.5450336236358" y="132" width="113.45496637636421" height="26" fill="#c96b3c" opacity="0.85"/>
+<text x="326.5450336236358" y="150" font-family="Arial" font-size="12" fill="#333">-0.572</text>
+<text x="24" y="186" font-family="Arial" font-size="13" fill="#333">werewolf</text>
+<rect x="510" y="168" width="240.0" height="26" fill="#2f6f9f" opacity="0.85"/>
+<text x="756.0" y="186" font-family="Arial" font-size="12" fill="#333">1.209</text>
+<text x="24" y="222" font-family="Arial" font-size="13" fill="#333">witch</text>
+<rect x="452.64248704663214" y="204" width="57.35751295336786" height="26" fill="#c96b3c" opacity="0.85"/>
+<text x="382.64248704663214" y="222" font-family="Arial" font-size="12" fill="#333">-0.289</text>
+</svg>

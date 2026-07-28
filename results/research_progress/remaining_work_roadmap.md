@@ -148,3 +148,7 @@
 ## Next Proposal-Completion Stage
 
 R4 — Unified Role-Specific Payoff Matrix.
+
+## R4 Unified Payoff Update
+
+Next exact experiment: R5 financial risk metrics using R4 payoff ledger outputs.

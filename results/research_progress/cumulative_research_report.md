@@ -240,3 +240,12 @@ Conclusion: `promising but uncertain`. R2 validates the BoW measurement pipeline
 ## 25. R3 Guarded Bag-of-Words Integration
 
 R3 integrated formal BoW speech scores into belief and village voting under explicit experimental flags. The stage generated matched live-game, speech, belief-update, vote-decision, shadow, template-shift, and disagreement-branch proxy datasets. Default gameplay remains unchanged unless `enable_bow_r3=True`.
+
+## 26. R4 Unified Role-Specific Payoff Matrix
+
+R4 implemented a unified, versioned, role-specific payoff matrix and event-level
+ledger. The validation dataset contains 2000 games,
+10 seeds, 5 regimes, and
+200660 payoff-event rows. The payoff system reconciles
+event-level, player-level, and game-level totals and is ready for R5
+risk-adjusted analysis.

@@ -167,6 +167,7 @@ class Game:
         r3_behavioral_regime="baseline_speech",
         r3_selective_override_margin=0.08,
         r3_selective_min_information_density=0.12,
+        enable_r4_payoff_ledger=False,
     ):
         if players is None:
             players = create_default_players(
@@ -412,6 +413,8 @@ class Game:
             r3_selective_min_information_density
         )
         self.r3_current_signal_by_player = {}
+        self.enable_r4_payoff_ledger = enable_r4_payoff_ledger
+        self.r4_payoff_results = {}
 
         if self.enable_risk_preference:
             assign_risk_preferences(
@@ -1192,8 +1195,34 @@ class Game:
         from payoff import calculate_payoffs
 
         self.payoffs = calculate_payoffs(self)
+        if self.enable_r4_payoff_ledger:
+            from payoff_calculator import calculate_r4_payoff
+
+            self.r4_payoff_results = {
+                "core": calculate_r4_payoff(
+                    self,
+                    game_id=getattr(self, "label_condition", None)
+                    or f"game_{id(self)}",
+                    matched_set_id=getattr(self, "label_condition", "") or "",
+                    seed=getattr(self, "main_game_seed", "") or "",
+                    calculation_specification="core",
+                ),
+                "extended": calculate_r4_payoff(
+                    self,
+                    game_id=getattr(self, "label_condition", None)
+                    or f"game_{id(self)}",
+                    matched_set_id=getattr(self, "label_condition", "") or "",
+                    seed=getattr(self, "main_game_seed", "") or "",
+                    calculation_specification="extended",
+                ),
+            }
         summary = self.state.summary()
         summary["payoffs"] = self.payoffs
+        if self.enable_r4_payoff_ledger:
+            summary["r4_payoff_summary"] = {
+                name: result["game_row"]
+                for name, result in self.r4_payoff_results.items()
+            }
         return summary
 
 

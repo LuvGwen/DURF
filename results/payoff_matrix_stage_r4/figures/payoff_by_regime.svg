@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="810" viewBox="0 0 900 810">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="24" y="32" font-family="Arial" font-size="20" fill="#222">Mean payoff by regime</text>
+<line x1="510" x2="510" y1="48" y2="790" stroke="#888"/>
+<text x="24" y="78" font-family="Arial" font-size="13" fill="#333">baseline_structured_speech</text>
+<rect x="368.14211836812876" y="60" width="141.85788163187127" height="26" fill="#c96b3c" opacity="0.85"/>
+<text x="298.14211836812876" y="78" font-family="Arial" font-size="12" fill="#333">-0.772</text>
+<text x="24" y="114" font-family="Arial" font-size="13" fill="#333">baseline_structured_speech</text>
+<rect x="489.10745067994634" y="96" width="20.892549320053636" height="26" fill="#c96b3c" opacity="0.85"/>
+<text x="419.1074506799464" y="114" font-family="Arial" font-size="12" fill="#333">-0.114</text>
+<text x="24" y="150" font-family="Arial" font-size="13" fill="#333">baseline_structured_speech</text>
+<rect x="402.2447806933538" y="132" width="107.75521930664621" height="26" fill="#c96b3c" opacity="0.85"/>
+<text x="332.2447806933538" y="150" font-family="Arial" font-size="12" fill="#333">-0.586</text>
+<text x="24" y="186" font-family="Arial" font-size="13" fill="#333">baseline_structured_speech</text>
+<rect x="510" y="168" width="226.62325225052672" height="26" fill="#2f6f9f" opacity="0.85"/>
+<text x="742.6232522505268" y="186" font-family="Arial" font-size="12" fill="#333">1.233</text>
+<text x="24" y="222" font-family="Arial" font-size="13" fill="#333">baseline_structured_speech</text>
+<rect x="456.8837387473664" y="204" width="53.11626125263357" height="26" fill="#c96b3c" opacity="0.85"/>
+<text x="386.88373874736646" y="222" font-family="Arial" font-size="12" fill="#333">-0.289</text>
+<text x="24" y="258" font-family="Arial" font-size="13" fill="#333">deception_and_credibility</text>
+<rect x="376.46236353189045" y="240" width="133.53763646810953" height="26" fill="#c96b3c" opacity="0.85"/>
+<text x="306.46236353189045" y="258" font-family="Arial" font-size="12" fill="#333">-0.726</text>
+<text x="24" y="294" font-family="Arial" font-size="13" fill="#333">deception_and_credibility</text>
+<rect x="488.4179276000766" y="276" width="21.582072399923394" height="26" fill="#c96b3c" opacity="0.85"/>
+<text x="418.4179276000766" y="294" font-family="Arial" font-size="12" fill="#333">-0.117</text>
+<text x="24" y="330" font-family="Arial" font-size="13" fill="#333">deception_and_credibility</text>
+<rect x="402.85960543957094" y="312" width="107.14039456042903" height="26" fill="#c96b3c" opacity="0.85"/>
+<text x="332.85960543957094" y="330" font-family="Arial" font-size="12" fill="#333">-0.583</text>
+<text x="24" y="366" font-family="Arial" font-size="13" fill="#333">deception_and_credibility</text>
+<rect x="510" y="348" width="224.64661942156675" height="26" fill="#2f6f9f" opacity="0.85"/>
+<text x="740.6466194215668" y="366" font-family="Arial" font-size="12" fill="#333">1.222</text>
+<text x="24" y="402" font-family="Arial" font-size="13" fill="#333">deception_and_credibility</text>
+<rect x="449.27600076613675" y="384" width="60.72399923386323" height="26" fill="#c96b3c" opacity="0.85"/>
+<text x="379.2760007661368" y="402" font-family="Arial" font-size="12" fill="#333">-0.330</text>
+<text x="24" y="438" font-family="Arial" font-size="13" fill="#333">low_information_noise</text>
+<rect x="388.7128902509098" y="420" width="121.2871097490902" height="26" fill="#c96b3c" opacity="0.85"/>
+<text x="318.7128902509098" y="438" font-family="Arial" font-size="12" fill="#333">-0.660</text>
+<text x="24" y="474" font-family="Arial" font-size="13" fill="#333">low_information_noise</text>
+<rect x="510" y="456" width="2.3213943688948353" height="26" fill="#2f6f9f" opacity="0.85"/>
+<text x="518.3213943688949" y="474" font-family="Arial" font-size="12" fill="#333">0.013</text>
+<text x="24" y="510" font-family="Arial" font-size="13" fill="#333">low_information_noise</text>
+<rect x="414.24822830875314" y="492" width="95.75177169124687" height="26" fill="#c96b3c" opacity="0.85"/>
+<text x="344.24822830875314" y="510" font-family="Arial" font-size="12" fill="#333">-0.521</text>
+<text x="24" y="546" font-family="Arial" font-size="13" fill="#333">low_information_noise</text>
+<rect x="510" y="528" width="210.1206665389772" height="26" fill="#2f6f9f" opacity="0.85"/>
+<text x="726.1206665389772" y="546" font-family="Arial" font-size="12" fill="#333">1.143</text>
+<text x="24" y="582" font-family="Arial" font-size="13" fill="#333">low_information_noise</text>
+<rect x="467.1116644321011" y="564" width="42.88833556789886" height="26" fill="#c96b3c" opacity="0.85"/>
+<text x="397.1116644321012" y="582" font-family="Arial" font-size="12" fill="#333">-0.233</text>
+<text x="24" y="618" font-family="Arial" font-size="13" fill="#333">risk_mixed</text>
+<rect x="349.0653131583988" y="600" width="160.9346868416012" height="26" fill="#c96b3c" opacity="0.85"/>
+<text x="279.0653131583988" y="618" font-family="Arial" font-size="12" fill="#333">-0.875</text>
+<text x="24" y="654" font-family="Arial" font-size="13" fill="#333">risk_mixed</text>
+<rect x="480.71825320819767" y="636" width="29.281746791802345" height="26" fill="#c96b3c" opacity="0.85"/>
+<text x="410.71825320819767" y="654" font-family="Arial" font-size="12" fill="#333">-0.159</text>
+<text x="24" y="690" font-family="Arial" font-size="13" fill="#333">risk_mixed</text>
+<rect x="393.9130434782609" y="672" width="116.0869565217391" height="26" fill="#c96b3c" opacity="0.85"/>
+<text x="323.9130434782609" y="690" font-family="Arial" font-size="12" fill="#333">-0.631</text>
+<text x="24" y="726" font-family="Arial" font-size="13" fill="#333">risk_mixed</text>
+<rect x="510" y="708" width="240.0" height="26" fill="#2f6f9f" opacity="0.85"/>
+<text x="756.0" y="726" font-family="Arial" font-size="12" fill="#333">1.305</text>
+<text x="24" y="762" font-family="Arial" font-size="13" fill="#333">risk_mixed</text>
+<rect x="443.13924535529594" y="744" width="66.86075464470406" height="26" fill="#c96b3c" opacity="0.85"/>
+<text x="373.13924535529594" y="762" font-family="Arial" font-size="12" fill="#333">-0.364</text>
+</svg>

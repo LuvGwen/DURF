@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="990" viewBox="0 0 900 990">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="24" y="32" font-family="Arial" font-size="20" fill="#222">Payoff event frequency by component</text>
+<line x1="510" x2="510" y1="48" y2="970" stroke="#888"/>
+<text x="24" y="78" font-family="Arial" font-size="13" fill="#333">correct_vote_for_wolf</text>
+<rect x="510" y="60" width="173.3088800804591" height="26" fill="#2f6f9f" opacity="0.85"/>
+<text x="689.3088800804591" y="78" font-family="Arial" font-size="12" fill="#333">12206.000</text>
+<text x="24" y="114" font-family="Arial" font-size="13" fill="#333">hunter_correct_shot</text>
+<rect x="510" y="96" width="6.701768916760338" height="26" fill="#2f6f9f" opacity="0.85"/>
+<text x="522.7017689167603" y="114" font-family="Arial" font-size="12" fill="#333">472.000</text>
+<text x="24" y="150" font-family="Arial" font-size="13" fill="#333">hunter_shoot_villager</text>
+<rect x="510" y="132" width="11.628704963615926" height="26" fill="#2f6f9f" opacity="0.85"/>
+<text x="527.628704963616" y="150" font-family="Arial" font-size="12" fill="#333">819.000</text>
+<text x="24" y="186" font-family="Arial" font-size="13" fill="#333">incorrect_vote_for_villager</text>
+<rect x="510" y="168" width="240.0" height="26" fill="#2f6f9f" opacity="0.85"/>
+<text x="756.0" y="186" font-family="Arial" font-size="12" fill="#333">16903.000</text>
+<text x="24" y="222" font-family="Arial" font-size="13" fill="#333">seer_information_leads_to_wolf_elimination</text>
+<rect x="510" y="204" width="9.243329586463942" height="26" fill="#2f6f9f" opacity="0.85"/>
+<text x="525.2433295864639" y="222" font-family="Arial" font-size="12" fill="#333">651.000</text>
+<text x="24" y="258" font-family="Arial" font-size="13" fill="#333">seer_investigation_used</text>
+<rect x="510" y="240" width="51.81092113825948" height="26" fill="#2f6f9f" opacity="0.85"/>
+<text x="567.8109211382595" y="258" font-family="Arial" font-size="12" fill="#333">3649.000</text>
+<text x="24" y="294" font-family="Arial" font-size="13" fill="#333">special_village_team_loss</text>
+<rect x="510" y="276" width="59.93255635094362" height="26" fill="#2f6f9f" opacity="0.85"/>
+<text x="575.9325563509436" y="294" font-family="Arial" font-size="12" fill="#333">4221.000</text>
+<text x="24" y="330" font-family="Arial" font-size="13" fill="#333">special_village_team_win</text>
+<rect x="510" y="312" width="25.25942140448441" height="26" fill="#2f6f9f" opacity="0.85"/>
+<text x="541.2594214044844" y="330" font-family="Arial" font-size="12" fill="#333">1779.000</text>
+<text x="24" y="366" font-family="Arial" font-size="13" fill="#333">villager_team_loss</text>
+<rect x="510" y="348" width="79.9100751345915" height="26" fill="#2f6f9f" opacity="0.85"/>
+<text x="595.9100751345915" y="366" font-family="Arial" font-size="12" fill="#333">5628.000</text>
+<text x="24" y="402" font-family="Arial" font-size="13" fill="#333">villager_team_win</text>
+<rect x="510" y="384" width="33.67922853931255" height="26" fill="#2f6f9f" opacity="0.85"/>
+<text x="549.6792285393126" y="402" font-family="Arial" font-size="12" fill="#333">2372.000</text>
+<text x="24" y="438" font-family="Arial" font-size="13" fill="#333">witch_correct_poison</text>
+<rect x="510" y="420" width="6.82955688339348" height="26" fill="#2f6f9f" opacity="0.85"/>
+<text x="522.8295568833935" y="438" font-family="Arial" font-size="12" fill="#333">481.000</text>
+<text x="24" y="474" font-family="Arial" font-size="13" fill="#333">witch_correct_save</text>
+<rect x="510" y="456" width="24.819262852748032" height="26" fill="#2f6f9f" opacity="0.85"/>
+<text x="540.819262852748" y="474" font-family="Arial" font-size="12" fill="#333">1748.000</text>
+<text x="24" y="510" font-family="Arial" font-size="13" fill="#333">witch_poison_villager</text>
+<rect x="510" y="492" width="2.016210140211797" height="26" fill="#2f6f9f" opacity="0.85"/>
+<text x="518.0162101402118" y="510" font-family="Arial" font-size="12" fill="#333">142.000</text>
+<text x="24" y="546" font-family="Arial" font-size="13" fill="#333">wolf_special_killed_shared</text>
+<rect x="510" y="528" width="217.0691593208306" height="26" fill="#2f6f9f" opacity="0.85"/>
+<text x="733.0691593208306" y="546" font-family="Arial" font-size="12" fill="#333">15288.000</text>
+<text x="24" y="582" font-family="Arial" font-size="13" fill="#333">wolf_team_loss</text>
+<rect x="510" y="564" width="25.25942140448441" height="26" fill="#2f6f9f" opacity="0.85"/>
+<text x="541.2594214044844" y="582" font-family="Arial" font-size="12" fill="#333">1779.000</text>
+<text x="24" y="618" font-family="Arial" font-size="13" fill="#333">wolf_team_win</text>
+<rect x="510" y="600" width="59.93255635094362" height="26" fill="#2f6f9f" opacity="0.85"/>
+<text x="575.9325563509436" y="618" font-family="Arial" font-size="12" fill="#333">4221.000</text>
+<text x="24" y="654" font-family="Arial" font-size="13" fill="#333">wolf_villager_voted_out_shared</text>
+<rect x="510" y="636" width="148.48961722771105" height="26" fill="#2f6f9f" opacity="0.85"/>
+<text x="664.489617227711" y="654" font-family="Arial" font-size="12" fill="#333">10458.000</text>
+<text x="24" y="690" font-family="Arial" font-size="13" fill="#333">wrongly_eliminated</text>
+<rect x="510" y="672" width="49.496539075903684" height="26" fill="#2f6f9f" opacity="0.85"/>
+<text x="565.4965390759037" y="690" font-family="Arial" font-size="12" fill="#333">3486.000</text>
+<text x="24" y="726" font-family="Arial" font-size="13" fill="#333">accusation_pressure_cost</text>
+<rect x="510" y="708" width="62.743891616872745" height="26" fill="#2f6f9f" opacity="0.85"/>
+<text x="578.7438916168727" y="726" font-family="Arial" font-size="12" fill="#333">4419.000</text>
+<text x="24" y="762" font-family="Arial" font-size="13" fill="#333">correct_public_accusation</text>
+<rect x="510" y="744" width="20.900431875998343" height="26" fill="#2f6f9f" opacity="0.85"/>
+<text x="536.9004318759984" y="762" font-family="Arial" font-size="12" fill="#333">1472.000</text>
+<text x="24" y="798" font-family="Arial" font-size="13" fill="#333">correct_vote_for_wolf</text>
+<rect x="510" y="780" width="173.3088800804591" height="26" fill="#2f6f9f" opacity="0.85"/>
+<text x="689.3088800804591" y="798" font-family="Arial" font-size="12" fill="#333">12206.000</text>
+<text x="24" y="834" font-family="Arial" font-size="13" fill="#333">death_with_unused_potion</text>
+<rect x="510" y="816" width="19.068804354256642" height="26" fill="#2f6f9f" opacity="0.85"/>
+<text x="535.0688043542566" y="834" font-family="Arial" font-size="12" fill="#333">1343.000</text>
+<text x="24" y="870" font-family="Arial" font-size="13" fill="#333">false_public_accusation</text>
+<rect x="510" y="852" width="94.37851269005502" height="26" fill="#2f6f9f" opacity="0.85"/>
+<text x="610.378512690055" y="870" font-family="Arial" font-size="12" fill="#333">6647.000</text>
+<text x="24" y="906" font-family="Arial" font-size="13" fill="#333">hunter_correct_shot</text>
+<rect x="510" y="888" width="6.701768916760338" height="26" fill="#2f6f9f" opacity="0.85"/>
+<text x="522.7017689167603" y="906" font-family="Arial" font-size="12" fill="#333">472.000</text>
+<text x="24" y="942" font-family="Arial" font-size="13" fill="#333">hunter_shoot_villager</text>
+<rect x="510" y="924" width="11.628704963615926" height="26" fill="#2f6f9f" opacity="0.85"/>
+<text x="527.628704963616" y="942" font-family="Arial" font-size="12" fill="#333">819.000</text>
+</svg>

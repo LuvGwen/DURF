@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="810" viewBox="0 0 900 810">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="24" y="32" font-family="Arial" font-size="20" fill="#222">Coefficient sensitivity sample</text>
+<line x1="510" x2="510" y1="48" y2="790" stroke="#888"/>
+<text x="24" y="78" font-family="Arial" font-size="13" fill="#333">terminal_team_payoff</text>
+<rect x="367.3185088293002" y="60" width="142.6814911706998" height="26" fill="#c96b3c" opacity="0.85"/>
+<text x="297.3185088293002" y="78" font-family="Arial" font-size="12" fill="#333">-0.720</text>
+<text x="24" y="114" font-family="Arial" font-size="13" fill="#333">terminal_team_payoff</text>
+<rect x="361.66775670372795" y="96" width="148.33224329627205" height="26" fill="#c96b3c" opacity="0.85"/>
+<text x="291.66775670372795" y="114" font-family="Arial" font-size="12" fill="#333">-0.748</text>
+<text x="24" y="150" font-family="Arial" font-size="13" fill="#333">terminal_team_payoff</text>
+<rect x="367.91332484251836" y="132" width="142.08667515748166" height="26" fill="#c96b3c" opacity="0.85"/>
+<text x="297.91332484251836" y="150" font-family="Arial" font-size="12" fill="#333">-0.717</text>
+<text x="24" y="186" font-family="Arial" font-size="13" fill="#333">terminal_team_payoff</text>
+<rect x="386.97222126604936" y="168" width="123.02777873395061" height="26" fill="#c96b3c" opacity="0.85"/>
+<text x="316.97222126604936" y="186" font-family="Arial" font-size="12" fill="#333">-0.620</text>
+<text x="24" y="222" font-family="Arial" font-size="13" fill="#333">terminal_team_payoff</text>
+<rect x="442.4635984991911" y="204" width="67.53640150080892" height="26" fill="#c96b3c" opacity="0.85"/>
+<text x="372.4635984991911" y="222" font-family="Arial" font-size="12" fill="#333">-0.341</text>
+<text x="24" y="258" font-family="Arial" font-size="13" fill="#333">terminal_team_payoff</text>
+<rect x="503.9031358645141" y="240" width="6.096864135485877" height="26" fill="#c96b3c" opacity="0.85"/>
+<text x="433.9031358645141" y="258" font-family="Arial" font-size="12" fill="#333">-0.031</text>
+<text x="24" y="294" font-family="Arial" font-size="13" fill="#333">terminal_team_payoff</text>
+<rect x="497.731919727376" y="276" width="12.268080272624012" height="26" fill="#c96b3c" opacity="0.85"/>
+<text x="427.73191972737595" y="294" font-family="Arial" font-size="12" fill="#333">-0.062</text>
+<text x="24" y="330" font-family="Arial" font-size="13" fill="#333">terminal_team_payoff</text>
+<rect x="476.4672472548277" y="312" width="33.53275274517229" height="26" fill="#c96b3c" opacity="0.85"/>
+<text x="406.4672472548277" y="330" font-family="Arial" font-size="12" fill="#333">-0.169</text>
+<text x="24" y="366" font-family="Arial" font-size="13" fill="#333">terminal_team_payoff</text>
+<rect x="510" y="348" width="16.654848370107732" height="26" fill="#2f6f9f" opacity="0.85"/>
+<text x="532.6548483701077" y="366" font-family="Arial" font-size="12" fill="#333">0.084</text>
+<text x="24" y="402" font-family="Arial" font-size="13" fill="#333">terminal_team_payoff</text>
+<rect x="510" y="384" width="77.20216171560355" height="26" fill="#2f6f9f" opacity="0.85"/>
+<text x="593.2021617156036" y="402" font-family="Arial" font-size="12" fill="#333">0.389</text>
+<text x="24" y="438" font-family="Arial" font-size="13" fill="#333">terminal_team_payoff</text>
+<rect x="407.80317372895945" y="420" width="102.19682627104058" height="26" fill="#c96b3c" opacity="0.85"/>
+<text x="337.80317372895945" y="438" font-family="Arial" font-size="12" fill="#333">-0.515</text>
+<text x="24" y="474" font-family="Arial" font-size="13" fill="#333">terminal_team_payoff</text>
+<rect x="401.2540015834222" y="456" width="108.74599841657775" height="26" fill="#c96b3c" opacity="0.85"/>
+<text x="331.2540015834222" y="474" font-family="Arial" font-size="12" fill="#333">-0.548</text>
+<text x="24" y="510" font-family="Arial" font-size="13" fill="#333">terminal_team_payoff</text>
+<rect x="395.96261746583593" y="492" width="114.03738253416407" height="26" fill="#c96b3c" opacity="0.85"/>
+<text x="325.96261746583593" y="510" font-family="Arial" font-size="12" fill="#333">-0.575</text>
+<text x="24" y="546" font-family="Arial" font-size="13" fill="#333">terminal_team_payoff</text>
+<rect x="417.3450139410003" y="528" width="92.6549860589997" height="26" fill="#c96b3c" opacity="0.85"/>
+<text x="347.3450139410003" y="546" font-family="Arial" font-size="12" fill="#333">-0.467</text>
+<text x="24" y="582" font-family="Arial" font-size="13" fill="#333">terminal_team_payoff</text>
+<rect x="461.6959829265774" y="564" width="48.3040170734226" height="26" fill="#c96b3c" opacity="0.85"/>
+<text x="391.6959829265774" y="582" font-family="Arial" font-size="12" fill="#333">-0.244</text>
+<text x="24" y="618" font-family="Arial" font-size="13" fill="#333">terminal_team_payoff</text>
+<rect x="510" y="600" width="227.20319438229325" height="26" fill="#2f6f9f" opacity="0.85"/>
+<text x="743.2031943822933" y="618" font-family="Arial" font-size="12" fill="#333">1.146</text>
+<text x="24" y="654" font-family="Arial" font-size="13" fill="#333">terminal_team_payoff</text>
+<rect x="510" y="636" width="235.68758390416855" height="26" fill="#2f6f9f" opacity="0.85"/>
+<text x="751.6875839041686" y="654" font-family="Arial" font-size="12" fill="#333">1.189</text>
+<text x="24" y="690" font-family="Arial" font-size="13" fill="#333">terminal_team_payoff</text>
+<rect x="510" y="672" width="240.0" height="26" fill="#2f6f9f" opacity="0.85"/>
+<text x="756.0" y="690" font-family="Arial" font-size="12" fill="#333">1.210</text>
+<text x="24" y="726" font-family="Arial" font-size="13" fill="#333">terminal_team_payoff</text>
+<rect x="510" y="708" width="216.983924821865" height="26" fill="#2f6f9f" opacity="0.85"/>
+<text x="732.983924821865" y="726" font-family="Arial" font-size="12" fill="#333">1.094</text>
+<text x="24" y="762" font-family="Arial" font-size="13" fill="#333">terminal_team_payoff</text>
+<rect x="510" y="744" width="127.83587484079726" height="26" fill="#2f6f9f" opacity="0.85"/>
+<text x="643.8358748407973" y="762" font-family="Arial" font-size="12" fill="#333">0.645</text>
+</svg>

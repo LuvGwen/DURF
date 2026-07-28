@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="810" viewBox="0 0 900 810">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="24" y="32" font-family="Arial" font-size="20" fill="#222">Core payoff by strategy condition</text>
+<line x1="510" x2="510" y1="48" y2="790" stroke="#888"/>
+<text x="24" y="78" font-family="Arial" font-size="13" fill="#333">reference_strategy_mix</text>
+<rect x="362.9610667936659" y="60" width="147.0389332063341" height="26" fill="#c96b3c" opacity="0.85"/>
+<text x="292.9610667936659" y="78" font-family="Arial" font-size="12" fill="#333">-0.858</text>
+<text x="24" y="114" font-family="Arial" font-size="13" fill="#333">reference_strategy_mix</text>
+<rect x="481.0679842838433" y="96" width="28.93201571615669" height="26" fill="#c96b3c" opacity="0.85"/>
+<text x="411.0679842838433" y="114" font-family="Arial" font-size="12" fill="#333">-0.169</text>
+<text x="24" y="150" font-family="Arial" font-size="13" fill="#333">reference_strategy_mix</text>
+<rect x="401.9121323967139" y="132" width="108.0878676032861" height="26" fill="#c96b3c" opacity="0.85"/>
+<text x="331.9121323967139" y="150" font-family="Arial" font-size="12" fill="#333">-0.630</text>
+<text x="24" y="186" font-family="Arial" font-size="13" fill="#333">reference_strategy_mix</text>
+<rect x="510" y="168" width="226.04119538040246" height="26" fill="#2f6f9f" opacity="0.85"/>
+<text x="742.0411953804024" y="186" font-family="Arial" font-size="12" fill="#333">1.318</text>
+<text x="24" y="222" font-family="Arial" font-size="13" fill="#333">reference_strategy_mix</text>
+<rect x="450.4857721157281" y="204" width="59.51422788427191" height="26" fill="#c96b3c" opacity="0.85"/>
+<text x="380.4857721157281" y="222" font-family="Arial" font-size="12" fill="#333">-0.347</text>
+<text x="24" y="258" font-family="Arial" font-size="13" fill="#333">seer_highest_suspicion</text>
+<rect x="356.27455649482084" y="240" width="153.72544350517916" height="26" fill="#c96b3c" opacity="0.85"/>
+<text x="286.27455649482084" y="258" font-family="Arial" font-size="12" fill="#333">-0.897</text>
+<text x="24" y="294" font-family="Arial" font-size="13" fill="#333">seer_highest_suspicion</text>
+<rect x="473.93142040719135" y="276" width="36.068579592808675" height="26" fill="#c96b3c" opacity="0.85"/>
+<text x="403.93142040719135" y="294" font-family="Arial" font-size="12" fill="#333">-0.210</text>
+<text x="24" y="330" font-family="Arial" font-size="13" fill="#333">seer_highest_suspicion</text>
+<rect x="394.74877961662105" y="312" width="115.25122038337895" height="26" fill="#c96b3c" opacity="0.85"/>
+<text x="324.74877961662105" y="330" font-family="Arial" font-size="12" fill="#333">-0.672</text>
+<text x="24" y="366" font-family="Arial" font-size="13" fill="#333">seer_highest_suspicion</text>
+<rect x="510" y="348" width="235.62805095844746" height="26" fill="#2f6f9f" opacity="0.85"/>
+<text x="751.6280509584475" y="366" font-family="Arial" font-size="12" fill="#333">1.374</text>
+<text x="24" y="402" font-family="Arial" font-size="13" fill="#333">seer_highest_suspicion</text>
+<rect x="444.24931539468986" y="384" width="65.75068460531014" height="26" fill="#c96b3c" opacity="0.85"/>
+<text x="374.24931539468986" y="402" font-family="Arial" font-size="12" fill="#333">-0.383</text>
+<text x="24" y="438" font-family="Arial" font-size="13" fill="#333">villager_random_vote</text>
+<rect x="361.1608524824384" y="420" width="148.8391475175616" height="26" fill="#c96b3c" opacity="0.85"/>
+<text x="291.1608524824384" y="438" font-family="Arial" font-size="12" fill="#333">-0.868</text>
+<text x="24" y="474" font-family="Arial" font-size="13" fill="#333">villager_random_vote</text>
+<rect x="455.0291701393023" y="456" width="54.970829860697705" height="26" fill="#c96b3c" opacity="0.85"/>
+<text x="385.0291701393023" y="474" font-family="Arial" font-size="12" fill="#333">-0.321</text>
+<text x="24" y="510" font-family="Arial" font-size="13" fill="#333">villager_random_vote</text>
+<rect x="389.74461245386357" y="492" width="120.25538754613643" height="26" fill="#c96b3c" opacity="0.85"/>
+<text x="319.74461245386357" y="510" font-family="Arial" font-size="12" fill="#333">-0.701</text>
+<text x="24" y="546" font-family="Arial" font-size="13" fill="#333">villager_random_vote</text>
+<rect x="510" y="528" width="240.0" height="26" fill="#2f6f9f" opacity="0.85"/>
+<text x="756.0" y="546" font-family="Arial" font-size="12" fill="#333">1.400</text>
+<text x="24" y="582" font-family="Arial" font-size="13" fill="#333">villager_random_vote</text>
+<rect x="445.17085367305634" y="564" width="64.82914632694366" height="26" fill="#c96b3c" opacity="0.85"/>
+<text x="375.17085367305634" y="582" font-family="Arial" font-size="12" fill="#333">-0.378</text>
+<text x="24" y="618" font-family="Arial" font-size="13" fill="#333">witch_conservative_poison</text>
+<rect x="382.7848553399215" y="600" width="127.21514466007855" height="26" fill="#c96b3c" opacity="0.85"/>
+<text x="312.7848553399215" y="618" font-family="Arial" font-size="12" fill="#333">-0.742</text>
+<text x="24" y="654" font-family="Arial" font-size="13" fill="#333">witch_conservative_poison</text>
+<rect x="503.5706631741874" y="636" width="6.4293368258126025" height="26" fill="#c96b3c" opacity="0.85"/>
+<text x="433.5706631741874" y="654" font-family="Arial" font-size="12" fill="#333">-0.038</text>
+<text x="24" y="690" font-family="Arial" font-size="13" fill="#333">witch_conservative_poison</text>
+<rect x="412.5205381593047" y="672" width="97.47946184069532" height="26" fill="#c96b3c" opacity="0.85"/>
+<text x="342.5205381593047" y="690" font-family="Arial" font-size="12" fill="#333">-0.569</text>
+<text x="24" y="726" font-family="Arial" font-size="13" fill="#333">witch_conservative_poison</text>
+<rect x="510" y="708" width="213.66829384450529" height="26" fill="#2f6f9f" opacity="0.85"/>
+<text x="729.6682938445053" y="726" font-family="Arial" font-size="12" fill="#333">1.246</text>
+<text x="24" y="762" font-family="Arial" font-size="13" fill="#333">witch_conservative_poison</text>
+<rect x="456.2721752589594" y="744" width="53.727824741040585" height="26" fill="#c96b3c" opacity="0.85"/>
+<text x="386.2721752589594" y="762" font-family="Arial" font-size="12" fill="#333">-0.313</text>
+</svg>

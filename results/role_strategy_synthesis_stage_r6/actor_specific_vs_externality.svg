@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="420" viewBox="0 0 900 420">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="24" y="32" font-family="Arial" font-size="20" font-weight="700" fill="#222">Actor-Specific versus Externality Evidence</text>
+<text x="24" y="74" font-family="Arial" font-size="13" fill="#333">global_configuration</text>
+<rect x="220" y="56" width="342.9" height="26" fill="#4C78A8" rx="2"/>
+<text x="570.9" y="74" font-family="Arial" font-size="12" fill="#333">4</text>
+<text x="24" y="110" font-family="Arial" font-size="13" fill="#333">actor_specific</text>
+<rect x="220" y="92" width="342.9" height="26" fill="#4C78A8" rx="2"/>
+<text x="570.9" y="110" font-family="Arial" font-size="12" fill="#333">4</text>
+<text x="24" y="146" font-family="Arial" font-size="13" fill="#333">strategy_level_game_outcome</text>
+<rect x="220" y="128" width="600.0" height="26" fill="#4C78A8" rx="2"/>
+<text x="828.0" y="146" font-family="Arial" font-size="12" fill="#333">7</text>
+<text x="24" y="182" font-family="Arial" font-size="13" fill="#333">post_outcome_association</text>
+<rect x="220" y="164" width="85.7" height="26" fill="#4C78A8" rx="2"/>
+<text x="313.7" y="182" font-family="Arial" font-size="12" fill="#333">1</text>
+<text x="24" y="218" font-family="Arial" font-size="13" fill="#333">insufficient_data</text>
+<rect x="220" y="200" width="171.4" height="26" fill="#4C78A8" rx="2"/>
+<text x="399.4" y="218" font-family="Arial" font-size="12" fill="#333">2</text>
+<text x="24" y="254" font-family="Arial" font-size="13" fill="#333">reference_policy</text>
+<rect x="220" y="236" width="85.7" height="26" fill="#4C78A8" rx="2"/>
+<text x="313.7" y="254" font-family="Arial" font-size="12" fill="#333">1</text>
+<text x="24" y="290" font-family="Arial" font-size="13" fill="#333">live_policy</text>
+<rect x="220" y="272" width="342.9" height="26" fill="#4C78A8" rx="2"/>
+<text x="570.9" y="290" font-family="Arial" font-size="12" fill="#333">4</text>
+</svg>

@@ -257,3 +257,18 @@ R5 computed expected payoff, volatility, downside deviation, VaR-like and CVaR-l
 ## 29. R5.1 Role-Strategy Attribution Audit
 
 R5.1 audited the R5 strategy output and found that strategy-condition labels were global game configurations. The stage reconstructs actor-specific rows, separates cross-role externalities, rebuilds sparse actor-specific frontiers, adds paired contrasts against the reference configuration, and strengthens premium analyses with group sizes and bootstrap CIs. The project is ready for R6 synthesis with explicit sparse-strategy limitations.
+
+
+## 30. R6 Unified Role Strategy Evidence Synthesis
+
+R6 synthesizes existing role-strategy evidence without changing gameplay.
+It creates a role strategy decision matrix, evidence grades, current default
+registry, cross-stage contradiction audit, cross-role externality matrix,
+and remaining-gap plan. The main conclusion is synthesis complete with
+sparse-strategy caveat: Villager, Seer, Witch, and Werewolf have bounded
+current defaults or candidates, while Hunter remains insufficient.
+
+R6 preserves negative findings from R3 BoW live integration, Stage 2A/2B
+frozen ML deployment, R5/R5.1 strategy-attribution correction, and
+randomized-role seer-position analysis. It selects R6.1 - Targeted Missing
+Strategy Experiments as the next stage before final strategy claims.

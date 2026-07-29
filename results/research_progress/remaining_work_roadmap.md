@@ -160,3 +160,14 @@ R6 should synthesize Seer, Witch, Hunter, Villager, and Werewolf strategy recomm
 ## Next Stage After R5.1
 
 R6 - Unified Role Strategy Optimization Synthesis should combine expected payoff, risk-adjusted payoff, downside risk, externalities, and evidence quality by role.
+
+
+## R6 Next Stage Decision
+
+Next stage: R6.1 - Targeted Missing Strategy Experiments.
+
+Rationale: Hunter actor-specific policy data are missing, Seer reveal
+timing is unresolved, Witch joint save/poison policy is incomplete,
+Werewolf aggression versus deep-cover deception remains descriptive, and
+Villager structured voting policies are sparse. These gaps should be
+targeted before final role-strategy recommendations are finalized.

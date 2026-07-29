@@ -79,3 +79,12 @@ R5 addresses the proposal components for expected payoff, payoff variance, oppor
 ## R5.1 Attribution Audit Update
 
 R5.1 resolves the strategy ownership ambiguity introduced by global R4 condition labels and prevents cross-role externalities from being reported as actor-specific strategy recommendations.
+
+
+## R6 Role Strategy Synthesis Update
+
+R6 partially completes the proposal requirement for role-specific strategy
+analysis. It documents current defaults and evidence grades but does not
+mark the full optimization requirement complete because Hunter policy,
+Seer reveal timing, Witch joint potion policy, Werewolf aggression versus
+deep cover, and Villager structured voting comparisons remain unresolved.

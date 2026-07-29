@@ -69,3 +69,10 @@ R5 financial-risk payoff analysis is complete for the R4 validation dataset. The
 ## R5.1 Progress Assessment
 
 R5.1 is complete. Strategy ownership is explicit, R5 strategy frontiers are superseded, and R6 may proceed with corrected attribution labels.
+
+
+## R6 Progress Assessment
+
+Role-strategy synthesis is complete with sparse-strategy caveat. The
+project is ready to run targeted missing strategy experiments before
+final role-specific claims are written into the final DURF report.

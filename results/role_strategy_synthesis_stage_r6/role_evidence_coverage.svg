@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="420" viewBox="0 0 900 420">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="24" y="32" font-family="Arial" font-size="20" font-weight="700" fill="#222">Role-Specific Evidence Coverage</text>
+<text x="24" y="74" font-family="Arial" font-size="13" fill="#333">Villager</text>
+<rect x="220" y="56" width="375.0" height="26" fill="#4C78A8" rx="2"/>
+<text x="603.0" y="74" font-family="Arial" font-size="12" fill="#333">5</text>
+<text x="24" y="110" font-family="Arial" font-size="13" fill="#333">Seer</text>
+<rect x="220" y="92" width="525.0" height="26" fill="#4C78A8" rx="2"/>
+<text x="753.0" y="110" font-family="Arial" font-size="12" fill="#333">7</text>
+<text x="24" y="146" font-family="Arial" font-size="13" fill="#333">Witch</text>
+<rect x="220" y="128" width="150.0" height="26" fill="#4C78A8" rx="2"/>
+<text x="378.0" y="146" font-family="Arial" font-size="12" fill="#333">2</text>
+<text x="24" y="182" font-family="Arial" font-size="13" fill="#333">Hunter</text>
+<rect x="220" y="164" width="75.0" height="26" fill="#4C78A8" rx="2"/>
+<text x="303.0" y="182" font-family="Arial" font-size="12" fill="#333">1</text>
+<text x="24" y="218" font-family="Arial" font-size="13" fill="#333">Werewolf</text>
+<rect x="220" y="200" width="600.0" height="26" fill="#4C78A8" rx="2"/>
+<text x="828.0" y="218" font-family="Arial" font-size="12" fill="#333">8</text>
+</svg>

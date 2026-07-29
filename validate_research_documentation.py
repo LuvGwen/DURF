@@ -99,6 +99,20 @@ REQUIRED_FILES = [
     "results/financial_risk_stage_r51/r51_manipulation_premium_summary.csv",
     "results/financial_risk_stage_r51/r51_mapping_validation_summary.csv",
     "results/financial_risk_stage_r51/r51_research_report.md",
+    "results/role_strategy_synthesis_stage_r6/r6_role_strategy_decision_matrix.csv",
+    "results/role_strategy_synthesis_stage_r6/r6_data_analysis_summary.csv",
+    "results/role_strategy_synthesis_stage_r6/r6_cross_stage_contradiction_audit.csv",
+    "results/role_strategy_synthesis_stage_r6/r6_cross_role_externality_matrix.csv",
+    "results/role_strategy_synthesis_stage_r6/r6_remaining_evidence_gaps.csv",
+    "results/role_strategy_synthesis_stage_r6/r6_targeted_experiment_priorities.csv",
+    "results/role_strategy_synthesis_stage_r6/r6_rejected_strategy_registry.csv",
+    "results/role_strategy_synthesis_stage_r6/r6_current_default_registry.csv",
+    "results/role_strategy_synthesis_stage_r6/r6_evidence_grade_registry.csv",
+    "results/role_strategy_synthesis_stage_r6/r6_source_evidence_index.csv",
+    "results/role_strategy_synthesis_stage_r6/r6_proposal_alignment_summary.csv",
+    "results/role_strategy_synthesis_stage_r6/r6_validation_summary.csv",
+    "results/role_strategy_synthesis_stage_r6/r6_research_report.md",
+    "results/role_strategy_synthesis_stage_r6/r6_overclaiming_audit.md",
 ]
 
 REGISTRY_COLUMNS = [
@@ -150,10 +164,13 @@ PROPOSAL_STATUSES = {
     "completed",
     "completed_by_alternative_implementation",
     "completed_and_extended",
+    "completed_with_limitations",
     "partially_completed",
     "not_started",
     "requires_formal_analysis",
     "requires_documentation",
+    "requires_targeted_experiment",
+    "insufficient_data",
     "no_longer_scientifically_justified",
 }
 
@@ -298,6 +315,12 @@ def main() -> int:
         "cumulative_report_r51_present",
         "## 29. R5.1 Role-Strategy Attribution Audit" in cumulative_text,
         "R5.1 chapter",
+    )
+    add_result(
+        summary,
+        "cumulative_report_r6_present",
+        "## 30. R6 Unified Role Strategy Evidence Synthesis" in cumulative_text,
+        "R6 chapter",
     )
 
     stage2a_text = (ROOT / "results/ml_optimization_stage2a/ml_stage2a_research_report.md").read_text(encoding="utf-8")

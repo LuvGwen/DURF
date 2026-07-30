@@ -113,6 +113,21 @@ REQUIRED_FILES = [
     "results/role_strategy_synthesis_stage_r6/r6_validation_summary.csv",
     "results/role_strategy_synthesis_stage_r6/r6_research_report.md",
     "results/role_strategy_synthesis_stage_r6/r6_overclaiming_audit.md",
+    "results/targeted_strategy_stage_r61/r61_master_seed_registry.csv",
+    "results/targeted_strategy_stage_r61/r61_behavioral_regime_registry.csv",
+    "results/targeted_strategy_stage_r61/r61_policy_registry.csv",
+    "results/targeted_strategy_stage_r61/r61_module_registry.csv",
+    "results/targeted_strategy_stage_r61/r61_validation_summary.csv",
+    "results/targeted_strategy_stage_r61/r61_global_primary_contrasts.csv",
+    "results/targeted_strategy_stage_r61/r61_global_robustness_summary.csv",
+    "results/targeted_strategy_stage_r61/r61_r7_readiness_summary.csv",
+    "results/targeted_strategy_stage_r61/r61_hunter_research_report.md",
+    "results/targeted_strategy_stage_r61/r61_seer_research_report.md",
+    "results/targeted_strategy_stage_r61/r61_witch_research_report.md",
+    "results/targeted_strategy_stage_r61/r61_wolf_research_report.md",
+    "results/targeted_strategy_stage_r61/r61_villager_research_report.md",
+    "results/targeted_strategy_stage_r61/r61_research_report.md",
+    "results/targeted_strategy_stage_r61/r61_final_strategy_gap_closure_report.md",
 ]
 
 REGISTRY_COLUMNS = [

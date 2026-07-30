@@ -171,3 +171,6 @@ timing is unresolved, Witch joint save/poison policy is incomplete,
 Werewolf aggression versus deep-cover deception remains descriptive, and
 Villager structured voting policies are sparse. These gaps should be
 targeted before final role-strategy recommendations are finalized.
+## Next Stage After R6.1
+
+R7 - Final role-strategy synthesis and final report integration. Use R6.1 matched live-validation outputs to update role defaults, preserve null and harmful strategy findings, and decide which recommendations are strong enough for the final DURF report.

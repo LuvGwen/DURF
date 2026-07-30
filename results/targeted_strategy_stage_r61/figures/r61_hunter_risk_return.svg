@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="520" viewBox="0 0 900 520">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="24" y="30" font-family="Arial" font-size="18" font-weight="700">R6.1 Hunter Risk Return</text>
+<line x1="80" y1="430" x2="800" y2="430" stroke="#222"/>
+<line x1="80" y1="430" x2="80" y2="100" stroke="#222"/>
+<text x="350" y="485" font-family="Arial" font-size="13">Standard deviation</text>
+<text x="14" y="250" font-family="Arial" font-size="13" transform="rotate(-90 14,250)">Mean actor payoff</text>
+<circle cx="800.0" cy="396.3" r="7" fill="#2f7d6d"/>
+<text x="810.0" y="400.3" font-family="Arial" font-size="11">reference</text>
+<circle cx="756.1" cy="430.0" r="7" fill="#b04d3a"/>
+<text x="766.1" y="434.0" font-family="Arial" font-size="11">random_shot</text>
+<circle cx="654.1" cy="426.6" r="7" fill="#4067a9"/>
+<text x="664.1" y="430.6" font-family="Arial" font-size="11">no_shot</text>
+<circle cx="800.0" cy="396.3" r="7" fill="#8a6f2a"/>
+<text x="810.0" y="400.3" font-family="Arial" font-size="11">highest_suspicion</text>
+<circle cx="795.0" cy="401.5" r="7" fill="#7d3c98"/>
+<text x="805.0" y="405.5" font-family="Arial" font-size="11">highest_p_wolf</text>
+<circle cx="665.7" cy="425.1" r="7" fill="#4b8b3b"/>
+<text x="675.7" y="429.1" font-family="Arial" font-size="11">conservative_threshold</text>
+</svg>

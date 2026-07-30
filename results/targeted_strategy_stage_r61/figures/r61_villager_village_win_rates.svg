@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="292" viewBox="0 0 900 292">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="20" y="26" font-family="Arial" font-size="18" font-weight="700">R6.1 Villager Village Win Rates</text>
+<text x="20" y="63" font-family="Arial" font-size="12">reference</text>
+<rect x="230" y="46" width="168.8" height="24" fill="#2f7d6d"/>
+<text x="406.8" y="63" font-family="Arial" font-size="12">0.291</text>
+<text x="20" y="99" font-family="Arial" font-size="12">random_vote</text>
+<rect x="230" y="82" width="133.4" height="24" fill="#2f7d6d"/>
+<text x="371.4" y="99" font-family="Arial" font-size="12">0.230</text>
+<text x="20" y="135" font-family="Arial" font-size="12">suspicion_only</text>
+<rect x="230" y="118" width="169.9" height="24" fill="#2f7d6d"/>
+<text x="407.9" y="135" font-family="Arial" font-size="12">0.293</text>
+<text x="20" y="171" font-family="Arial" font-size="12">p_wolf_only</text>
+<rect x="230" y="154" width="139.2" height="24" fill="#2f7d6d"/>
+<text x="377.2" y="171" font-family="Arial" font-size="12">0.240</text>
+<text x="20" y="207" font-family="Arial" font-size="12">trust_weighted</text>
+<rect x="230" y="190" width="233.2" height="24" fill="#2f7d6d"/>
+<text x="471.2" y="207" font-family="Arial" font-size="12">0.402</text>
+<text x="20" y="243" font-family="Arial" font-size="12">guarded_herding</text>
+<rect x="230" y="226" width="193.7" height="24" fill="#2f7d6d"/>
+<text x="431.7" y="243" font-family="Arial" font-size="12">0.334</text>
+</svg>

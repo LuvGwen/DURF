@@ -1,0 +1,3 @@
+# R6.1 Pre-Registration
+
+R6.1 targets the five strategy gaps identified by R6: Hunter shot policy, Seer reveal timing, Witch joint potion timing, Werewolf aggression versus deep cover, and Villager structured voting. The independent unit is a matched complete game. Each module uses 1,000 matched sets per policy, generated from final seeds 520-539, ten behavioral regimes, and five replicates per seed-regime cell. Development seeds 500-509 and validation seeds 510-514 are recorded but not used for final policy selection. Primary contrasts compare each candidate with the module reference using paired differences, permutation p-values, normal-approximation confidence intervals, and Holm correction within module-metric families.

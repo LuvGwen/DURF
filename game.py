@@ -168,6 +168,16 @@ class Game:
         r3_selective_override_margin=0.08,
         r3_selective_min_information_density=0.12,
         enable_r4_payoff_ledger=False,
+        enable_r61_hunter_policy=False,
+        r61_hunter_policy="reference",
+        enable_r61_seer_reveal_policy=False,
+        r61_seer_reveal_policy="private_only",
+        enable_r61_witch_joint_policy=False,
+        r61_witch_joint_policy="reference",
+        enable_r61_wolf_aggression_policy=False,
+        r61_wolf_aggression_policy="reference",
+        enable_r61_villager_voting_policy=False,
+        r61_villager_voting_policy="reference",
     ):
         if players is None:
             players = create_default_players(
@@ -288,6 +298,39 @@ class Game:
 
         if seer_avoid_repeat_checks is None:
             seer_avoid_repeat_checks = False
+
+        if enable_r61_wolf_aggression_policy:
+            from r61_wolf_aggression_policies import (
+                get_r61_wolf_aggression_overrides,
+            )
+
+            wolf_policy_overrides = get_r61_wolf_aggression_overrides(
+                r61_wolf_aggression_policy,
+            )
+            enable_wolf_strategy = wolf_policy_overrides.get(
+                "enable_wolf_strategy",
+                enable_wolf_strategy,
+            )
+            wolf_kill_strategy = wolf_policy_overrides.get(
+                "wolf_kill_strategy",
+                wolf_kill_strategy,
+            )
+            enable_wolf_deception = wolf_policy_overrides.get(
+                "enable_wolf_deception",
+                enable_wolf_deception,
+            )
+            wolf_deception_strategy = wolf_policy_overrides.get(
+                "wolf_deception_strategy",
+                wolf_deception_strategy,
+            )
+            enable_deception_credibility = wolf_policy_overrides.get(
+                "enable_deception_credibility",
+                enable_deception_credibility,
+            )
+            credibility_cost_scale = wolf_policy_overrides.get(
+                "credibility_cost_scale",
+                credibility_cost_scale,
+            )
 
         self.enable_position_model = enable_position_model
         self.randomize_seat_roles = randomize_seat_roles
@@ -415,6 +458,20 @@ class Game:
         self.r3_current_signal_by_player = {}
         self.enable_r4_payoff_ledger = enable_r4_payoff_ledger
         self.r4_payoff_results = {}
+        self.enable_r61_hunter_policy = enable_r61_hunter_policy
+        self.r61_hunter_policy = r61_hunter_policy
+        self.enable_r61_seer_reveal_policy = enable_r61_seer_reveal_policy
+        self.r61_seer_reveal_policy = r61_seer_reveal_policy
+        self.enable_r61_witch_joint_policy = enable_r61_witch_joint_policy
+        self.r61_witch_joint_policy = r61_witch_joint_policy
+        self.enable_r61_wolf_aggression_policy = (
+            enable_r61_wolf_aggression_policy
+        )
+        self.r61_wolf_aggression_policy = r61_wolf_aggression_policy
+        self.enable_r61_villager_voting_policy = (
+            enable_r61_villager_voting_policy
+        )
+        self.r61_villager_voting_policy = r61_villager_voting_policy
 
         if self.enable_risk_preference:
             assign_risk_preferences(
@@ -564,13 +621,27 @@ class Game:
         if not self.enable_hunter or self.state.game_over:
             return
 
-        shot_target_id, shot_event = perform_hunter_shot(
-            self.state,
-            player_id,
-        )
+        if self.enable_r61_hunter_policy:
+            from r61_hunter_policies import perform_r61_hunter_shot
+
+            shot_target_id, shot_event = perform_r61_hunter_shot(
+                self.state,
+                player_id,
+                policy_name=self.r61_hunter_policy,
+            )
+        else:
+            shot_target_id, shot_event = perform_hunter_shot(
+                self.state,
+                player_id,
+            )
 
         if shot_event is not None:
-            self.log_event("hunter_shot", shot_event)
+            event_type = (
+                "hunter_shot_abstained"
+                if shot_event.get("abstained")
+                else "hunter_shot"
+            )
+            self.log_event(event_type, shot_event)
 
         if shot_target_id is None or self.state.game_over:
             return
@@ -606,6 +677,29 @@ class Game:
             )
             if seer_event is not None:
                 self.log_event("seer_check", seer_event)
+                if self.enable_r61_seer_reveal_policy:
+                    from r61_seer_reveal_policies import (
+                        maybe_apply_r61_seer_reveal,
+                    )
+
+                    reveal_event = maybe_apply_r61_seer_reveal(
+                        self,
+                        seer_event,
+                        policy_name=self.r61_seer_reveal_policy,
+                    )
+                    if reveal_event is not None:
+                        self.log_event("seer_reveal", reveal_event)
+                        if self.enable_speaker_memory:
+                            memory_event = apply_speaker_memory_from_reveal(
+                                self.state,
+                                self.event_log,
+                                reveal_event.get("target"),
+                            )
+                            if memory_event is not None:
+                                self.log_event(
+                                    "speaker_trust_update",
+                                    memory_event,
+                                )
 
         wolf_kill_strategy = (
             self.wolf_kill_strategy
@@ -671,11 +765,21 @@ class Game:
         poison_excluded_witch_ids = set()
 
         if self.enable_witch:
-            saved, save_event = perform_witch_save(
-                self.state,
-                night_kill_target_id,
-                save_probability=self.witch_save_probability,
-            )
+            if self.enable_r61_witch_joint_policy:
+                from r61_witch_joint_policies import perform_r61_witch_save
+
+                saved, save_event = perform_r61_witch_save(
+                    self.state,
+                    night_kill_target_id,
+                    policy_name=self.r61_witch_joint_policy,
+                    fallback_save_probability=self.witch_save_probability,
+                )
+            else:
+                saved, save_event = perform_witch_save(
+                    self.state,
+                    night_kill_target_id,
+                    save_probability=self.witch_save_probability,
+                )
 
         if save_event is not None:
             self.log_event("witch_save", save_event)
@@ -712,12 +816,23 @@ class Game:
         if not self.enable_witch:
             return
 
-        poison_target_id, poison_event = perform_witch_poison(
-            self.state,
-            suspicion_threshold=self.witch_poison_threshold,
-            excluded_witch_ids=poison_excluded_witch_ids,
-            enable_risk_preference=self.enable_risk_preference,
-        )
+        if self.enable_r61_witch_joint_policy:
+            from r61_witch_joint_policies import perform_r61_witch_poison
+
+            poison_target_id, poison_event = perform_r61_witch_poison(
+                self.state,
+                policy_name=self.r61_witch_joint_policy,
+                excluded_witch_ids=poison_excluded_witch_ids,
+                fallback_suspicion_threshold=self.witch_poison_threshold,
+                enable_risk_preference=self.enable_risk_preference,
+            )
+        else:
+            poison_target_id, poison_event = perform_witch_poison(
+                self.state,
+                suspicion_threshold=self.witch_poison_threshold,
+                excluded_witch_ids=poison_excluded_witch_ids,
+                enable_risk_preference=self.enable_risk_preference,
+            )
 
         if poison_event is not None:
             self.log_event("witch_poison", poison_event)
@@ -957,30 +1072,46 @@ class Game:
                     if self.enable_herding
                     else 0.0
                 )
-                target = choose_vote_target(
-                    voter,
-                    alive_players,
-                    recent_speech_events=vote_speech_events,
-                    game_state=self.state,
-                    event_log=self.event_log,
-                    enable_speaker_memory=self.enable_speaker_memory,
-                    speaker_memory_weight=self.speaker_memory_weight,
-                    alpha=self.role_prior_alpha,
-                    beta=self.role_prior_beta,
-                    gamma=role_prior_gamma,
-                    delta=self.role_prior_delta,
-                    enable_role_prior=self.enable_role_prior,
-                    enable_trust_weighted_herding=(
-                        self.enable_trust_weighted_herding
-                    ),
-                    trust_herding_min_multiplier=(
-                        self.trust_herding_min_multiplier
-                    ),
-                    trust_herding_max_multiplier=(
-                        self.trust_herding_max_multiplier
-                    ),
-                    enable_risk_preference=self.enable_risk_preference,
-                )
+                if self.enable_r61_villager_voting_policy:
+                    from r61_villager_voting_policies import (
+                        choose_r61_villager_vote_target,
+                    )
+
+                    target = choose_r61_villager_vote_target(
+                        voter,
+                        alive_players,
+                        self.state,
+                        policy_name=self.r61_villager_voting_policy,
+                        recent_speech_events=vote_speech_events,
+                        event_log=self.event_log,
+                        speaker_memory_weight=self.speaker_memory_weight,
+                        enable_risk_preference=self.enable_risk_preference,
+                    )
+                else:
+                    target = choose_vote_target(
+                        voter,
+                        alive_players,
+                        recent_speech_events=vote_speech_events,
+                        game_state=self.state,
+                        event_log=self.event_log,
+                        enable_speaker_memory=self.enable_speaker_memory,
+                        speaker_memory_weight=self.speaker_memory_weight,
+                        alpha=self.role_prior_alpha,
+                        beta=self.role_prior_beta,
+                        gamma=role_prior_gamma,
+                        delta=self.role_prior_delta,
+                        enable_role_prior=self.enable_role_prior,
+                        enable_trust_weighted_herding=(
+                            self.enable_trust_weighted_herding
+                        ),
+                        trust_herding_min_multiplier=(
+                            self.trust_herding_min_multiplier
+                        ),
+                        trust_herding_max_multiplier=(
+                            self.trust_herding_max_multiplier
+                        ),
+                        enable_risk_preference=self.enable_risk_preference,
+                    )
             else:
                 possible_targets = [
                     player for player in alive_players
@@ -1076,6 +1207,9 @@ class Game:
 
         self.log_event("day_vote", {
             "method": (
+                self.r61_villager_voting_policy
+                if self.enable_r61_villager_voting_policy
+                else
                 "suspicion_based"
                 if self.use_suspicion_voting
                 else "random"

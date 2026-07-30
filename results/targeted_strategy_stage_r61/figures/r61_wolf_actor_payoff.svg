@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="292" viewBox="0 0 900 292">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="20" y="26" font-family="Arial" font-size="18" font-weight="700">R6.1 Wolf Actor Payoff</text>
+<text x="20" y="63" font-family="Arial" font-size="12">reference</text>
+<rect x="230" y="46" width="404.2" height="24" fill="#2f7d6d"/>
+<text x="642.2" y="63" font-family="Arial" font-size="12">0.697</text>
+<text x="20" y="99" font-family="Arial" font-size="12">aggressive_false_accuse</text>
+<rect x="230" y="82" width="344.5" height="24" fill="#2f7d6d"/>
+<text x="582.5" y="99" font-family="Arial" font-size="12">0.594</text>
+<text x="20" y="135" font-family="Arial" font-size="12">aggressive_kill_restrained_deception</text>
+<rect x="230" y="118" width="351.6" height="24" fill="#2f7d6d"/>
+<text x="589.6" y="135" font-family="Arial" font-size="12">0.606</text>
+<text x="20" y="171" font-family="Arial" font-size="12">threat_adaptive</text>
+<rect x="230" y="154" width="404.2" height="24" fill="#2f7d6d"/>
+<text x="642.2" y="171" font-family="Arial" font-size="12">0.697</text>
+<text x="20" y="207" font-family="Arial" font-size="12">deep_cover</text>
+<rect x="230" y="190" width="48.2" height="24" fill="#2f7d6d"/>
+<text x="286.2" y="207" font-family="Arial" font-size="12">0.083</text>
+<text x="20" y="243" font-family="Arial" font-size="12">minimal_deception</text>
+<rect x="230" y="226" width="345.2" height="24" fill="#2f7d6d"/>
+<text x="583.2" y="243" font-family="Arial" font-size="12">0.595</text>
+</svg>

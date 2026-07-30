@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="520" viewBox="0 0 900 520">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="24" y="30" font-family="Arial" font-size="18" font-weight="700">R6.1 Seer Risk Return</text>
+<line x1="80" y1="430" x2="800" y2="430" stroke="#222"/>
+<line x1="80" y1="430" x2="80" y2="100" stroke="#222"/>
+<text x="350" y="485" font-family="Arial" font-size="13">Standard deviation</text>
+<text x="14" y="250" font-family="Arial" font-size="13" transform="rotate(-90 14,250)">Mean actor payoff</text>
+<circle cx="772.1" cy="430.0" r="7" fill="#2f7d6d"/>
+<text x="782.1" y="434.0" font-family="Arial" font-size="11">private_only</text>
+<circle cx="794.9" cy="409.6" r="7" fill="#b04d3a"/>
+<text x="804.9" y="413.6" font-family="Arial" font-size="11">immediate_reveal</text>
+<circle cx="778.8" cy="424.7" r="7" fill="#4067a9"/>
+<text x="788.8" y="428.7" font-family="Arial" font-size="11">reveal_first_wolf</text>
+<circle cx="781.5" cy="423.4" r="7" fill="#8a6f2a"/>
+<text x="791.5" y="427.4" font-family="Arial" font-size="11">delayed_round_2</text>
+<circle cx="773.5" cy="428.8" r="7" fill="#7d3c98"/>
+<text x="783.5" y="432.8" font-family="Arial" font-size="11">under_threat</text>
+<circle cx="778.0" cy="425.3" r="7" fill="#4b8b3b"/>
+<text x="788.0" y="429.3" font-family="Arial" font-size="11">selective_useful_info</text>
+</svg>

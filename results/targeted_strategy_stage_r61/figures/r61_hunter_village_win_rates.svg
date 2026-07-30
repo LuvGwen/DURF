@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="292" viewBox="0 0 900 292">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="20" y="26" font-family="Arial" font-size="18" font-weight="700">R6.1 Hunter Village Win Rates</text>
+<text x="20" y="63" font-family="Arial" font-size="12">reference</text>
+<rect x="230" y="46" width="176.9" height="24" fill="#2f7d6d"/>
+<text x="414.9" y="63" font-family="Arial" font-size="12">0.305</text>
+<text x="20" y="99" font-family="Arial" font-size="12">random_shot</text>
+<rect x="230" y="82" width="145.6" height="24" fill="#2f7d6d"/>
+<text x="383.6" y="99" font-family="Arial" font-size="12">0.251</text>
+<text x="20" y="135" font-family="Arial" font-size="12">no_shot</text>
+<rect x="230" y="118" width="125.9" height="24" fill="#2f7d6d"/>
+<text x="363.9" y="135" font-family="Arial" font-size="12">0.217</text>
+<text x="20" y="171" font-family="Arial" font-size="12">highest_suspicion</text>
+<rect x="230" y="154" width="176.9" height="24" fill="#2f7d6d"/>
+<text x="414.9" y="171" font-family="Arial" font-size="12">0.305</text>
+<text x="20" y="207" font-family="Arial" font-size="12">highest_p_wolf</text>
+<rect x="230" y="190" width="175.7" height="24" fill="#2f7d6d"/>
+<text x="413.7" y="207" font-family="Arial" font-size="12">0.303</text>
+<text x="20" y="243" font-family="Arial" font-size="12">conservative_threshold</text>
+<rect x="230" y="226" width="128.8" height="24" fill="#2f7d6d"/>
+<text x="366.8" y="243" font-family="Arial" font-size="12">0.222</text>
+</svg>

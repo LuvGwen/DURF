@@ -272,3 +272,14 @@ R6 preserves negative findings from R3 BoW live integration, Stage 2A/2B
 frozen ML deployment, R5/R5.1 strategy-attribution correction, and
 randomized-role seer-position analysis. It selects R6.1 - Targeted Missing
 Strategy Experiments as the next stage before final strategy claims.
+## 31. R6.1 Targeted Role-Strategy Gap Closure
+
+R6.1 runs matched live validation for the five strategy gaps identified by R6: Hunter shot policy, Seer reveal timing, Witch joint potion timing, Werewolf aggression versus deep cover, and Villager structured voting. The stage generates 30,000 complete game rows, 1,000 matched sets per module, 20 final seeds, ten behavioral regimes, module-level action diagnostics, formal paired contrasts, risk metrics, seed/regime robustness tables, and five module reports.
+
+- Hunter: best mean actor-payoff policy `reference`; village win 30.50%; wolf win 69.50%.
+- Seer: best mean actor-payoff policy `immediate_reveal`; village win 33.70%; wolf win 66.30%.
+- Witch: best mean actor-payoff policy `aggressive_full`; village win 35.20%; wolf win 64.80%.
+- Wolf: best mean actor-payoff policy `reference`; village win 29.20%; wolf win 70.80%.
+- Villager: best mean actor-payoff policy `trust_weighted`; village win 40.20%; wolf win 59.80%.
+
+Conclusion: `promising but uncertain` overall, with at least one module-policy contrast reaching statistical support. R7 should synthesize these findings into final role defaults and remaining limitations.

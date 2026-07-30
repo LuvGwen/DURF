@@ -1,0 +1,50 @@
+{
+  "behavioral_regimes": [
+    "baseline",
+    "speech_enabled",
+    "herding_enabled",
+    "deception_enabled",
+    "heterogeneous_risk",
+    "strong_village_information",
+    "weak_village_information",
+    "high_emotional_speech",
+    "low_information_speech",
+    "mixed_strategies"
+  ],
+  "final_seeds": [
+    520,
+    521,
+    522,
+    523,
+    524,
+    525,
+    526,
+    527,
+    528,
+    529,
+    530,
+    531,
+    532,
+    533,
+    534,
+    535,
+    536,
+    537,
+    538,
+    539
+  ],
+  "matched_sets_per_module": 1000,
+  "module": "villager",
+  "policies": [
+    "reference",
+    "random_vote",
+    "suspicion_only",
+    "p_wolf_only",
+    "trust_weighted",
+    "guarded_herding"
+  ],
+  "policy_selection_note": "Development and validation seeds were reserved; final seeds were not used for policy selection.",
+  "r4_manifest_hash": "eee8007693ec6a484632f61444a53f6f8b1b9feb64b18c865f0edf704a15c7cd",
+  "r5_metric_manifest_hash": "4b48f5aae165d6c30d5a13cd2e9c3e01f5b595ddbfeb93f7c1832b018f6861bf",
+  "reference_policy": "reference"
+}

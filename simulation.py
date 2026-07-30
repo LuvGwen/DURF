@@ -126,6 +126,16 @@ def run_simulation(
     ml_wolf_kill_manifest_hash=None,
     ml_wolf_kill_epsilon=0.10,
     ml_wolf_kill_hybrid_weight=0.50,
+    enable_r61_hunter_policy=False,
+    r61_hunter_policy="reference",
+    enable_r61_seer_reveal_policy=False,
+    r61_seer_reveal_policy="private_only",
+    enable_r61_witch_joint_policy=False,
+    r61_witch_joint_policy="reference",
+    enable_r61_wolf_aggression_policy=False,
+    r61_wolf_aggression_policy="reference",
+    enable_r61_villager_voting_policy=False,
+    r61_villager_voting_policy="reference",
     include_game_level_log=False,
     game_level_log_builder=None,
 ):
@@ -206,6 +216,20 @@ def run_simulation(
             ml_wolf_kill_manifest_hash=ml_wolf_kill_manifest_hash,
             ml_wolf_kill_epsilon=ml_wolf_kill_epsilon,
             ml_wolf_kill_hybrid_weight=ml_wolf_kill_hybrid_weight,
+            enable_r61_hunter_policy=enable_r61_hunter_policy,
+            r61_hunter_policy=r61_hunter_policy,
+            enable_r61_seer_reveal_policy=enable_r61_seer_reveal_policy,
+            r61_seer_reveal_policy=r61_seer_reveal_policy,
+            enable_r61_witch_joint_policy=enable_r61_witch_joint_policy,
+            r61_witch_joint_policy=r61_witch_joint_policy,
+            enable_r61_wolf_aggression_policy=(
+                enable_r61_wolf_aggression_policy
+            ),
+            r61_wolf_aggression_policy=r61_wolf_aggression_policy,
+            enable_r61_villager_voting_policy=(
+                enable_r61_villager_voting_policy
+            ),
+            r61_villager_voting_policy=r61_villager_voting_policy,
         )
         result = game.run_game(max_rounds=max_rounds)
         seer_check_events = [

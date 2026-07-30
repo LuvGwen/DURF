@@ -88,3 +88,6 @@ analysis. It documents current defaults and evidence grades but does not
 mark the full optimization requirement complete because Hunter policy,
 Seer reveal timing, Witch joint potion policy, Werewolf aggression versus
 deep cover, and Villager structured voting comparisons remain unresolved.
+## R6.1 Targeted Strategy Alignment
+
+R6.1 directly addresses the proposal-alignment gaps for role-specific strategy analysis and risk-adjusted comparison by producing matched live-validation policy families for all five roles. It does not add new roles, alter payoff rules, deploy ML policies, or revive live BoW overrides.

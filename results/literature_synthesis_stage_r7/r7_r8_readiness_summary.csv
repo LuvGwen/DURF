@@ -1,0 +1,12 @@
+criterion,status,evidence
+every_major_chapter_has_literature_coverage,pass,All 41 required findings map to at least one source.
+key_claims_have_citation_ready_sources,pass,Claim-support audit contains source-backed safe wording.
+citation_metadata_validated,pass_with_manual_review_items,Manual-review items are explicit and non-blocking.
+literature_and_project_evidence_separated,pass,Comparison matrix has separate project and literature fields.
+financial_analogy_limitations_explicit,pass,Every crosswalk row has important_difference and overclaim_to_avoid.
+contradictions_documented,pass,Contradiction registry records eight qualifying disagreements.
+no_fake_citations_remain,pass,Tests reject fabricated/unflagged sources.
+final_bibliography_usable,pass_with_manual_review_items,BibTeX and APA files are generated; book edition items need final manual review.
+cumulative_reports_updated,pass,Research progress files updated with R7 rows and sections.
+remaining_gaps_nonblocking_or_listed,pass,Limitations and manual-review files list unresolved metadata and scope limits.
+r8_readiness_decision,ready,Proceed to R8 - Final Integrated Data Analysis and Evidence Tables.

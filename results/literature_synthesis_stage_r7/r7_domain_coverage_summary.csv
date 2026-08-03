@@ -1,0 +1,10 @@
+domain,domain_label,source_count,minimum_required,meets_minimum,notes
+social_deduction,Social deduction and hidden-role games,10,5,True,minimum met
+asymmetric_information,Game theory and asymmetric information,12,6,True,minimum met
+herding_trust,"Herding, trust, and collective decision-making",18,5,True,minimum met
+deception_misinformation,Misinformation and strategic deception,18,5,True,minimum met
+behavioral_finance,Behavioral finance and market analogy,24,8,True,minimum met
+bow_domain_shift,"Bag-of-Words, text quantification, and domain shift",11,5,True,minimum met
+offline_policy,Offline policy evaluation and distribution shift,16,6,True,minimum met
+simulation_validation,Multi-agent simulation and validation,16,5,True,minimum met
+risk_metrics,Decision-making and risk metrics,13,5,True,minimum met

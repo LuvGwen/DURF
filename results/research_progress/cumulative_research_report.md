@@ -288,3 +288,9 @@ Conclusion: `promising but uncertain` overall, with at least one module-policy c
 ## R6.2 Metrics Integrity Audit
 
 R6.2 resolves the Seer terminal-survival metric ambiguity and supersedes the Witch wrong-poison waste proxy with a lifecycle taxonomy. It also creates an explicit opt-in recommended research configuration and finalizes R6 strategy cards for R7 literature comparison.
+
+## 32. R7 Systematic Literature Comparison
+
+R7 conducts a structured literature comparison and theoretical synthesis without running new gameplay experiments. It retains 64 sources, maps all 41 required project findings, creates a financial analogy crosswalk, documents contradictions and limitations, and generates citation-ready BibTeX and APA draft references.
+
+Conclusion: `ready for synthesis`. R7 supports the financial-market analogy as a bounded conceptual framework, not a causal claim about real markets. The exact next stage is R8 - Final Integrated Data Analysis and Evidence Tables.

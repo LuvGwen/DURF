@@ -1,0 +1,65 @@
+source_id,peer_reviewed,primary_or_secondary,venue_quality,methodological_relevance,directness_to_project,citation_reliability,recency,limitations,quality_grade
+S001,yes,primary,high,high,high,high,classic_or_foundational,Theoretical abstraction differs from this simulator's role actions and speech machinery.,A
+S002,yes,primary,high,high,high,high,recent,One Night Ultimate Werewolf has a shorter horizon than the DURF simulator.,A
+S003,yes,primary,high,high,high,high,recent,Human perception experiment; not directly comparable to automated 10-player Werewolf.,A
+S004,yes,primary,high,moderate,high,high,classic_or_foundational,Platform and contest design differ from this project's research simulator.,B
+S005,yes,primary,high,high,high,high,recent,"Uses human Mafia dialogue, not generated DURF template speech.",A
+S006,yes,primary,high,high,high,high,recent,Avalon action space and no natural-language chat differ from Werewolf speech simulation.,A
+S007,yes,primary,high,high,high,high,recent,Small human dataset and Avalon rules limit direct effect-size comparison.,A
+S008,no,secondary_or_reference,background,moderate,high,high,recent,Preprint and non-Werewolf spatial environment; used as background only.,C
+S009,yes,primary,high,high,moderate,high,classic_or_foundational,"General theory, not a social-deduction simulation.",A
+S010,yes,primary,high,high,moderate,high,classic_or_foundational,"Market-quality model, not a game of voting or role inference.",A
+S011,yes,primary,high,high,moderate,high,classic_or_foundational,Signaling model is economic and stylized; DURF signals are simulated speech acts.,A
+S012,yes,primary,high,high,moderate,high,classic_or_foundational,Cheap-talk equilibria are not directly estimated in DURF.,A
+S013,yes,primary,high,high,moderate,high,classic_or_foundational,The DURF simulator uses scalar p_wolf rather than full belief hierarchies.,A
+S014,yes,primary,high,high,moderate,needs_review,classic_or_foundational,DURF validates policy outcomes empirically rather than solving equilibrium.,A
+S015,yes,primary,high,high,moderate,high,classic_or_foundational,"Sequential adoption model, not simultaneous day voting.",A
+S016,yes,primary,high,high,moderate,high,classic_or_foundational,The DURF herding mechanism is simpler than the formal cascade model.,A
+S017,no,secondary_or_reference,high,moderate,moderate,high,classic_or_foundational,"Psychology demonstration, not a computational model or financial setting.",B
+S018,no,secondary_or_reference,background,moderate,moderate,high,classic_or_foundational,Secondary synthesis; not used for formal claims.,C
+S019,yes,primary,high,moderate,moderate,high,classic_or_foundational,Online service provision differs from hidden-role games.,B
+S020,yes,primary,high,moderate,moderate,high,classic_or_foundational,"Reputation is explicit transaction history, not inferred speech reliability.",B
+S021,yes,primary,high,moderate,moderate,high,classic_or_foundational,"Pure moral hazard in markets, not public accusations in Werewolf.",B
+S022,yes,primary,high,high,moderate,high,recent,"Twitter rumor diffusion, not game speech or hidden roles.",A
+S023,yes,primary,high,moderate,moderate,high,recent,Broad agenda article rather than direct experiment.,B
+S024,yes,primary,high,moderate,moderate,high,classic_or_foundational,"Election media context, not social deduction.",B
+S025,yes,primary,high,high,moderate,high,recent,Crowd source ratings differ from game-level speaker memory.,A
+S026,yes,primary,high,high,moderate,high,recent,"Social-media sharing intervention, not voting under hidden roles.",A
+S027,yes,primary,high,high,moderate,high,recent,Diplomacy alliance messaging differs from Werewolf day speech.,A
+S028,yes,primary,high,high,moderate,high,recent,Security-game deception differs from wolf daytime deception.,A
+S029,yes,primary,high,high,moderate,high,classic_or_foundational,Financial asset-price model; DURF payoffs are game utilities.,A
+S030,yes,primary,high,high,moderate,high,classic_or_foundational,"Should support only analogy, not causal equivalence with financial markets.",A
+S031,yes,primary,high,high,moderate,high,classic_or_foundational,Asset pricing is not a direct model of Werewolf voting.,A
+S032,yes,primary,high,high,moderate,high,classic_or_foundational,IPO sales model; only a conceptual parallel for vote herding.,A
+S033,yes,primary,high,moderate,moderate,needs_review,classic_or_foundational,NBER page verified; final article metadata requires manual DOI review.,B
+S034,yes,primary,high,high,moderate,needs_review,classic_or_foundational,"General market psychology model, not simulated hidden-role inference.",A
+S035,yes,primary,high,high,moderate,needs_review,classic_or_foundational,Continuous auction model; Seer analogy is conceptual.,A
+S036,yes,primary,high,high,moderate,needs_review,classic_or_foundational,"Market equilibrium result, not direct payoff proof for the Seer.",A
+S037,no,secondary_or_reference,high,moderate,moderate,needs_review,classic_or_foundational,Book-level synthesis; use as conceptual support only.,B
+S038,no,secondary_or_reference,high,moderate,moderate,high,classic_or_foundational,"Textbook reference, not evidence for policy value in DURF.",B
+S039,yes,primary,high,moderate,moderate,high,classic_or_foundational,"Classification setting, not causal decision integration.",B
+S040,yes,primary,high,moderate,moderate,needs_review,classic_or_foundational,No direct policy evaluation.,B
+S041,yes,primary,high,high,moderate,high,classic_or_foundational,"General NLP domain adaptation, not Werewolf templates.",A
+S042,yes,primary,high,high,moderate,needs_review,classic_or_foundational,Theory does not specify DURF template generators.,A
+S043,yes,primary,high,high,moderate,needs_review,classic_or_foundational,Computer vision setting; used for methodological analogy.,A
+S044,yes,primary,high,high,moderate,needs_review,recent,"Benchmark suite, not a Werewolf experiment.",A
+S045,yes,primary,high,moderate,high,needs_review,classic_or_foundational,"Tabular RL setting, not complete-game Werewolf rollout.",B
+S046,yes,primary,high,high,high,high,classic_or_foundational,DURF uses matched live validation rather than DR estimators.,A
+S047,yes,primary,high,high,high,high,classic_or_foundational,Confidence-bound method not implemented directly in DURF.,A
+S048,yes,primary,high,high,high,high,classic_or_foundational,Not a direct model of the project's shadow rollout diagnostics.,A
+S049,yes,primary,high,high,high,needs_review,classic_or_foundational,Bandit feedback differs from long-horizon Werewolf games.,A
+S050,no,secondary_or_reference,background,moderate,high,needs_review,recent,Preprint review; use as background only.,C
+S051,yes,primary,high,high,high,needs_review,recent,"Continuous-control benchmark, not social-deduction policy.",A
+S052,yes,primary,high,high,high,needs_review,classic_or_foundational,"Segregation model, not hidden-role game.",A
+S053,no,secondary_or_reference,high,moderate,high,needs_review,classic_or_foundational,"General ABM reference, not a validation method by itself.",B
+S054,yes,primary,high,high,high,needs_review,classic_or_foundational,"Ecological ABM origin, not game-specific.",A
+S055,yes,primary,high,high,high,high,classic_or_foundational,"General simulation V&V, not specific to social deduction.",A
+S056,no,secondary_or_reference,high,moderate,high,high,recent,Textbook; not direct evidence for Werewolf outcomes.,B
+S057,no,secondary_or_reference,high,moderate,high,high,classic_or_foundational,General simulation methods textbook.,B
+S058,yes,primary,high,high,moderate,high,classic_or_foundational,DURF payoff ratios are analogues and not investment returns.,A
+S059,yes,primary,high,high,moderate,high,classic_or_foundational,Project payoff denominators are game-specific.,A
+S060,yes,primary,high,high,moderate,high,classic_or_foundational,"Optimization framework, while DURF reports CVaR-like descriptive metrics.",A
+S061,no,secondary_or_reference,high,moderate,moderate,needs_review,classic_or_foundational,Book metadata requires manual edition review; used for conceptual metric framing.,B
+S062,yes,primary,high,high,moderate,needs_review,classic_or_foundational,Portfolio optimization is not equivalent to role selection in a game.,A
+S063,yes,primary,high,high,moderate,needs_review,classic_or_foundational,"DURF VaR/CVaR-like metrics are descriptive analogues, not full coherent-risk optimization.",A
+S064,yes,primary,high,high,moderate,needs_review,classic_or_foundational,The project's risk-preference labels are simplified and not calibrated prospect-theory parameters.,A

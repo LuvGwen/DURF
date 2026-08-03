@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="420" viewBox="0 0 920 420">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="24" y="34" font-family="Arial" font-size="20" font-weight="700" fill="#1f2933">Project Finding-Literature Relationships</text>
+<text x="24" y="75" font-family="Arial" font-size="13" fill="#334155">consistent_with_literature</text>
+<rect x="220" y="58" width="640.0" height="24" rx="3" fill="#3366cc"/>
+<text x="868.0" y="75" font-family="Arial" font-size="13" fill="#334155">78</text>
+<text x="24" y="111" font-family="Arial" font-size="13" fill="#334155">extends_literature</text>
+<rect x="220" y="94" width="73.8" height="24" rx="3" fill="#3366cc"/>
+<text x="301.84615384615387" y="111" font-family="Arial" font-size="13" fill="#334155">9</text>
+<text x="24" y="147" font-family="Arial" font-size="13" fill="#334155">methodological_parallel</text>
+<rect x="220" y="130" width="172.3" height="24" rx="3" fill="#3366cc"/>
+<text x="400.30769230769226" y="147" font-family="Arial" font-size="13" fill="#334155">21</text>
+<text x="24" y="183" font-family="Arial" font-size="13" fill="#334155">no_direct_prior_comparison</text>
+<rect x="220" y="166" width="16.4" height="24" rx="3" fill="#3366cc"/>
+<text x="244.4102564102564" y="183" font-family="Arial" font-size="13" fill="#334155">2</text>
+<text x="24" y="219" font-family="Arial" font-size="13" fill="#334155">partially_consistent</text>
+<rect x="220" y="202" width="139.5" height="24" rx="3" fill="#3366cc"/>
+<text x="367.4871794871795" y="219" font-family="Arial" font-size="13" fill="#334155">17</text>
+</svg>

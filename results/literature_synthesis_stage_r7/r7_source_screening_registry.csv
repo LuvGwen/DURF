@@ -1,0 +1,65 @@
+source_id,title,screened,included,exclusion_reason,duplicate_of,quality_rating,notes
+S001,Mafia: A theoretical study of players and coalitions in a partial information environment,yes,yes,,,A,"Formal Mafia model with hidden coalitions, communication, and relative power."
+S002,Keeping the Story Straight: A Comparison of Commitment Strategies for a Social Deduction Game,yes,yes,,,A,Studies commitment and deception in One Night Ultimate Werewolf agents.
+S003,A Study of AI Agent Commitment in One Night Ultimate Werewolf with Human Players,yes,yes,,,A,Human-agent social deduction experiment on commitment and player perception.
+S004,AI Wolf Contest: Development of Game AI Using Collective Intelligence,yes,yes,,,B,Introduces AIWolf as a Werewolf AI platform and competition.
+S005,Putting the Con in Context: Identifying Deceptive Actors in the Game of Mafia,yes,yes,,,A,Text-based Mafia role and deception detection.
+S006,Finding Friend and Foe in Multi-Agent Games,yes,yes,,,A,DeepRole hidden-role Avalon agent with belief reasoning.
+S007,Long-Horizon Dialogue Understanding for Role Identification in the Game of Avalon with Large Language Models,yes,yes,,,A,Long-horizon deception and role identification in Avalon dialogue.
+S008,Hidden Agenda: A Social Deduction Game with Diverse Learned Equilibria,yes,yes,,,C,Learned equilibria in a spatial social deduction environment.
+S009,"Games with Incomplete Information Played by Bayesian Players, I-III. Part I. The Basic Model",yes,yes,,,A,Foundational Bayesian games under incomplete information.
+S010,The Market for Lemons: Quality Uncertainty and the Market Mechanism,yes,yes,,,A,Canonical asymmetric-information market model.
+S011,Job Market Signaling,yes,yes,,,A,Foundational signaling model.
+S012,Strategic Information Transmission,yes,yes,,,A,Canonical cheap-talk model with sender-receiver preference divergence.
+S013,Formulation of Bayesian Analysis for Games with Incomplete Information,yes,yes,,,A,Formal belief hierarchies for incomplete-information games.
+S014,Sequential Equilibria,yes,yes,,,A,Equilibrium concept for dynamic games with beliefs.
+S015,A Simple Model of Herd Behavior,yes,yes,,,A,Canonical sequential herding model.
+S016,"A Theory of Fads, Fashion, Custom, and Cultural Change as Informational Cascades",yes,yes,,,A,Foundational informational-cascade theory.
+S017,Opinions and Social Pressure,yes,yes,,,B,Classic conformity experiment summary.
+S018,The Wisdom of Crowds,yes,yes,,,C,Popular synthesis of collective intelligence conditions.
+S019,A Survey of Trust and Reputation Systems for Online Service Provision,yes,yes,,,B,Trust/reputation system survey.
+S020,Trust Among Strangers in Internet Transactions: Empirical Analysis of eBay's Reputation System,yes,yes,,,B,Empirical reputation-system evidence.
+S021,Reputation Mechanism Design in Online Trading Environments with Pure Moral Hazard,yes,yes,,,B,Reputation design under opportunistic behavior.
+S022,The Spread of True and False News Online,yes,yes,,,A,Large-scale empirical misinformation diffusion study.
+S023,The Science of Fake News,yes,yes,,,B,Research agenda for fake news and interventions.
+S024,Social Media and Fake News in the 2016 Election,yes,yes,,,B,Economic framing of fake news consumption and belief.
+S025,Fighting Misinformation on Social Media Using Crowdsourced Judgments of News Source Quality,yes,yes,,,A,Crowd-based source quality judgments against misinformation.
+S026,Shifting Attention to Accuracy Can Reduce Misinformation Online,yes,yes,,,A,Intervention that shifts attention toward accuracy.
+S027,"It Takes Two to Lie: One to Lie, and One to Listen",yes,yes,,,A,Conversation-level deception in Diplomacy.
+S028,When Can the Defender Effectively Deceive Attackers in Security Games?,yes,yes,,,A,Formal analysis of deception usefulness and harm under attacker models.
+S029,Noise Trader Risk in Financial Markets,yes,yes,,,A,Noise trader risk and risk-bearing returns.
+S030,Stock-Price Manipulation,yes,yes,,,A,Formal market-manipulation model.
+S031,"A Unified Theory of Underreaction, Momentum Trading, and Overreaction in Asset Markets",yes,yes,,,A,Gradual information diffusion and momentum/overreaction.
+S032,"Sequential Sales, Learning, and Cascades",yes,yes,,,A,Sequential investor learning and cascades.
+S033,The Impact of Institutional Trading on Stock Prices,yes,yes,,,B,Empirical analysis of institutional herding and feedback trading.
+S034,A Model of Investor Sentiment,yes,yes,,,A,Investor sentiment and misreaction model.
+S035,Continuous Auctions and Insider Trading,yes,yes,,,A,Canonical informed-trader market model.
+S036,On the Impossibility of Informationally Efficient Markets,yes,yes,,,A,Information acquisition and market efficiency theory.
+S037,Irrational Exuberance,yes,yes,,,B,"Market narratives, contagion, and feedback in speculative behavior."
+S038,Introduction to Information Retrieval,yes,yes,,,B,Standard reference for text representation and classification.
+S039,A Comparison of Event Models for Naive Bayes Text Classification,yes,yes,,,B,Classic comparison of Naive Bayes event models for text.
+S040,Text Categorization with Support Vector Machines: Learning with Many Relevant Features,yes,yes,,,B,Classic sparse high-dimensional text classification method.
+S041,Domain Adaptation with Structural Correspondence Learning,yes,yes,,,A,NLP domain adaptation under train/test mismatch.
+S042,A Theory of Learning from Different Domains,yes,yes,,,A,Theory of domain divergence and adaptation.
+S043,Unbiased Look at Dataset Bias,yes,yes,,,A,Dataset bias and cross-dataset generalization.
+S044,WILDS: A Benchmark of in-the-Wild Distribution Shifts,yes,yes,,,A,Benchmarking real distribution shifts.
+S045,Eligibility Traces for Off-Policy Policy Evaluation,yes,yes,,,B,Early off-policy evaluation under behavior-policy mismatch.
+S046,Doubly Robust Policy Evaluation and Learning,yes,yes,,,A,Doubly robust contextual-bandit evaluation.
+S047,High-Confidence Off-Policy Evaluation,yes,yes,,,A,High-confidence evaluation before deploying policies.
+S048,Doubly Robust Off-policy Value Evaluation for Reinforcement Learning,yes,yes,,,A,Sequential off-policy value evaluation.
+S049,Unbiased Offline Evaluation of Contextual-Bandit-Based News Article Recommendation Algorithms,yes,yes,,,A,Offline evaluation with logged bandit feedback.
+S050,"Offline Reinforcement Learning: Tutorial, Review, and Perspectives on Open Problems",yes,yes,,,C,Review of offline RL and distributional issues.
+S051,Off-Policy Deep Reinforcement Learning without Exploration,yes,yes,,,A,Offline deep RL with support constraints.
+S052,Dynamic Models of Segregation,yes,yes,,,A,Classic agent-based social process model.
+S053,Growing Artificial Societies: Social Science from the Bottom Up,yes,yes,,,B,Foundational agent-based modeling book.
+S054,A Standard Protocol for Describing Individual-Based and Agent-Based Models,yes,yes,,,A,ODD protocol for ABM documentation.
+S055,Verification and Validation of Simulation Models,yes,yes,,,A,Simulation verification and validation framework.
+S056,Agent-Based and Individual-Based Modeling: A Practical Introduction,yes,yes,,,B,"Practical ABM design, testing, and robustness reference."
+S057,Simulation Modeling and Analysis,yes,yes,,,B,"Simulation input, output, validation, and experimental design reference."
+S058,Mutual Fund Performance,yes,yes,,,A,Foundational risk-adjusted performance measure.
+S059,Performance Measurement in a Downside Risk Framework,yes,yes,,,A,Downside-risk performance measurement.
+S060,Optimization of Conditional Value-at-Risk,yes,yes,,,A,CVaR optimization reference.
+S061,Value at Risk: The New Benchmark for Managing Financial Risk,yes,yes,,,B,Value-at-risk risk-management reference.
+S062,Portfolio Selection,yes,yes,,,A,Mean-variance portfolio theory.
+S063,Coherent Measures of Risk,yes,yes,,,A,Coherent risk measure axioms.
+S064,Prospect Theory: An Analysis of Decision under Risk,yes,yes,,,A,Behavioral decision-making under risk.

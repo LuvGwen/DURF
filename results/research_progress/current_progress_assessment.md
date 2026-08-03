@@ -84,3 +84,7 @@ R6.1 is complete at pilot minimum scale. It closes the R6 missing strategy-data 
 ## R6.2 Current Assessment
 
 Metrics integrity checks are complete for Seer survival and Witch potion waste. The project is ready for R7 systematic literature comparison.
+
+## R7 Current Assessment
+
+Systematic literature comparison is complete with identified metadata review gaps. The project is ready for R8 final integrated Data Analysis and evidence tables.

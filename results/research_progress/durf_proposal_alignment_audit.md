@@ -96,3 +96,7 @@ R6.1 directly addresses the proposal-alignment gaps for role-specific strategy a
 ## R6.2 Proposal Alignment Update
 
 Seer mortality risk and Witch wasted-potion cost are now represented with corrected metric definitions. Historical defaults remain separate from the recommended research configuration.
+
+## R7 Literature Comparison Update
+
+R7 completes the proposal requirement to cross-check findings with literature. It adds related-work coverage for social deduction, game theory, herding, deception, behavioral finance, Bag-of-Words/domain shift, offline policy evaluation, simulation validation, and risk metrics. The final bibliography remains citation-ready with explicit manual-review items.

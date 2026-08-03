@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="680" viewBox="0 0 960 680">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="24" y="34" font-family="Arial" font-size="20" font-weight="700" fill="#1f2933">Financial Analogy Crosswalk Coverage</text>
+<text x="24" y="75" font-family="Arial" font-size="13" fill="#334155">Villager</text>
+<rect x="220" y="58" width="680.0" height="24" rx="3" fill="#3366cc"/>
+<text x="908.0" y="75" font-family="Arial" font-size="13" fill="#334155">1</text>
+<text x="24" y="111" font-family="Arial" font-size="13" fill="#334155">Seer</text>
+<rect x="220" y="94" width="680.0" height="24" rx="3" fill="#3366cc"/>
+<text x="908.0" y="111" font-family="Arial" font-size="13" fill="#334155">1</text>
+<text x="24" y="147" font-family="Arial" font-size="13" fill="#334155">Witch</text>
+<rect x="220" y="130" width="680.0" height="24" rx="3" fill="#3366cc"/>
+<text x="908.0" y="147" font-family="Arial" font-size="13" fill="#334155">1</text>
+<text x="24" y="183" font-family="Arial" font-size="13" fill="#334155">Hunter</text>
+<rect x="220" y="166" width="680.0" height="24" rx="3" fill="#3366cc"/>
+<text x="908.0" y="183" font-family="Arial" font-size="13" fill="#334155">1</text>
+<text x="24" y="219" font-family="Arial" font-size="13" fill="#334155">Werewolf</text>
+<rect x="220" y="202" width="680.0" height="24" rx="3" fill="#3366cc"/>
+<text x="908.0" y="219" font-family="Arial" font-size="13" fill="#334155">1</text>
+<text x="24" y="255" font-family="Arial" font-size="13" fill="#334155">public speech</text>
+<rect x="220" y="238" width="680.0" height="24" rx="3" fill="#3366cc"/>
+<text x="908.0" y="255" font-family="Arial" font-size="13" fill="#334155">1</text>
+<text x="24" y="291" font-family="Arial" font-size="13" fill="#334155">false accusation</text>
+<rect x="220" y="274" width="680.0" height="24" rx="3" fill="#3366cc"/>
+<text x="908.0" y="291" font-family="Arial" font-size="13" fill="#334155">1</text>
+<text x="24" y="327" font-family="Arial" font-size="13" fill="#334155">trust score</text>
+<rect x="220" y="310" width="680.0" height="24" rx="3" fill="#3366cc"/>
+<text x="908.0" y="327" font-family="Arial" font-size="13" fill="#334155">1</text>
+<text x="24" y="363" font-family="Arial" font-size="13" fill="#334155">herding</text>
+<rect x="220" y="346" width="680.0" height="24" rx="3" fill="#3366cc"/>
+<text x="908.0" y="363" font-family="Arial" font-size="13" fill="#334155">1</text>
+<text x="24" y="399" font-family="Arial" font-size="13" fill="#334155">reveal timing</text>
+<rect x="220" y="382" width="680.0" height="24" rx="3" fill="#3366cc"/>
+<text x="908.0" y="399" font-family="Arial" font-size="13" fill="#334155">1</text>
+<text x="24" y="435" font-family="Arial" font-size="13" fill="#334155">poison/save</text>
+<rect x="220" y="418" width="680.0" height="24" rx="3" fill="#3366cc"/>
+<text x="908.0" y="435" font-family="Arial" font-size="13" fill="#334155">1</text>
+<text x="24" y="471" font-family="Arial" font-size="13" fill="#334155">vote coordination</text>
+<rect x="220" y="454" width="680.0" height="24" rx="3" fill="#3366cc"/>
+<text x="908.0" y="471" font-family="Arial" font-size="13" fill="#334155">1</text>
+<text x="24" y="507" font-family="Arial" font-size="13" fill="#334155">payoff volatility</text>
+<rect x="220" y="490" width="680.0" height="24" rx="3" fill="#3366cc"/>
+<text x="908.0" y="507" font-family="Arial" font-size="13" fill="#334155">1</text>
+<text x="24" y="543" font-family="Arial" font-size="13" fill="#334155">Sharpe-like ratio</text>
+<rect x="220" y="526" width="680.0" height="24" rx="3" fill="#3366cc"/>
+<text x="908.0" y="543" font-family="Arial" font-size="13" fill="#334155">1</text>
+<text x="24" y="579" font-family="Arial" font-size="13" fill="#334155">information premium</text>
+<rect x="220" y="562" width="680.0" height="24" rx="3" fill="#3366cc"/>
+<text x="908.0" y="579" font-family="Arial" font-size="13" fill="#334155">1</text>
+<text x="24" y="615" font-family="Arial" font-size="13" fill="#334155">manipulation premium</text>
+<rect x="220" y="598" width="680.0" height="24" rx="3" fill="#3366cc"/>
+<text x="908.0" y="615" font-family="Arial" font-size="13" fill="#334155">1</text>
+</svg>

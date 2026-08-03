@@ -1,0 +1,65 @@
+source_id,citation_key,author_year,title,doi,url,metadata_status
+S001,braverman2008mafia,Mark Braverman (2008),Mafia: A theoretical study of players and coalitions in a partial information environment,10.1214/07-AAP456,https://doi.org/10.1214/07-AAP456,verified_publisher_record
+S002,eger2018story,Markus Eger (2018),Keeping the Story Straight: A Comparison of Commitment Strategies for a Social Deduction Game,10.1609/aiide.v14i1.13015,https://doi.org/10.1609/aiide.v14i1.13015,verified_publisher_record
+S003,eger2019commitment,Markus Eger (2019),A Study of AI Agent Commitment in One Night Ultimate Werewolf with Human Players,10.1609/aiide.v15i1.5236,https://doi.org/10.1609/aiide.v15i1.5236,verified_publisher_record
+S004,toriumi2017aiwolf,Fujio Toriumi (2017),AI Wolf Contest: Development of Game AI Using Collective Intelligence,10.1007/978-3-319-57969-6_8,https://doi.org/10.1007/978-3-319-57969-6_8,verified_index_record
+S005,ibraheem2022con,Samee Ibraheem (2022),Putting the Con in Context: Identifying Deceptive Actors in the Game of Mafia,10.18653/v1/2022.naacl-main.11,https://aclanthology.org/2022.naacl-main.11/,verified_acl_record
+S006,serrino2019friend,Jack Serrino (2019),Finding Friend and Foe in Multi-Agent Games,,https://arxiv.org/abs/1906.02330,verified_index_and_arxiv_record
+S007,stepputtis2023avalon,Simon Stepputtis (2023),Long-Horizon Dialogue Understanding for Role Identification in the Game of Avalon with Large Language Models,10.18653/v1/2023.findings-emnlp.748,https://aclanthology.org/2023.findings-emnlp.748/,verified_acl_record
+S008,kopparapu2022hidden,Kavya Kopparapu (2022),Hidden Agenda: A Social Deduction Game with Diverse Learned Equilibria,,https://arxiv.org/abs/2201.01816,verified_arxiv_record
+S009,harsanyi1967bayesian,John C. Harsanyi (1967),"Games with Incomplete Information Played by Bayesian Players, I-III. Part I. The Basic Model",10.1287/mnsc.14.3.159,https://doi.org/10.1287/mnsc.14.3.159,verified_publisher_record
+S010,akerlof1970lemons,George A. Akerlof (1970),The Market for Lemons: Quality Uncertainty and the Market Mechanism,10.2307/1879431,https://doi.org/10.2307/1879431,verified_publisher_record
+S011,spence1973signaling,Michael Spence (1973),Job Market Signaling,10.2307/1882010,https://doi.org/10.2307/1882010,verified_index_record
+S012,crawford1982cheap,Vincent P. Crawford (1982),Strategic Information Transmission,10.2307/1913390,https://doi.org/10.2307/1913390,verified_index_record
+S013,mertens1985beliefs,Jean-Francois Mertens (1985),Formulation of Bayesian Analysis for Games with Incomplete Information,10.1007/BF01770224,https://doi.org/10.1007/BF01770224,verified_institutional_record
+S014,kreps1982sequential,David M. Kreps (1982),Sequential Equilibria,10.2307/1912767,https://doi.org/10.2307/1912767,manual_identifier_review
+S015,banerjee1992herd,Abhijit V. Banerjee (1992),A Simple Model of Herd Behavior,10.2307/2118364,https://doi.org/10.2307/2118364,verified_publisher_record
+S016,bikhchandani1992cascades,Sushil Bikhchandani (1992),"A Theory of Fads, Fashion, Custom, and Cultural Change as Informational Cascades",10.1086/261849,https://doi.org/10.1086/261849,verified_publisher_record
+S017,asch1955pressure,Solomon E. Asch (1955),Opinions and Social Pressure,10.1038/scientificamerican1155-31,https://doi.org/10.1038/scientificamerican1155-31,verified_publisher_record
+S018,surowiecki2004wisdom,James Surowiecki (2004),The Wisdom of Crowds,,https://books.google.com/books?id=Moh1Z6D4VRAC,verified_book_record
+S019,josang2007trust,Audun Josang (2007),A Survey of Trust and Reputation Systems for Online Service Provision,10.1016/j.dss.2005.05.019,https://doi.org/10.1016/j.dss.2005.05.019,verified_index_record
+S020,resnick2002trust,Paul Resnick (2002),Trust Among Strangers in Internet Transactions: Empirical Analysis of eBay's Reputation System,10.1016/S0278-0984(02)11030-3,https://doi.org/10.1016/S0278-0984(02)11030-3,verified_dblp_and_author_record
+S021,dellarocas2005reputation,Chrysanthos Dellarocas (2005),Reputation Mechanism Design in Online Trading Environments with Pure Moral Hazard,10.1287/isre.1050.0054,https://doi.org/10.1287/isre.1050.0054,verified_publisher_record
+S022,vosoughi2018false,Soroush Vosoughi (2018),The Spread of True and False News Online,10.1126/science.aap9559,https://doi.org/10.1126/science.aap9559,verified_pubmed_record
+S023,lazer2018science,David M. J. Lazer (2018),The Science of Fake News,10.1126/science.aao2998,https://doi.org/10.1126/science.aao2998,verified_pubmed_record
+S024,allcott2017fake,Hunt Allcott (2017),Social Media and Fake News in the 2016 Election,10.1257/jep.31.2.211,https://doi.org/10.1257/jep.31.2.211,verified_aea_record
+S025,pennycook2019crowd,Gordon Pennycook (2019),Fighting Misinformation on Social Media Using Crowdsourced Judgments of News Source Quality,10.1073/pnas.1806781116,https://doi.org/10.1073/pnas.1806781116,verified_pubmed_record
+S026,pennycook2021accuracy,Gordon Pennycook (2021),Shifting Attention to Accuracy Can Reduce Misinformation Online,10.1038/s41586-021-03344-2,https://doi.org/10.1038/s41586-021-03344-2,verified_publisher_record
+S027,peskov2020lie,Denis Peskov (2020),"It Takes Two to Lie: One to Lie, and One to Listen",,https://aclanthology.org/2020.acl-main.353/,verified_acl_record
+S028,nguyen2022deceive,Thanh Nguyen (2022),When Can the Defender Effectively Deceive Attackers in Security Games?,10.1609/aaai.v36i9.21172,https://doi.org/10.1609/aaai.v36i9.21172,verified_publisher_record
+S029,delong1990noise,J. Bradford De Long (1990),Noise Trader Risk in Financial Markets,10.1086/261703,https://doi.org/10.1086/261703,verified_publisher_record
+S030,allen1992manipulation,Franklin Allen (1992),Stock-Price Manipulation,10.1093/rfs/5.3.503,https://doi.org/10.1093/rfs/5.3.503,verified_publisher_record
+S031,hong1999underreaction,Harrison Hong (1999),"A Unified Theory of Underreaction, Momentum Trading, and Overreaction in Asset Markets",10.1111/0022-1082.00184,https://doi.org/10.1111/0022-1082.00184,verified_publisher_record
+S032,welch1992cascades,Ivo Welch (1992),"Sequential Sales, Learning, and Cascades",10.1111/j.1540-6261.1992.tb04406.x,https://doi.org/10.1111/j.1540-6261.1992.tb04406.x,verified_publisher_record
+S033,lakonishok1992institutional,Josef Lakonishok (1992),The Impact of Institutional Trading on Stock Prices,,https://www.nber.org/papers/w3846,manual_review_required
+S034,barberis1998sentiment,Nicholas Barberis (1998),A Model of Investor Sentiment,10.1016/S0304-405X(98)00027-0,https://doi.org/10.1016/S0304-405X(98)00027-0,manual_identifier_review
+S035,kyle1985continuous,Albert S. Kyle (1985),Continuous Auctions and Insider Trading,10.2307/1913210,https://doi.org/10.2307/1913210,manual_identifier_review
+S036,grossman1980impossibility,Sanford J. Grossman (1980),On the Impossibility of Informationally Efficient Markets,10.2307/1805228,https://doi.org/10.2307/1805228,manual_identifier_review
+S037,shiller2000irrational,Robert J. Shiller (2000),Irrational Exuberance,,https://press.princeton.edu/books/paperback/9780691173122/irrational-exuberance,manual_review_required
+S038,manning2008ir,Christopher D. Manning (2008),Introduction to Information Retrieval,,https://nlp.stanford.edu/IR-book/,verified_book_record
+S039,mccallum1998event,Andrew McCallum (1998),A Comparison of Event Models for Naive Bayes Text Classification,,https://aaai.org/papers/041-ws98-05-007/,verified_aaai_record
+S040,joachims1998text,Thorsten Joachims (1998),Text Categorization with Support Vector Machines: Learning with Many Relevant Features,10.1007/BFb0026683,https://doi.org/10.1007/BFb0026683,manual_identifier_review
+S041,blitzer2006domain,John Blitzer (2006),Domain Adaptation with Structural Correspondence Learning,,https://aclanthology.org/W06-1615/,verified_acl_record
+S042,bendavid2010domain,Shai Ben-David (2010),A Theory of Learning from Different Domains,10.1007/s10994-009-5152-4,https://doi.org/10.1007/s10994-009-5152-4,manual_identifier_review
+S043,torralba2011bias,Antonio Torralba (2011),Unbiased Look at Dataset Bias,10.1109/CVPR.2011.5995347,https://doi.org/10.1109/CVPR.2011.5995347,manual_identifier_review
+S044,koh2021wilds,Pang Wei Koh (2021),WILDS: A Benchmark of in-the-Wild Distribution Shifts,,https://proceedings.mlr.press/v139/koh21a.html,manual_review_required
+S045,precup2000offpolicy,Doina Precup (2000),Eligibility Traces for Off-Policy Policy Evaluation,,https://dblp.org/rec/conf/icml/PrecupSS00,manual_review_required
+S046,dudik2011doubly,Miroslav Dudik (2011),Doubly Robust Policy Evaluation and Learning,,https://www.microsoft.com/en-us/research/publication/doubly-robust-policy-evaluation-and-learning-2/,verified_research_page
+S047,thomas2015hcope,Philip Thomas (2015),High-Confidence Off-Policy Evaluation,10.1609/aaai.v29i1.9541,https://doi.org/10.1609/aaai.v29i1.9541,verified_publisher_record
+S048,jiang2016doubly,Nan Jiang (2016),Doubly Robust Off-policy Value Evaluation for Reinforcement Learning,,https://proceedings.mlr.press/v48/jiang16.html,verified_pmlr_record
+S049,li2011unbiased,Lihong Li (2011),Unbiased Offline Evaluation of Contextual-Bandit-Based News Article Recommendation Algorithms,10.1145/1935826.1935878,https://doi.org/10.1145/1935826.1935878,manual_identifier_review
+S050,levine2020offline,Sergey Levine (2020),"Offline Reinforcement Learning: Tutorial, Review, and Perspectives on Open Problems",,https://arxiv.org/abs/2005.01643,manual_review_required
+S051,fujimoto2019bcq,Scott Fujimoto (2019),Off-Policy Deep Reinforcement Learning without Exploration,,https://proceedings.mlr.press/v97/fujimoto19a.html,manual_review_required
+S052,schelling1971segregation,Thomas C. Schelling (1971),Dynamic Models of Segregation,10.1080/0022250X.1971.9989794,https://doi.org/10.1080/0022250X.1971.9989794,manual_identifier_review
+S053,epstein1996growing,Joshua M. Epstein (1996),Growing Artificial Societies: Social Science from the Bottom Up,,https://www.brookings.edu/books/growing-artificial-societies/,manual_review_required
+S054,grimm2006odd,Volker Grimm (2006),A Standard Protocol for Describing Individual-Based and Agent-Based Models,10.1016/j.ecolmodel.2006.04.023,https://doi.org/10.1016/j.ecolmodel.2006.04.023,manual_identifier_review
+S055,sargent2013verification,Robert G. Sargent (2013),Verification and Validation of Simulation Models,10.1057/jos.2012.20,https://doi.org/10.1057/jos.2012.20,verified_index_record
+S056,railsback2019abm,Steven F. Railsback (2019),Agent-Based and Individual-Based Modeling: A Practical Introduction,,https://www.railsback-grimm-abm-book.com/,verified_book_record
+S057,law2015simulation,Averill M. Law (2015),Simulation Modeling and Analysis,,https://www.mheducation.com/highered/product/simulation-modeling-analysis-law,verified_publisher_record
+S058,sharpe1966mutual,William F. Sharpe (1966),Mutual Fund Performance,10.1086/294846,https://doi.org/10.1086/294846,verified_index_record
+S059,sortino1994downside,Frank A. Sortino (1994),Performance Measurement in a Downside Risk Framework,10.3905/joi.3.3.59,https://doi.org/10.3905/joi.3.3.59,verified_index_record
+S060,rockafellar2000cvar,R. Tyrrell Rockafellar (2000),Optimization of Conditional Value-at-Risk,10.21314/JOR.2000.038,https://doi.org/10.21314/JOR.2000.038,verified_index_record
+S061,jorion2007var,Philippe Jorion (2007),Value at Risk: The New Benchmark for Managing Financial Risk,,https://www.mheducation.com/,manual_review_required
+S062,markowitz1952portfolio,Harry Markowitz (1952),Portfolio Selection,10.2307/2975974,https://doi.org/10.2307/2975974,manual_identifier_review
+S063,artzner1999coherent,Philippe Artzner (1999),Coherent Measures of Risk,10.1111/1467-9965.00068,https://doi.org/10.1111/1467-9965.00068,manual_identifier_review
+S064,kahneman1979prospect,Daniel Kahneman (1979),Prospect Theory: An Analysis of Decision under Risk,10.2307/1914185,https://doi.org/10.2307/1914185,manual_identifier_review

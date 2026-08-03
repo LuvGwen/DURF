@@ -1,0 +1,68 @@
+# R7 References (APA 7 Draft)
+
+- George A. Akerlof. (1970). The Market for Lemons: Quality Uncertainty and the Market Mechanism. Quarterly Journal of Economics. 10.2307/1879431
+- Hunt Allcott, Matthew Gentzkow. (2017). Social Media and Fake News in the 2016 Election. Journal of Economic Perspectives. 10.1257/jep.31.2.211
+- Franklin Allen, Douglas Gale. (1992). Stock-Price Manipulation. Review of Financial Studies. 10.1093/rfs/5.3.503
+- Philippe Artzner, Freddy Delbaen, Jean-Marc Eber, David Heath. (1999). Coherent Measures of Risk. Mathematical Finance. 10.1111/1467-9965.00068
+- Solomon E. Asch. (1955). Opinions and Social Pressure. Scientific American. 10.1038/scientificamerican1155-31
+- Abhijit V. Banerjee. (1992). A Simple Model of Herd Behavior. Quarterly Journal of Economics. 10.2307/2118364
+- Nicholas Barberis, Andrei Shleifer, Robert Vishny. (1998). A Model of Investor Sentiment. Journal of Financial Economics. 10.1016/S0304-405X(98)00027-0
+- Shai Ben-David, John Blitzer, Koby Crammer, Alex Kulesza, Fernando Pereira, Jennifer Wortman Vaughan. (2010). A Theory of Learning from Different Domains. Machine Learning. 10.1007/s10994-009-5152-4
+- Sushil Bikhchandani, David Hirshleifer, Ivo Welch. (1992). A Theory of Fads, Fashion, Custom, and Cultural Change as Informational Cascades. Journal of Political Economy. 10.1086/261849
+- John Blitzer, Ryan McDonald, Fernando Pereira. (2006). Domain Adaptation with Structural Correspondence Learning. EMNLP. https://aclanthology.org/W06-1615/
+- Mark Braverman, Omid Etesami, Elchanan Mossel. (2008). Mafia: A theoretical study of players and coalitions in a partial information environment. Annals of Applied Probability. 10.1214/07-AAP456
+- Vincent P. Crawford, Joel Sobel. (1982). Strategic Information Transmission. Econometrica. 10.2307/1913390
+- Chrysanthos Dellarocas. (2005). Reputation Mechanism Design in Online Trading Environments with Pure Moral Hazard. Information Systems Research. 10.1287/isre.1050.0054
+- J. Bradford De Long, Andrei Shleifer, Lawrence H. Summers, Robert J. Waldmann. (1990). Noise Trader Risk in Financial Markets. Journal of Political Economy. 10.1086/261703
+- Miroslav Dudik, John Langford, Lihong Li. (2011). Doubly Robust Policy Evaluation and Learning. ICML. https://www.microsoft.com/en-us/research/publication/doubly-robust-policy-evaluation-and-learning-2/
+- Markus Eger, Chris Martens. (2018). Keeping the Story Straight: A Comparison of Commitment Strategies for a Social Deduction Game. AAAI Conference on Artificial Intelligence and Interactive Digital Entertainment. 10.1609/aiide.v14i1.13015
+- Markus Eger, Chris Martens. (2019). A Study of AI Agent Commitment in One Night Ultimate Werewolf with Human Players. AAAI Conference on Artificial Intelligence and Interactive Digital Entertainment. 10.1609/aiide.v15i1.5236
+- Joshua M. Epstein, Robert Axtell. (1996). Growing Artificial Societies: Social Science from the Bottom Up. Brookings Institution Press. https://www.brookings.edu/books/growing-artificial-societies/
+- Scott Fujimoto, David Meger, Doina Precup. (2019). Off-Policy Deep Reinforcement Learning without Exploration. ICML. https://proceedings.mlr.press/v97/fujimoto19a.html
+- Volker Grimm, Uta Berger, Finn Bastiansen, Sigrunn Eliassen, Vincent Ginot, Jarl Giske, John Goss-Custard, Tamara Grand, Simone K. Heinz, Geir Huse, Andreas Huth, Jane U. Jepsen, Christian Jorgensen, Wolf M. Mooij, Birgit Mueller, Guy Pe'er, Cyril Piou, Steven F. Railsback, Andrew M. Robbins, Martha M. Robbins, Eva Rossmanith, Nadja Rueger, Espen Strand, Sami Souissi, Richard A. Stillman, Rune Vabo, Ute Visser, Donald L. DeAngelis. (2006). A Standard Protocol for Describing Individual-Based and Agent-Based Models. Ecological Modelling. 10.1016/j.ecolmodel.2006.04.023
+- Sanford J. Grossman, Joseph E. Stiglitz. (1980). On the Impossibility of Informationally Efficient Markets. American Economic Review. 10.2307/1805228
+- John C. Harsanyi. (1967). Games with Incomplete Information Played by Bayesian Players, I-III. Part I. The Basic Model. Management Science. 10.1287/mnsc.14.3.159
+- Harrison Hong, Jeremy C. Stein. (1999). A Unified Theory of Underreaction, Momentum Trading, and Overreaction in Asset Markets. Journal of Finance. 10.1111/0022-1082.00184
+- Samee Ibraheem, Gaoyue Zhou, John DeNero. (2022). Putting the Con in Context: Identifying Deceptive Actors in the Game of Mafia. NAACL-HLT. 10.18653/v1/2022.naacl-main.11
+- Nan Jiang, Lihong Li. (2016). Doubly Robust Off-policy Value Evaluation for Reinforcement Learning. ICML. https://proceedings.mlr.press/v48/jiang16.html
+- Thorsten Joachims. (1998). Text Categorization with Support Vector Machines: Learning with Many Relevant Features. European Conference on Machine Learning. 10.1007/BFb0026683
+- Philippe Jorion. (2007). Value at Risk: The New Benchmark for Managing Financial Risk. McGraw-Hill. https://www.mheducation.com/
+- Audun Josang, Roslan Ismail, Colin Boyd. (2007). A Survey of Trust and Reputation Systems for Online Service Provision. Decision Support Systems. 10.1016/j.dss.2005.05.019
+- Daniel Kahneman, Amos Tversky. (1979). Prospect Theory: An Analysis of Decision under Risk. Econometrica. 10.2307/1914185
+- Pang Wei Koh, Shiori Sagawa, Henrik Marklund, Sang Michael Xie, Marvin Zhang, Akshay Balsubramani, Weihua Hu, Michihiro Yasunaga, Richard Lanas Phillips, Irena Gao, Tony Lee, Etienne David, Ian Stavness, Wei Guo, Berton Earnshaw, Imran Haque, Sara Beery, Jure Leskovec, Anshul Kundaje, Emma Pierson, Sergey Levine, Chelsea Finn, Percy Liang. (2021). WILDS: A Benchmark of in-the-Wild Distribution Shifts. ICML. https://proceedings.mlr.press/v139/koh21a.html
+- Kavya Kopparapu, Edgar A. Dueniez-Guzman, Jayd Matyas, Alexander Sasha Vezhnevets, John P. Agapiou, Kevin R. McKee, Richard Everett, Janusz Marecki, Joel Z. Leibo, Thore Graepel. (2022). Hidden Agenda: A Social Deduction Game with Diverse Learned Equilibria. CoRR. https://arxiv.org/abs/2201.01816
+- David M. Kreps, Robert Wilson. (1982). Sequential Equilibria. Econometrica. 10.2307/1912767
+- Albert S. Kyle. (1985). Continuous Auctions and Insider Trading. Econometrica. 10.2307/1913210
+- Josef Lakonishok, Andrei Shleifer, Robert W. Vishny. (1992). The Impact of Institutional Trading on Stock Prices. Journal of Financial Economics. https://www.nber.org/papers/w3846
+- Averill M. Law. (2015). Simulation Modeling and Analysis. McGraw-Hill. https://www.mheducation.com/highered/product/simulation-modeling-analysis-law
+- David M. J. Lazer, Matthew A. Baum, Yochai Benkler, Adam J. Berinsky, Kelly M. Greenhill, Filippo Menczer, Miriam J. Metzger, Brendan Nyhan, Gordon Pennycook, David Rothschild, Michael Schudson, Steven A. Sloman, Cass R. Sunstein, Emily A. Thorson, Duncan J. Watts, Jonathan L. Zittrain. (2018). The Science of Fake News. Science. 10.1126/science.aao2998
+- Sergey Levine, Aviral Kumar, George Tucker, Justin Fu. (2020). Offline Reinforcement Learning: Tutorial, Review, and Perspectives on Open Problems. arXiv. https://arxiv.org/abs/2005.01643
+- Lihong Li, Wei Chu, John Langford, Xuanhui Wang. (2011). Unbiased Offline Evaluation of Contextual-Bandit-Based News Article Recommendation Algorithms. WSDM. 10.1145/1935826.1935878
+- Christopher D. Manning, Prabhakar Raghavan, Hinrich Schuetze. (2008). Introduction to Information Retrieval. Cambridge University Press. https://nlp.stanford.edu/IR-book/
+- Harry Markowitz. (1952). Portfolio Selection. Journal of Finance. 10.2307/2975974
+- Andrew McCallum, Kamal Nigam. (1998). A Comparison of Event Models for Naive Bayes Text Classification. AAAI Workshop on Learning for Text Categorization. https://aaai.org/papers/041-ws98-05-007/
+- Jean-Francois Mertens, Shmuel Zamir. (1985). Formulation of Bayesian Analysis for Games with Incomplete Information. International Journal of Game Theory. 10.1007/BF01770224
+- Thanh Nguyen, Haifeng Xu. (2022). When Can the Defender Effectively Deceive Attackers in Security Games?. AAAI. 10.1609/aaai.v36i9.21172
+- Gordon Pennycook, David G. Rand. (2019). Fighting Misinformation on Social Media Using Crowdsourced Judgments of News Source Quality. Proceedings of the National Academy of Sciences. 10.1073/pnas.1806781116
+- Gordon Pennycook, Ziv Epstein, Mohsen Mosleh, Antonio A. Arechar, Dean Eckles, David G. Rand. (2021). Shifting Attention to Accuracy Can Reduce Misinformation Online. Nature. 10.1038/s41586-021-03344-2
+- Denis Peskov, Benny Cheng, Ahmed Elgohary, Joe Barrow, Cristian Danescu-Niculescu-Mizil, Jordan Boyd-Graber. (2020). It Takes Two to Lie: One to Lie, and One to Listen. ACL. https://aclanthology.org/2020.acl-main.353/
+- Doina Precup, Richard S. Sutton, Satinder Singh. (2000). Eligibility Traces for Off-Policy Policy Evaluation. ICML. https://dblp.org/rec/conf/icml/PrecupSS00
+- Steven F. Railsback, Volker Grimm. (2019). Agent-Based and Individual-Based Modeling: A Practical Introduction. Princeton University Press. https://www.railsback-grimm-abm-book.com/
+- Paul Resnick, Richard Zeckhauser. (2002). Trust Among Strangers in Internet Transactions: Empirical Analysis of eBay's Reputation System. The Economics of the Internet and E-Commerce. 10.1016/S0278-0984(02)11030-3
+- R. Tyrrell Rockafellar, Stanislav Uryasev. (2000). Optimization of Conditional Value-at-Risk. Journal of Risk. 10.21314/JOR.2000.038
+- Robert G. Sargent. (2013). Verification and Validation of Simulation Models. Journal of Simulation. 10.1057/jos.2012.20
+- Thomas C. Schelling. (1971). Dynamic Models of Segregation. Journal of Mathematical Sociology. 10.1080/0022250X.1971.9989794
+- Jack Serrino, Max Kleiman-Weiner, David C. Parkes, Joshua B. Tenenbaum. (2019). Finding Friend and Foe in Multi-Agent Games. NeurIPS. https://arxiv.org/abs/1906.02330
+- William F. Sharpe. (1966). Mutual Fund Performance. Journal of Business. 10.1086/294846
+- Robert J. Shiller. (2000). Irrational Exuberance. Princeton University Press. https://press.princeton.edu/books/paperback/9780691173122/irrational-exuberance
+- Frank A. Sortino, Lee N. Price. (1994). Performance Measurement in a Downside Risk Framework. Journal of Investing. 10.3905/joi.3.3.59
+- Michael Spence. (1973). Job Market Signaling. Quarterly Journal of Economics. 10.2307/1882010
+- Simon Stepputtis, Joseph Campbell, Yaqi Xie, Zhengyang Qi, Wenxin Zhang, Ruiyi Wang, Sanketh Rangreji, Charles Lewis, Katia Sycara. (2023). Long-Horizon Dialogue Understanding for Role Identification in the Game of Avalon with Large Language Models. Findings of EMNLP. 10.18653/v1/2023.findings-emnlp.748
+- James Surowiecki. (2004). The Wisdom of Crowds. Doubleday. https://books.google.com/books?id=Moh1Z6D4VRAC
+- Philip Thomas, Georgios Theocharous, Mohammad Ghavamzadeh. (2015). High-Confidence Off-Policy Evaluation. AAAI. 10.1609/aaai.v29i1.9541
+- Fujio Toriumi, Hirotaka Osawa, Michimasa Inaba, Daisuke Katagami, Kosuke Shinoda, Hitoshi Matsubara. (2017). AI Wolf Contest: Development of Game AI Using Collective Intelligence. Communications in Computer and Information Science. 10.1007/978-3-319-57969-6_8
+- Antonio Torralba, Alexei A. Efros. (2011). Unbiased Look at Dataset Bias. CVPR. 10.1109/CVPR.2011.5995347
+- Soroush Vosoughi, Deb Roy, Sinan Aral. (2018). The Spread of True and False News Online. Science. 10.1126/science.aap9559
+- Ivo Welch. (1992). Sequential Sales, Learning, and Cascades. Journal of Finance. 10.1111/j.1540-6261.1992.tb04406.x
+
+Note: Entries marked in metadata validation as manual-review items require final human bibliography cleanup before submission.

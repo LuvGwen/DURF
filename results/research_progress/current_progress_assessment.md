@@ -79,3 +79,8 @@ final role-specific claims are written into the final DURF report.
 ## R6.1 Progress Assessment
 
 R6.1 is complete at pilot minimum scale. It closes the R6 missing strategy-data gap with matched live-validation outputs for Hunter, Seer, Witch, Werewolf, and Villager policies. Default simulator behavior remains unchanged behind disabled R6.1 flags, and R4/R5 manifest hashes remain unchanged.
+
+
+## R6.2 Current Assessment
+
+Metrics integrity checks are complete for Seer survival and Witch potion waste. The project is ready for R7 systematic literature comparison.

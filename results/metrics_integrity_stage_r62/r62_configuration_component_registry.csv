@@ -1,0 +1,12 @@
+component,value,evidence_source,evidence_grade,confidence,status
+villager_voting_policy,trust_weighted_structured,R6.1,A,high within tested strategy space,statistically supported improvement
+seer_checking_policy,random_or_diversified_reference,R6 and R6.1,B,moderate,retain reference; reject highest_suspicion/highest_p_wolf/edge-seat theory
+seer_reveal_policy,private_reference,R6.1 and R6.2,B,moderate for current reference,immediate_reveal remains experimental candidate
+witch_joint_policy,reference,R6.1 and R6.2,B,low to moderate,aggressive_full remains experimental candidate with waste warning
+hunter_policy,reference,R6.1,B,moderate,no_shot and conservative_threshold rejected
+werewolf_night_kill_policy,threat_based,R6.1,B,moderate,reference/threat_adaptive retained; random kill and deep_cover rejected
+werewolf_deception_policy,adaptive_with_credibility_costs,Stage 3 through R6.1,B,moderate,credibility-constrained deception only
+speech_policy,structured_speech_enabled,Stage 2 through R6,B,moderate,live BoW contribution disabled
+herding_policy,guarded_configurable,Stage 4 and R6.1,C,low to moderate,trust-weighted voting is primary recommendation
+bow_mode,shadow_diagnostics_only,R3 and R6,E for live deployment,high rejection for live override,disabled for live decisions
+ml_mode,diagnostic_only,ML Stage 2A/2B and R6,E for deployment,moderate,continuous and hybrid ML disabled

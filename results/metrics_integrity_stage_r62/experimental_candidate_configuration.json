@@ -1,0 +1,25 @@
+{
+  "candidates": {
+    "seer_reveal_policy": "immediate_reveal",
+    "villager_herding_policy": "guarded_herding",
+    "witch_joint_policy": "aggressive_full"
+  },
+  "configuration_hash": "942731c7163530e6bd6e47c2d9625212dba3a6acbbc17ffa51e88a0eb39f7738",
+  "configuration_name": "experimental_candidate_configuration",
+  "configuration_version": "r62_v1",
+  "historical_default_unchanged": true,
+  "purpose": "Promising but uncertain components requiring future inference.",
+  "role_composition": [
+    "werewolf",
+    "werewolf",
+    "werewolf",
+    "seer",
+    "witch",
+    "hunter",
+    "villager",
+    "villager",
+    "villager",
+    "villager"
+  ],
+  "source_commit": "51dc679025fa4a8d054d2e0aa6871eb5750a1f27"
+}

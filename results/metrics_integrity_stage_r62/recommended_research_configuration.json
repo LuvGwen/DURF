@@ -1,0 +1,121 @@
+{
+  "components": {
+    "bow_mode": {
+      "confidence": "high rejection for live override",
+      "evidence_grade": "E for live deployment",
+      "evidence_source": "R3 and R6",
+      "status": "disabled for live decisions",
+      "value": "shadow_diagnostics_only"
+    },
+    "herding_policy": {
+      "confidence": "low to moderate",
+      "evidence_grade": "C",
+      "evidence_source": "Stage 4 and R6.1",
+      "status": "trust-weighted voting is primary recommendation",
+      "value": "guarded_configurable"
+    },
+    "hunter_policy": {
+      "confidence": "moderate",
+      "evidence_grade": "B",
+      "evidence_source": "R6.1",
+      "status": "no_shot and conservative_threshold rejected",
+      "value": "reference"
+    },
+    "ml_mode": {
+      "confidence": "moderate",
+      "evidence_grade": "E for deployment",
+      "evidence_source": "ML Stage 2A/2B and R6",
+      "status": "continuous and hybrid ML disabled",
+      "value": "diagnostic_only"
+    },
+    "seer_checking_policy": {
+      "confidence": "moderate",
+      "evidence_grade": "B",
+      "evidence_source": "R6 and R6.1",
+      "status": "retain reference; reject highest_suspicion/highest_p_wolf/edge-seat theory",
+      "value": "random_or_diversified_reference"
+    },
+    "seer_reveal_policy": {
+      "confidence": "moderate for current reference",
+      "evidence_grade": "B",
+      "evidence_source": "R6.1 and R6.2",
+      "status": "immediate_reveal remains experimental candidate",
+      "value": "private_reference"
+    },
+    "speech_policy": {
+      "confidence": "moderate",
+      "evidence_grade": "B",
+      "evidence_source": "Stage 2 through R6",
+      "status": "live BoW contribution disabled",
+      "value": "structured_speech_enabled"
+    },
+    "villager_voting_policy": {
+      "confidence": "high within tested strategy space",
+      "evidence_grade": "A",
+      "evidence_source": "R6.1",
+      "status": "statistically supported improvement",
+      "value": "trust_weighted_structured"
+    },
+    "werewolf_deception_policy": {
+      "confidence": "moderate",
+      "evidence_grade": "B",
+      "evidence_source": "Stage 3 through R6.1",
+      "status": "credibility-constrained deception only",
+      "value": "adaptive_with_credibility_costs"
+    },
+    "werewolf_night_kill_policy": {
+      "confidence": "moderate",
+      "evidence_grade": "B",
+      "evidence_source": "R6.1",
+      "status": "reference/threat_adaptive retained; random kill and deep_cover rejected",
+      "value": "threat_based"
+    },
+    "witch_joint_policy": {
+      "confidence": "low to moderate",
+      "evidence_grade": "B",
+      "evidence_source": "R6.1 and R6.2",
+      "status": "aggressive_full remains experimental candidate with waste warning",
+      "value": "reference"
+    }
+  },
+  "configuration_hash": "0d5e284c625dd63181c6ee852e565a10506271cba3b3684da3b612c634d2e537",
+  "configuration_name": "recommended_research_configuration",
+  "configuration_version": "r62_v1",
+  "explicit_activation_command": "python3 run_recommended_configuration.py",
+  "financial_metric_manifest_hash": "4b48f5aae165d6c30d5a13cd2e9c3e01f5b595ddbfeb93f7c1832b018f6861bf",
+  "historical_default_unchanged": true,
+  "payoff_manifest_hash": "eee8007693ec6a484632f61444a53f6f8b1b9feb64b18c865f0edf704a15c7cd",
+  "purpose": "Explicit opt-in research configuration for final analysis inputs.",
+  "rejected_alternatives": [
+    "villager_random_vote",
+    "live_guarded_bow",
+    "structured_plus_bow_live",
+    "seer_highest_suspicion",
+    "seer_highest_p_wolf",
+    "edge_seat_checking_theory",
+    "hunter_no_shot",
+    "hunter_conservative_threshold",
+    "wolf_random_kill",
+    "wolf_deep_cover",
+    "continuous_frozen_ml",
+    "hybrid_frozen_ml"
+  ],
+  "role_composition": [
+    "werewolf",
+    "werewolf",
+    "werewolf",
+    "seer",
+    "witch",
+    "hunter",
+    "villager",
+    "villager",
+    "villager",
+    "villager"
+  ],
+  "source_commit": "51dc679025fa4a8d054d2e0aa6871eb5750a1f27",
+  "unresolved_candidates": [
+    "seer_immediate_reveal",
+    "witch_aggressive_full",
+    "villager_guarded_herding"
+  ]
+}

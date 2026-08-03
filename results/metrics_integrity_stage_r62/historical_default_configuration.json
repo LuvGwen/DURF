@@ -1,0 +1,22 @@
+{
+  "activation": "implicit legacy defaults only",
+  "configuration_hash": "c9ab19b7ed87c129921e505f728e7cfcdc22e0014a54a0ca5e9bd5742caf7d9a",
+  "configuration_name": "historical_default_configuration",
+  "configuration_version": "r62_v1",
+  "historical_default_unchanged": true,
+  "notes": "This manifest records defaults; it does not modify code.",
+  "purpose": "Preserve project historical simulator behavior.",
+  "role_composition": [
+    "werewolf",
+    "werewolf",
+    "werewolf",
+    "seer",
+    "witch",
+    "hunter",
+    "villager",
+    "villager",
+    "villager",
+    "villager"
+  ],
+  "source_commit": "51dc679025fa4a8d054d2e0aa6871eb5750a1f27"
+}

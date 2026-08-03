@@ -1,0 +1,3 @@
+analysis_area,independent_unit,source_games,bootstrap_replicates,conclusion
+seer_survival,matched_set_id,1200,1000,terminal survival correctly measured but scientifically narrow
+witch_potion_waste,matched_set_id,1200,1000,potion waste metric corrected

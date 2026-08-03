@@ -1,0 +1,3 @@
+condition,game_count,village_win_rate,wolf_win_rate,trust_weighted_voting_activations,live_bow_activations,ml_activations
+historical_reference,200,0.36,0.64,0,0,0
+recommended_research_configuration,200,0.46,0.54,200,0,0

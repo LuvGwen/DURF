@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="312" viewBox="0 0 920 312">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="24" y="30" font-family="Arial" font-size="18" font-weight="700">Seer Terminal Survival by Reveal Policy</text>
+<text x="24" y="73" font-family="Arial" font-size="12">delayed_round_2</text>
+<rect x="250" y="55" width="0.0" height="24" fill="#2f7d6d"/>
+<text x="258.0" y="72" font-family="Arial" font-size="12">0.000</text>
+<text x="24" y="115" font-family="Arial" font-size="12">immediate_reveal</text>
+<rect x="250" y="97" width="0.0" height="24" fill="#2f7d6d"/>
+<text x="258.0" y="114" font-family="Arial" font-size="12">0.000</text>
+<text x="24" y="157" font-family="Arial" font-size="12">private_only</text>
+<rect x="250" y="139" width="0.0" height="24" fill="#2f7d6d"/>
+<text x="258.0" y="156" font-family="Arial" font-size="12">0.000</text>
+<text x="24" y="199" font-family="Arial" font-size="12">reveal_first_wolf</text>
+<rect x="250" y="181" width="0.0" height="24" fill="#2f7d6d"/>
+<text x="258.0" y="198" font-family="Arial" font-size="12">0.000</text>
+<text x="24" y="241" font-family="Arial" font-size="12">selective_useful_info</text>
+<rect x="250" y="223" width="0.0" height="24" fill="#2f7d6d"/>
+<text x="258.0" y="240" font-family="Arial" font-size="12">0.000</text>
+<text x="24" y="283" font-family="Arial" font-size="12">under_threat</text>
+<rect x="250" y="265" width="0.0" height="24" fill="#2f7d6d"/>
+<text x="258.0" y="282" font-family="Arial" font-size="12">0.000</text>
+</svg>

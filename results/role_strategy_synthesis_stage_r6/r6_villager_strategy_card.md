@@ -1,40 +1,16 @@
 # R6 Villager Strategy Card
 
-        ## Current Evidence Status
+## R6.2 Updated Recommendation
 
-        Current default: structured speech plus belief/trust-aware voting reference
+Current strongest tested policy: `trust_weighted_structured` voting.
 
-        Evidence grade: B
+- Village win: 40.2% versus reference 29.1%
+- Vote accuracy: 41.3% versus 34.3%
+- False-positive rate: 58.7% versus 65.7%
+- Actor payoff difference: +0.245
+- Holm-adjusted p-value: 0.005
+- Stable under leave-one-seed-out and leave-one-regime-out checks
 
-        Confidence: moderate
+Evidence grade: Grade A. Confidence: high within the tested strategy space.
 
-        ## Recommendation
-
-        random voting has no supported improvement and live BoW overrides are harmful.
-
-        ## Supported or Candidate Strategies
-
-        | Strategy | Grade | Label | Recommendation |
-| --- | --- | --- | --- |
-| structured_speech_reference | B | retain reference/default | Retain structured speech and belief voting as the current Villager-facing default. |
-
-        ## Rejected or No-Improvement Strategies
-
-        | Strategy | Grade | Label | Main Risk |
-| --- | --- | --- | --- |
-| villager_random_vote | D | no supported improvement | does not improve payoff and discards available belief structure. |
-| guarded_bow_010_live | E | statistically supported harmful | large harmful live effect. |
-| structured_bow_guarded_live | E | statistically supported harmful | largest harmful R3 live effect. |
-| selective_bow_vote_override_live | D | no supported improvement | no reliable improvement. |
-
-        ## Remaining Gaps
-
-        | Gap | Question | Priority | Required Experiment |
-| --- | --- | --- | --- |
-| R6-G05 | Which structured voting rule should villagers use after speech and trust updates? | high | suspicion-only, p_wolf-only, trust-weighted, herding-guarded, conservative vote policies |
-
-        ## Source Boundaries
-
-        This card synthesizes existing results only. It does not rerun simulation,
-        change game mechanics, or claim a global optimum. Actor-specific evidence
-        is separated from cross-role externalities.
+Rejected/not recommended: random vote, live guarded BoW, structured plus BoW live integration, and p_wolf-only voting as a replacement. Guarded herding remains promising but uncertain. This is not proof of global optimality.

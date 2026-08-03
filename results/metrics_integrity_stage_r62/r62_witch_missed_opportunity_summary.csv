@@ -1,0 +1,7 @@
+policy,game_count,missed_save_opportunities,missed_poison_opportunities,missed_opportunity_rate
+aggressive_full,200,0,366,0.6944971537001897
+conservative_full,200,123,298,1.0
+reference,200,53,344,0.851931330472103
+risk_balanced,200,50,351,0.9325581395348838
+save_aggressive_poison_conservative,200,0,366,1.0
+save_conservative_poison_aggressive,200,123,257,0.6884057971014492

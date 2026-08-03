@@ -1,0 +1,10 @@
+check,passed,detail
+r4_payoff_manifest_unchanged,True,eee8007693ec6a484632f61444a53f6f8b1b9feb64b18c865f0edf704a15c7cd
+r5_metric_manifest_unchanged,True,4b48f5aae165d6c30d5a13cd2e9c3e01f5b595ddbfeb93f7c1832b018f6861bf
+seer_life_history_reconstructable,True,1200 rows
+witch_lifecycle_reconstructable,True,1200 rows
+recommended_configuration_opt_in,True,0d5e284c625dd63181c6ee852e565a10506271cba3b3684da3b612c634d2e537
+historical_default_preserved,True,Game defaults were not modified by R6.2.
+wrong_poison_not_double_counted,True,No duplicate potion penalties detected.
+live_bow_disabled,True,recommended configuration uses shadow diagnostics only
+ml_deployment_disabled,True,recommended configuration uses diagnostic-only ML mode

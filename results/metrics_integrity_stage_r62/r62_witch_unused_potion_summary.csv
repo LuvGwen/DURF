@@ -1,0 +1,7 @@
+policy,game_count,unused_save_potion_at_death,unused_save_potion_at_game_end,unused_poison_potion_at_death,unused_poison_potion_at_game_end,unused_potion_rate
+aggressive_full,200,0,0,39,0,0.0975
+conservative_full,200,83,0,197,3,0.7075
+reference,200,23,0,129,2,0.385
+risk_balanced,200,24,0,170,1,0.4875
+save_aggressive_poison_conservative,200,0,0,199,1,0.5
+save_conservative_poison_aggressive,200,83,4,28,0,0.2875

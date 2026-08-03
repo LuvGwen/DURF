@@ -283,3 +283,8 @@ R6.1 runs matched live validation for the five strategy gaps identified by R6: H
 - Villager: best mean actor-payoff policy `trust_weighted`; village win 40.20%; wolf win 59.80%.
 
 Conclusion: `promising but uncertain` overall, with at least one module-policy contrast reaching statistical support. R7 should synthesize these findings into final role defaults and remaining limitations.
+
+
+## R6.2 Metrics Integrity Audit
+
+R6.2 resolves the Seer terminal-survival metric ambiguity and supersedes the Witch wrong-poison waste proxy with a lifecycle taxonomy. It also creates an explicit opt-in recommended research configuration and finalizes R6 strategy cards for R7 literature comparison.

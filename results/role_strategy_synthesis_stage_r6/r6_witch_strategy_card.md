@@ -1,35 +1,11 @@
 # R6 Witch Strategy Card
 
-        ## Current Evidence Status
+## R6.2 Updated Recommendation
 
-        Current default: conservative poison as uncertain candidate; retain current potion safeguards
+Primary default: retain reference. Experimental candidate: aggressive_full.
 
-        Evidence grade: C
+Evidence: aggressive_full village win 35.2% versus reference 30.1%, actor payoff difference +0.131, Holm-adjusted p-value 0.057. It remains promising but uncertain.
 
-        Confidence: low
+Rejected: conservative_full and conservative save plus aggressive poison. R6.2 corrected potion metrics: true primary waste, wrong poison, unused potion, missed opportunity, and waste cost are now separate. Wrong poison should not be called identical to potion waste.
 
-        ## Recommendation
-
-        conservative poison has a small positive but uncertain payoff signal.
-
-        ## Supported or Candidate Strategies
-
-        | Strategy | Grade | Label | Recommendation |
-| --- | --- | --- | --- |
-| witch_conservative_poison | C | promising but uncertain | Conditionally prefer conservative poison over indiscriminate poison; keep as uncertain. |
-
-        ## Rejected or No-Improvement Strategies
-
-        No rejected strategy rows for this role.
-
-        ## Remaining Gaps
-
-        | Gap | Question | Priority | Required Experiment |
-| --- | --- | --- | --- |
-| R6-G03 | How should the Witch jointly manage antidote and poison timing? | critical | factorial save probability x poison threshold policy test |
-
-        ## Source Boundaries
-
-        This card synthesizes existing results only. It does not rerun simulation,
-        change game mechanics, or claim a global optimum. Actor-specific evidence
-        is separated from cross-role externalities.
+Evidence grade: reference Grade B; aggressive_full Grade C; harmful policies Grade E where formally supported. Confidence: low to moderate depending on corrected mechanism metrics.

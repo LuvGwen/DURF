@@ -91,3 +91,8 @@ deep cover, and Villager structured voting comparisons remain unresolved.
 ## R6.1 Targeted Strategy Alignment
 
 R6.1 directly addresses the proposal-alignment gaps for role-specific strategy analysis and risk-adjusted comparison by producing matched live-validation policy families for all five roles. It does not add new roles, alter payoff rules, deploy ML policies, or revive live BoW overrides.
+
+
+## R6.2 Proposal Alignment Update
+
+Seer mortality risk and Witch wasted-potion cost are now represented with corrected metric definitions. Historical defaults remain separate from the recommended research configuration.

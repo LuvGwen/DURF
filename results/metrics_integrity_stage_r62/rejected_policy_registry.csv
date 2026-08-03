@@ -1,0 +1,13 @@
+policy,status,source
+villager_random_vote,rejected_or_not_recommended,R6/R6.1/R6.2
+live_guarded_bow,rejected_or_not_recommended,R6/R6.1/R6.2
+structured_plus_bow_live,rejected_or_not_recommended,R6/R6.1/R6.2
+seer_highest_suspicion,rejected_or_not_recommended,R6/R6.1/R6.2
+seer_highest_p_wolf,rejected_or_not_recommended,R6/R6.1/R6.2
+edge_seat_checking_theory,rejected_or_not_recommended,R6/R6.1/R6.2
+hunter_no_shot,rejected_or_not_recommended,R6/R6.1/R6.2
+hunter_conservative_threshold,rejected_or_not_recommended,R6/R6.1/R6.2
+wolf_random_kill,rejected_or_not_recommended,R6/R6.1/R6.2
+wolf_deep_cover,rejected_or_not_recommended,R6/R6.1/R6.2
+continuous_frozen_ml,rejected_or_not_recommended,R6/R6.1/R6.2
+hybrid_frozen_ml,rejected_or_not_recommended,R6/R6.1/R6.2

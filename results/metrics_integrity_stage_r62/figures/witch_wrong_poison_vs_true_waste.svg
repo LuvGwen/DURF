@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="920" height="312" viewBox="0 0 920 312">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="24" y="30" font-family="Arial" font-size="18" font-weight="700">Witch Wrong Poison Rate</text>
+<text x="24" y="73" font-family="Arial" font-size="12">aggressive_full</text>
+<rect x="250" y="55" width="198.3" height="24" fill="#2f7d6d"/>
+<text x="456.3" y="72" font-family="Arial" font-size="12">0.354</text>
+<text x="24" y="115" font-family="Arial" font-size="12">conservative_full</text>
+<rect x="250" y="97" width="0.0" height="24" fill="#2f7d6d"/>
+<text x="258.0" y="114" font-family="Arial" font-size="12">0.000</text>
+<text x="24" y="157" font-family="Arial" font-size="12">reference</text>
+<rect x="250" y="139" width="105.5" height="24" fill="#2f7d6d"/>
+<text x="363.5" y="156" font-family="Arial" font-size="12">0.188</text>
+<text x="24" y="199" font-family="Arial" font-size="12">risk_balanced</text>
+<rect x="250" y="181" width="19.3" height="24" fill="#2f7d6d"/>
+<text x="277.3" y="198" font-family="Arial" font-size="12">0.034</text>
+<text x="24" y="241" font-family="Arial" font-size="12">save_aggressive_poison_conservative</text>
+<rect x="250" y="223" width="0.0" height="24" fill="#2f7d6d"/>
+<text x="258.0" y="240" font-family="Arial" font-size="12">0.000</text>
+<text x="24" y="283" font-family="Arial" font-size="12">save_conservative_poison_aggressive</text>
+<rect x="250" y="265" width="240.9" height="24" fill="#2f7d6d"/>
+<text x="498.9" y="282" font-family="Arial" font-size="12">0.430</text>
+</svg>

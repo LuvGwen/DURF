@@ -1,0 +1,7 @@
+policy,revealed_seer_count,eligible_post_reveal_nights,wolf_kill_events_against_seer,night_kill_hazard_after_reveal,hazard_within_one_night,hazard_within_two_nights
+delayed_round_2,135,198,134,0.6767676767676768,0.007407407407407408,0.9925925925925926
+immediate_reveal,200,472,185,0.3919491525423729,0.665,0.925
+private_only,0,0,0,0.0,0.0,0.0
+reveal_first_wolf,95,197,95,0.48223350253807107,0.4842105263157895,1.0
+selective_useful_info,91,191,91,0.47643979057591623,0.4945054945054945,1.0
+under_threat,2,3,2,0.6666666666666666,0.5,1.0

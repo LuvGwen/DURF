@@ -1,0 +1,7 @@
+policy,source,game_count,reconstructable_life_histories,missing_life_history_count,terminal_survival_rate,alive_at_terminal_start_rate,reveal_rate,one_round_post_reveal_survival_rate,two_round_post_reveal_survival_rate,died_same_round_as_reveal_rate,died_next_night_after_reveal_rate,mean_rounds_survived_after_reveal,median_rounds_survived_after_reveal,death_before_first_check_rate,death_before_first_wolf_found_rate,death_before_any_information_reveal_rate,death_after_useful_information_rate,checks_completed_before_death_mean,wolves_found_before_death_mean,survival_conditional_on_village_win,survival_conditional_on_wolf_win
+delayed_round_2,supplementary_metric_audit,200,200,0,0.0,0.0,0.675,0.0,0.0,0.9925925925925926,0.007407407407407408,0.007407407407407408,0.0,0.0,0.525,0.25,0.75,1.68,0.515,0.0,0.0
+immediate_reveal,supplementary_metric_audit,200,200,0,0.0,0.0,1.0,0.02,0.01,0.315,0.665,0.695,1.0,0.0,0.52,0.0,1.0,1.695,0.52,0.0,0.0
+private_only,supplementary_metric_audit,200,200,0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.525,0.525,0.475,1.675,0.515,0.0,0.0
+reveal_first_wolf,supplementary_metric_audit,200,200,0,0.0,0.0,0.475,0.0,0.0,0.5157894736842106,0.4842105263157895,0.4842105263157895,0.0,0.0,0.525,0.525,0.475,1.68,0.515,0.0,0.0
+selective_useful_info,supplementary_metric_audit,200,200,0,0.0,0.0,0.455,0.0,0.0,0.5054945054945055,0.4945054945054945,0.4945054945054945,0.0,0.0,0.525,0.525,0.475,1.675,0.515,0.0,0.0
+under_threat,supplementary_metric_audit,200,200,0,0.0,0.0,0.01,0.0,0.0,0.5,0.5,0.5,0.5,0.0,0.525,0.525,0.475,1.68,0.515,0.0,0.0

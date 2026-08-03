@@ -174,3 +174,8 @@ targeted before final role-strategy recommendations are finalized.
 ## Next Stage After R6.1
 
 R7 - Final role-strategy synthesis and final report integration. Use R6.1 matched live-validation outputs to update role defaults, preserve null and harmful strategy findings, and decide which recommendations are strong enough for the final DURF report.
+
+
+## After R6.2
+
+Next stages: R7 systematic literature comparison, R8 final integrated data analysis, R9 final DURF report and presentation package.

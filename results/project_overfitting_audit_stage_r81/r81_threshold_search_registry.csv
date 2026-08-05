@@ -1,0 +1,13 @@
+threshold_id,parameter,values_tested,selection_outcome,source_stage,search_status,overfitting_risk,audit_note
+THR_01,witch_poison_threshold,0.0;0.05;0.10;0.15;0.20;0.25;0.30;0.50;0.60;0.70;0.90;1.10,wolf/village win; poison usage,Stage 1/2,exploratory,high,Threshold exploration is evidence-generating unless a held-out confirmatory rerun is used.
+THR_02,witch_save_probability,default; sensitivity implied in config,saves; prevented kills,Stage 1/2,limited,moderate,Threshold exploration is evidence-generating unless a held-out confirmatory rerun is used.
+THR_03,trust_vote_weight,0.00;0.05;0.10;0.20;0.30;0.40,wolf/village win,Stage 4,exploratory,high,Threshold exploration is evidence-generating unless a held-out confirmatory rerun is used.
+THR_04,trust_speech_multiplier,0.5 min;1.5 max,belief update strength,Stage 4,mechanism default,moderate,Threshold exploration is evidence-generating unless a held-out confirmatory rerun is used.
+THR_05,trust_herding_multiplier,default trust-weighted herding on/off,herding influence,Stage 4,toggle,moderate,Threshold exploration is evidence-generating unless a held-out confirmatory rerun is used.
+THR_06,false_accuse_cost,baseline; credibility-cost revised,wolf deception payoff and win,Stage 3,post-hoc correction,high,Threshold exploration is evidence-generating unless a held-out confirmatory rerun is used.
+THR_07,self_defense_cost,none; enabled,wolf deception payoff and win,Stage 3,post-hoc correction,high,Threshold exploration is evidence-generating unless a held-out confirmatory rerun is used.
+THR_08,bow_guard_weight,0.10 live guard; structured live guard,village win,R3,confirmatory negative,moderate,Threshold exploration is evidence-generating unless a held-out confirmatory rerun is used.
+THR_09,ml_hybrid_weight,frozen hybrid live,village win,ML2A,confirmatory negative,moderate,Threshold exploration is evidence-generating unless a held-out confirmatory rerun is used.
+THR_10,risk_preference_mix,conservative; neutral; aggressive proportions,payoff distribution,risk_preference,exploratory,high,Threshold exploration is evidence-generating unless a held-out confirmatory rerun is used.
+THR_11,payoff_terminal_weight,0.75x;1.00x;1.25x,role strategy rank,R5/R8.1,sensitivity,moderate,Threshold exploration is evidence-generating unless a held-out confirmatory rerun is used.
+THR_12,payoff_action_weight,0.75x;1.00x;1.25x,role strategy rank,R5/R8.1,sensitivity,moderate,Threshold exploration is evidence-generating unless a held-out confirmatory rerun is used.

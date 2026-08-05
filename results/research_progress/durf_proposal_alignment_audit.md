@@ -108,3 +108,7 @@ R7.1 extends the R7 literature comparison by applying a DOI-only final citation 
 ## R8 Final Integrated Analysis Update
 
 R8 adds the final cross-stage evidence synthesis and R9 readiness audit. Existing R4/R5/R6.2 frozen hashes are unchanged and final report blockers are tracked in the R8 readiness summary.
+
+## R8.1 Research Integrity Update
+
+R8.1 adds a formal overfitting, selection-bias, and researcher-degrees-of-freedom audit. Proposal completion remains strong, but final default recommendations must use audited labels.

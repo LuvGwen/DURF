@@ -1,0 +1,12 @@
+family_id,analysis_family,test_count,correction_used,post_selection_risk,source
+R61_hunter,R6.1 Hunter role-policy contrasts,10,Holm within role-policy family,moderate,results/targeted_strategy_stage_r61/r61_global_primary_contrasts.csv
+R61_seer,R6.1 Seer role-policy contrasts,10,Holm within role-policy family,moderate,results/targeted_strategy_stage_r61/r61_global_primary_contrasts.csv
+R61_witch,R6.1 Witch role-policy contrasts,10,Holm within role-policy family,moderate,results/targeted_strategy_stage_r61/r61_global_primary_contrasts.csv
+R61_wolf,R6.1 Werewolf role-policy contrasts,10,Holm within role-policy family,moderate,results/targeted_strategy_stage_r61/r61_global_primary_contrasts.csv
+R61_villager,R6.1 Villager role-policy contrasts,10,Holm within role-policy family,moderate,results/targeted_strategy_stage_r61/r61_global_primary_contrasts.csv
+R3_BOW,R3 guarded BoW live game contrasts,3,Holm across primary game contrasts,moderate,results/bow_integration_stage_r3/r3_primary_game_contrasts.csv
+ML2A,ML Stage 2A wolf-kill live contrasts,2,Holm reported,moderate,results/ml_optimization_stage2a/wolf_kill_primary_contrasts.csv
+ML2B,ML Stage 2B offline-trained live voting contrasts,2,Holm reported,moderate,results/ml_optimization_stage2b/stage2b_primary_contrasts.csv
+THRESHOLD_SWEEPS,Historical threshold and weight sweeps,28,No formal family correction; exploratory,high,Stage 1-4 sweep scripts
+R5_PREMIUMS,R5 information/manipulation premium tests,9,bootstrap CIs and p-values where available,moderate,results/financial_risk_stage_r5
+R8_MAX_SELECTION,R8 max-policy role recommendations,5,No independent final holdout after max selection,high,results/final_integrated_analysis_stage_r8/r8_final_role_strategy_table.csv

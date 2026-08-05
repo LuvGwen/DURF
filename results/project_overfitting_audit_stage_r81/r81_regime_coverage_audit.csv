@@ -1,0 +1,8 @@
+distribution_axis,coverage,status,risk
+seed,20 final R6.1 seeds plus earlier pilot/report seeds,adequate_for_internal_robustness,moderate
+behavioral_regime,10 R6.1 regimes,adequate_for_internal_robustness,moderate
+role_setup,primarily fixed 10-player setup for final strategy tests,limited_external_generalization,high
+speech_templates,generated/controlled BoW templates,template_bound,high
+seat_role_assignment,randomized-seat-role validation exists for seer position,validated_for_position_claims,low
+physical_direction,replay/mirror validation,engine_symmetry_validated,low
+strategy_space,finite handcrafted policy families,not_global_optimization,high

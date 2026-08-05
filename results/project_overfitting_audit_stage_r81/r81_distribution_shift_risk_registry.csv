@@ -1,0 +1,6 @@
+risk_id,domain,distribution_shift_risk,severity,mitigation
+DS_01,fixed role count,final policies may not transfer to different player counts,high,R9 or R8.2 should replicate load-bearing policies under preregistered role setups.
+DS_02,generated speech,BoW effects are template-bound,high,Do not claim natural-language deployment.
+DS_03,behavioral regimes,regime robustness is internal only,moderate,Report leave-one-regime-out and avoid external claims.
+DS_04,policy search,best policy can be selected from final data,high,Use corrected labels and targeted replication.
+DS_05,payoff coefficients,rankings can change under payoff variants,moderate,Report sensitivity and default retention rules.

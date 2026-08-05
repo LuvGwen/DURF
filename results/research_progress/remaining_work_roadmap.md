@@ -191,3 +191,7 @@ Next stage: R8 - Final Integrated Data Analysis and Evidence Tables. R8 should c
 ## R8 Roadmap Update
 
 Next stage: R9 - Final DURF Report, Presentation, and Reproducibility Package. No additional mechanism tuning is required before R9.
+
+## R8.2 Targeted Replication
+
+Run fresh-seed confirmatory replication for Seer immediate_reveal and Witch aggressive_full before treating either as a production/default recommendation.

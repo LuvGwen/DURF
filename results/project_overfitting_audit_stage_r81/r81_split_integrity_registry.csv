@@ -1,0 +1,10 @@
+split_unit,expected_integrity_rule,evidence,status,leakage_or_bias_risk
+game,Complete game is the unit for win-rate inference.,R6.1 game raw contains unique game_id per module/policy/matched set.,pass,controlled
+matched_set,Matched set clusters counterfactual policies under shared seed/regime.,R6.1 uses 1000 matched sets per policy family.,pass,controlled
+seed,R6.1 final seeds 520-539 isolated from earlier pilot seeds.,Final seed split preserved in r61_master_seed_registry.csv.,pass_with_selection_caveat,controlled
+behavioral_regime,Ten regimes crossed with seeds.,R6.1 behavioral regime registry has 10 regimes.,pass,controlled
+player,Player rows cannot be treated as independent games.,R8 sample-unit registry flags player overlap.,pass,controlled
+event,Event rows are descriptive unless clustered by game/matched set.,R61 action raw files retained.,pass,controlled
+utterance/template,BoW utterance/template splits must avoid template leakage.,R2/R3 diagnostics reported template generalization.,pass_with_caveat,controlled
+ml_rollout,Offline ML shadow samples cannot be treated as live game wins.,ML stages keep deployment status diagnostic.,pass_with_caveat,controlled
+policy_final_selection,Final R8 selected maximum payoff policies from final R6.1 data.,"This is post-test selection, not raw data leakage.",selection_risk_found,post_selection_bias

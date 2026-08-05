@@ -1,0 +1,15 @@
+scenario_id,scenario_name,terminal_multiplier,action_multiplier,credibility_cost_multiplier,special_penalty_multiplier,description,basis
+PS_01,baseline_r61_payoff,1.00,1.00,1.00,1.00,Original R6.1 actor_payoff summaries.,summary-level sensitivity audit; R4/R5 manifests unchanged
+PS_02,core_like_terminal_075,0.75,1.00,1.00,1.00,Summary-level perturbation lowering terminal payoff weight.,summary-level sensitivity audit; R4/R5 manifests unchanged
+PS_03,core_like_terminal_125,1.25,1.00,1.00,1.00,Summary-level perturbation raising terminal payoff weight.,summary-level sensitivity audit; R4/R5 manifests unchanged
+PS_04,action_bonus_075,1.00,0.75,1.00,1.00,Lower action-specific reward/penalty weight.,summary-level sensitivity audit; R4/R5 manifests unchanged
+PS_05,action_bonus_125,1.00,1.25,1.00,1.00,Higher action-specific reward/penalty weight.,summary-level sensitivity audit; R4/R5 manifests unchanged
+PS_06,credibility_cost_075,1.00,1.00,0.75,1.00,Lower credibility/manipulation costs.,summary-level sensitivity audit; R4/R5 manifests unchanged
+PS_07,credibility_cost_125,1.00,1.00,1.25,1.00,Higher credibility/manipulation costs.,summary-level sensitivity audit; R4/R5 manifests unchanged
+PS_08,witch_wrong_poison_harsher,1.00,1.00,1.00,1.25,Extra penalty for risky Witch poison policies.,summary-level sensitivity audit; R4/R5 manifests unchanged
+PS_09,witch_wrong_poison_lighter,1.00,1.00,1.00,0.75,Lower penalty for risky Witch poison policies.,summary-level sensitivity audit; R4/R5 manifests unchanged
+PS_10,seer_exposure_penalty,1.00,1.00,1.00,1.00,Penalize public reveal policies for survival exposure.,summary-level sensitivity audit; R4/R5 manifests unchanged
+PS_11,wolf_deception_penalty,1.00,1.00,1.25,1.00,Penalize deception-heavy wolf policies.,summary-level sensitivity audit; R4/R5 manifests unchanged
+PS_12,villager_false_positive_penalty,1.00,1.25,1.00,1.00,Penalize riskier vote policies by action cost.,summary-level sensitivity audit; R4/R5 manifests unchanged
+PS_13,downside_risk_averse,1.00,1.00,1.00,1.00,Subtract 0.10 times downside deviation.,summary-level sensitivity audit; R4/R5 manifests unchanged
+PS_14,risk_seeking,1.00,1.00,1.00,1.00,Add 0.05 times payoff volatility.,summary-level sensitivity audit; R4/R5 manifests unchanged

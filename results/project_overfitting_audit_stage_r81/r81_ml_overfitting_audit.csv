@@ -1,0 +1,6 @@
+audit_id,stage,risk,evidence,status,final_label
+ML_01,ML1,offline surrogate overfitting,offline AUC/regret not treated as deployed policy,controlled_with_caveat,diagnostic_only
+ML_02,ML1.5,shadow policy selection,full-rollout diagnostics and overfitting diagnostics exist,controlled_with_caveat,surrogate_only
+ML_03,ML2A,frozen wolf-kill model deployment,live policy harmed village outcome,negative_confirmed,statistically_supported_harm
+ML_04,ML2B,continuous override compounding,diagnostic rather than deployable evidence,uncertain_or_negative,diagnostic_only
+ML_05,R8,ML proposal-completion pressure,R8 says ML remains diagnostic only,controlled,diagnostic_only

@@ -304,3 +304,7 @@ Policy update: no-DOI sources may remain in internal screening registries but sh
 ## 34. R8 Final Integrated Data Analysis
 
 R8 consolidates all prior DURF Werewolf Simulation evidence into final statistical, role-strategy, payoff-risk, speech/BoW, ML, literature, validity, limitation, and R9-readiness tables. It is analysis-only and does not run new gameplay simulations. The final R8 artifacts are stored in `results/final_integrated_analysis_stage_r8/`.
+
+## 35. R8.1 Project-Wide Overfitting and Selection-Bias Audit
+
+R8.1 audited the project decision history, strategy and threshold search, outcome switching, seed/split integrity, multiple testing, post-selection bootstrap stability, payoff sensitivity, distribution shift, BoW/ML overfitting risks, and literature confirmation bias. The audit preserves the R4 and R5 manifests, adds a corrected R8 interpretation layer, and classifies Seer immediate reveal and Witch aggressive_full as descriptive candidates requiring targeted independent replication before default adoption. The audited readiness decision is R8.2 TARGETED REPLICATION REQUIRED.

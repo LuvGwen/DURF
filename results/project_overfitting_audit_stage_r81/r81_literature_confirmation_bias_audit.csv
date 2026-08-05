@@ -1,0 +1,5 @@
+audit_id,risk,evidence,status
+LIT_01,source selection confirmation,R7.1 DOI and recency audit replaced/excluded unsupported sources,controlled_with_manual_review_limits
+LIT_02,using literature to overstate simulation generality,R8 literature table uses safe final wording and coverage status,controlled
+LIT_03,foundational source exceptions,R7.1 foundational exception registry exists,transparent_caveat
+LIT_04,financial analogy confirmation,"R5/R8 restrict analogy to payoff metrics, not real returns",controlled

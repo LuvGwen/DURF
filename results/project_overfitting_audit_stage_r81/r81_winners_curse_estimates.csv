@@ -1,0 +1,31 @@
+module,role,policy,observed_mean_actor_payoff,bootstrap_mean_when_selected,selection_frequency,winner_curse_estimate,interpretation
+hunter,Hunter,reference,-0.41380000,-0.41095813,0.849200,0.00284187,Positive values indicate expected optimism conditional on being selected as best.
+hunter,Hunter,random_shot,-0.57460000,,0.000000,,No bootstrap selection; no winners-curse estimate.
+hunter,Hunter,no_shot,-0.55860000,,0.000000,,No bootstrap selection; no winners-curse estimate.
+hunter,Hunter,highest_suspicion,-0.41380000,-0.41095813,0.849200,0.00284187,Positive values indicate expected optimism conditional on being selected as best.
+hunter,Hunter,highest_p_wolf,-0.43880000,-0.42072819,0.152200,0.01807181,Positive values indicate expected optimism conditional on being selected as best.
+hunter,Hunter,conservative_threshold,-0.55130000,,0.000000,,No bootstrap selection; no winners-curse estimate.
+seer,Seer,private_only,-0.23530000,,0.000000,,No bootstrap selection; no winners-curse estimate.
+seer,Seer,immediate_reveal,-0.15905000,-0.15916466,0.997200,-0.00011466,Positive values indicate expected optimism conditional on being selected as best.
+seer,Seer,reveal_first_wolf,-0.21550000,-0.17975000,0.000200,0.03575000,Positive values indicate expected optimism conditional on being selected as best.
+seer,Seer,delayed_round_2,-0.21055000,-0.17168077,0.002600,0.03886923,Positive values indicate expected optimism conditional on being selected as best.
+seer,Seer,under_threat,-0.23095000,,0.000000,,No bootstrap selection; no winners-curse estimate.
+seer,Seer,selective_useful_info,-0.21755000,,0.000000,,No bootstrap selection; no winners-curse estimate.
+witch,Witch,reference,-0.16845000,,0.000000,,No bootstrap selection; no winners-curse estimate.
+witch,Witch,aggressive_full,-0.03725000,-0.03693028,0.999200,0.00031972,Positive values indicate expected optimism conditional on being selected as best.
+witch,Witch,save_aggressive_poison_conservative,-0.16180000,-0.12675000,0.000200,0.03505000,Positive values indicate expected optimism conditional on being selected as best.
+witch,Witch,save_conservative_poison_aggressive,-0.31185000,,0.000000,,No bootstrap selection; no winners-curse estimate.
+witch,Witch,conservative_full,-0.49405000,,0.000000,,No bootstrap selection; no winners-curse estimate.
+witch,Witch,risk_balanced,-0.17890000,-0.11861667,0.000600,0.06028333,Positive values indicate expected optimism conditional on being selected as best.
+wolf,Werewolf,reference,0.69691667,0.69726714,0.992600,0.00035047,Positive values indicate expected optimism conditional on being selected as best.
+wolf,Werewolf,aggressive_false_accuse,0.59390000,,0.000000,,No bootstrap selection; no winners-curse estimate.
+wolf,Werewolf,aggressive_kill_restrained_deception,0.60625000,0.67260714,0.001400,0.06635714,Positive values indicate expected optimism conditional on being selected as best.
+wolf,Werewolf,threat_adaptive,0.69691667,0.69726714,0.992600,0.00035047,Positive values indicate expected optimism conditional on being selected as best.
+wolf,Werewolf,deep_cover,0.08306667,,0.000000,,No bootstrap selection; no winners-curse estimate.
+wolf,Werewolf,minimal_deception,0.59510000,0.65440500,0.006000,0.05930500,Positive values indicate expected optimism conditional on being selected as best.
+villager,Villager,reference,-0.33848750,,0.000000,,No bootstrap selection; no winners-curse estimate.
+villager,Villager,random_vote,-0.47273750,,0.000000,,No bootstrap selection; no winners-curse estimate.
+villager,Villager,suspicion_only,-0.33083750,,0.000000,,No bootstrap selection; no winners-curse estimate.
+villager,Villager,p_wolf_only,-0.44632500,,0.000000,,No bootstrap selection; no winners-curse estimate.
+villager,Villager,trust_weighted,-0.09395000,-0.09376873,1.000000,0.00018127,Positive values indicate expected optimism conditional on being selected as best.
+villager,Villager,guarded_herding,-0.24430000,,0.000000,,No bootstrap selection; no winners-curse estimate.

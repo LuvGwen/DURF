@@ -1,0 +1,5 @@
+audit_id,stage,risk,evidence,status,final_label
+BOW_01,R2,template leakage,template split diagnostics and manifest exist,controlled_with_caveat,diagnostic_only
+BOW_02,R2,offline metric overclaiming,AUC metrics do not imply live policy success,risk_found,promising_but_uncertain
+BOW_03,R3,live integration harm,guarded BoW and structured+BoW harmed village win rate,negative_confirmed,statistically_supported_harm
+BOW_04,R8,confirmation bias toward proposal completion,R8 keeps BoW as completed diagnostic but not final decision policy,controlled,diagnostic_only

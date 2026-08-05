@@ -1,0 +1,8 @@
+outcome_switch_id,analysis_area,final_or_selected_outcome,earlier_or_alternative_outcome,outcome_switching_risk,audit_action
+OS_01,R8 role recommendations,actor_payoff after considering win rate and risk metrics,R6.1 primary contrasts were actor payoff and village/wolf win; R8 emphasized maximum mean payoff,moderate,Use corrected label distinguishing descriptive best from default recommendation.
+OS_02,Seer reveal policy,actor payoff,Survival/exposure metrics from R6.2 alter interpretation of immediate_reveal,high,Treat immediate_reveal as experimental candidate.
+OS_03,Witch aggressive_full,actor payoff,Potion waste and wrong-poison outcomes change practical meaning,high,Require targeted replication before default replacement.
+OS_04,BoW speech,AUC in R2 then live win in R3,Offline predictive success did not transfer to live decision improvement,moderate,"Keep BoW as diagnostic, not deployed policy."
+OS_05,ML optimization,offline AUC/regret then live village win,Offline shadow improvements failed or harmed in live deployment,moderate,Keep ML as diagnostic until R9 replication.
+OS_06,Financial analogy,role payoff risk metrics,"Financial metrics are analogues, not real returns",low,Report as quantitative analogy only.
+OS_07,Seat-position folklore,first-check wolf rate and village win,Randomized roles removed apparent edge advantage,low,Report negative positional finding.

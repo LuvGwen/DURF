@@ -96,3 +96,7 @@ The final bibliography is DOI-only, recency-prioritized, and preserves all proje
 ## R8 Current Progress Update
 
 The project has completed final integrated evidence consolidation and is ready to proceed to R9 if validation remains green.
+
+## R8.1 Progress Update
+
+Project-wide overfitting and selection-bias audit completed. R9 should wait for targeted R8.2 replication of load-bearing corrected recommendations.

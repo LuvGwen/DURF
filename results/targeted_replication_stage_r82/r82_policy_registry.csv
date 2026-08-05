@@ -1,0 +1,7 @@
+module,policy,policy_role,primary_outcome,secondary_outcome,strategy_frozen,threshold_tuned_in_r82
+villager,reference,reference,actor_payoff,village_win,True,False
+villager,trust_weighted,candidate,actor_payoff,village_win,True,False
+seer,private_only,reference,actor_payoff,village_win,True,False
+seer,immediate_reveal,candidate,actor_payoff,village_win,True,False
+witch,reference,reference,actor_payoff,village_win,True,False
+witch,aggressive_full,candidate,actor_payoff,village_win,True,False

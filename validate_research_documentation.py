@@ -331,6 +331,29 @@ REQUIRED_FILES.extend(
     ]
 )
 
+REQUIRED_FILES.extend(
+    [
+        "results/targeted_replication_stage_r82/r82_pre_registration.md",
+        "results/targeted_replication_stage_r82/r82_schema.md",
+        "results/targeted_replication_stage_r82/r82_seed_registry.csv",
+        "results/targeted_replication_stage_r82/r82_matched_set_registry.csv",
+        "results/targeted_replication_stage_r82/r82_module_registry.csv",
+        "results/targeted_replication_stage_r82/r82_policy_registry.csv",
+        "results/targeted_replication_stage_r82/r82_game_level_raw.csv",
+        "results/targeted_replication_stage_r82/r82_action_raw.csv.gz",
+        "results/targeted_replication_stage_r82/r82_policy_summary.csv",
+        "results/targeted_replication_stage_r82/r82_primary_contrasts.csv",
+        "results/targeted_replication_stage_r82/r82_replication_decision_summary.csv",
+        "results/targeted_replication_stage_r82/r82_seed_robustness.csv",
+        "results/targeted_replication_stage_r82/r82_regime_robustness.csv",
+        "results/targeted_replication_stage_r82/r82_leave_one_seed_out.csv",
+        "results/targeted_replication_stage_r82/r82_leave_one_regime_out.csv",
+        "results/targeted_replication_stage_r82/r82_special_module_metrics.csv",
+        "results/targeted_replication_stage_r82/r82_validation_summary.csv",
+        "results/targeted_replication_stage_r82/r82_research_report.md",
+    ]
+)
+
 REGISTRY_COLUMNS = [
     "stage_id",
     "stage_name",
@@ -561,6 +584,12 @@ def main() -> int:
         "cumulative_report_r8_present",
         "## 34. R8 Final Integrated Data Analysis" in cumulative_text,
         "R8 chapter",
+    )
+    add_result(
+        summary,
+        "cumulative_report_r82_present",
+        "## 37. R8.2 Targeted Independent Replication" in cumulative_text,
+        "R8.2 chapter",
     )
 
     stage2a_text = (ROOT / "results/ml_optimization_stage2a/ml_stage2a_research_report.md").read_text(encoding="utf-8")

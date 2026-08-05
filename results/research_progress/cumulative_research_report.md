@@ -312,3 +312,14 @@ R8.1 audited the project decision history, strategy and threshold search, outcom
 ## 36. R8.1 Manifest Hash Forensic Correction
 
 The manifest hash inconsistency was resolved before R8.2. The historically frozen R4/R5 hashes are embedded content-level self-hashes, while the earlier R8.1 handoff reported raw-file SHA-256 values. Git history shows no modification to either manifest file after creation. Final reporting must cite the embedded content-level hashes as authoritative and may cite raw-file hashes only as secondary byte-level integrity checks.
+
+## 37. R8.2 Targeted Independent Replication
+
+R8.2 performs an independent targeted replication of the three load-bearing
+role recommendations flagged by R8.1: Villager `trust_weighted` versus
+`reference`, Seer `immediate_reveal` versus `private_only`, and Witch
+`aggressive_full` versus `reference`. The stage uses fresh R8.2 seeds,
+1,000 matched sets per module, the existing R6.1 behavioral regimes, and a
+fixed actor-payoff primary outcome. Hunter and Werewolf are excluded from this
+replication scope.
+

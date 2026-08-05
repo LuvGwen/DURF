@@ -1,0 +1,7 @@
+correct_vote_count,correct_vote_rate,first_check_wolf_rate,found_wolf_by_check_2_rate,found_wolf_by_check_3_rate,game_count,mean_checks_until_first_wolf,mean_search_path_coverage,mean_total_seer_checks,mean_witch_poison_per_game,mean_witch_saves_per_game,mean_wolves_discovered,module,no_wolf_found_rate,policy,seer_survival_rate,total_night_kills_prevented,total_seer_reveals,total_votes,total_witch_poison,total_witch_saves,wrong_eliminations,wrong_vote_count
+7262,0.3494706448508181,,,,1000,,,,,,,villager,,reference,,,,20780,,,1814,13518
+8483,0.4018855410270987,,,,1000,,,,,,,villager,,trust_weighted,,,,21108,,,1685,12625
+,,0.333,0.491,0.493,1000,1.328600405679513,0.18411111111111111,1.657,,,0.55,seer,0.507,immediate_reveal,0.0,,1657,,,,,
+,,0.333,0.483,0.483,1000,1.31055900621118,0.18155555555555555,1.634,,,0.538,seer,0.517,private_only,0.0,,0,,,,,
+,,,,,1000,,,,0.788,1.0,,witch,,aggressive_full,,1000,,,788,1000,,
+,,,,,1000,,,,0.302,0.859,,witch,,reference,,859,,,302,859,,

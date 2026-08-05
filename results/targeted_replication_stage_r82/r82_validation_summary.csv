@@ -1,0 +1,11 @@
+check,passed,detail
+expected_game_row_count,True,6000
+action_rows_present,True,51644
+frozen_modules_only,True,"seer,villager,witch"
+frozen_policy_pairs_only,True,"[('seer', 'immediate_reveal'), ('seer', 'private_only'), ('villager', 'reference'), ('villager', 'trust_weighted'), ('witch', 'aggressive_full'), ('witch', 'reference')]"
+no_hunter_or_werewolf_replication,True,hunter/wolf absent from R8.2 game rows
+r82_seed_namespace_independent,True,r82=820-839 r61=520-539
+game_ids_unique,True,6000
+matched_seat_assignments_within_module,True,0
+primary_outcome_fixed,True,actor_payoff
+manifest_hashes_authoritative,True,R4=eee8007693ec6a484632f61444a53f6f8b1b9feb64b18c865f0edf704a15c7cd; R5=4b48f5aae165d6c30d5a13cd2e9c3e01f5b595ddbfeb93f7c1832b018f6861bf

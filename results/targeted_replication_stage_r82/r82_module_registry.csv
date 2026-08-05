@@ -1,0 +1,4 @@
+module,role,reference_policy,candidate_policy,recommendation_source,included_in_r82
+villager,villager,reference,trust_weighted,R6.1/R8.1 load-bearing Villager candidate,True
+seer,seer,private_only,immediate_reveal,R6.1/R8.1 load-bearing Seer candidate,True
+witch,witch,reference,aggressive_full,R6.1/R8.1 load-bearing Witch candidate,True

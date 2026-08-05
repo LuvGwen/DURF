@@ -294,3 +294,9 @@ R6.2 resolves the Seer terminal-survival metric ambiguity and supersedes the Wit
 R7 conducts a structured literature comparison and theoretical synthesis without running new gameplay experiments. It retains 64 sources, maps all 41 required project findings, creates a financial analogy crosswalk, documents contradictions and limitations, and generates citation-ready BibTeX and APA draft references.
 
 Conclusion: `ready for synthesis`. R7 supports the financial-market analogy as a bounded conceptual framework, not a causal claim about real markets. The exact next stage is R8 - Final Integrated Data Analysis and Evidence Tables.
+
+## 33. R7.1 DOI-Verified and Recency-Prioritized Literature Audit
+
+R7.1 audits the 64 retained R7 sources and creates a stricter final written-report bibliography. The final bibliography contains 44 DOI-bearing sources, 35 from 2016-2026 (79.55%), and 9 older foundational exceptions. All 41 of 41 project findings retain DOI-backed coverage.
+
+Policy update: no-DOI sources may remain in internal screening registries but should not be cited in the final written report unless a DOI-bearing publication record is later verified. R8 is cleared to use the R7.1 final reference list.

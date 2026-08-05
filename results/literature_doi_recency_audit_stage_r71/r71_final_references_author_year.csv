@@ -1,0 +1,45 @@
+source_id,citation_key,author_year,title,doi,url,metadata_status
+S001,braverman2008mafia,Mark Braverman (2008),Mafia: A theoretical study of players and coalitions in a partial information environment,10.1214/07-AAP456,https://doi.org/10.1214/07-AAP456,verified_publisher_record
+S002,eger2018story,Markus Eger (2018),Keeping the Story Straight: A Comparison of Commitment Strategies for a Social Deduction Game,10.1609/aiide.v14i1.13015,https://doi.org/10.1609/aiide.v14i1.13015,verified_publisher_record
+S003,eger2019commitment,Markus Eger (2019),A Study of AI Agent Commitment in One Night Ultimate Werewolf with Human Players,10.1609/aiide.v15i1.5236,https://doi.org/10.1609/aiide.v15i1.5236,verified_publisher_record
+S004,toriumi2017aiwolf,Fujio Toriumi (2017),AI Wolf Contest: Development of Game AI Using Collective Intelligence,10.1007/978-3-319-57969-6_8,https://doi.org/10.1007/978-3-319-57969-6_8,verified_index_record
+S005,ibraheem2022con,Samee Ibraheem (2022),Putting the Con in Context: Identifying Deceptive Actors in the Game of Mafia,10.18653/v1/2022.naacl-main.11,https://aclanthology.org/2022.naacl-main.11/,verified_acl_record
+S007,stepputtis2023avalon,Simon Stepputtis (2023),Long-Horizon Dialogue Understanding for Role Identification in the Game of Avalon with Large Language Models,10.18653/v1/2023.findings-emnlp.748,https://aclanthology.org/2023.findings-emnlp.748/,verified_acl_record
+S009,harsanyi1967bayesian,John C. Harsanyi (1967),"Games with Incomplete Information Played by Bayesian Players, I-III. Part I. The Basic Model",10.1287/mnsc.14.3.159,https://doi.org/10.1287/mnsc.14.3.159,verified_publisher_record
+S012,crawford1982cheap,Vincent P. Crawford (1982),Strategic Information Transmission,10.2307/1913390,https://doi.org/10.2307/1913390,verified_index_record
+S015,banerjee1992herd,Abhijit V. Banerjee (1992),A Simple Model of Herd Behavior,10.2307/2118364,https://doi.org/10.2307/2118364,verified_publisher_record
+S016,bikhchandani1992cascades,Sushil Bikhchandani (1992),"A Theory of Fads, Fashion, Custom, and Cultural Change as Informational Cascades",10.1086/261849,https://doi.org/10.1086/261849,verified_publisher_record
+S022,vosoughi2018false,Soroush Vosoughi (2018),The Spread of True and False News Online,10.1126/science.aap9559,https://doi.org/10.1126/science.aap9559,verified_pubmed_record
+S023,lazer2018science,David M. J. Lazer (2018),The Science of Fake News,10.1126/science.aao2998,https://doi.org/10.1126/science.aao2998,verified_pubmed_record
+S024,allcott2017fake,Hunt Allcott (2017),Social Media and Fake News in the 2016 Election,10.1257/jep.31.2.211,https://doi.org/10.1257/jep.31.2.211,verified_aea_record
+S025,pennycook2019crowd,Gordon Pennycook (2019),Fighting Misinformation on Social Media Using Crowdsourced Judgments of News Source Quality,10.1073/pnas.1806781116,https://doi.org/10.1073/pnas.1806781116,verified_pubmed_record
+S026,pennycook2021accuracy,Gordon Pennycook (2021),Shifting Attention to Accuracy Can Reduce Misinformation Online,10.1038/s41586-021-03344-2,https://doi.org/10.1038/s41586-021-03344-2,verified_publisher_record
+S028,nguyen2022deceive,Thanh Nguyen (2022),When Can the Defender Effectively Deceive Attackers in Security Games?,10.1609/aaai.v36i9.21172,https://doi.org/10.1609/aaai.v36i9.21172,verified_publisher_record
+S030,allen1992manipulation,Franklin Allen (1992),Stock-Price Manipulation,10.1093/rfs/5.3.503,https://doi.org/10.1093/rfs/5.3.503,verified_publisher_record
+S058,sharpe1966mutual,William F. Sharpe (1966),Mutual Fund Performance,10.1086/294846,https://doi.org/10.1086/294846,verified_index_record
+S059,sortino1994downside,Frank A. Sortino (1994),Performance Measurement in a Downside Risk Framework,10.3905/joi.3.3.59,https://doi.org/10.3905/joi.3.3.59,verified_index_record
+S060,rockafellar2000cvar,R. Tyrrell Rockafellar (2000),Optimization of Conditional Value-at-Risk,10.21314/JOR.2000.038,https://doi.org/10.21314/JOR.2000.038,verified_index_record
+S065,geirhos2020shortcut,Robert Geirhos (2020),Shortcut learning in deep neural networks,10.1038/s42256-020-00257-z,https://doi.org/10.1038/s42256-020-00257-z,verified_publisher_record
+S066,abar2017abms,Sameera Abar (2017),Agent Based Modelling and Simulation tools: A review of the state-of-art software,10.1016/j.cosrev.2017.03.001,https://doi.org/10.1016/j.cosrev.2017.03.001,verified_publisher_record
+S067,grimm2020odd,Volker Grimm (2020),"The ODD Protocol for Describing Agent-Based and Other Simulation Models: A Second Update to Improve Clarity, Replication, and Structural Realism",10.18564/jasss.4259,https://doi.org/10.18564/jasss.4259,verified_government_and_journal_record
+S068,minaee2021textclassification,Shervin Minaee (2021),Deep Learning--based Text Classification: A Comprehensive Review,10.1145/3439726,https://doi.org/10.1145/3439726,verified_publisher_record
+S069,prudencio2024offline,Rafael Figueiredo Prudencio (2024),"A Survey on Offline Reinforcement Learning: Taxonomy, Review, and Open Problems",10.1109/TNNLS.2023.3250269,https://doi.org/10.1109/TNNLS.2023.3250269,verified_pubmed_and_dblp_record
+S070,gottesman2019healthcare,Omer Gottesman (2019),Guidelines for reinforcement learning in healthcare,10.1038/s41591-018-0310-5,https://doi.org/10.1038/s41591-018-0310-5,verified_publisher_record
+S071,kamenica2019persuasion,Emir Kamenica (2019),Bayesian Persuasion and Information Design,10.1146/annurev-economics-080218-025739,https://doi.org/10.1146/annurev-economics-080218-025739,verified_publisher_record
+S072,bergemann2018price,Dirk Bergemann (2018),The Design and Price of Information,10.1257/aer.20161079,https://doi.org/10.1257/aer.20161079,verified_aea_record
+S073,cookson2023echo,J. Anthony Cookson (2023),Echo Chambers,10.1093/rfs/hhac058,https://doi.org/10.1093/rfs/hhac058,verified_university_and_index_record
+S074,fissler2016elicitability,Tobias Fissler (2016),Higher Order Elicitability and Osband's Principle,10.1214/16-AOS1439,https://doi.org/10.1214/16-AOS1439,verified_institutional_record
+S075,jiao2020socialmedia,Peiran Jiao (2020),"Social media, news media and the stock market",10.1016/j.jebo.2020.03.002,https://doi.org/10.1016/j.jebo.2020.03.002,verified_publisher_record
+S076,cresci2018fake,Stefano Cresci (2018),$FAKE: Evidence of Spam and Bot Activity in Stock Microblogs on Twitter,10.1609/icwsm.v12i1.15073,https://doi.org/10.1609/icwsm.v12i1.15073,verified_aaai_record
+S077,loughran2020textual,Tim Loughran (2020),Textual Analysis in Finance,10.1146/annurev-financial-012820-032249,https://doi.org/10.1146/annurev-financial-012820-032249,verified_publisher_record
+S078,zhou2020fakenews,Xinyi Zhou (2020),"A Survey of Fake News: Fundamental Theories, Detection Methods, and Opportunities",10.1145/3395046,https://doi.org/10.1145/3395046,verified_acm_record
+S079,toyokawa2019social,Wataru Toyokawa (2019),Social learning strategies regulate the wisdom and madness of interactive crowds,10.1038/s41562-018-0518-x,https://doi.org/10.1038/s41562-018-0518-x,verified_publisher_record
+S080,jia2020rumors,Wei Jia (2020),Can social media distort price discovery? Evidence from merger rumors,10.1016/j.jacceco.2020.101334,https://doi.org/10.1016/j.jacceco.2020.101334,verified_institutional_record
+S081,bergemann2019unified,Dirk Bergemann (2019),Information Design: A Unified Perspective,10.1257/jel.20181489,https://doi.org/10.1257/jel.20181489,verified_aea_record
+S082,bergemann2016bayes,Dirk Bergemann (2016),Bayes Correlated Equilibrium and the Comparison of Information Structures in Games,10.3982/TE1808,https://doi.org/10.3982/TE1808,verified_publisher_record
+S083,christoffersen2019riskherding,Jeppe Christoffersen (2019),Individual risk tolerance and herding behaviors in financial forecasts,10.1111/eufm.12231,https://doi.org/10.1111/eufm.12231,verified_publisher_record
+S084,siganos2025fakenews,Antonios Siganos (2025),Trump's fake news and stock market returns,10.1080/1351847X.2024.2395927,https://doi.org/10.1080/1351847X.2024.2395927,verified_publisher_record
+S085,dong2021socialmassmedia,Hang Dong (2021),How are social and mass media different in relation to the stock market? A study on topic coverage and predictive value,10.1016/j.im.2021.103588,https://doi.org/10.1016/j.im.2021.103588,verified_publisher_record
+S086,jeon2021newsjumps,Yoontae Jeon (2021),"News as sources of jumps in stock returns: Evidence from 21 million news articles for 9,000 companies",10.1016/j.jfineco.2021.08.002,https://doi.org/10.1016/j.jfineco.2021.08.002,verified_publisher_record
+S087,kou2016tailrisk,Steven Kou (2016),On the Measurement of Economic Tail Risk,10.1287/opre.2016.1539,https://doi.org/10.1287/opre.2016.1539,verified_publisher_record
+S088,embrechts2018rvar,Paul Embrechts (2018),Quantile-Based Risk Sharing,10.1287/opre.2017.1716,https://doi.org/10.1287/opre.2017.1716,verified_publisher_record

@@ -100,3 +100,7 @@ Seer mortality risk and Witch wasted-potion cost are now represented with correc
 ## R7 Literature Comparison Update
 
 R7 completes the proposal requirement to cross-check findings with literature. It adds related-work coverage for social deduction, game theory, herding, deception, behavioral finance, Bag-of-Words/domain shift, offline policy evaluation, simulation validation, and risk metrics. The final bibliography remains citation-ready with explicit manual-review items.
+
+## R7.1 DOI and Recency Literature Audit
+
+R7.1 extends the R7 literature comparison by applying a DOI-only final citation policy and a 2016-2026 recency preference. No-DOI sources remain traceable in internal registries but are excluded from final written-report references. Older sources are retained only as documented foundational exceptions.

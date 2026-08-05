@@ -88,3 +88,7 @@ Metrics integrity checks are complete for Seer survival and Witch potion waste. 
 ## R7 Current Assessment
 
 Systematic literature comparison is complete with identified metadata review gaps. The project is ready for R8 final integrated Data Analysis and evidence tables.
+
+## R7.1 Current Assessment
+
+The final bibliography is DOI-only, recency-prioritized, and preserves all project-finding coverage. The project is ready for R8 final integrated evidence synthesis.

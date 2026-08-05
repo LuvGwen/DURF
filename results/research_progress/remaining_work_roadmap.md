@@ -183,3 +183,7 @@ Next stages: R7 systematic literature comparison, R8 final integrated data analy
 ## After R7
 
 Next stage: R8 - Final Integrated Data Analysis and Evidence Tables. R8 should consolidate all hypotheses, final evidence grades, statistical results, literature relationships, and final limitations. R7 does not begin final report writing.
+
+## After R7.1
+
+Next stage: R8 - Final Integrated Data Analysis and Evidence Tables. R8 should cite from the R7.1 DOI-only final bibliography and retain explicit limitations for foundational exceptions.

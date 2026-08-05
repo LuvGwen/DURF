@@ -1,0 +1,48 @@
+# R7.1 Final References (APA 7 Draft)
+
+- Sameera Abar, Georgios K. Theodoropoulos, Pierre Lemarinier, Gregory M. P. O'Hare. (2017). Agent Based Modelling and Simulation tools: A review of the state-of-art software. Computer Science Review. https://doi.org/10.1016/j.cosrev.2017.03.001
+- Hunt Allcott, Matthew Gentzkow. (2017). Social Media and Fake News in the 2016 Election. Journal of Economic Perspectives. https://doi.org/10.1257/jep.31.2.211
+- Franklin Allen, Douglas Gale. (1992). Stock-Price Manipulation. Review of Financial Studies. https://doi.org/10.1093/rfs/5.3.503
+- Abhijit V. Banerjee. (1992). A Simple Model of Herd Behavior. Quarterly Journal of Economics. https://doi.org/10.2307/2118364
+- Dirk Bergemann, Stephen Morris. (2016). Bayes Correlated Equilibrium and the Comparison of Information Structures in Games. Theoretical Economics. https://doi.org/10.3982/TE1808
+- Dirk Bergemann, Alessandro Bonatti, Alex Smolin. (2018). The Design and Price of Information. American Economic Review. https://doi.org/10.1257/aer.20161079
+- Dirk Bergemann, Stephen Morris. (2019). Information Design: A Unified Perspective. Journal of Economic Literature. https://doi.org/10.1257/jel.20181489
+- Sushil Bikhchandani, David Hirshleifer, Ivo Welch. (1992). A Theory of Fads, Fashion, Custom, and Cultural Change as Informational Cascades. Journal of Political Economy. https://doi.org/10.1086/261849
+- Mark Braverman, Omid Etesami, Elchanan Mossel. (2008). Mafia: A theoretical study of players and coalitions in a partial information environment. Annals of Applied Probability. https://doi.org/10.1214/07-AAP456
+- Jeppe Christoffersen, Sara Staehr. (2019). Individual risk tolerance and herding behaviors in financial forecasts. European Financial Management. https://doi.org/10.1111/eufm.12231
+- J. Anthony Cookson, Joseph E. Engelberg, William Mullins. (2023). Echo Chambers. Review of Financial Studies. https://doi.org/10.1093/rfs/hhac058
+- Vincent P. Crawford, Joel Sobel. (1982). Strategic Information Transmission. Econometrica. https://doi.org/10.2307/1913390
+- Stefano Cresci, Fabrizio Lillo, Daniele Regoli, Serena Tardelli, Maurizio Tesconi. (2018). $FAKE: Evidence of Spam and Bot Activity in Stock Microblogs on Twitter. International AAAI Conference on Web and Social Media. https://doi.org/10.1609/icwsm.v12i1.15073
+- Hang Dong, Jie Ren, Balaji Padmanabhan, Jeffrey V. Nickerson. (2021). How are social and mass media different in relation to the stock market? A study on topic coverage and predictive value. Information & Management. https://doi.org/10.1016/j.im.2021.103588
+- Markus Eger, Chris Martens. (2018). Keeping the Story Straight: A Comparison of Commitment Strategies for a Social Deduction Game. AAAI Conference on Artificial Intelligence and Interactive Digital Entertainment. https://doi.org/10.1609/aiide.v14i1.13015
+- Markus Eger, Chris Martens. (2019). A Study of AI Agent Commitment in One Night Ultimate Werewolf with Human Players. AAAI Conference on Artificial Intelligence and Interactive Digital Entertainment. https://doi.org/10.1609/aiide.v15i1.5236
+- Paul Embrechts, Haiyan Liu, Ruodu Wang. (2018). Quantile-Based Risk Sharing. Operations Research. https://doi.org/10.1287/opre.2017.1716
+- Tobias Fissler, Johanna F. Ziegel. (2016). Higher Order Elicitability and Osband's Principle. Annals of Statistics. https://doi.org/10.1214/16-AOS1439
+- Robert Geirhos, Joern-Henrik Jacobsen, Claudio Michaelis, Richard Zemel, Wieland Brendel, Matthias Bethge, Felix A. Wichmann. (2020). Shortcut learning in deep neural networks. Nature Machine Intelligence. https://doi.org/10.1038/s42256-020-00257-z
+- Omer Gottesman, Fredrik Johansson, Matthieu Komorowski, A. Aldo Faisal, David Sontag, Finale Doshi-Velez, Leo Anthony Celi. (2019). Guidelines for reinforcement learning in healthcare. Nature Medicine. https://doi.org/10.1038/s41591-018-0310-5
+- Volker Grimm, Steven F. Railsback, Christian E. Vincenot, Uta Berger, Cara A. Gallagher, Donald L. DeAngelis, Bruce Edmonds, Jiaqi Ge, Jarl Giske, Jurgen Groeneveld, Alice S. A. Johnston, Alexander Milles, Jacob Nabe-Nielsen, J. Gareth Polhill, Viktoriia Radchuk, Marie-Sophie Rohwaeder, Richard A. Stillman, Jan Thiele, Daniel Ayllon. (2020). The ODD Protocol for Describing Agent-Based and Other Simulation Models: A Second Update to Improve Clarity, Replication, and Structural Realism. Journal of Artificial Societies and Social Simulation. https://doi.org/10.18564/jasss.4259
+- John C. Harsanyi. (1967). Games with Incomplete Information Played by Bayesian Players, I-III. Part I. The Basic Model. Management Science. https://doi.org/10.1287/mnsc.14.3.159
+- Samee Ibraheem, Gaoyue Zhou, John DeNero. (2022). Putting the Con in Context: Identifying Deceptive Actors in the Game of Mafia. NAACL-HLT. https://doi.org/10.18653/v1/2022.naacl-main.11
+- Yoontae Jeon, Thomas H. McCurdy, Xiaofei Zhao. (2021). News as sources of jumps in stock returns: Evidence from 21 million news articles for 9,000 companies. Journal of Financial Economics. https://doi.org/10.1016/j.jfineco.2021.08.002
+- Wei Jia, Giorgia Redigolo, Susan Shu, Jenny Zhao. (2020). Can social media distort price discovery? Evidence from merger rumors. Journal of Accounting and Economics. https://doi.org/10.1016/j.jacceco.2020.101334
+- Peiran Jiao, Andre Veiga, Ansgar Walther. (2020). Social media, news media and the stock market. Journal of Economic Behavior & Organization. https://doi.org/10.1016/j.jebo.2020.03.002
+- Emir Kamenica. (2019). Bayesian Persuasion and Information Design. Annual Review of Economics. https://doi.org/10.1146/annurev-economics-080218-025739
+- Steven Kou, Xianhua Peng. (2016). On the Measurement of Economic Tail Risk. Operations Research. https://doi.org/10.1287/opre.2016.1539
+- David M. J. Lazer, Matthew A. Baum, Yochai Benkler, Adam J. Berinsky, Kelly M. Greenhill, Filippo Menczer, Miriam J. Metzger, Brendan Nyhan, Gordon Pennycook, David Rothschild, Michael Schudson, Steven A. Sloman, Cass R. Sunstein, Emily A. Thorson, Duncan J. Watts, Jonathan L. Zittrain. (2018). The Science of Fake News. Science. https://doi.org/10.1126/science.aao2998
+- Tim Loughran, Bill McDonald. (2020). Textual Analysis in Finance. Annual Review of Financial Economics. https://doi.org/10.1146/annurev-financial-012820-032249
+- Shervin Minaee, Nal Kalchbrenner, Erik Cambria, Narjes Nikzad, Meysam Chenaghlu, Jianfeng Gao. (2021). Deep Learning--based Text Classification: A Comprehensive Review. ACM Computing Surveys. https://doi.org/10.1145/3439726
+- Thanh Nguyen, Haifeng Xu. (2022). When Can the Defender Effectively Deceive Attackers in Security Games?. AAAI. https://doi.org/10.1609/aaai.v36i9.21172
+- Gordon Pennycook, David G. Rand. (2019). Fighting Misinformation on Social Media Using Crowdsourced Judgments of News Source Quality. Proceedings of the National Academy of Sciences. https://doi.org/10.1073/pnas.1806781116
+- Gordon Pennycook, Ziv Epstein, Mohsen Mosleh, Antonio A. Arechar, Dean Eckles, David G. Rand. (2021). Shifting Attention to Accuracy Can Reduce Misinformation Online. Nature. https://doi.org/10.1038/s41586-021-03344-2
+- Rafael Figueiredo Prudencio, Marcos Ricardo Omena Albuquerque Maximo, Esther Luna Colombini. (2024). A Survey on Offline Reinforcement Learning: Taxonomy, Review, and Open Problems. IEEE Transactions on Neural Networks and Learning Systems. https://doi.org/10.1109/TNNLS.2023.3250269
+- R. Tyrrell Rockafellar, Stanislav Uryasev. (2000). Optimization of Conditional Value-at-Risk. Journal of Risk. https://doi.org/10.21314/JOR.2000.038
+- William F. Sharpe. (1966). Mutual Fund Performance. Journal of Business. https://doi.org/10.1086/294846
+- Antonios Siganos. (2025). Trump's fake news and stock market returns. European Journal of Finance. https://doi.org/10.1080/1351847X.2024.2395927
+- Frank A. Sortino, Lee N. Price. (1994). Performance Measurement in a Downside Risk Framework. Journal of Investing. https://doi.org/10.3905/joi.3.3.59
+- Simon Stepputtis, Joseph Campbell, Yaqi Xie, Zhengyang Qi, Wenxin Zhang, Ruiyi Wang, Sanketh Rangreji, Charles Lewis, Katia Sycara. (2023). Long-Horizon Dialogue Understanding for Role Identification in the Game of Avalon with Large Language Models. Findings of EMNLP. https://doi.org/10.18653/v1/2023.findings-emnlp.748
+- Fujio Toriumi, Hirotaka Osawa, Michimasa Inaba, Daisuke Katagami, Kosuke Shinoda, Hitoshi Matsubara. (2017). AI Wolf Contest: Development of Game AI Using Collective Intelligence. Communications in Computer and Information Science. https://doi.org/10.1007/978-3-319-57969-6_8
+- Wataru Toyokawa, Andrew Whalen, Kevin N. Laland. (2019). Social learning strategies regulate the wisdom and madness of interactive crowds. Nature Human Behaviour. https://doi.org/10.1038/s41562-018-0518-x
+- Soroush Vosoughi, Deb Roy, Sinan Aral. (2018). The Spread of True and False News Online. Science. https://doi.org/10.1126/science.aap9559
+- Xinyi Zhou, Reza Zafarani. (2020). A Survey of Fake News: Fundamental Theories, Detection Methods, and Opportunities. ACM Computing Surveys. https://doi.org/10.1145/3395046
+
+All entries in this R7.1 final-reference draft have DOI identifiers and DOI URLs. Older entries are retained only as documented foundational exceptions.

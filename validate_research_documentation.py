@@ -188,6 +188,28 @@ REQUIRED_FILES = [
     "results/literature_synthesis_stage_r7/theoretical_framework_map.svg",
     "results/literature_synthesis_stage_r7/financial_analogy_crosswalk.svg",
     "results/literature_synthesis_stage_r7/literature_agreement_disagreement_map.svg",
+    "results/literature_doi_recency_audit_stage_r71/r71_doi_validation_registry.csv",
+    "results/literature_doi_recency_audit_stage_r71/r71_recency_audit.csv",
+    "results/literature_doi_recency_audit_stage_r71/r71_foundational_exception_registry.csv",
+    "results/literature_doi_recency_audit_stage_r71/r71_replacement_source_registry.csv",
+    "results/literature_doi_recency_audit_stage_r71/r71_revised_finding_literature_matrix.csv",
+    "results/literature_doi_recency_audit_stage_r71/r71_final_bibliography.bib",
+    "results/literature_doi_recency_audit_stage_r71/r71_final_references_apa7.md",
+    "results/literature_doi_recency_audit_stage_r71/r71_final_references_author_year.csv",
+    "results/literature_doi_recency_audit_stage_r71/r71_excluded_no_doi_sources.csv",
+    "results/literature_doi_recency_audit_stage_r71/r71_revised_claim_support_audit.csv",
+    "results/literature_doi_recency_audit_stage_r71/r71_domain_recency_coverage.csv",
+    "results/literature_doi_recency_audit_stage_r71/r71_manual_review_items.md",
+    "results/literature_doi_recency_audit_stage_r71/r71_pre_registration.md",
+    "results/literature_doi_recency_audit_stage_r71/r71_doi_verification_method.md",
+    "results/literature_doi_recency_audit_stage_r71/r71_recency_review_method.md",
+    "results/literature_doi_recency_audit_stage_r71/r71_source_replacement_report.md",
+    "results/literature_doi_recency_audit_stage_r71/r71_foundational_exception_report.md",
+    "results/literature_doi_recency_audit_stage_r71/r71_finding_coverage_report.md",
+    "results/literature_doi_recency_audit_stage_r71/r71_final_bibliography_validation.md",
+    "results/literature_doi_recency_audit_stage_r71/r71_research_report.md",
+    "results/literature_doi_recency_audit_stage_r71/r71_limitations.md",
+    "results/literature_doi_recency_audit_stage_r71/r71_r8_readiness.md",
 ]
 
 REGISTRY_COLUMNS = [
@@ -402,6 +424,12 @@ def main() -> int:
         "cumulative_report_r7_present",
         "## 32. R7 Systematic Literature Comparison" in cumulative_text,
         "R7 chapter",
+    )
+    add_result(
+        summary,
+        "cumulative_report_r71_present",
+        "## 33. R7.1 DOI-Verified and Recency-Prioritized Literature Audit" in cumulative_text,
+        "R7.1 chapter",
     )
 
     stage2a_text = (ROOT / "results/ml_optimization_stage2a/ml_stage2a_research_report.md").read_text(encoding="utf-8")

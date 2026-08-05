@@ -1,0 +1,10 @@
+domain,domain_label,final_source_count,recent_2016_2026_count,recent_2016_2026_percent,foundational_exception_count,excluded_no_doi_original_count,replacement_source_count
+social_deduction,Social deduction and hidden-role games,9,7,0.7778,2,2,2
+asymmetric_information,Game theory and asymmetric information,9,5,0.5556,4,1,4
+herding_trust,"Herding, trust, and collective decision-making",12,10,0.8333,2,5,7
+deception_misinformation,Misinformation and strategic deception,20,18,0.9000,2,2,8
+behavioral_finance,Behavioral finance and market analogy,22,16,0.7273,6,3,15
+bow_domain_shift,"Bag-of-Words, text quantification, and domain shift",8,8,1.0000,0,5,6
+offline_policy,Offline policy evaluation and distribution shift,4,4,1.0000,0,11,4
+simulation_validation,Multi-agent simulation and validation,11,10,0.9091,1,8,8
+risk_metrics,Decision-making and risk metrics,10,7,0.7000,3,4,7

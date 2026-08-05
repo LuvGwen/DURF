@@ -1,0 +1,8 @@
+check_name,status,evidence,source
+R4 payoff manifest hash,passed,eee8007693ec6a484632f61444a53f6f8b1b9feb64b18c865f0edf704a15c7cd,results/payoff_matrix_stage_r4/r4_payoff_manifest.json
+R5 metric manifest hash,passed,4b48f5aae165d6c30d5a13cd2e9c3e01f5b595ddbfeb93f7c1832b018f6861bf,results/financial_risk_stage_r5/r5_metric_definition_manifest.json
+R6.2 recommended configuration hash,passed,0d5e284c625dd63181c6ee852e565a10506271cba3b3684da3b612c634d2e537,results/metrics_integrity_stage_r62/recommended_research_configuration.json
+required R8 table objects,passed,11 required table objects available,final_integrated_analysis_stage_r8.py
+no invalid sample summing,passed,sample-unit registry marks incompatible units as not summable,results/final_integrated_analysis_stage_r8/r8_sample_unit_registry.csv
+DOI-only final literature eligibility,passed,R8 literature table uses R7.1 rows with doi_verified=True and final_citation_eligible=True,results/literature_doi_recency_audit_stage_r71/r71_revised_finding_literature_matrix.csv
+analysis-only stage,passed,R8 generator does not import Game or run_simulation,final_integrated_analysis_stage_r8.py

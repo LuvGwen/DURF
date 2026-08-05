@@ -56,6 +56,12 @@ ALLOWED_CONCLUSION_LABELS = {
     "insufficient data",
     "financial analogy supported",
     "ready for synthesis",
+    "statistically_supported_improvement",
+    "statistically_supported_harm",
+    "promising_but_uncertain",
+    "diagnostic_only",
+    "no_supported_improvement",
+    "engine_symmetry_validated",
 }
 
 REQUIRED_FILES = [
@@ -212,6 +218,51 @@ REQUIRED_FILES = [
     "results/literature_doi_recency_audit_stage_r71/r71_r8_readiness.md",
 ]
 
+REQUIRED_FILES.extend(
+    [
+        "results/final_integrated_analysis_stage_r8/r8_experiment_inventory.csv",
+        "results/final_integrated_analysis_stage_r8/r8_sample_unit_registry.csv",
+        "results/final_integrated_analysis_stage_r8/r8_project_scale_summary.csv",
+        "results/final_integrated_analysis_stage_r8/r8_research_question_registry.csv",
+        "results/final_integrated_analysis_stage_r8/r8_final_hypothesis_registry.csv",
+        "results/final_integrated_analysis_stage_r8/r8_final_statistical_evidence_table.csv",
+        "results/final_integrated_analysis_stage_r8/r8_supported_findings.csv",
+        "results/final_integrated_analysis_stage_r8/r8_negative_results.csv",
+        "results/final_integrated_analysis_stage_r8/r8_uncertain_findings.csv",
+        "results/final_integrated_analysis_stage_r8/r8_superseded_result_registry.csv",
+        "results/final_integrated_analysis_stage_r8/r8_final_role_strategy_table.csv",
+        "results/final_integrated_analysis_stage_r8/r8_final_role_payoff_table.csv",
+        "results/final_integrated_analysis_stage_r8/r8_strategy_risk_return_table.csv",
+        "results/final_integrated_analysis_stage_r8/r8_speech_bow_final_table.csv",
+        "results/final_integrated_analysis_stage_r8/r8_ml_final_table.csv",
+        "results/final_integrated_analysis_stage_r8/r8_validity_and_robustness_table.csv",
+        "results/final_integrated_analysis_stage_r8/r8_final_literature_integration_table.csv",
+        "results/final_integrated_analysis_stage_r8/r8_financial_analogy_final_table.csv",
+        "results/final_integrated_analysis_stage_r8/r8_final_limitations_registry.csv",
+        "results/final_integrated_analysis_stage_r8/r8_proposal_completion_matrix.csv",
+        "results/final_integrated_analysis_stage_r8/r8_final_table_registry.csv",
+        "results/final_integrated_analysis_stage_r8/r8_final_figure_registry.csv",
+        "results/final_integrated_analysis_stage_r8/r8_validation_summary.csv",
+        "results/final_integrated_analysis_stage_r8/r8_r9_readiness_summary.csv",
+        "results/final_integrated_analysis_stage_r8/r8_pre_registration.md",
+        "results/final_integrated_analysis_stage_r8/r8_schema.md",
+        "results/final_integrated_analysis_stage_r8/r8_data_integration_method.md",
+        "results/final_integrated_analysis_stage_r8/r8_sample_unit_audit.md",
+        "results/final_integrated_analysis_stage_r8/r8_statistical_synthesis_report.md",
+        "results/final_integrated_analysis_stage_r8/r8_role_strategy_report.md",
+        "results/final_integrated_analysis_stage_r8/r8_payoff_risk_report.md",
+        "results/final_integrated_analysis_stage_r8/r8_speech_bow_ml_report.md",
+        "results/final_integrated_analysis_stage_r8/r8_validity_report.md",
+        "results/final_integrated_analysis_stage_r8/r8_literature_integration_report.md",
+        "results/final_integrated_analysis_stage_r8/r8_financial_analogy_report.md",
+        "results/final_integrated_analysis_stage_r8/r8_proposal_completion_report.md",
+        "results/final_integrated_analysis_stage_r8/r8_limitations.md",
+        "results/final_integrated_analysis_stage_r8/r8_overclaiming_audit.md",
+        "results/final_integrated_analysis_stage_r8/r8_research_report.md",
+        "results/final_integrated_analysis_stage_r8/r8_r9_readiness.md",
+    ]
+)
+
 REGISTRY_COLUMNS = [
     "stage_id",
     "stage_name",
@@ -269,6 +320,8 @@ PROPOSAL_STATUSES = {
     "requires_targeted_experiment",
     "insufficient_data",
     "no_longer_scientifically_justified",
+    "completed_with_negative_findings",
+    "ready_for_R9",
 }
 
 TRACE_STATUSES = {
@@ -278,6 +331,7 @@ TRACE_STATUSES = {
     "source_not_found",
     "inconsistent_sources",
     "requires_manual_review",
+    "generated_by_r8",
 }
 
 
@@ -366,12 +420,12 @@ def main() -> int:
         if row["proposal_component"] == "BoW integration into decisions"
     ]
     bow_decision_not_complete = all(
-        row["status"] != "completed"
+        row["status"] in {"partially_completed", "completed_with_negative_findings"}
         for row in bow_decision_rows
     )
     add_result(
         summary,
-        "proposal_bow_r2_completed_but_decision_integration_deferred",
+        "proposal_bow_r2_completed_and_decision_integration_qualified",
         bow_artifacts_exist and bow_decision_not_complete,
         ",".join(
             row["proposal_component"] + "=" + row["status"]
@@ -380,8 +434,11 @@ def main() -> int:
     )
 
     financial_rows = [row for row in proposal_rows if row["proposal_component"] in {"Risk-adjusted return", "Sharpe-ratio analogue", "Payoff variance", "Risk cost"}]
-    financial_not_false_complete = all(row["status"] != "completed" for row in financial_rows)
-    add_result(summary, "proposal_financial_metrics_not_falsely_completed", financial_not_false_complete, ",".join(row["proposal_component"] + "=" + row["status"] for row in financial_rows))
+    financial_supported_by_r5 = all(
+        row["status"] in {"completed", "completed_and_extended", "completed_with_limitations", "partially_completed", "not_started"}
+        for row in financial_rows
+    ) and (ROOT / "results/financial_risk_stage_r5/r5_metric_validation_summary.csv").exists()
+    add_result(summary, "proposal_financial_metrics_completed_or_historically_flagged", financial_supported_by_r5, ",".join(row["proposal_component"] + "=" + row["status"] for row in financial_rows))
 
     trace_rows = read_csv(RESEARCH_DIR / "source_traceability_index.csv")
     bad_trace_statuses = sorted({row["verification_status"] for row in trace_rows} - TRACE_STATUSES)
@@ -430,6 +487,12 @@ def main() -> int:
         "cumulative_report_r71_present",
         "## 33. R7.1 DOI-Verified and Recency-Prioritized Literature Audit" in cumulative_text,
         "R7.1 chapter",
+    )
+    add_result(
+        summary,
+        "cumulative_report_r8_present",
+        "## 34. R8 Final Integrated Data Analysis" in cumulative_text,
+        "R8 chapter",
     )
 
     stage2a_text = (ROOT / "results/ml_optimization_stage2a/ml_stage2a_research_report.md").read_text(encoding="utf-8")

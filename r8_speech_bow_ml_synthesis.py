@@ -1,0 +1,356 @@
+"""R8 synthesis for speech, Bag-of-Words, and ML policy stages."""
+
+from __future__ import annotations
+
+from r8_common import fmt_float, get_row, read_csv
+
+
+SPEECH_BOW_COLUMNS = [
+    "stage",
+    "artifact_or_policy",
+    "analysis_type",
+    "sample_unit",
+    "sample_size",
+    "primary_metric",
+    "metric_value",
+    "comparison",
+    "effect",
+    "confidence_interval",
+    "raw_p_value",
+    "holm_adjusted_p_value",
+    "conclusion",
+    "final_use",
+    "source_data",
+]
+
+ML_COLUMNS = [
+    "stage",
+    "policy_or_model",
+    "analysis_type",
+    "sample_unit",
+    "sample_size",
+    "primary_metric",
+    "metric_value",
+    "comparison",
+    "effect",
+    "confidence_interval",
+    "raw_p_value",
+    "holm_adjusted_p_value",
+    "conclusion",
+    "deployment_status",
+    "source_data",
+]
+
+
+def build_speech_bow_final_table() -> list[dict[str, str]]:
+    r2_metrics = read_csv("results/bow_speech_stage_r2/bow_role_prediction_metrics.csv")
+    r2_generalization = read_csv("results/bow_speech_stage_r2/bow_template_generalization_metrics.csv")
+    r2_selection = read_csv("results/bow_speech_stage_r2/bow_model_selection_summary.csv")
+    r3_outcomes = read_csv("results/bow_integration_stage_r3/r3_policy_game_outcome_summary.csv")
+    r3_contrasts = read_csv("results/bow_integration_stage_r3/r3_primary_game_contrasts.csv")
+
+    bow_scores = get_row(r2_metrics, dataset_split="final_test", model_name="bow_scores_only")
+    full_bow = get_row(r2_metrics, dataset_split="final_test", model_name="full_bow_vector_naive_bayes")
+    structured = get_row(r2_metrics, dataset_split="final_test", model_name="p_wolf_suspicion_structured")
+    ood = get_row(r2_generalization, model_name="bow_scores_only")
+    added = get_row(r2_selection, criterion="bow_score_added_value_over_structured")
+    guarded = get_row(r3_contrasts, condition_name="guarded_bow_010_live")
+    structured_live = get_row(r3_contrasts, condition_name="structured_bow_guarded_live")
+    selective = get_row(r3_contrasts, condition_name="selective_bow_vote_override_live")
+    pure_live = get_row(r3_outcomes, condition_name="pure_bow_diagnostic_live")
+
+    return [
+        {
+            "stage": "R2",
+            "artifact_or_policy": "bow_scores_only",
+            "analysis_type": "offline prediction",
+            "sample_unit": "utterance with grouped split caveat",
+            "sample_size": bow_scores["n_rows"],
+            "primary_metric": "final-test ROC-AUC",
+            "metric_value": fmt_float(bow_scores["roc_auc"], 4),
+            "comparison": "against base rate",
+            "effect": "moderate predictive signal",
+            "confidence_interval": "not_reported",
+            "raw_p_value": "not_reported",
+            "holm_adjusted_p_value": "not_reported",
+            "conclusion": "speech tokens contain wolf-role signal in generated utterances",
+            "final_use": "diagnostic feature representation",
+            "source_data": "results/bow_speech_stage_r2/bow_role_prediction_metrics.csv",
+        },
+        {
+            "stage": "R2",
+            "artifact_or_policy": "full_bow_vector_naive_bayes",
+            "analysis_type": "offline prediction",
+            "sample_unit": "utterance with grouped split caveat",
+            "sample_size": full_bow["n_rows"],
+            "primary_metric": "final-test ROC-AUC",
+            "metric_value": fmt_float(full_bow["roc_auc"], 4),
+            "comparison": "against BoW score model",
+            "effect": "higher final-test AUC but worse OOD template behavior",
+            "confidence_interval": "not_reported",
+            "raw_p_value": "not_reported",
+            "holm_adjusted_p_value": "not_reported",
+            "conclusion": "high-capacity lexical counts are template-sensitive",
+            "final_use": "not a live policy",
+            "source_data": "results/bow_speech_stage_r2/bow_template_generalization_metrics.csv",
+        },
+        {
+            "stage": "R2",
+            "artifact_or_policy": "p_wolf_suspicion_structured",
+            "analysis_type": "offline prediction",
+            "sample_unit": "utterance/player state",
+            "sample_size": structured["n_rows"],
+            "primary_metric": "final-test ROC-AUC",
+            "metric_value": fmt_float(structured["roc_auc"], 4),
+            "comparison": "selected by final-test ROC-AUC",
+            "effect": f"BoW added value over structured features {fmt_float(added['value'], 4)}",
+            "confidence_interval": "not_reported",
+            "raw_p_value": "not_reported",
+            "holm_adjusted_p_value": "not_reported",
+            "conclusion": "structured beliefs explain most predictive value",
+            "final_use": "diagnostic benchmark",
+            "source_data": "results/bow_speech_stage_r2/bow_model_selection_summary.csv",
+        },
+        {
+            "stage": "R2",
+            "artifact_or_policy": "bow_scores_only_ood",
+            "analysis_type": "template generalization",
+            "sample_unit": "held-out template utterance",
+            "sample_size": "not_reported",
+            "primary_metric": "OOD template ROC-AUC",
+            "metric_value": fmt_float(ood["ood_template_roc_auc"], 4),
+            "comparison": "OOD minus final-test AUC",
+            "effect": fmt_float(ood["ood_template_auc_gap"], 4),
+            "confidence_interval": "not_reported",
+            "raw_p_value": "not_reported",
+            "holm_adjusted_p_value": "not_reported",
+            "conclusion": "BoW signal is template-bound",
+            "final_use": "caveat for final report",
+            "source_data": "results/bow_speech_stage_r2/bow_template_generalization_metrics.csv",
+        },
+        {
+            "stage": "R3",
+            "artifact_or_policy": "guarded_bow_010_live",
+            "analysis_type": "live policy",
+            "sample_unit": "matched complete game",
+            "sample_size": guarded["matched_sets"],
+            "primary_metric": "village win-rate change",
+            "metric_value": guarded["absolute_pp_difference"],
+            "comparison": guarded["comparison"],
+            "effect": "harmful",
+            "confidence_interval": f"OR [{guarded['odds_ratio_ci_low']}, {guarded['odds_ratio_ci_high']}]",
+            "raw_p_value": guarded["raw_p_value"],
+            "holm_adjusted_p_value": guarded["holm_adjusted_p_value"],
+            "conclusion": "guarded BoW live integration was harmful",
+            "final_use": "negative result",
+            "source_data": "results/bow_integration_stage_r3/r3_primary_game_contrasts.csv",
+        },
+        {
+            "stage": "R3",
+            "artifact_or_policy": "structured_bow_guarded_live",
+            "analysis_type": "live policy",
+            "sample_unit": "matched complete game",
+            "sample_size": structured_live["matched_sets"],
+            "primary_metric": "village win-rate change",
+            "metric_value": structured_live["absolute_pp_difference"],
+            "comparison": structured_live["comparison"],
+            "effect": "harmful",
+            "confidence_interval": f"OR [{structured_live['odds_ratio_ci_low']}, {structured_live['odds_ratio_ci_high']}]",
+            "raw_p_value": structured_live["raw_p_value"],
+            "holm_adjusted_p_value": structured_live["holm_adjusted_p_value"],
+            "conclusion": "adding BoW to structured live voting was harmful",
+            "final_use": "negative result",
+            "source_data": "results/bow_integration_stage_r3/r3_primary_game_contrasts.csv",
+        },
+        {
+            "stage": "R3",
+            "artifact_or_policy": "selective_bow_vote_override_live",
+            "analysis_type": "live policy",
+            "sample_unit": "matched complete game",
+            "sample_size": selective["matched_sets"],
+            "primary_metric": "village win-rate change",
+            "metric_value": selective["absolute_pp_difference"],
+            "comparison": selective["comparison"],
+            "effect": "near zero and not useful",
+            "confidence_interval": f"OR [{selective['odds_ratio_ci_low']}, {selective['odds_ratio_ci_high']}]",
+            "raw_p_value": selective["raw_p_value"],
+            "holm_adjusted_p_value": selective["holm_adjusted_p_value"],
+            "conclusion": "selective override did not rescue BoW live value",
+            "final_use": "not recommended",
+            "source_data": "results/bow_integration_stage_r3/r3_primary_game_contrasts.csv",
+        },
+        {
+            "stage": "R3",
+            "artifact_or_policy": "pure_bow_diagnostic_live",
+            "analysis_type": "diagnostic live policy",
+            "sample_unit": "complete game",
+            "sample_size": pure_live["live_games"],
+            "primary_metric": "village win rate",
+            "metric_value": fmt_float(pure_live["village_win_rate"], 4),
+            "comparison": "descriptive diagnostic only",
+            "effect": "not selected as final policy",
+            "confidence_interval": "not_reported",
+            "raw_p_value": "not_reported",
+            "holm_adjusted_p_value": "not_reported",
+            "conclusion": "diagnostic result does not override matched primary contrasts",
+            "final_use": "diagnostic only",
+            "source_data": "results/bow_integration_stage_r3/r3_policy_game_outcome_summary.csv",
+        },
+    ]
+
+
+def build_ml_final_table() -> list[dict[str, str]]:
+    ml1 = read_csv("results/ml_optimization_stage1/ml_rollout_value_summary.csv")
+    ml15 = read_csv("results/ml_optimization_stage15/ml_identity_generalization_metrics.csv")
+    ml2a_policy = read_csv("results/ml_optimization_stage2a/wolf_kill_live_policy_summary.csv")
+    ml2a_contrast = read_csv("results/ml_optimization_stage2a/wolf_kill_primary_contrasts.csv")
+    ml2b_policy = read_csv("results/ml_optimization_stage2b/stage2b_policy_win_summary.csv")
+    ml2b_contrast = read_csv("results/ml_optimization_stage2b/stage2b_primary_contrasts.csv")
+
+    day_vote_rollout = get_row(ml1, decision_type="day_vote")
+    grouped_vote = get_row(ml15, context="village_vote_candidate_states", model="logistic_regression_stdlib", split_name="final_test")
+    existing_2a = get_row(ml2a_policy, policy_name="existing_rule")
+    hybrid_2a = get_row(ml2a_contrast, policy_name="frozen_hybrid_50_50")
+    first_kill_2b = get_row(ml2b_contrast, policy_name="ml_first_kill_only")
+    continuous_2b = get_row(ml2b_contrast, policy_name="continuous_frozen_ml")
+    selective_2b = get_row(ml2b_contrast, policy_name="selective_ml_override")
+    existing_2b = get_row(ml2b_policy, policy_name="existing_rule")
+
+    return [
+        {
+            "stage": "ML Stage 1",
+            "policy_or_model": "rollout_value_diagnostics",
+            "analysis_type": "offline rollout",
+            "sample_unit": "candidate action and rollout branch",
+            "sample_size": day_vote_rollout["candidate_rows"],
+            "primary_metric": "mean existing policy regret",
+            "metric_value": fmt_float(day_vote_rollout["mean_existing_policy_regret"], 4),
+            "comparison": "candidate rollouts versus existing decisions",
+            "effect": "offline improvement opportunity observed",
+            "confidence_interval": "not_reported",
+            "raw_p_value": "not_reported",
+            "holm_adjusted_p_value": "not_reported",
+            "conclusion": "offline regret is diagnostic only",
+            "deployment_status": "not_deployed",
+            "source_data": "results/ml_optimization_stage1/ml_rollout_value_summary.csv",
+        },
+        {
+            "stage": "ML Stage 1.5",
+            "policy_or_model": "logistic_regression_grouped_split",
+            "analysis_type": "offline prediction",
+            "sample_unit": "candidate action with identity-grouped split",
+            "sample_size": grouped_vote["candidate_rows"],
+            "primary_metric": "ROC-AUC",
+            "metric_value": fmt_float(grouped_vote["roc_auc"], 4),
+            "comparison": "grouped split final-test prediction",
+            "effect": "moderate but not policy-validating",
+            "confidence_interval": "not_reported",
+            "raw_p_value": "not_reported",
+            "holm_adjusted_p_value": "not_reported",
+            "conclusion": "prediction does not imply live policy improvement",
+            "deployment_status": "diagnostic_only",
+            "source_data": "results/ml_optimization_stage15/ml_identity_generalization_metrics.csv",
+        },
+        {
+            "stage": "ML Stage 2A",
+            "policy_or_model": "existing_rule",
+            "analysis_type": "live policy reference",
+            "sample_unit": "complete game",
+            "sample_size": existing_2a["games"],
+            "primary_metric": "wolf win rate",
+            "metric_value": fmt_float(existing_2a["wolf_win_rate"], 4),
+            "comparison": "reference policy",
+            "effect": "reference remains strong",
+            "confidence_interval": f"[{existing_2a['wolf_win_ci_low']}, {existing_2a['wolf_win_ci_high']}]",
+            "raw_p_value": "not_applicable",
+            "holm_adjusted_p_value": "not_applicable",
+            "conclusion": "use as comparator",
+            "deployment_status": "current_reference",
+            "source_data": "results/ml_optimization_stage2a/wolf_kill_live_policy_summary.csv",
+        },
+        {
+            "stage": "ML Stage 2A",
+            "policy_or_model": "frozen_hybrid_50_50",
+            "analysis_type": "matched live policy",
+            "sample_unit": "matched complete game",
+            "sample_size": hybrid_2a["matched_sets"],
+            "primary_metric": "wolf win-rate change",
+            "metric_value": hybrid_2a["absolute_difference"],
+            "comparison": hybrid_2a["contrast"],
+            "effect": "harmful",
+            "confidence_interval": f"[{hybrid_2a['difference_ci_low']}, {hybrid_2a['difference_ci_high']}]",
+            "raw_p_value": hybrid_2a["raw_p_value"],
+            "holm_adjusted_p_value": hybrid_2a["holm_adjusted_p_value"],
+            "conclusion": "hybrid ML should not replace existing wolf-kill rule",
+            "deployment_status": "not_recommended",
+            "source_data": "results/ml_optimization_stage2a/wolf_kill_primary_contrasts.csv",
+        },
+        {
+            "stage": "ML Stage 2B",
+            "policy_or_model": "ml_first_kill_only",
+            "analysis_type": "matched live intervention",
+            "sample_unit": "matched complete game",
+            "sample_size": first_kill_2b["matched_sets"],
+            "primary_metric": "wolf win-rate change",
+            "metric_value": first_kill_2b["absolute_difference"],
+            "comparison": first_kill_2b["contrast"],
+            "effect": "no significant improvement",
+            "confidence_interval": f"[{first_kill_2b['difference_ci_low']}, {first_kill_2b['difference_ci_high']}]",
+            "raw_p_value": first_kill_2b["raw_p_value"],
+            "holm_adjusted_p_value": first_kill_2b["holm_adjusted_p_value"],
+            "conclusion": "first-kill-only ML evidence is inconclusive",
+            "deployment_status": "diagnostic_only",
+            "source_data": "results/ml_optimization_stage2b/stage2b_primary_contrasts.csv",
+        },
+        {
+            "stage": "ML Stage 2B",
+            "policy_or_model": "continuous_frozen_ml",
+            "analysis_type": "matched live repeated control",
+            "sample_unit": "matched complete game",
+            "sample_size": continuous_2b["matched_sets"],
+            "primary_metric": "wolf win-rate change",
+            "metric_value": continuous_2b["absolute_difference"],
+            "comparison": continuous_2b["contrast"],
+            "effect": "harmful direction, not Holm-significant",
+            "confidence_interval": f"[{continuous_2b['difference_ci_low']}, {continuous_2b['difference_ci_high']}]",
+            "raw_p_value": continuous_2b["raw_p_value"],
+            "holm_adjusted_p_value": continuous_2b["holm_adjusted_p_value"],
+            "conclusion": "continuous ML is not recommended for final configuration",
+            "deployment_status": "not_recommended",
+            "source_data": "results/ml_optimization_stage2b/stage2b_primary_contrasts.csv",
+        },
+        {
+            "stage": "ML Stage 2B",
+            "policy_or_model": "selective_ml_override",
+            "analysis_type": "matched live selective override",
+            "sample_unit": "matched complete game",
+            "sample_size": selective_2b["matched_sets"],
+            "primary_metric": "wolf win-rate change",
+            "metric_value": selective_2b["absolute_difference"],
+            "comparison": selective_2b["contrast"],
+            "effect": "near zero",
+            "confidence_interval": f"[{selective_2b['difference_ci_low']}, {selective_2b['difference_ci_high']}]",
+            "raw_p_value": selective_2b["raw_p_value"],
+            "holm_adjusted_p_value": selective_2b["holm_adjusted_p_value"],
+            "conclusion": "selective override did not provide robust live value",
+            "deployment_status": "diagnostic_only",
+            "source_data": "results/ml_optimization_stage2b/stage2b_primary_contrasts.csv",
+        },
+        {
+            "stage": "ML Stage 2B",
+            "policy_or_model": "existing_rule",
+            "analysis_type": "live reference",
+            "sample_unit": "complete game",
+            "sample_size": existing_2b["games"],
+            "primary_metric": "wolf win rate",
+            "metric_value": fmt_float(existing_2b["wolf_win_rate"], 4),
+            "comparison": "reference policy",
+            "effect": "strong reference baseline",
+            "confidence_interval": f"[{existing_2b['wolf_win_ci_low']}, {existing_2b['wolf_win_ci_high']}]",
+            "raw_p_value": "not_applicable",
+            "holm_adjusted_p_value": "not_applicable",
+            "conclusion": "current rule remains preferred over tested ML replacements",
+            "deployment_status": "current_reference",
+            "source_data": "results/ml_optimization_stage2b/stage2b_policy_win_summary.csv",
+        },
+    ]

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="560" viewBox="0 0 980 560">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="24" y="36" font-family="Arial" font-size="20" font-weight="700" fill="#172033">ML live policy effect</text>
+<text x="24" y="536" font-family="Arial" font-size="11" fill="#526070">Source: r8_ml_final_table.csv</text>
+<line x1="580.0" y1="60" x2="580.0" y2="500" stroke="#94a3b8" stroke-width="1"/>
+<text x="24" y="87" font-family="Arial" font-size="13" fill="#263445">frozen_hybrid_50_50</text>
+<rect x="543.2" y="70" width="36.8" height="24" rx="3" fill="#b64d4d"/>
+<text x="588.0" y="87" font-family="Arial" font-size="13" fill="#263445">-0.115</text>
+<text x="24" y="125" font-family="Arial" font-size="13" fill="#263445">ml_first_kill_only</text>
+<rect x="580.0" y="108" width="3.2" height="24" rx="3" fill="#2f6fbb"/>
+<text x="591.2" y="125" font-family="Arial" font-size="13" fill="#263445">0.01</text>
+<text x="24" y="163" font-family="Arial" font-size="13" fill="#263445">continuous_frozen_ml</text>
+<rect x="548.0" y="146" width="32.0" height="24" rx="3" fill="#b64d4d"/>
+<text x="588.0" y="163" font-family="Arial" font-size="13" fill="#263445">-0.1</text>
+<text x="24" y="201" font-family="Arial" font-size="13" fill="#263445">selective_ml_override</text>
+<rect x="576.8" y="184" width="3.2" height="24" rx="3" fill="#b64d4d"/>
+<text x="588.0" y="201" font-family="Arial" font-size="13" fill="#263445">-0.01</text>
+</svg>

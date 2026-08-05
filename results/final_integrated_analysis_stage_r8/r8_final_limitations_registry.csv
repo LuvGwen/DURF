@@ -1,0 +1,9 @@
+limitation_id,domain,limitation,severity,mitigation_or_final_reporting_rule,source
+L_R8_01,simulation environment,The Werewolf environment is synthetic and self-built.,medium,"Report findings as simulation evidence, not direct human-subject evidence.",all stages
+L_R8_02,speech,Generated BoW utterances are template-bound and not a natural conversation corpus.,high,Use BoW as controlled signal engineering; do not claim natural-language generality.,R2/R3
+L_R8_03,sample units,"Games, matched sets, player rows, events, utterances, and rollouts are incompatible units.",high,Never sum these units into a single independent sample size.,R8 sample-unit audit
+L_R8_04,strategy search,The strongest tested policy is not proof of a global optimum.,medium,Use the phrase strongest tested policy and preserve strategy-space bounds.,R6/R6.1
+L_R8_05,ML,Offline predictive or rollout quality did not reliably transfer to live policy control.,high,Treat ML outputs as diagnostic unless matched live policy evidence supports deployment.,ML Stage 2A/2B
+L_R8_06,financial analogy,Payoffs are not externally priced financial returns.,medium,Use risk metrics as formal analogues within the game ledger only.,R5/R7.1
+L_R8_07,causal inference,Premium analyses are descriptive associations because exposure groups are behaviorally selected.,medium,Do not label premiums as causal effects.,R5.1
+L_R8_08,historical coverage,Some historical outputs are summary-only and cannot be recalculated at event level.,medium,Use later raw game-level stages for formal inference and list historical datasets separately.,R5 historical compatibility and R8 inventory

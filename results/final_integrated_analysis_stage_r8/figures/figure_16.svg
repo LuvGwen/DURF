@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="560" viewBox="0 0 980 560">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="24" y="36" font-family="Arial" font-size="20" font-weight="700" fill="#172033">Randomized-role seer strategies</text>
+<text x="24" y="536" font-family="Arial" font-size="11" fill="#526070">Source: structured_seer_search_strategy_summary.csv</text>
+<text x="24" y="87" font-family="Arial" font-size="13" fill="#263445">random</text>
+<rect x="260.0" y="70" width="259.3" height="24" rx="3" fill="#2f6fbb"/>
+<text x="527.3" y="87" font-family="Arial" font-size="13" fill="#263445">0.405</text>
+<text x="24" y="125" font-family="Arial" font-size="13" fill="#263445">default</text>
+<rect x="260.0" y="108" width="259.3" height="24" rx="3" fill="#2f6fbb"/>
+<text x="527.3" y="125" font-family="Arial" font-size="13" fill="#263445">0.405</text>
+<text x="24" y="163" font-family="Arial" font-size="13" fill="#263445">edge_first</text>
+<rect x="260.0" y="146" width="265.2" height="24" rx="3" fill="#2f6fbb"/>
+<text x="533.2" y="163" font-family="Arial" font-size="13" fill="#263445">0.414</text>
+<text x="24" y="201" font-family="Arial" font-size="13" fill="#263445">inner_first</text>
+<rect x="260.0" y="184" width="269.3" height="24" rx="3" fill="#2f6fbb"/>
+<text x="537.3" y="201" font-family="Arial" font-size="13" fill="#263445">0.421</text>
+<text x="24" y="239" font-family="Arial" font-size="13" fill="#263445">highest_p_wolf</text>
+<rect x="260.0" y="222" width="223.2" height="24" rx="3" fill="#2f6fbb"/>
+<text x="491.2" y="239" font-family="Arial" font-size="13" fill="#263445">0.349</text>
+<text x="24" y="277" font-family="Arial" font-size="13" fill="#263445">highest_suspicion</text>
+<rect x="260.0" y="260" width="223.0" height="24" rx="3" fill="#2f6fbb"/>
+<text x="491.0" y="277" font-family="Arial" font-size="13" fill="#263445">0.348</text>
+<text x="24" y="315" font-family="Arial" font-size="13" fill="#263445">left_to_right</text>
+<rect x="260.0" y="298" width="261.4" height="24" rx="3" fill="#2f6fbb"/>
+<text x="529.4" y="315" font-family="Arial" font-size="13" fill="#263445">0.408</text>
+<text x="24" y="353" font-family="Arial" font-size="13" fill="#263445">right_to_left</text>
+<rect x="260.0" y="336" width="280.8" height="24" rx="3" fill="#2f6fbb"/>
+<text x="548.8" y="353" font-family="Arial" font-size="13" fill="#263445">0.439</text>
+<text x="24" y="391" font-family="Arial" font-size="13" fill="#263445">alternate_sides</text>
+<rect x="260.0" y="374" width="282.6" height="24" rx="3" fill="#2f6fbb"/>
+<text x="550.6" y="391" font-family="Arial" font-size="13" fill="#263445">0.442</text>
+<text x="24" y="429" font-family="Arial" font-size="13" fill="#263445">nearest_first</text>
+<rect x="260.0" y="412" width="266.8" height="24" rx="3" fill="#2f6fbb"/>
+<text x="534.8" y="429" font-family="Arial" font-size="13" fill="#263445">0.417</text>
+</svg>

@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="560" viewBox="0 0 980 560">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="24" y="36" font-family="Arial" font-size="20" font-weight="700" fill="#172033">Hunter policy village win rate</text>
+<text x="24" y="536" font-family="Arial" font-size="11" fill="#526070">Source: r61_hunter_policy_summary.csv</text>
+<text x="24" y="87" font-family="Arial" font-size="13" fill="#263445">reference</text>
+<rect x="260.0" y="70" width="195.2" height="24" rx="3" fill="#2f6fbb"/>
+<text x="463.2" y="87" font-family="Arial" font-size="13" fill="#263445">0.305</text>
+<text x="24" y="125" font-family="Arial" font-size="13" fill="#263445">random_shot</text>
+<rect x="260.0" y="108" width="160.6" height="24" rx="3" fill="#2f6fbb"/>
+<text x="428.6" y="125" font-family="Arial" font-size="13" fill="#263445">0.251</text>
+<text x="24" y="163" font-family="Arial" font-size="13" fill="#263445">no_shot</text>
+<rect x="260.0" y="146" width="138.9" height="24" rx="3" fill="#2f6fbb"/>
+<text x="406.9" y="163" font-family="Arial" font-size="13" fill="#263445">0.217</text>
+<text x="24" y="201" font-family="Arial" font-size="13" fill="#263445">highest_suspicion</text>
+<rect x="260.0" y="184" width="195.2" height="24" rx="3" fill="#2f6fbb"/>
+<text x="463.2" y="201" font-family="Arial" font-size="13" fill="#263445">0.305</text>
+<text x="24" y="239" font-family="Arial" font-size="13" fill="#263445">highest_p_wolf</text>
+<rect x="260.0" y="222" width="193.9" height="24" rx="3" fill="#2f6fbb"/>
+<text x="461.9" y="239" font-family="Arial" font-size="13" fill="#263445">0.303</text>
+<text x="24" y="277" font-family="Arial" font-size="13" fill="#263445">conservative_threshold</text>
+<rect x="260.0" y="260" width="142.1" height="24" rx="3" fill="#2f6fbb"/>
+<text x="410.1" y="277" font-family="Arial" font-size="13" fill="#263445">0.222</text>
+</svg>

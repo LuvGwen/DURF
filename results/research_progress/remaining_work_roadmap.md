@@ -187,3 +187,7 @@ Next stage: R8 - Final Integrated Data Analysis and Evidence Tables. R8 should c
 ## After R7.1
 
 Next stage: R8 - Final Integrated Data Analysis and Evidence Tables. R8 should cite from the R7.1 DOI-only final bibliography and retain explicit limitations for foundational exceptions.
+
+## R8 Roadmap Update
+
+Next stage: R9 - Final DURF Report, Presentation, and Reproducibility Package. No additional mechanism tuning is required before R9.

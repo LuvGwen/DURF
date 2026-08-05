@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="560" viewBox="0 0 980 560">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="24" y="36" font-family="Arial" font-size="20" font-weight="700" fill="#172033">Evidence conclusion distribution</text>
+<text x="24" y="536" font-family="Arial" font-size="11" fill="#526070">Source: r8_final_statistical_evidence_table.csv</text>
+<text x="24" y="87" font-family="Arial" font-size="13" fill="#263445">promising_but_uncertain</text>
+<rect x="260.0" y="70" width="426.7" height="24" rx="3" fill="#2f6fbb"/>
+<text x="694.7" y="87" font-family="Arial" font-size="13" fill="#263445">4</text>
+<text x="24" y="125" font-family="Arial" font-size="13" fill="#263445">statistically_supported_harm</text>
+<rect x="260.0" y="108" width="640.0" height="24" rx="3" fill="#2f6fbb"/>
+<text x="908.0" y="125" font-family="Arial" font-size="13" fill="#263445">6</text>
+<text x="24" y="163" font-family="Arial" font-size="13" fill="#263445">statistically_supported_improvement</text>
+<rect x="260.0" y="146" width="213.3" height="24" rx="3" fill="#2f6fbb"/>
+<text x="481.3" y="163" font-family="Arial" font-size="13" fill="#263445">2</text>
+<text x="24" y="201" font-family="Arial" font-size="13" fill="#263445">no_supported_improvement</text>
+<rect x="260.0" y="184" width="106.7" height="24" rx="3" fill="#2f6fbb"/>
+<text x="374.7" y="201" font-family="Arial" font-size="13" fill="#263445">1</text>
+<text x="24" y="239" font-family="Arial" font-size="13" fill="#263445">diagnostic_only</text>
+<rect x="260.0" y="222" width="106.7" height="24" rx="3" fill="#2f6fbb"/>
+<text x="374.7" y="239" font-family="Arial" font-size="13" fill="#263445">1</text>
+</svg>

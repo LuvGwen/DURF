@@ -104,3 +104,7 @@ R7 completes the proposal requirement to cross-check findings with literature. I
 ## R7.1 DOI and Recency Literature Audit
 
 R7.1 extends the R7 literature comparison by applying a DOI-only final citation policy and a 2016-2026 recency preference. No-DOI sources remain traceable in internal registries but are excluded from final written-report references. Older sources are retained only as documented foundational exceptions.
+
+## R8 Final Integrated Analysis Update
+
+R8 adds the final cross-stage evidence synthesis and R9 readiness audit. Existing R4/R5/R6.2 frozen hashes are unchanged and final report blockers are tracked in the R8 readiness summary.

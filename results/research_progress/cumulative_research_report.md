@@ -300,3 +300,7 @@ Conclusion: `ready for synthesis`. R7 supports the financial-market analogy as a
 R7.1 audits the 64 retained R7 sources and creates a stricter final written-report bibliography. The final bibliography contains 44 DOI-bearing sources, 35 from 2016-2026 (79.55%), and 9 older foundational exceptions. All 41 of 41 project findings retain DOI-backed coverage.
 
 Policy update: no-DOI sources may remain in internal screening registries but should not be cited in the final written report unless a DOI-bearing publication record is later verified. R8 is cleared to use the R7.1 final reference list.
+
+## 34. R8 Final Integrated Data Analysis
+
+R8 consolidates all prior DURF Werewolf Simulation evidence into final statistical, role-strategy, payoff-risk, speech/BoW, ML, literature, validity, limitation, and R9-readiness tables. It is analysis-only and does not run new gameplay simulations. The final R8 artifacts are stored in `results/final_integrated_analysis_stage_r8/`.

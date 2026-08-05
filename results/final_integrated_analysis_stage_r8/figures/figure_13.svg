@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="560" viewBox="0 0 980 560">
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="24" y="36" font-family="Arial" font-size="20" font-weight="700" fill="#172033">BoW offline AUC</text>
+<text x="24" y="536" font-family="Arial" font-size="11" fill="#526070">Source: r8_speech_bow_final_table.csv</text>
+<text x="24" y="87" font-family="Arial" font-size="13" fill="#263445">bow_scores_only</text>
+<rect x="260.0" y="70" width="442.8" height="24" rx="3" fill="#2f6fbb"/>
+<text x="710.8" y="87" font-family="Arial" font-size="13" fill="#263445">0.692</text>
+<text x="24" y="125" font-family="Arial" font-size="13" fill="#263445">full_bow_vector_naive_bayes</text>
+<rect x="260.0" y="108" width="484.9" height="24" rx="3" fill="#2f6fbb"/>
+<text x="752.9" y="125" font-family="Arial" font-size="13" fill="#263445">0.758</text>
+<text x="24" y="163" font-family="Arial" font-size="13" fill="#263445">p_wolf_suspicion_structured</text>
+<rect x="260.0" y="146" width="570.4" height="24" rx="3" fill="#2f6fbb"/>
+<text x="838.4" y="163" font-family="Arial" font-size="13" fill="#263445">0.891</text>
+<text x="24" y="201" font-family="Arial" font-size="13" fill="#263445">bow_scores_only_ood</text>
+<rect x="260.0" y="184" width="392.9" height="24" rx="3" fill="#2f6fbb"/>
+<text x="660.9" y="201" font-family="Arial" font-size="13" fill="#263445">0.614</text>
+</svg>

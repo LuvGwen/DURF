@@ -308,3 +308,7 @@ R8 consolidates all prior DURF Werewolf Simulation evidence into final statistic
 ## 35. R8.1 Project-Wide Overfitting and Selection-Bias Audit
 
 R8.1 audited the project decision history, strategy and threshold search, outcome switching, seed/split integrity, multiple testing, post-selection bootstrap stability, payoff sensitivity, distribution shift, BoW/ML overfitting risks, and literature confirmation bias. The audit preserves the R4 and R5 manifests, adds a corrected R8 interpretation layer, and classifies Seer immediate reveal and Witch aggressive_full as descriptive candidates requiring targeted independent replication before default adoption. The audited readiness decision is R8.2 TARGETED REPLICATION REQUIRED.
+
+## 36. R8.1 Manifest Hash Forensic Correction
+
+The manifest hash inconsistency was resolved before R8.2. The historically frozen R4/R5 hashes are embedded content-level self-hashes, while the earlier R8.1 handoff reported raw-file SHA-256 values. Git history shows no modification to either manifest file after creation. Final reporting must cite the embedded content-level hashes as authoritative and may cite raw-file hashes only as secondary byte-level integrity checks.

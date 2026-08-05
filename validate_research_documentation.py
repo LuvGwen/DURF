@@ -317,6 +317,8 @@ REQUIRED_FILES.extend(
         "results/project_overfitting_audit_stage_r81/r81_overclaiming_audit.md",
         "results/project_overfitting_audit_stage_r81/r81_research_report.md",
         "results/project_overfitting_audit_stage_r81/r81_r9_readiness.md",
+        "results/project_overfitting_audit_stage_r81/r81_manifest_hash_forensic_audit.csv",
+        "results/project_overfitting_audit_stage_r81/r81_manifest_hash_forensic_report.md",
         "results/project_overfitting_audit_stage_r81/corrected_r8/corrected_role_strategy_table.csv",
         "results/project_overfitting_audit_stage_r81/corrected_r8/corrected_supported_findings.csv",
         "results/project_overfitting_audit_stage_r81/corrected_r8/corrected_negative_results.csv",

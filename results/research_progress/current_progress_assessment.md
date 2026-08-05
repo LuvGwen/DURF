@@ -100,3 +100,8 @@ The project has completed final integrated evidence consolidation and is ready t
 ## R8.1 Progress Update
 
 Project-wide overfitting and selection-bias audit completed. R9 should wait for targeted R8.2 replication of load-bearing corrected recommendations.
+
+## R8.3 Progress Assessment
+
+R8.3 is complete. It creates corrected R8/R8.1/R8.2 layers, a corrected R9
+input pack, and final role recommendation wording. R9 readiness: `READY FOR R9 WITH AUDITED LIMITATIONS`.

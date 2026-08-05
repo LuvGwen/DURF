@@ -1,0 +1,4 @@
+artifact,row_id,previous_label,audited_label,changed,reason,authoritative_stage,final_use_status,source_file
+r82_replication_decision_summary,Villager,R8.2 original decision label,independently_replicated_confirmatory_supported,False,Recommend trust_weighted within tested simulation configuration.,R8.3,use_audited_label,r83_final_replication_conclusions.csv
+r82_replication_decision_summary,Seer,R8.2 original decision label,replicated_positive_with_material_tradeoff,True,Retain private_only as safety-conservative default; treat immediate_reveal as payoff-supported but exposure-constrained.,R8.3,use_audited_label,r83_final_replication_conclusions.csv
+r82_replication_decision_summary,Witch,R8.2 original decision label,replicated_positive_with_material_tradeoff,False,Use aggressive_full only as a conditional risk-tolerant policy; retain reference as conservative default option.,R8.3,use_audited_label,r83_final_replication_conclusions.csv

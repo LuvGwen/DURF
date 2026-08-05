@@ -1,0 +1,4 @@
+artifact,row_id,previous_label,audited_label,changed,reason,authoritative_stage,final_use_status,source_file,fact_type,fact,value,source
+corrected_r9_input_pack,L01,prior layer,R8.3 audited,True,R8.3 final corrected R9 input.,R8.3,use_for_R9,r83_witch_risk_benefit_summary.csv,limitation,Witch lifecycle waste,unavailable_from_R8.2_export,r83_witch_risk_benefit_summary.csv
+corrected_r9_input_pack,L02,prior layer,R8.3 audited,True,R8.3 final corrected R9 input.,R8.3,use_for_R9,r83_seer_evidence_integration.csv,limitation,Seer next-night hazard,unavailable_from_R8.2_export; use separated R6.2 evidence,r83_seer_evidence_integration.csv
+corrected_r9_input_pack,L03,prior layer,R8.3 audited,True,R8.3 final corrected R9 input.,R8.3,use_for_R9,r83_final_five_role_recommendations.csv,limitation,Simulation scope,10-player randomized-role simulation,r83_final_five_role_recommendations.csv

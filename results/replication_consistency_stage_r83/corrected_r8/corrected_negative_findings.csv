@@ -1,0 +1,2 @@
+artifact,row_id,previous_label,audited_label,changed,reason,authoritative_stage,final_use_status,source_file
+corrected_negative_findings.csv,R83_CLAIM_03,prior R8/R8.1 label,withdrawn,True,Retain private_only as safety-conservative default.,R8.3,use_audited_label,r83_seer_evidence_integration.csv

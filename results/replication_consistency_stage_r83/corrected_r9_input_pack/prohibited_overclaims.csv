@@ -1,0 +1,5 @@
+artifact,row_id,previous_label,audited_label,changed,reason,authoritative_stage,final_use_status,source_file,fact_type,fact,value,source
+corrected_r9_input_pack,P01,prior layer,R8.3 audited,True,R8.3 final corrected R9 input.,R8.3,use_for_R9,r83_overclaiming_audit.md,prohibited_wording,optimal,do_not_use,r83_overclaiming_audit.md
+corrected_r9_input_pack,P02,prior layer,R8.3 audited,True,R8.3 final corrected R9 input.,R8.3,use_for_R9,r83_overclaiming_audit.md,prohibited_wording,proven,do_not_use,r83_overclaiming_audit.md
+corrected_r9_input_pack,P03,prior layer,R8.3 audited,True,R8.3 final corrected R9 input.,R8.3,use_for_R9,r83_overclaiming_audit.md,prohibited_wording,universally best,do_not_use,r83_overclaiming_audit.md
+corrected_r9_input_pack,P04,prior layer,R8.3 audited,True,R8.3 final corrected R9 input.,R8.3,use_for_R9,r83_overclaiming_audit.md,prohibited_wording,causes,do_not_use,r83_overclaiming_audit.md

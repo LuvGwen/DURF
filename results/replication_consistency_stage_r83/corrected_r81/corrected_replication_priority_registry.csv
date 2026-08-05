@@ -1,0 +1,6 @@
+artifact,row_id,previous_label,audited_label,changed,reason,authoritative_stage,final_use_status,source_file
+replication_priority_registry,Villager,R8.1 replication priority,R8.3 resolved for final R9 input,True,R8.2/R8.3 fresh-seed replication supported,R8.3,use_audited_label,r83_final_five_role_recommendations.csv
+replication_priority_registry,Seer,R8.1 replication priority,R8.3 resolved for final R9 input,True,corrected independent payoff replication,R8.3,use_audited_label,r83_final_five_role_recommendations.csv
+replication_priority_registry,Witch,R8.1 replication priority,R8.3 resolved for final R9 input,True,R8.2/R8.3 fresh-seed replication supported for payoff,R8.3,use_audited_label,r83_final_five_role_recommendations.csv
+replication_priority_registry,Hunter,R8.1 replication priority,R8.3 resolved for final R9 input,True,not part of R8.2; R8.1 said no replication required for retaining reference,R8.3,use_audited_label,r83_final_five_role_recommendations.csv
+replication_priority_registry,Werewolf,R8.1 replication priority,R8.3 resolved for final R9 input,True,not part of R8.2; R8.1 retained reference family,R8.3,use_audited_label,r83_final_five_role_recommendations.csv

@@ -1,0 +1,4 @@
+artifact,row_id,previous_label,audited_label,changed,reason,authoritative_stage,final_use_status,source_file,fact_type,fact,value,source
+corrected_r9_input_pack,M01,prior layer,R8.3 audited,True,R8.3 final corrected R9 input.,R8.3,use_for_R9,r83_statistical_consistency_method.md,method,primary inference block,matched_set_id,r83_statistical_consistency_method.md
+corrected_r9_input_pack,M02,prior layer,R8.3 audited,True,R8.3 final corrected R9 input.,R8.3,use_for_R9,r83_primary_contrast_recalculation.csv,method,Holm family,exactly three R8.2/R8.3 primary role contrasts,r83_primary_contrast_recalculation.csv
+corrected_r9_input_pack,M03,prior layer,R8.3 audited,True,R8.3 final corrected R9 input.,R8.3,use_for_R9,r83_validation_summary.csv,method,no new gameplay,R8.3 reads frozen R8.2/R8.1/R6.2 outputs only,r83_validation_summary.csv

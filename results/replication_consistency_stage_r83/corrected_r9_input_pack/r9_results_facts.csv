@@ -1,0 +1,4 @@
+artifact,row_id,previous_label,audited_label,changed,reason,authoritative_stage,final_use_status,source_file,fact_type,fact,value,source
+corrected_r9_input_pack,R_Villager,prior layer,R8.3 audited,True,R8.3 final corrected R9 input.,R8.3,use_for_R9,r83_final_replication_conclusions.csv,result,Villager final evidence label,independently_replicated_confirmatory_supported,r83_final_replication_conclusions.csv
+corrected_r9_input_pack,R_Seer,prior layer,R8.3 audited,True,R8.3 final corrected R9 input.,R8.3,use_for_R9,r83_final_replication_conclusions.csv,result,Seer final evidence label,replicated_positive_with_material_tradeoff,r83_final_replication_conclusions.csv
+corrected_r9_input_pack,R_Witch,prior layer,R8.3 audited,True,R8.3 final corrected R9 input.,R8.3,use_for_R9,r83_final_replication_conclusions.csv,result,Witch final evidence label,replicated_positive_with_material_tradeoff,r83_final_replication_conclusions.csv

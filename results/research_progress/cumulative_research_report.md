@@ -323,3 +323,13 @@ role recommendations flagged by R8.1: Villager `trust_weighted` versus
 fixed actor-payoff primary outcome. Hunter and Werewolf are excluded from this
 replication scope.
 
+## 38. R8.3 Replication Consistency and Final Role Freeze
+
+R8.3 audits the R8.2 Seer CI/p-value inconsistency, corrects the matched
+sign-flip p-value denominator, recomputes all three primary role contrasts,
+and freezes final five-role recommendation wording for R9. Villager
+`trust_weighted` and Witch `aggressive_full` remain confirmatory on payoff,
+with Witch safety tradeoffs explicitly retained. Seer `immediate_reveal`
+becomes payoff-confirmatory after correction, but `private_only` remains the
+safety-conservative default because R8.2 lacks short-horizon survival exports
+and R6.2 documents post-reveal exposure.

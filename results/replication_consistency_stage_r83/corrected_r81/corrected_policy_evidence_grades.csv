@@ -1,0 +1,6 @@
+artifact,row_id,previous_label,audited_label,changed,reason,authoritative_stage,final_use_status,source_file
+policy_evidence_grades,Villager,R8.1 grade,A,True,independently replicated confirmatory improvement,R8.3,use_audited_label,r83_final_five_role_recommendations.csv
+policy_evidence_grades,Seer,R8.1 grade,B,True,payoff effect replicated after R8.3 p-value correction; default constrained by safety evidence,R8.3,use_audited_label,r83_final_five_role_recommendations.csv
+policy_evidence_grades,Witch,R8.1 grade,A/B,True,replicated payoff improvement with material safety tradeoff,R8.3,use_audited_label,r83_final_five_role_recommendations.csv
+policy_evidence_grades,Hunter,R8.1 grade,B,False,retained reference; no tested alternative confirmed improvement,R8.3,use_audited_label,r83_final_five_role_recommendations.csv
+policy_evidence_grades,Werewolf,R8.1 grade,B,False,no unique superior member established,R8.3,use_audited_label,r83_final_five_role_recommendations.csv

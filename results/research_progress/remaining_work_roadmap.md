@@ -195,3 +195,9 @@ Next stage: R9 - Final DURF Report, Presentation, and Reproducibility Package. N
 ## R8.2 Targeted Replication
 
 Run fresh-seed confirmatory replication for Seer immediate_reveal and Witch aggressive_full before treating either as a production/default recommendation.
+
+## R8.3 Replication Consistency Audit
+
+- Status: Completed in `results/replication_consistency_stage_r83/`.
+- Exit condition: corrected primary contrasts, final role conclusions, and R9 input pack generated.
+- Exact next stage: R9 final DURF report and reproducibility package.

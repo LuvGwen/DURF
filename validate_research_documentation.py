@@ -354,6 +354,47 @@ REQUIRED_FILES.extend(
     ]
 )
 
+REQUIRED_FILES.extend(
+    [
+        "results/replication_consistency_stage_r83/r83_seer_statistical_consistency_audit.csv",
+        "results/replication_consistency_stage_r83/r83_primary_contrast_recalculation.csv",
+        "results/replication_consistency_stage_r83/r83_final_replication_conclusions.csv",
+        "results/replication_consistency_stage_r83/r83_witch_risk_benefit_summary.csv",
+        "results/replication_consistency_stage_r83/r83_seer_evidence_integration.csv",
+        "results/replication_consistency_stage_r83/r83_final_five_role_recommendations.csv",
+        "results/replication_consistency_stage_r83/r83_final_claim_registry.csv",
+        "results/replication_consistency_stage_r83/r83_validation_summary.csv",
+        "results/replication_consistency_stage_r83/r83_r9_readiness_summary.csv",
+        "results/replication_consistency_stage_r83/r83_pre_registration.md",
+        "results/replication_consistency_stage_r83/r83_statistical_consistency_method.md",
+        "results/replication_consistency_stage_r83/r83_inference_interpretation_standard.md",
+        "results/replication_consistency_stage_r83/r83_seer_statistical_consistency_report.md",
+        "results/replication_consistency_stage_r83/r83_primary_recalculation_report.md",
+        "results/replication_consistency_stage_r83/r83_witch_risk_benefit_report.md",
+        "results/replication_consistency_stage_r83/r83_seer_evidence_integration_report.md",
+        "results/replication_consistency_stage_r83/r83_final_role_conclusion_report.md",
+        "results/replication_consistency_stage_r83/r83_overclaiming_audit.md",
+        "results/replication_consistency_stage_r83/r83_research_report.md",
+        "results/replication_consistency_stage_r83/r83_r9_readiness.md",
+        "results/replication_consistency_stage_r83/corrected_r8/corrected_final_role_strategy_table.csv",
+        "results/replication_consistency_stage_r83/corrected_r8/corrected_final_statistical_evidence_table.csv",
+        "results/replication_consistency_stage_r83/corrected_r8/corrected_supported_findings.csv",
+        "results/replication_consistency_stage_r83/corrected_r8/corrected_uncertain_findings.csv",
+        "results/replication_consistency_stage_r83/corrected_r8/corrected_negative_findings.csv",
+        "results/replication_consistency_stage_r83/corrected_r81/corrected_conclusion_change_registry.csv",
+        "results/replication_consistency_stage_r83/corrected_r81/corrected_policy_evidence_grades.csv",
+        "results/replication_consistency_stage_r83/corrected_r81/corrected_replication_priority_registry.csv",
+        "results/replication_consistency_stage_r83/corrected_r82/corrected_r82_primary_contrasts.csv",
+        "results/replication_consistency_stage_r83/corrected_r82/corrected_r82_replication_decision_summary.csv",
+        "results/replication_consistency_stage_r83/corrected_r9_input_pack/r9_methods_facts.csv",
+        "results/replication_consistency_stage_r83/corrected_r9_input_pack/r9_results_facts.csv",
+        "results/replication_consistency_stage_r83/corrected_r9_input_pack/r9_discussion_claims.csv",
+        "results/replication_consistency_stage_r83/corrected_r9_input_pack/r9_limitations.csv",
+        "results/replication_consistency_stage_r83/corrected_r9_input_pack/prohibited_overclaims.csv",
+        "results/replication_consistency_stage_r83/corrected_r9_input_pack/README.md",
+    ]
+)
+
 REGISTRY_COLUMNS = [
     "stage_id",
     "stage_name",
@@ -590,6 +631,12 @@ def main() -> int:
         "cumulative_report_r82_present",
         "## 37. R8.2 Targeted Independent Replication" in cumulative_text,
         "R8.2 chapter",
+    )
+    add_result(
+        summary,
+        "cumulative_report_r83_present",
+        "## 38. R8.3 Replication Consistency and Final Role Freeze" in cumulative_text,
+        "R8.3 chapter",
     )
 
     stage2a_text = (ROOT / "results/ml_optimization_stage2a/ml_stage2a_research_report.md").read_text(encoding="utf-8")

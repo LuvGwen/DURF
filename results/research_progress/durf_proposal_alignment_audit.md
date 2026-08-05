@@ -112,3 +112,9 @@ R8 adds the final cross-stage evidence synthesis and R9 readiness audit. Existin
 ## R8.1 Research Integrity Update
 
 R8.1 adds a formal overfitting, selection-bias, and researcher-degrees-of-freedom audit. Proposal completion remains strong, but final default recommendations must use audited labels.
+
+## R8.3 Replication Consistency Update
+
+R8.3 resolves the R8.2 statistical consistency issue and marks R9 readiness as
+`READY FOR R9 WITH AUDITED LIMITATIONS`. Final role recommendations are now bounded by corrected
+matched-set inference and explicit safety limitations.

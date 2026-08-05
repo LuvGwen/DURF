@@ -1,0 +1,2 @@
+artifact,row_id,previous_label,audited_label,changed,reason,authoritative_stage,final_use_status,source_file
+corrected_uncertain_findings.csv,R83_CLAIM_07,prior R8/R8.1 label,simulation_distribution_bound,True,Report findings as simulation-specific strategy evidence.,R8.3,use_audited_label,r83_final_five_role_recommendations.csv

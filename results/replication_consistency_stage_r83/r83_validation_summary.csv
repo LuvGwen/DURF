@@ -1,0 +1,18 @@
+check,passed,detail
+no_gameplay_experiment_run,True,R8.3 imports no game runner and reads frozen CSV artifacts only.
+r82_raw_hashes_unchanged,True,"[{'file': 'results/targeted_replication_stage_r82/r82_game_level_raw.csv', 'expected_sha256': '53a592af91951cf520ac1ad677c4f947362d1c63e88b037ba1683c963d3d6c02', 'actual_sha256': '53a592af91951cf520ac1ad677c4f947362d1c63e88b037ba1683c963d3d6c02', 'matches': 'True'}, {'file': 'results/targeted_replication_stage_r82/r82_action_raw.csv.gz', 'expected_sha256': '1dc64525979b76f715bab6f5984445c4441497c11d107789381801f4a44152d5', 'actual_sha256': '1dc64525979b76f715bab6f5984445c4441497c11d107789381801f4a44152d5', 'matches': 'True'}, {'file': 'results/targeted_replication_stage_r82/r82_primary_contrasts.csv', 'expected_sha256': '04ad59845df9c133b67a9f32cb1394930aab88999a5a25046158b97861e9edfb', 'actual_sha256': '04ad59845df9c133b67a9f32cb1394930aab88999a5a25046158b97861e9edfb', 'matches': 'True'}, {'file': 'results/targeted_replication_stage_r82/r82_policy_summary.csv', 'expected_sha256': '59578777f020c565a18c2868c48dffa12f4576aefe45591f08066d9c38f45090', 'actual_sha256': '59578777f020c565a18c2868c48dffa12f4576aefe45591f08066d9c38f45090', 'matches': 'True'}]"
+matched_set_id_inference_block,True,1000 per module
+holm_family_exactly_three_primary_tests,True,3
+raw_and_adjusted_p_values_distinguished,True,present
+seer_discrepancy_corrected,True,Seer original p mismatch found
+villager_recalculation_confirms,True,Villager confirmed
+witch_recalculation_confirms,True,Witch confirmed
+seer_not_upgraded_to_unconditional_safety_default,True,Payoff replicated but safety-conservative default retained.
+no_posthoc_practical_threshold,True,R8.3 reports no preregistered practical threshold because R8.2 did not define one.
+unavailable_metrics_not_invented,True,R8.2 lifecycle fields remain unavailable.
+r6_2_not_pooled_with_r8_2,True,Seer safety evidence integrated qualitatively only.
+r4_authoritative_hash_unchanged,True,eee8007693ec6a484632f61444a53f6f8b1b9feb64b18c865f0edf704a15c7cd
+r5_authoritative_hash_unchanged,True,4b48f5aae165d6c30d5a13cd2e9c3e01f5b595ddbfeb93f7c1832b018f6861bf
+corrected_r9_input_pack_complete,True,corrected_r9_input_pack/r9_methods_facts.csv;corrected_r9_input_pack/r9_results_facts.csv;corrected_r9_input_pack/r9_discussion_claims.csv;corrected_r9_input_pack/r9_limitations.csv;corrected_r9_input_pack/prohibited_overclaims.csv;corrected_r9_input_pack/README.md
+original_r8_r81_r82_outputs_preserved,True,R8.3 writes corrected layers under results/replication_consistency_stage_r83 only.
+documentation_validation_passed,True,validate_research_documentation.py

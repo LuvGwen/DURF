@@ -1,0 +1,4 @@
+artifact,row_id,previous_label,audited_label,changed,reason,authoritative_stage,final_use_status,source_file
+final_statistical_evidence_table,Villager,R8.2 original primary contrast table,independently_replicated_confirmatory_supported,False,R8.3 corrected sign-flip p-values and froze final evidence labels.,R8.3,use_audited_label,r83_primary_contrast_recalculation.csv
+final_statistical_evidence_table,Seer,R8.2 original primary contrast table,replicated_positive_with_material_tradeoff,True,R8.3 corrected sign-flip p-values and froze final evidence labels.,R8.3,use_audited_label,r83_primary_contrast_recalculation.csv
+final_statistical_evidence_table,Witch,R8.2 original primary contrast table,replicated_positive_with_material_tradeoff,False,R8.3 corrected sign-flip p-values and froze final evidence labels.,R8.3,use_audited_label,r83_primary_contrast_recalculation.csv

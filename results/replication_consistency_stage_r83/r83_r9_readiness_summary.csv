@@ -1,0 +1,12 @@
+criterion,passed,detail
+seer_discrepancy_corrected,True,
+villager_recalculation_confirms,True,
+witch_recalculation_confirms,True,
+unavailable_metrics_not_invented,True,
+no_posthoc_practical_threshold,True,
+r4_authoritative_hash_unchanged,True,
+r5_authoritative_hash_unchanged,True,
+r82_raw_hashes_unchanged,True,
+corrected_r9_input_pack_complete,True,
+documentation_validation_passed,True,
+r9_readiness_decision,True,READY FOR R9 WITH AUDITED LIMITATIONS
